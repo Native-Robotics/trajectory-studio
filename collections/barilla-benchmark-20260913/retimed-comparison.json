@@ -1,0 +1,1851 @@
+[
+  {
+    "task_id": 3,
+    "backend": "develop-retimed",
+    "time_scale": 2.99834707170469,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 1.9354080837974408e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.0004068352742319578,
+              0.10793831557697925,
+              -0.08010186873677955,
+              -0.02784263715552395,
+              5.6623297692696486e-06,
+              0.00035430702852952927
+            ],
+            [
+              -2.322493553528018,
+              1.898292799727824,
+              -0.5168609518377832,
+              0.05156932770156097,
+              0.003908389736432908,
+              -1.0564475441892196
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 2.322493553528018,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 263,
+            "peak_tcp_speed_m_s": 0.2159620462243373,
+            "peak_tcp_acceleration_m_s2": 0.37015905472326033,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 828,
+            "peak_tcp_speed_m_s": 0.6329632617576632,
+            "peak_tcp_acceleration_m_s2": 0.9766280294669097,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 5.388122753956769,
+      "joint_mileage_rad": [
+        1.2095516003949531,
+        1.2746868962064795,
+        0.6406432854901394,
+        0.876066608108882,
+        0.008952652927140425,
+        1.2261518997903917
+      ],
+      "total_mileage_rad": 5.236052942917986,
+      "integrated_squared_jerk": 12.494290160198265,
+      "normalized_jerk": 9835.05645833205,
+      "peak_velocity_rad_s": 0.6097764179830741,
+      "peak_velocity_rad_s_per_joint": [
+        0.6097764179830741,
+        0.6042944647801347,
+        0.2263542528235924,
+        0.41424152645962853,
+        0.004204746267861213,
+        0.5499779761025323
+      ],
+      "peak_acceleration_rad_s2": 0.7296651860522005,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.7296651860522005,
+        0.6561202719572813,
+        0.3395188293628153,
+        0.3127430814686176,
+        0.01133265088845427,
+        0.40629917556431405
+      ],
+      "peak_jerk_rad_s3": 4.613147086186565,
+      "peak_jerk_rad_s3_per_joint": [
+        4.613147086186565,
+        3.3364562391799413,
+        1.9218895780790057,
+        2.7991757674204862,
+        0.03133597572810818,
+        1.5211505848100626
+      ],
+      "rms_acceleration_rad_s2": 0.5827281019943068,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.302514163488634,
+        0.3396935205644562,
+        0.1823208096099259,
+        0.1884684405448954,
+        0.004260856532339278,
+        0.2527570933377575
+      ],
+      "rms_jerk_rad_s3": 1.5227796102871163,
+      "rms_jerk_rad_s3_per_joint": [
+        0.8636158845300539,
+        0.9619337656034679,
+        0.5586741162093222,
+        0.38999857447368264,
+        0.011336012709340213,
+        0.42821094648265257
+      ],
+      "max_position_jump_rad": 1.1102230246251565e-15,
+      "max_position_jump_rad_per_joint": [
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        1.1102230246251565e-15
+      ],
+      "max_velocity_jump_rad_s": 1.1551870571224754e-13,
+      "max_velocity_jump_rad_s_per_joint": [
+        5.776341861427059e-14,
+        8.659739592076221e-14,
+        1.1551870571224754e-13,
+        1.1102230246251565e-16,
+        2.888171100120119e-14,
+        2.888172285966245e-14
+      ],
+      "max_acceleration_jump_rad_s2": 0.46001266259006474,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.01986795408506011,
+        0.46001266259006474,
+        0.06292800819126929,
+        0.2501887857684111,
+        0.005511802959891058,
+        0.24107278874671803
+      ]
+    }
+  },
+  {
+    "task_id": 4,
+    "backend": "develop-retimed",
+    "time_scale": 3.298087273987268,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 1.1520828306857563e-10,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.00620727102348596,
+              0.10266191317164433,
+              -0.08680033872626454,
+              -0.015875344451970246,
+              1.7120344460625634e-05,
+              0.006155669045283826
+            ],
+            [
+              -0.0021821486192068937,
+              0.07220185811889726,
+              0.02838872607359882,
+              -0.10064890278218819,
+              1.5194715594424947e-05,
+              -0.002169536945496405
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 0.10266191317164433,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 259,
+            "peak_tcp_speed_m_s": 0.22363973081163316,
+            "peak_tcp_acceleration_m_s2": 0.3925999634763327,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 950,
+            "peak_tcp_speed_m_s": 0.5803942365470465,
+            "peak_tcp_acceleration_m_s2": 0.977057473523928,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 2,
+            "samples": 153,
+            "peak_tcp_speed_m_s": 0.11978574305576671,
+            "peak_tcp_acceleration_m_s2": 0.2203396983118749,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 6.733512817334935,
+      "joint_mileage_rad": [
+        1.39028034316133,
+        1.488660977522662,
+        0.7999105844632894,
+        0.842851711904407,
+        0.07319703542255351,
+        1.4011883029256311
+      ],
+      "total_mileage_rad": 5.996088955399873,
+      "integrated_squared_jerk": 12.45375105222278,
+      "normalized_jerk": 23083.84779445841,
+      "peak_velocity_rad_s": 0.585278516101897,
+      "peak_velocity_rad_s_per_joint": [
+        0.544013162564118,
+        0.547439720029976,
+        0.35338858684407376,
+        0.27242829217263026,
+        0.0314452392372703,
+        0.585278516101897
+      ],
+      "peak_acceleration_rad_s2": 0.8252035130445399,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.8252035130445399,
+        0.4453461345806439,
+        0.39206765375136304,
+        0.36381942791890465,
+        0.04225516775760979,
+        0.42322823652163477
+      ],
+      "peak_jerk_rad_s3": 3.9982307283314515,
+      "peak_jerk_rad_s3_per_joint": [
+        3.9982307283314515,
+        3.0132934304075345,
+        1.9689652365443897,
+        3.033586875242202,
+        0.12888419907483206,
+        0.9683683309522468
+      ],
+      "rms_acceleration_rad_s2": 0.49341721759312834,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.25321504754933516,
+        0.25485055787818517,
+        0.189775532207061,
+        0.16601523703764792,
+        0.02170448478371846,
+        0.22438134336045848
+      ],
+      "rms_jerk_rad_s3": 1.359969737581216,
+      "rms_jerk_rad_s3_per_joint": [
+        0.7590366159202555,
+        0.6973709151745806,
+        0.5123287451953066,
+        0.6462965594256604,
+        0.04595211339674674,
+        0.3236716343659809
+      ],
+      "max_position_jump_rad": 2.220446049250313e-15,
+      "max_position_jump_rad_per_joint": [
+        2.220446049250313e-15,
+        8.881784197001252e-16,
+        6.661338147750939e-16,
+        1.1102230246251565e-15,
+        6.661338147750939e-16,
+        6.661338147750939e-16
+      ],
+      "max_velocity_jump_rad_s": 1.8783932742572063e-13,
+      "max_velocity_jump_rad_s_per_joint": [
+        1.0079827597597735e-15,
+        4.5005665860742283e-14,
+        5.892508703198018e-14,
+        2.949029909160572e-14,
+        6.665199601550882e-14,
+        1.8783932742572063e-13
+      ],
+      "max_acceleration_jump_rad_s2": 0.36996850926089775,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.017914571764672274,
+        0.36996850926089775,
+        0.2303953884607069,
+        0.256325067428296,
+        0.031827035871484194,
+        0.1398103124636932
+      ]
+    }
+  },
+  {
+    "task_id": 21,
+    "backend": "develop-retimed",
+    "time_scale": 3.1245697925042166,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 2.770506046800847e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.0007169541159144929,
+              -0.006047529447893732,
+              0.020043433710444133,
+              -0.01390004723998723,
+              6.637578355172315e-05,
+              0.0006662759465381107
+            ],
+            [
+              -2.2260517659076076,
+              0.9609107270448721,
+              0.08160977864536016,
+              -0.028201841814798442,
+              -0.06468556911604778,
+              -1.3967142307229952
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 2.2260517659076076,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 259,
+            "peak_tcp_speed_m_s": 0.13193371698500567,
+            "peak_tcp_acceleration_m_s2": 0.13766511942682214,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 1093,
+            "peak_tcp_speed_m_s": 0.7372741029834465,
+            "peak_tcp_acceleration_m_s2": 0.9725298205269037,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 6.700878901207984,
+      "joint_mileage_rad": [
+        2.3355217588276984,
+        1.2374505041902166,
+        0.5949108164129584,
+        1.063832383670841,
+        0.02270211215797424,
+        3.9229198769794356
+      ],
+      "total_mileage_rad": 9.177337452239124,
+      "integrated_squared_jerk": 16.609397600329128,
+      "normalized_jerk": 9404.08293708046,
+      "peak_velocity_rad_s": 1.5459046739336648,
+      "peak_velocity_rad_s_per_joint": [
+        0.5752316323145226,
+        0.3430791410970372,
+        0.2066559423103688,
+        0.43081067703463494,
+        0.01130089104605605,
+        1.5459046739336648
+      ],
+      "peak_acceleration_rad_s2": 0.8260351986857651,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.7991961043267022,
+        0.39590875602743647,
+        0.1709530805720622,
+        0.32596393513579175,
+        0.01744596205923968,
+        0.8260351986857651
+      ],
+      "peak_jerk_rad_s3": 4.685841768270693,
+      "peak_jerk_rad_s3_per_joint": [
+        4.523155779508169,
+        3.341290261761892,
+        1.0601081670866015,
+        1.4734861737295144,
+        0.1615279330968068,
+        4.685841768270693
+      ],
+      "rms_acceleration_rad_s2": 0.6655281099781015,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.28451976228596687,
+        0.18988576192617107,
+        0.11681844563868757,
+        0.16184082238684336,
+        0.007488558993540896,
+        0.534812572691957
+      ],
+      "rms_jerk_rad_s3": 1.5743854085034996,
+      "rms_jerk_rad_s3_per_joint": [
+        0.8809353345031116,
+        0.6217304738807083,
+        0.2557470354478393,
+        0.378818137473995,
+        0.029879597876616818,
+        1.0518037131479423
+      ],
+      "max_position_jump_rad": 7.993605777301127e-15,
+      "max_position_jump_rad_per_joint": [
+        3.552713678800501e-15,
+        5.995204332975845e-15,
+        7.993605777301127e-15,
+        6.439293542825908e-15,
+        8.881784197001252e-16,
+        2.7755575615628914e-15
+      ],
+      "max_velocity_jump_rad_s": 2.6244490608506865e-10,
+      "max_velocity_jump_rad_s_per_joint": [
+        5.999483071797429e-11,
+        3.103001189330712e-11,
+        2.7909619060295654e-12,
+        2.6244490608506865e-10,
+        5.460277554809965e-12,
+        1.2724139710623694e-10
+      ],
+      "max_acceleration_jump_rad_s2": 0.39622657824344776,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.39622657824344776,
+        0.11615350305507637,
+        0.008979665835339583,
+        0.12494319405609468,
+        0.0009823439377523663,
+        0.2982130813223009
+      ]
+    }
+  },
+  {
+    "task_id": 54,
+    "backend": "develop-retimed",
+    "time_scale": 2.7199194155787674,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 2.6835242361578082e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.0011282662094483096,
+              -0.018935885224888774,
+              0.03900970179996636,
+              -0.019425914227059027,
+              5.056313506013374e-05,
+              0.0010584190710524995
+            ],
+            [
+              -2.030800804200321,
+              1.400840627987474,
+              0.055955516130768886,
+              0.23650812759379375,
+              -0.0598769248763224,
+              -5.0571322251100135
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 5.0571322251100135,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 237,
+            "peak_tcp_speed_m_s": 0.13555527604651876,
+            "peak_tcp_acceleration_m_s2": 0.18398449925621826,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 894,
+            "peak_tcp_speed_m_s": 0.7992171955772925,
+            "peak_tcp_acceleration_m_s2": 0.966488719880266,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 1
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 5.593199302346231,
+      "joint_mileage_rad": [
+        1.6825076347981798,
+        0.985709514363107,
+        0.8312300346837982,
+        1.3110264700000003,
+        0.011888922696065896,
+        4.840702321554799
+      ],
+      "total_mileage_rad": 9.66306489809595,
+      "integrated_squared_jerk": 16.364395722403028,
+      "normalized_jerk": 3021.7181868176563,
+      "peak_velocity_rad_s": 1.8878142765883463,
+      "peak_velocity_rad_s_per_joint": [
+        0.6634752705309814,
+        0.32508982786527907,
+        0.36423834199631266,
+        0.48476362068756107,
+        0.005929211336847519,
+        1.8878142765883463
+      ],
+      "peak_acceleration_rad_s2": 1.739992000801768,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.6254372577694831,
+        0.42751584948336635,
+        0.40726588422235876,
+        0.49064421416232185,
+        0.012123023202232925,
+        1.739992000801768
+      ],
+      "peak_jerk_rad_s3": 6.09989980535573,
+      "peak_jerk_rad_s3_per_joint": [
+        2.044138807413044,
+        1.400840627987474,
+        0.830235937354964,
+        0.910212105459957,
+        0.0598769248763224,
+        6.09989980535573
+      ],
+      "rms_acceleration_rad_s2": 0.9622413108920491,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.29787351319971384,
+        0.19514466659308877,
+        0.1946966695675924,
+        0.20214321203519994,
+        0.004668084252168588,
+        0.8487094952328363
+      ],
+      "rms_jerk_rad_s3": 1.7104872413853276,
+      "rms_jerk_rad_s3_per_joint": [
+        0.5216259460941657,
+        0.4631046172403427,
+        0.37680803805113866,
+        0.3900892872411359,
+        0.014286406879328225,
+        1.4645303130397345
+      ],
+      "max_position_jump_rad": 1.3322676295501878e-15,
+      "max_position_jump_rad_per_joint": [
+        1.3322676295501878e-15,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16
+      ],
+      "max_velocity_jump_rad_s": 1.1236706010109287e-11,
+      "max_velocity_jump_rad_s_per_joint": [
+        1.2421784521127188e-12,
+        5.164979555161153e-12,
+        1.1236706010109287e-11,
+        7.606415497463104e-14,
+        3.644251072513604e-13,
+        3.01726092027943e-13
+      ],
+      "max_acceleration_jump_rad_s2": 0.7642624558014084,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.240054622306511,
+        0.12826260959922042,
+        0.12108381443306697,
+        0.20645486446453007,
+        0.002082080855012627,
+        0.7642624558014084
+      ]
+    }
+  },
+  {
+    "task_id": 59,
+    "backend": "develop-retimed",
+    "time_scale": 2.469977556999305,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 5.0488594587668606e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              -0.0028928691050929063,
+              -0.015259687053522129,
+              0.034359123611345056,
+              -0.01818599062624589,
+              9.89728568340163e-05,
+              -0.0029793691573154362
+            ],
+            [
+              -0.005265638459420585,
+              0.03881204322199357,
+              0.029589641894862205,
+              -0.06846636966977608,
+              1.4815210724675486e-05,
+              -0.00525140345761616
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 0.06846636966977608,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 217,
+            "peak_tcp_speed_m_s": 0.15212966644456155,
+            "peak_tcp_acceleration_m_s2": 0.2047971048549426,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 865,
+            "peak_tcp_speed_m_s": 0.926394570557163,
+            "peak_tcp_acceleration_m_s2": 0.9658482198762838,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 2,
+            "samples": 167,
+            "peak_tcp_speed_m_s": 0.10594342974187228,
+            "peak_tcp_acceleration_m_s2": 0.16891919046938367,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 6.171692433153827,
+      "joint_mileage_rad": [
+        2.0303381942758394,
+        1.096840482934709,
+        0.7862378085352173,
+        1.3687390484134567,
+        0.0036511446624492017,
+        5.188535743410101
+      ],
+      "total_mileage_rad": 10.474342422231773,
+      "integrated_squared_jerk": 45.87517343750852,
+      "normalized_jerk": 11824.85891623734,
+      "peak_velocity_rad_s": 2.055553515062337,
+      "peak_velocity_rad_s_per_joint": [
+        0.727440855602792,
+        0.32006583602716343,
+        0.43394010396434346,
+        0.5639410778264324,
+        0.0019265713837462925,
+        2.055553515062337
+      ],
+      "peak_acceleration_rad_s2": 2.5582559542611434,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.9099922690480166,
+        0.4804501237214183,
+        0.38986107629714495,
+        0.5016279593193526,
+        0.004479021289265507,
+        2.5582559542611434
+      ],
+      "peak_jerk_rad_s3": 7.329105649954899,
+      "peak_jerk_rad_s3_per_joint": [
+        3.3569624254389807,
+        4.141301077427303,
+        7.258042901766878,
+        7.011263156445708,
+        0.05697563304186848,
+        7.329105649954899
+      ],
+      "rms_acceleration_rad_s2": 1.0733536089125426,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.3461680799421185,
+        0.20482876303731143,
+        0.21780571927442496,
+        0.25881636613974157,
+        0.0016229206073044807,
+        0.9358808318507453
+      ],
+      "rms_jerk_rad_s3": 2.7263821026919492,
+      "rms_jerk_rad_s3_per_joint": [
+        0.7957660509882248,
+        0.7605010455256347,
+        0.9116232760152918,
+        1.0441749900272301,
+        0.008311929199223675,
+        2.073674619218204
+      ],
+      "max_position_jump_rad": 1.3322676295501878e-15,
+      "max_position_jump_rad_per_joint": [
+        8.881784197001252e-16,
+        6.661338147750939e-16,
+        1.3322676295501878e-15,
+        1.1102230246251565e-15,
+        4.440892098500626e-16,
+        1.3322676295501878e-15
+      ],
+      "max_velocity_jump_rad_s": 3.2875369093687823e-12,
+      "max_velocity_jump_rad_s_per_joint": [
+        7.551392237209464e-14,
+        1.957989326228926e-12,
+        9.493239527813557e-13,
+        3.2875369093687823e-12,
+        3.9779384484756736e-14,
+        1.057193612166718e-12
+      ],
+      "max_acceleration_jump_rad_s2": 0.7446595593937727,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.4246321118822987,
+        0.1454037716200876,
+        0.12490561052906086,
+        0.2034391774425677,
+        0.0008091974887385652,
+        0.7446595593937727
+      ]
+    }
+  },
+  {
+    "task_id": 69,
+    "backend": "develop-retimed",
+    "time_scale": 2.5152860946541593,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 4.2709290829423194e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.000944646133707646,
+              -0.046523643108018285,
+              0.04766732298065508,
+              -0.00044329295957074054,
+              0.00010303865531612763,
+              0.0008475113569360484
+            ],
+            [
+              -3.0622445333986525,
+              0.9065533607837903,
+              0.18885354319754888,
+              0.18963151154547814,
+              0.019315042443986213,
+              -6.389670295810545
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 6.389670295810545,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 209,
+            "peak_tcp_speed_m_s": 0.15219462627343405,
+            "peak_tcp_acceleration_m_s2": 0.23747565292938738,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 864,
+            "peak_tcp_speed_m_s": 0.8875915910930109,
+            "peak_tcp_acceleration_m_s2": 0.9672550614625909,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 1
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 5.307195842236081,
+      "joint_mileage_rad": [
+        1.9993556093716036,
+        0.781193834603482,
+        0.35383472628126933,
+        0.7401035000000007,
+        0.005380267096853242,
+        5.157550157494338
+      ],
+      "total_mileage_rad": 9.037418094847547,
+      "integrated_squared_jerk": 30.995930223913536,
+      "normalized_jerk": 4093.5342234037084,
+      "peak_velocity_rad_s": 2.028849625374909,
+      "peak_velocity_rad_s_per_joint": [
+        0.7137611306643937,
+        0.25264500794262723,
+        0.1880766882936257,
+        0.2663766773804038,
+        0.002767278220968667,
+        2.028849625374909
+      ],
+      "peak_acceleration_rad_s2": 2.583447475925008,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.9081189945299192,
+        0.36660270998266675,
+        0.18079794304390007,
+        0.2018437154881077,
+        0.005848646126448384,
+        2.583447475925008
+      ],
+      "peak_jerk_rad_s3": 6.4680461698587735,
+      "peak_jerk_rad_s3_per_joint": [
+        3.0622445333986525,
+        1.595021852116767,
+        1.742547788998852,
+        1.124766819236453,
+        0.03590125486518188,
+        6.4680461698587735
+      ],
+      "rms_acceleration_rad_s2": 1.1009466815200732,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.369116801295372,
+        0.17538390771717655,
+        0.11788013970981681,
+        0.11282646537385911,
+        0.002478423619416213,
+        1.009180452770953
+      ],
+      "rms_jerk_rad_s3": 2.4166835188422007,
+      "rms_jerk_rad_s3_per_joint": [
+        0.8295122301756557,
+        0.4665518925704442,
+        0.352151061040435,
+        0.256461816027256,
+        0.008960601605982645,
+        2.1782411933756154
+      ],
+      "max_position_jump_rad": 8.881784197001252e-16,
+      "max_position_jump_rad_per_joint": [
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16
+      ],
+      "max_velocity_jump_rad_s": 1.582506348185575e-11,
+      "max_velocity_jump_rad_s_per_joint": [
+        2.2055358299237493e-12,
+        6.922101780659773e-12,
+        3.825856298433905e-12,
+        1.582506348185575e-11,
+        6.779724893470063e-14,
+        5.441809763223615e-12
+      ],
+      "max_acceleration_jump_rad_s2": 0.7116178109763717,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.41277925772911267,
+        0.08033424477902772,
+        0.0641477605834066,
+        0.11659254929180064,
+        0.000682282167375835,
+        0.7116178109763717
+      ]
+    }
+  },
+  {
+    "task_id": 95,
+    "backend": "develop-retimed",
+    "time_scale": 3.3329718499761016,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 2.7116097192479314e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.0003312573498084263,
+              0.6179787427789062,
+              -0.12646016170101845,
+              -0.4915439390818429,
+              4.265450872984376e-05,
+              0.0002953400482111488
+            ],
+            [
+              -2.301758222634343,
+              -0.018279801738192658,
+              -0.013696711937572069,
+              0.03201349358657065,
+              -5.639530843559585e-05,
+              -0.9182001779859518
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 2.301758222634343,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 297,
+            "peak_tcp_speed_m_s": 0.07923195040099942,
+            "peak_tcp_acceleration_m_s2": 0.3689983383570135,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 890,
+            "peak_tcp_speed_m_s": 0.5824550556225222,
+            "peak_tcp_acceleration_m_s2": 0.9816897107028544,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 1
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 5.8835871705921035,
+      "joint_mileage_rad": [
+        1.724792537921818,
+        0.27784234950754794,
+        0.041521132533939964,
+        0.30265237000000034,
+        8.090020018425292e-05,
+        1.7413945777202129
+      ],
+      "total_mileage_rad": 4.088283867883703,
+      "integrated_squared_jerk": 9.03937621250465,
+      "normalized_jerk": 10315.961891765382,
+      "peak_velocity_rad_s": 0.7057740340899226,
+      "peak_velocity_rad_s_per_joint": [
+        0.5386279766999442,
+        0.08680212395257596,
+        0.013267115764683254,
+        0.07964214974963806,
+        3.577956623657347e-05,
+        0.7057740340899226
+      ],
+      "peak_acceleration_rad_s2": 0.8595311128915866,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.8595311128915866,
+        0.4208237017781222,
+        0.07182259956994869,
+        0.3490050638621513,
+        0.00030463155767126353,
+        0.6518132192498233
+      ],
+      "peak_jerk_rad_s3": 5.434860791094359,
+      "peak_jerk_rad_s3_per_joint": [
+        5.434860791094359,
+        4.3258511994222,
+        0.8852211322604646,
+        3.440807573648802,
+        0.012104458308826747,
+        1.236528838693248
+      ],
+      "rms_acceleration_rad_s2": 0.43512839747861226,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.28740894786166893,
+        0.06430030712723904,
+        0.01231179515871516,
+        0.055822927138111114,
+        4.286163059314408e-05,
+        0.3151674287633162
+      ],
+      "rms_jerk_rad_s3": 1.239504576906775,
+      "rms_jerk_rad_s3_per_joint": [
+        0.9763935172069564,
+        0.4243203650934216,
+        0.08747022882772056,
+        0.3384728227681686,
+        0.0008428765297041437,
+        0.5298716074403184
+      ],
+      "max_position_jump_rad": 8.881784197001252e-16,
+      "max_position_jump_rad_per_joint": [
+        8.881784197001252e-16,
+        1.1102230246251565e-16,
+        6.661338147750939e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16
+      ],
+      "max_velocity_jump_rad_s": 4.7040010775489804e-12,
+      "max_velocity_jump_rad_s_per_joint": [
+        1.4070239114441496e-13,
+        4.7040010775489804e-12,
+        2.092952655803615e-12,
+        6.31494856406789e-13,
+        2.7181239843545452e-14,
+        1.1991677182493499e-13
+      ],
+      "max_acceleration_jump_rad_s2": 0.5491202987957882,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.5491202987957882,
+        0.010823315434750269,
+        0.009580314033846144,
+        0.0012436211332611485,
+        1.3260043146920698e-06,
+        0.3237666303402729
+      ]
+    }
+  },
+  {
+    "task_id": 118,
+    "backend": "develop-retimed",
+    "time_scale": 2.721434125448959,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 2.0546730983284078e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.0008430444294262565,
+              0.8142289706681564,
+              0.2812206856033483,
+              -1.096003484966559,
+              6.374439222621246e-05,
+              0.0007977965532202355
+            ],
+            [
+              -3.8671798660102596,
+              0.9932882280076976,
+              -0.8535680500972984,
+              -0.13970598779554913,
+              -0.0001566535880697217,
+              -1.9324136585874565
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 3.8671798660102596,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 295,
+            "peak_tcp_speed_m_s": 0.08048747562393684,
+            "peak_tcp_acceleration_m_s2": 0.33545958772634693,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 615,
+            "peak_tcp_speed_m_s": 0.6866399140186421,
+            "peak_tcp_acceleration_m_s2": 0.9709984864752667,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 3
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 4.488012865530096,
+      "joint_mileage_rad": [
+        1.2383275185737557,
+        0.7485261683070333,
+        0.6788437200000019,
+        0.3590095424350098,
+        8.23316832869736e-05,
+        1.2549301933920645
+      ],
+      "total_mileage_rad": 4.279719474391152,
+      "integrated_squared_jerk": 20.730893688122656,
+      "normalized_jerk": 8864.432128481334,
+      "peak_velocity_rad_s": 0.7442023366538003,
+      "peak_velocity_rad_s_per_joint": [
+        0.6180914476710366,
+        0.36349946590879906,
+        0.34693048071546295,
+        0.18161538917857667,
+        5.197694183085184e-05,
+        0.7442023366538003
+      ],
+      "peak_acceleration_rad_s2": 0.9998416987719018,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.8627525425246847,
+        0.5977542188511611,
+        0.4481637002031135,
+        0.7947564372119476,
+        0.0004488722093080512,
+        0.9998416987719018
+      ],
+      "peak_jerk_rad_s3": 7.672024395223197,
+      "peak_jerk_rad_s3_per_joint": [
+        7.024337673865458,
+        5.699602794705635,
+        1.9685448005862027,
+        7.672024395223197,
+        0.018088620787145845,
+        2.795421513264579
+      ],
+      "rms_acceleration_rad_s2": 0.7137402937681784,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.39301605039952076,
+        0.2804490989458167,
+        0.2002017779583061,
+        0.15960672349164245,
+        7.410211445744243e-05,
+        0.45908259649500827
+      ],
+      "rms_jerk_rad_s3": 2.149225405591641,
+      "rms_jerk_rad_s3_per_joint": [
+        1.2039611984977276,
+        0.8842013821203455,
+        0.5539758150698205,
+        0.867551719943103,
+        0.0014339114790699586,
+        1.1525180891631606
+      ],
+      "max_position_jump_rad": 1.7763568394002505e-15,
+      "max_position_jump_rad_per_joint": [
+        1.7763568394002505e-15,
+        1.1102230246251565e-16,
+        8.881784197001252e-16,
+        6.661338147750939e-16,
+        6.661338147750939e-16,
+        8.881784197001252e-16
+      ],
+      "max_velocity_jump_rad_s": 2.9105329257816948e-12,
+      "max_velocity_jump_rad_s_per_joint": [
+        8.048107536309801e-13,
+        2.9105329257816948e-12,
+        1.0493966806635058e-12,
+        6.755151993331765e-13,
+        1.3707459646516984e-14,
+        9.213228053736588e-13
+      ],
+      "max_acceleration_jump_rad_s2": 0.7246354244930325,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.7246354244930325,
+        0.33546056481690467,
+        0.19463458272759915,
+        0.14082540103425015,
+        5.260573356788483e-06,
+        0.49272296618974676
+      ]
+    }
+  },
+  {
+    "task_id": 119,
+    "backend": "develop-retimed",
+    "time_scale": 2.5552257736436146,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 5.543159334320258e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              0.001395668303817136,
+              0.82221935977775,
+              0.14517237046035109,
+              -0.9684359828543777,
+              0.00012095000823111594,
+              0.0013083103910212087
+            ],
+            [
+              -0.003008791769932949,
+              0.03524663130473576,
+              0.01711837979550434,
+              -0.0524234158127017,
+              1.338614748920466e-05,
+              -0.0029959351684999518
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 0.9684359828543777,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 217,
+            "peak_tcp_speed_m_s": 0.11711166681279257,
+            "peak_tcp_acceleration_m_s2": 0.419260778708043,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 540,
+            "peak_tcp_speed_m_s": 0.6840126565198024,
+            "peak_tcp_acceleration_m_s2": 0.9658417238785516,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 2,
+            "samples": 177,
+            "peak_tcp_speed_m_s": 0.10116477941755292,
+            "peak_tcp_acceleration_m_s2": 0.15264422439087205,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 3
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 4.577770628464312,
+      "joint_mileage_rad": [
+        1.0212443182339395,
+        0.6887135910777901,
+        0.5625796587343397,
+        0.5360584522225254,
+        9.118603738134112e-05,
+        1.03784690825259
+      ],
+      "total_mileage_rad": 3.8465341145585663,
+      "integrated_squared_jerk": 23.11042231541208,
+      "normalized_jerk": 14526.667839236152,
+      "peak_velocity_rad_s": 0.7026732472720751,
+      "peak_velocity_rad_s_per_joint": [
+        0.617783256109685,
+        0.3205639146863141,
+        0.32361500106681795,
+        0.22334156029892155,
+        5.509770545566992e-05,
+        0.7026732472720751
+      ],
+      "peak_acceleration_rad_s2": 1.0797463275010277,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.7734489117598836,
+        0.6447738466973152,
+        0.507158450479807,
+        0.8130645084053835,
+        0.0008665613604337619,
+        1.0797463275010277
+      ],
+      "peak_jerk_rad_s3": 6.77905188139632,
+      "peak_jerk_rad_s3_per_joint": [
+        5.137468560427622,
+        5.755535518478441,
+        1.746439119731726,
+        6.77905188139632,
+        0.051457627865937945,
+        3.3412685410993612
+      ],
+      "rms_acceleration_rad_s2": 0.7194244721224214,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.3959348703350624,
+        0.2554752167789015,
+        0.20458466941591782,
+        0.20937678697888115,
+        0.00011544690000815563,
+        0.4580895370334804
+      ],
+      "rms_jerk_rad_s3": 2.2468647285822017,
+      "rms_jerk_rad_s3_per_joint": [
+        1.003866555842071,
+        0.9749303930440276,
+        0.611438562733681,
+        0.964637516379624,
+        0.00379989078134823,
+        1.3363258143704093
+      ],
+      "max_position_jump_rad": 1.1102230246251565e-15,
+      "max_position_jump_rad_per_joint": [
+        4.440892098500626e-16,
+        1.1102230246251565e-16,
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        1.1102230246251565e-15,
+        8.881784197001252e-16
+      ],
+      "max_velocity_jump_rad_s": 2.679856336840203e-12,
+      "max_velocity_jump_rad_s_per_joint": [
+        4.744647600155028e-13,
+        2.679856336840203e-12,
+        5.318245843710656e-13,
+        8.640033133389124e-13,
+        1.2578515499691613e-13,
+        8.076321729444391e-13
+      ],
+      "max_acceleration_jump_rad_s2": 0.6481100461826063,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.6481100461826063,
+        0.30721958915891484,
+        0.1964735152890868,
+        0.1792071096439863,
+        0.0007560690411482281,
+        0.4993734459918712
+      ]
+    }
+  },
+  {
+    "task_id": 133,
+    "backend": "develop-retimed",
+    "time_scale": 2.854540524997988,
+    "diagnostic_only": true,
+    "audit": {
+      "constraints_valid": false,
+      "collision_valid": true,
+      "error": "Constraints: ValueError: Emitted spline violates part continuity",
+      "metrics": {
+        "shared_audit_settings": {
+          "device": "cuda:0",
+          "interpolation_dt": 0.025,
+          "interpolation_buffer_size": 2000,
+          "num_ik_seeds": 16,
+          "num_trajopt_seeds": 4,
+          "max_attempts": 3,
+          "use_cuda_graph": true,
+          "default_estimated_time": 3.0,
+          "default_payload_orientation_bound": 0.05,
+          "default_jerk_bound": 10000,
+          "movel_npts": 10,
+          "start_trajectory_npts": 10,
+          "validation_frequency": 200,
+          "joint_tolerance": 0.0001,
+          "endpoint_tolerance": 0.001,
+          "linear_tolerance": 0.002,
+          "orientation_tolerance": 0.01,
+          "acceleration_limit": 100,
+          "jerk_limit": 10000
+        },
+        "reconstruction_max_abs_error": 1.3561395062477999e-11,
+        "audit_policy": "Recorded constraints plus shared audit bounds/tolerances; backend-specific missing endpoint defaults are not inserted. Acceleration continuity is an additional quality criterion.",
+        "default_endpoint_jerk": {
+          "note": "Missing global endpoint jerk defaults differ: NRKinematic strict zero; CuRobo +/-10000 rad/s^3. These checks concern only absent endpoint jerk, not full qualification.",
+          "missing_in_request_start_end": [
+            true,
+            true
+          ],
+          "global_endpoint_jerk_rad_s3": [
+            [
+              -0.0031524501024437607,
+              0.4045888500479782,
+              0.026193506938026155,
+              -0.4308769080878977,
+              4.512882892572801e-05,
+              -0.003184610069449787
+            ],
+            [
+              -3.5859654127596166,
+              0.32140376082927125,
+              -0.12451823087409876,
+              -0.19686838225663594,
+              -0.00013441861038813102,
+              -1.7247974548014746
+            ]
+          ],
+          "max_abs_global_endpoint_jerk_rad_s3": 3.5859654127596166,
+          "endpoint_tolerance_rad_s3": 0.001,
+          "nrkinematic_default_satisfied": false,
+          "curobo_default_satisfied": true
+        },
+        "sampled_tcp": [
+          {
+            "part": 0,
+            "samples": 337,
+            "peak_tcp_speed_m_s": 0.06929848642448691,
+            "peak_tcp_acceleration_m_s2": 0.2756572495289702,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          },
+          {
+            "part": 1,
+            "samples": 645,
+            "peak_tcp_speed_m_s": 0.6418405233539848,
+            "peak_tcp_acceleration_m_s2": 0.9749465273602789,
+            "requested_tcp_speed_m_s": 2.0,
+            "requested_tcp_acceleration_m_s2": 1.0
+          }
+        ],
+        "collision_parts": [
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 0
+          },
+          {
+            "obstacle_collision_times": 0,
+            "self_collision_times": 0,
+            "prophylactic_obstacle_collision_times": 3
+          }
+        ]
+      }
+    },
+    "motion": {
+      "duration_s": 4.864612811350737,
+      "joint_mileage_rad": [
+        1.275266277380644,
+        0.31589838716724533,
+        0.17042446000000067,
+        0.27398310358409395,
+        8.301044459657625e-05,
+        1.2918669557337503
+      ],
+      "total_mileage_rad": 3.3275221943103315,
+      "integrated_squared_jerk": 12.824411127853441,
+      "normalized_jerk": 9984.333526376075,
+      "peak_velocity_rad_s": 0.7305448398387281,
+      "peak_velocity_rad_s_per_joint": [
+        0.5983040631140978,
+        0.12949312900160337,
+        0.06281282157612768,
+        0.09525078306499044,
+        4.935912609949618e-05,
+        0.7305448398387281
+      ],
+      "peak_acceleration_rad_s2": 0.9358843194428634,
+      "peak_acceleration_rad_s2_per_joint": [
+        0.8519740316335416,
+        0.30436658734176286,
+        0.06985771770442711,
+        0.3604396850559767,
+        0.00036805194491474193,
+        0.9358843194428634
+      ],
+      "peak_jerk_rad_s3": 6.8602310402350515,
+      "peak_jerk_rad_s3_per_joint": [
+        6.8602310402350515,
+        2.8321219504170454,
+        0.18917884036197447,
+        3.0161383565577062,
+        0.012806597953298055,
+        2.494312803133979
+      ],
+      "rms_acceleration_rad_s2": 0.5758346593203179,
+      "rms_acceleration_rad_s2_per_joint": [
+        0.362722429031605,
+        0.10602938796988716,
+        0.031833976952857626,
+        0.09509623668388709,
+        6.350349405642968e-05,
+        0.4227517745508862
+      ],
+      "rms_jerk_rad_s3": 1.6236580741070679,
+      "rms_jerk_rad_s3_per_joint": [
+        1.150279763083594,
+        0.3813175276173744,
+        0.07675414608237244,
+        0.37149177212892953,
+        0.0010501666357935794,
+        1.0118401617028783
+      ],
+      "max_position_jump_rad": 2.6645352591003757e-15,
+      "max_position_jump_rad_per_joint": [
+        2.6645352591003757e-15,
+        1.1102230246251565e-16,
+        8.881784197001252e-16,
+        2.220446049250313e-16,
+        4.440892098500626e-16,
+        6.661338147750939e-16
+      ],
+      "max_velocity_jump_rad_s": 9.521550214941499e-14,
+      "max_velocity_jump_rad_s_per_joint": [
+        4.4804980038615216e-14,
+        9.521550214941499e-14,
+        2.2398749521812533e-14,
+        1.1185496973098452e-14,
+        2.2402503571834764e-14,
+        5.828670879282072e-16
+      ],
+      "max_acceleration_jump_rad_s2": 0.6954187286960789,
+      "max_acceleration_jump_rad_s2_per_joint": [
+        0.6954187286960789,
+        0.13318214613353496,
+        0.017220519851117205,
+        0.11596080644305111,
+        4.550461501076932e-06,
+        0.4610748102766785
+      ]
+    }
+  }
+]

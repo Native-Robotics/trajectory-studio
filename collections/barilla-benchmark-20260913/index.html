@@ -31,7 +31,7 @@
       }
     }
   </script>
-</head>
+<style>#btn-rename-traj,#btn-delete-traj,#btn-recalculate,#scale-tools-panel{display:none!important}</style></head>
 <body>
   <div id="app-container">
     
@@ -45,7 +45,7 @@
       </div>
 
 
-      <p class="corpus-link"><a href="corpus.html">Barilla · 135-task table →</a><a href="collections/barilla-curobo-20260912/index.html">CuRobo results →</a><a href="collections/barilla-benchmark-20260913/report.html">10-task comparison →</a><span>↑↓ select</span></p>
+      <p class="corpus-link"><a href="report.html">10-task comparison →</a><a href="../barilla-curobo-20260912/index.html">CuRobo results →</a><span>↑↓ select</span></p>
       <div class="search-filter-box">
         <div class="search-wrapper">
           <i data-lucide="search" class="search-icon"></i>
@@ -95,7 +95,7 @@
     <!-- CENTER VIEW: 3D Scene and Playback Controls -->
     <main id="main-viewer">
       
-      <div id="canvas-container">
+      <div id="canvas-container"><div id="benchmark-audit-warning" style="display:none;position:absolute;top:46px;left:12px;right:12px;z-index:10;background:#452530;color:#ffd6dd;padding:10px;border-radius:6px;font-size:12px;pointer-events:none"></div>
         <canvas id="three-canvas"></canvas>
         
         <!-- Floating Scene Control Panel (Top Left) -->
