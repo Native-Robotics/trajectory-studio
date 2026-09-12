@@ -4,7 +4,7 @@
  */
 
 import * as THREE from 'three';
-import { TrajectoryViewer } from './viewer.js?v=48';
+import { TrajectoryViewer } from './viewer.js?v=49';
 import { TrajectoryChart } from './charts.js?v=36';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
 import { parseTraj, parseCSV } from './readers.js?v=36';
