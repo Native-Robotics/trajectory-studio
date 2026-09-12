@@ -85,3 +85,15 @@ trajectory-studio/
 - **Charting**: Chart.js (custom layout and annotations plugins).
 - **Styling**: Vanilla CSS (CSS Variables, Flexbox, absolute layouts, backdrop-filters).
 - **Backend Utility**: Python (HTTP serving, file system monitoring, spline scaling computations).
+
+## Barilla historical collection
+
+The `barilla` branch preserves the September 9–10, 2026 Studio improvements and
+all 135 historical Barilla requests and results. Open `corpus.html` for the
+sortable task table. The earlier review report remains intentionally removed,
+matching the original session request.
+
+The tracked `Trajectories/traj` files, `trajectories.json`, and
+`palletize_corpus.json` form one complete collection. Earlier bundled samples
+remain in the parent commit. New replay collections under `collections/` and
+local IDE settings are excluded from this snapshot.

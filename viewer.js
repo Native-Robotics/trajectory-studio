@@ -289,13 +289,15 @@ export class TrajectoryViewer {
     this.xRayMode = xRay;
     const material = xRay ? this.robotMaterials.xray : this.robotMaterials.solid;
     
-    this.linkGroups.forEach(group => {
-      group.traverse(child => {
+    const applyMat = (root) => {
+      root.traverse(child => {
         if (child instanceof THREE.Mesh && child.name === 'hitbox') {
           child.material = material;
         }
       });
-    });
+    };
+    this.linkGroups.forEach(applyMat);
+
   }
 
   setObstaclesVisible(visible) {
@@ -608,7 +610,7 @@ export class TrajectoryViewer {
         this.linkGroups[i].matrix.fromArray(toColumnMajor(transform));
       }
     }
-    
+
     // Position of link 6 TCP marker
     if (linkTransforms[6]) {
       const t6 = linkTransforms[6];

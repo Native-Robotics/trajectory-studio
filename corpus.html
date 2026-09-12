@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Palletize 135 — corpus table</title>
+  <style>
+    :root {
+      --bg-color: #0b0d19;
+      --panel-bg: rgba(16, 20, 38, 0.65);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-color: #06b6d4;
+      --danger-color: #ef4444;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: var(--bg-color);
+      color: var(--text-primary);
+      font-family: Inter, system-ui, sans-serif;
+    }
+    .page {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .head { flex: 0 0 auto; padding: 16px 24px 8px; }
+    h1 { font-size: 1.25rem; margin: 0 0 8px; }
+    p { color: var(--text-secondary); margin: 0 0 8px; }
+    .dist { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+    .dist div { background: var(--panel-bg); border: 1px solid var(--panel-border); padding: 8px 12px; border-radius: 8px; }
+    .table-wrap {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: auto;
+      padding: 0 24px 24px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    th, td { padding: 6px 8px; border-bottom: 1px solid var(--panel-border); text-align: right; white-space: nowrap; }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #12162d;
+      cursor: pointer;
+      color: var(--text-secondary);
+      text-align: right;
+    }
+    td:nth-child(2), td:nth-child(3) { text-align: left; }
+    tr.red { background: rgba(239, 68, 68, 0.18); color: #fecaca; }
+    tr.yellow { background: rgba(245, 158, 11, 0.12); }
+    a { color: var(--accent-color); }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.72rem; }
+    details.glossary {
+      margin: 8px 0 4px;
+      padding: 8px 12px;
+      background: var(--panel-bg);
+      border: 1px solid var(--panel-border);
+      border-radius: 8px;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      line-height: 1.45;
+      max-width: 1100px;
+    }
+    details.glossary summary { cursor: pointer; color: var(--text-primary); font-weight: 600; }
+    details.glossary p { margin: 8px 0 0; }
+    details.glossary code { color: #a5f3fc; }
+    .flag {
+      display: inline-block;
+      padding: 1px 7px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      margin: 0 2px 0 0;
+      white-space: nowrap;
+    }
+    .flag.yellow { background: rgba(245, 158, 11, 0.22); color: #fbbf24; }
+    .flag.red { background: rgba(239, 68, 68, 0.22); color: #fecaca; }
+    .flag.muted { background: rgba(255, 255, 255, 0.06); color: var(--text-muted); }
+    tr.sel { outline: 1px solid var(--accent-color); outline-offset: -1px; }
+    th[title], td[title] { cursor: help; }
+    .sort-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0 4px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+    .sort-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--panel-border);
+      color: var(--text-secondary);
+      border-radius: 999px;
+      padding: 4px 10px;
+      cursor: pointer;
+      font-size: 0.75rem;
+    }
+    .sort-btn:hover { color: var(--text-primary); border-color: rgba(255,255,255,0.2); }
+    .sort-btn.active {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+      background: rgba(6, 182, 212, 0.12);
+    }
+    th.sorted { color: var(--accent-color); }
+  </style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+  <p><a href="index.html">← Trajectory Studio viewer</a></p>
+  <h1>Palletize 135 — compute, duration, joint mileage</h1>
+  <p>Box number = count of <code>pallet-*.Box</code> already on the destination pallet. ↑↓ selects a row, Enter opens it in the viewer.</p>
+  <details class="glossary" open>
+    <summary>Σ|dq| and flags</summary>
+    <p><strong>Σ|dq|</strong> is joint-space path length in radians, not Cartesian TCP travel and not the chord |q<sub>end</sub>−q<sub>start</sub>|. For each of the six joints the cubic spline is sampled at 100 Hz; that joint’s mileage is Σ<sub>i</sub>|q(t<sub>i+1</sub>)−q(t<sub>i</sub>)|. Σ|dq| is the sum of those six numbers. A joint that goes out and back counts twice. Rechecked against every dumped <code>.traj</code>: 132/132 SOLVED rows match (max error &lt; 0.02 rad). The three red rows have no spline, so mileage is —.</p>
+    <p>Worked example, corpus task 0 (<code>8a8ddaf4</code>): path Σ|dq| = 9.68 rad, but the chord |q<sub>end</sub>−q<sub>start</sub>| is only 5.72 rad. J6 is almost one-way (2.61 vs 2.61); J3 is a detour (path 1.58 vs chord 0.10).</p>
+    <p><strong>Flags</strong> (also colour the row). Empty = SOLVED and compute ≤ 60 s; the overshoot detectors ran and found nothing.</p>
+    <p>
+      <span class="flag yellow" title="Active worker seconds, retries included, queue wait excluded.">slow_compute</span> yellow — worker CPU &gt; 60 s (15 rows).<br>
+      <span class="flag red" title="No usable spline in the dump.">not_solved</span> red — not SOLVED: tasks 32 and 74 hung in IPOPT (<code>IN_PROGRESS</code>), task 35 gripper vs <code>pallet-A.Box</code> (<code>FAILED_VALIDATION</code>).<br>
+      <span class="flag muted">overshoot_rollback</span> linear lift/place passed a joint target by ≥1° then came back. None of the 132 solved paths hit this.<br>
+      <span class="flag muted">short_joint_wiggle</span> net Δq tiny but the joint wandered &gt;~5°. None in this corpus.
+    </p>
+  </details>
+  <div class="dist" id="dist"></div>
+  <div class="sort-bar">
+    <span>Sort</span>
+    <button type="button" class="sort-btn" data-sort="box" title="Place of box N, then Wait / Pick for that box, then box N+1. Pallet A then B.">Box order</button>
+    <button type="button" class="sort-btn" data-sort="mileage" title="Σ|dq| joint-space path length">Mileage</button>
+    <button type="button" class="sort-btn" data-sort="compute" title="Active worker seconds">Compute</button>
+    <span id="sort-hint" class="mono" style="color: var(--text-muted);"></span>
+  </div>
+  </div>
+  <div class="table-wrap">
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th data-k="task_id">id</th>
+        <th data-k="tag">tag</th>
+        <th data-k="status">status</th>
+        <th data-k="box_number">box #</th>
+        <th data-k="place_pallet">pallet</th>
+        <th data-k="compute_s">compute s</th>
+        <th data-k="traj_time_s">traj s</th>
+        <th data-k="j0" title="J1 path length Σ|Δq| along the spline, radians">J1 m</th>
+        <th data-k="j1" title="J2 path length Σ|Δq| along the spline, radians">J2 m</th>
+        <th data-k="j2" title="J3 path length Σ|Δq| along the spline, radians">J3 m</th>
+        <th data-k="j3" title="J4 path length Σ|Δq| along the spline, radians">J4 m</th>
+        <th data-k="j4" title="J5 path length Σ|Δq| along the spline, radians">J5 m</th>
+        <th data-k="j5" title="J6 path length Σ|Δq| along the spline, radians">J6 m</th>
+        <th data-k="mileage_sum_rad" title="Sum of the six joint path lengths. Out-and-back counts twice. Not |q_end−q_start|.">Σ|dq|</th>
+        <th data-k="flags" title="slow_compute: CPU &gt; 60s. not_solved: no spline. Empty: SOLVED, fast, no overshoot.">flags</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  </div>
+</div>
+  <script>
+    const fmt = (x, n=2) => (x == null || Number.isNaN(x)) ? '—' : Number(x).toFixed(n);
+    const FLAG_TIP = {
+      slow_compute: 'Worker CPU > 60 s (retries included, queue wait excluded).',
+      not_solved: 'No spline: hung IPOPT or FAILED_VALIDATION.',
+      overshoot_rollback: 'Linear lift/place passed a joint target by ≥1° then returned.',
+      short_joint_wiggle: 'Net Δq tiny but the joint wandered >~5°.',
+    };
+    const motionKind = tag => {
+      const t = tag || '';
+      if (t.includes('Place')) return 'place';
+      if (t.includes('Wait')) return 'wait';
+      if (t.includes('Pick')) return 'pick';
+      return 'other';
+    };
+    const palRank = p => p === 'pallet-A' ? 0 : p === 'pallet-B' ? 1 : 2;
+    const annotateBoxCycles = list => {
+      const byPal = new Map();
+      for (const r of list) {
+        const pal = r.place_pallet || '';
+        if (!byPal.has(pal)) byPal.set(pal, []);
+        byPal.get(pal).push(r);
+      }
+      for (const [, rs] of byPal) {
+        rs.sort((a, b) => a.task_id - b.task_id);
+        let cycle = 0;
+        for (const r of rs) {
+          const k = motionKind(r.tag);
+          if (k === 'place') cycle += 1;
+          r._pal = palRank(r.place_pallet);
+          r._cycle = cycle;
+          r._phase = k === 'place' ? 0 : k === 'wait' ? 1 : k === 'pick' ? 2 : 3;
+        }
+      }
+    };
+    const nullLast = (va, vb, dir) => {
+      const aN = va == null || Number.isNaN(va);
+      const bN = vb == null || Number.isNaN(vb);
+      if (aN && bN) return 0;
+      if (aN) return 1;
+      if (bN) return -1;
+      if (typeof va === 'string') return dir * va.localeCompare(vb);
+      return dir * (va - vb);
+    };
+    fetch('palletize_corpus.json').then(r => r.json()).then(data => {
+      const d = data.compute_distribution_s || {};
+      document.getElementById('dist').innerHTML = [
+        ['n SOLVED', data.status.SOLVED],
+        ['red', data.n_red],
+        ['compute min', fmt(d.min)+'s'],
+        ['p10', fmt(d.p10)+'s'],
+        ['p50', fmt(d.p50)+'s'],
+        ['p90', fmt(d.p90)+'s'],
+        ['p99', fmt(d.p99)+'s'],
+        ['max', fmt(d.max)+'s'],
+        ['mean', fmt(d.mean)+'s'],
+      ].map(([k,v]) => `<div><div class="meta-label">${k}</div><div class="mono">${v}</div></div>`).join('');
+      const tb = document.querySelector('#tbl tbody');
+      const rows = data.rows.slice();
+      annotateBoxCycles(rows);
+      let sel = 0;
+      let mode = 'box';
+      let dir = 1;
+      const COL = { box: 'box_number', mileage: 'mileage_sum_rad', compute: 'compute_s' };
+      const sortRows = () => {
+        rows.sort((a, b) => {
+          if (mode === 'box') {
+            return dir * ((a._pal - b._pal) || (a._cycle - b._cycle) || (a._phase - b._phase) || (a.task_id - b.task_id));
+          }
+          if (mode === 'mileage') return nullLast(a.mileage_sum_rad, b.mileage_sum_rad, dir);
+          if (mode === 'compute') return nullLast(a.compute_s, b.compute_s, dir);
+          return 0;
+        });
+      };
+      const paintSortUi = () => {
+        const arrow = dir > 0 ? '↑' : '↓';
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+          const on = btn.dataset.sort === mode;
+          btn.classList.toggle('active', on);
+          const label = { box: 'Box order', mileage: 'Mileage', compute: 'Compute' }[btn.dataset.sort];
+          btn.textContent = on ? `${label} ${arrow}` : label;
+        });
+        document.querySelectorAll('th[data-k]').forEach(th => {
+          th.classList.toggle('sorted', th.dataset.k === COL[mode]);
+        });
+        const hint = {
+          box: 'Place of box N, then Wait / Pick, then box N+1 · A then B',
+          mileage: 'Σ|dq| path length',
+          compute: 'worker CPU seconds',
+        }[mode];
+        document.getElementById('sort-hint').textContent = hint || '';
+      };
+      const paint = () => {
+        tb.innerHTML = rows.map((r, i) => {
+          const m = r.mileage_rad || [];
+          const cls = [
+            r.red ? 'red' : (r.flags||[]).some(f => f.severity==='yellow') ? 'yellow' : '',
+            i === sel ? 'sel' : '',
+          ].filter(Boolean).join(' ');
+          const flags = (r.flags||[]).length
+            ? (r.flags||[]).map(f => `<span class="flag ${f.severity||'muted'}" title="${FLAG_TIP[f.code]||f.code}">${f.code}</span>`).join('')
+            : '<span class="flag muted" title="SOLVED, compute ≤ 60 s, no overshoot-rollback.">—</span>';
+          const kind = motionKind(r.tag);
+          return `<tr class="${cls}" data-i="${i}" data-id="${r.desired_id}">
+            <td><a href="index.html#${r.desired_id}">${r.task_id}</a></td>
+            <td>${(r.tag||'').replace('manipulator-part ','')}</td>
+            <td>${r.status}</td>
+            <td class="mono" title="cycle ${r._cycle} · ${kind}">${r.box_number ?? '—'}</td>
+            <td>${(r.place_pallet||'').replace('pallet-','')}</td>
+            <td class="mono">${fmt(r.compute_s,1)}</td>
+            <td class="mono">${fmt(r.traj_time_s,2)}</td>
+            ${[0,1,2,3,4,5].map(i => `<td class="mono">${fmt(m[i],2)}</td>`).join('')}
+            <td class="mono" title="Sum of J1…J6 path lengths, rad">${fmt(r.mileage_sum_rad,2)}</td>
+            <td>${flags}</td>
+          </tr>`;
+        }).join('');
+        tb.querySelectorAll('tr').forEach(tr => {
+          tr.addEventListener('click', () => { sel = Number(tr.dataset.i); mark(); });
+          tr.addEventListener('dblclick', () => { location.href = `index.html#${tr.dataset.id}`; });
+        });
+        mark();
+      };
+      const mark = () => {
+        tb.querySelectorAll('tr').forEach(tr => {
+          const on = Number(tr.dataset.i) === sel;
+          tr.classList.toggle('sel', on);
+          if (on) tr.scrollIntoView({ block: 'nearest' });
+        });
+      };
+      const applySort = (nextMode, nextDir) => {
+        if (nextMode === mode) dir *= -1;
+        else {
+          mode = nextMode;
+          dir = nextDir != null ? nextDir : (mode === 'box' ? 1 : -1);
+        }
+        sortRows();
+        sel = 0;
+        paintSortUi();
+        paint();
+      };
+      sortRows();
+      paintSortUi();
+      paint();
+      document.querySelectorAll('.sort-btn').forEach(btn => {
+        btn.addEventListener('click', () => applySort(btn.dataset.sort));
+      });
+      document.addEventListener('keydown', e => {
+        if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown' && e.key !== 'Enter') return;
+        const tag = (e.target && e.target.tagName) || '';
+        if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SUMMARY' || tag === 'BUTTON') return;
+        if (e.key === 'Enter') {
+          const r = rows[sel];
+          if (r) location.href = `index.html#${r.desired_id}`;
+          return;
+        }
+        e.preventDefault();
+        sel = Math.max(0, Math.min(rows.length - 1, sel + (e.key === 'ArrowDown' ? 1 : -1)));
+        mark();
+      });
+      document.querySelectorAll('th[data-k]').forEach(th => {
+        th.addEventListener('click', () => {
+          const k = th.dataset.k;
+          if (k === 'mileage_sum_rad') return applySort('mileage');
+          if (k === 'compute_s') return applySort('compute');
+          if (k === 'box_number') return applySort('box');
+          const ji = {j0:0,j1:1,j2:2,j3:3,j4:4,j5:5};
+          dir *= -1;
+          mode = k;
+          rows.sort((a,b) => {
+            let va, vb;
+            if (k in ji) { va = (a.mileage_rad||[])[ji[k]]; vb = (b.mileage_rad||[])[ji[k]]; }
+            else if (k === 'flags') {
+              va = (a.flags||[]).map(f => f.code).join(',');
+              vb = (b.flags||[]).map(f => f.code).join(',');
+            }
+            else { va = a[k]; vb = b[k]; }
+            return nullLast(va, vb, dir);
+          });
+          sel = 0;
+          paintSortUi();
+          paint();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

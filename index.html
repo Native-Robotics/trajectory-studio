@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="index.css?v=36">
+  <link rel="stylesheet" href="index.css?v=37">
   
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -45,6 +45,7 @@
       </div>
 
 
+      <p style="padding: 0 12px; font-size: 0.75rem;"><a href="corpus.html" style="color: var(--accent-color);">Palletize 135 table →</a> · <span style="color: var(--text-muted);">↑↓ select</span></p>
       <div class="search-filter-box">
         <div class="search-wrapper">
           <i data-lucide="search" class="search-icon"></i>
@@ -59,11 +60,19 @@
               <button class="badge-btn" data-filter="status" data-val="fail" id="filter-status-fail">Failed</button>
             </div>
           </div>
+          <div class="filter-group" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="font-size: 0.65rem; color: var(--text-muted); letter-spacing: 0.04em;">SORT</span>
+            <div class="filter-badges" id="sort-filters">
+              <button class="badge-btn active" data-sort="box" title="Place of box N, then Wait / Pick, then box N+1. Pallet A then B.">Box order</button>
+              <button class="badge-btn" data-sort="mileage" title="Σ|dq| joint-space path length">Mileage</button>
+              <button class="badge-btn" data-sort="compute" title="Active worker seconds">Compute</button>
+            </div>
+          </div>
         </div>
       </div>
       
       <div class="trajectory-list-container">
-        <ul id="trajectory-list" class="styled-list" role="listbox" aria-label="Trajectory list">
+        <ul id="trajectory-list" class="styled-list" role="listbox" aria-label="Trajectory list" tabindex="0">
           <!-- Items will be generated dynamically -->
         </ul>
       </div>
@@ -88,6 +97,7 @@
         </div>
       </div>
     </aside>
+    <div class="col-resizer" id="resize-left" role="separator" aria-orientation="vertical" aria-label="Resize trajectory list" title="Drag to resize"></div>
     
     <!-- CENTER VIEW: 3D Scene and Playback Controls -->
     <main id="main-viewer">
@@ -103,6 +113,7 @@
           </div>
           <div id="scene-csv-controls" class="scene-csv-controls hidden">
             <select id="csv-robot-select" class="config-select" style="width: 125px;">
+              <option value="aubo-is25">Aubo iS25</option>
               <option value="dobot-cr20a">Dobot CR20A</option>
               <option value="dobot-cr30h">Dobot CR30H</option>
             </select>
@@ -148,6 +159,7 @@
         </div>
       </div>
     </main>
+    <div class="col-resizer" id="resize-right" role="separator" aria-orientation="vertical" aria-label="Resize charts" title="Drag to resize"></div>
     
     <!-- RIGHT SIDEBAR: Joint Graph and Joint Details -->
     <aside id="sidebar-right" class="glass-panel">
@@ -311,6 +323,6 @@
   </div>
 
   <!-- JavaScript Root Entry Point -->
-  <script type="module" src="app.js?v=41"></script>
+  <script type="module" src="app.js?v=59"></script>
 </body>
 </html>

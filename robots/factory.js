@@ -5,7 +5,7 @@
 import { BaseRobot } from './base.js';
 import { DobotCR30h } from './dobot.js';
 import { AuboIS20 } from './aubo.js';
-import { AuboIS25 } from './aubo_is25.js';
+import { AuboIS25 } from './aubo_is25.js?v=2';
 import { DobotCR20A } from './dobot_cr20a.js';
 
 export function getRobotConfig(modelName) {

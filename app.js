@@ -4,10 +4,11 @@
  */
 
 import * as THREE from 'three';
-import { TrajectoryViewer } from './viewer.js?v=36';
+import { TrajectoryViewer } from './viewer.js?v=48';
 import { TrajectoryChart } from './charts.js?v=36';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
 import { parseTraj, parseCSV } from './readers.js?v=36';
+import { createAuboIS25Repr } from './robots/aubo_is25.js?v=2';
 
 class TrajectoryApp {
   constructor() {
@@ -19,7 +20,9 @@ class TrajectoryApp {
     this.filteredTrajectories = [];
     this.selectedTraj = null;
     this.activeMode = 'traj'; // 'traj', 'csv', 'mcap'
-    this.globalCSVRobot = 'dobot-cr20a';
+    this.listSort = 'box'; // 'box' | 'mileage' | 'compute'
+    this.listSortDir = 1;
+    this.globalCSVRobot = 'aubo-is25';
     this.globalCSVTimingMode = 'hz';
     this.globalCSVTimingVal = 20;
     
@@ -53,6 +56,7 @@ class TrajectoryApp {
     
     // 3. Register Event Listeners
     this.registerEvents();
+    this.initPanelResize();
     
     // 4. Fetch Trajectory index
     await this.loadTrajectoryIndex();
@@ -60,8 +64,16 @@ class TrajectoryApp {
     // 5. Start animation loop
     requestAnimationFrame((timestamp) => this.playbackLoop(timestamp));
     
-    // 6. Select the first trajectory as default if available
-    if (this.filteredTrajectories.length > 0) {
+    // 6. Select hash id or the first trajectory
+    const hashId = decodeURIComponent((location.hash || '').replace(/^#/, ''));
+    if (hashId && this.trajectories.some(t => t.id === hashId)) {
+      this.selectTrajectory(hashId);
+    } else if (hashId) {
+      const overlay = document.getElementById('failed-trajectory-overlay');
+      const warning = document.getElementById('warning-status-code');
+      if (warning) warning.textContent = `unknown id ${hashId.slice(0, 16)}…`;
+      if (overlay) overlay.classList.remove('hidden');
+    } else if (this.filteredTrajectories.length > 0) {
       this.selectTrajectory(this.filteredTrajectories[0].id);
     }
     
@@ -104,6 +116,19 @@ class TrajectoryApp {
       btn.addEventListener('click', (e) => {
         filterButtons.forEach(b => b.classList.remove('active'));
         e.target.classList.add('active');
+        this.applyFilters();
+      });
+    });
+
+    const sortButtons = document.querySelectorAll('#sort-filters .badge-btn');
+    sortButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const next = btn.dataset.sort;
+        if (this.listSort === next) this.listSortDir *= -1;
+        else {
+          this.listSort = next;
+          this.listSortDir = next === 'box' ? 1 : -1;
+        }
         this.applyFilters();
       });
     });
@@ -263,6 +288,8 @@ class TrajectoryApp {
       });
     });
     
+    document.addEventListener('keydown', (e) => this.onTrajectoryKeydown(e));
+
     // Copy ID button
     this.elements['copy-id-btn'].addEventListener('click', () => {
       if (this.selectedTraj) {
@@ -287,6 +314,7 @@ class TrajectoryApp {
     try {
       const response = await fetch(`trajectories.json?v=${Date.now()}`);
       this.trajectories = await response.json();
+      this.annotateBoxCycles(this.trajectories);
       this.applyFilters();
     } catch (e) {
       console.error("Error loading index:", e);
@@ -306,6 +334,7 @@ class TrajectoryApp {
         if (this.checkIndexDifference(this.trajectories, newTrajectories)) {
           console.log("Trajectories database changed, reloading sidebar...");
           this.trajectories = newTrajectories;
+          this.annotateBoxCycles(this.trajectories);
           this.applyFilters();
           
           // Fallback selection if active is lost or none selected
@@ -344,20 +373,27 @@ class TrajectoryApp {
     
     this.filteredTrajectories.forEach(t => {
       const li = document.createElement('li');
-      li.className = `list-item ${this.selectedTraj === t.id ? 'selected' : ''}`;
+      const selected = this.selectedTraj === t.id;
+      li.className = `list-item ${selected ? 'selected' : ''}`;
       li.setAttribute('role', 'option');
       li.setAttribute('data-id', t.id);
+      li.setAttribute('aria-selected', selected ? 'true' : 'false');
       
-      const shortId = t.id.length > 33 ? `${t.id.slice(0, 15)}...${t.id.slice(-15)}` : t.id;
-      const statusColor = t.status === 70 ? 'var(--success-color)' : t.status === 40 ? 'var(--danger-color)' : 'var(--warning-color)';
-      const statusLabel = t.status === 70 ? 'Planned' : t.status === 40 ? 'Collided' : 'Timeout';
+      const shortId = t.id.slice(0, 8);
+      const dest = this.destinationLabel(t.tag);
+      const statusColor = t.red ? 'var(--danger-color)' : t.status === 70 ? 'var(--success-color)' : t.status === 40 ? 'var(--danger-color)' : 'var(--warning-color)';
+      const statusLabel = t.red ? 'Anomaly' : t.status === 70 ? 'Planned' : t.status === 40 ? 'Collided' : 'Timeout';
+      if (t.red) li.style.background = 'rgba(239, 68, 68, 0.18)';
+      const box = t.box_number != null ? `box ${t.box_number}` : '';
+      const compute = t.compute_s != null ? `${t.compute_s.toFixed(1)}s cpu` : '';
       
       li.innerHTML = `
         <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 8px;">
           <div style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: ${statusColor}; box-shadow: 0 0 4px ${statusColor};" title="${statusLabel}"></div>
-          <span class="item-id monospace" style="font-size: 0.75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${shortId}</span>
+          <span class="item-id monospace" style="font-size: 0.75rem; white-space: nowrap;">${shortId}</span>
+          <span style="font-size: 0.68rem; color: var(--accent-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${dest}</span>
         </div>
-        <span style="font-size: 0.7rem; color: var(--text-muted); flex-shrink: 0;">${t.duration.toFixed(2)}s</span>
+        <span style="font-size: 0.65rem; color: ${t.red ? 'var(--danger-color)' : 'var(--text-muted)'}; flex-shrink: 0; text-align: right;">${box}<br>${compute || t.duration.toFixed(2) + 's'}</span>
       `;
       
       li.addEventListener('click', () => this.selectTrajectory(t.id));
@@ -367,6 +403,109 @@ class TrajectoryApp {
     if (window.lucide) {
       window.lucide.createIcons({ attrs: { class: 'meta-group-icon' } });
     }
+    this.scrollSelectedIntoView();
+  }
+
+  scrollSelectedIntoView() {
+    const list = this.elements['trajectory-list'];
+    if (!list || !this.selectedTraj) return;
+    const item = list.querySelector(`.list-item[data-id="${CSS.escape(this.selectedTraj)}"]`);
+    item?.scrollIntoView({ block: 'nearest' });
+  }
+
+  onTrajectoryKeydown(e) {
+    if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return;
+    const tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+    if (!this.filteredTrajectories.length) return;
+    e.preventDefault();
+    this.navigateTrajectory(e.key === 'ArrowDown' ? 1 : -1);
+  }
+
+  navigateTrajectory(delta) {
+    const list = this.filteredTrajectories;
+    if (!list.length) return;
+    let idx = list.findIndex(t => t.id === this.selectedTraj);
+    if (idx < 0) idx = delta > 0 ? -1 : 0;
+    const next = Math.max(0, Math.min(list.length - 1, idx + delta));
+    const id = list[next].id;
+    if (id !== this.selectedTraj) this.selectTrajectory(id);
+    else this.scrollSelectedIntoView();
+  }
+
+  initPanelResize() {
+    const root = document.getElementById('app-container');
+    const leftHandle = document.getElementById('resize-left');
+    const rightHandle = document.getElementById('resize-right');
+    if (!root || !leftHandle || !rightHandle) return;
+
+    const KEY = 'ts-panel-widths';
+    const minLeft = 220;
+    const minRight = 360;
+    const minCenter = 280;
+
+    const defaults = () => ({
+      left: Math.round(Math.min(360, Math.max(280, window.innerWidth * 0.18))),
+      right: Math.round(Math.min(800, Math.max(500, window.innerWidth * 0.38)))
+    });
+
+    const clamp = (left, right) => {
+      const cs = getComputedStyle(root);
+      const chrome = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0) + 24;
+      const maxTotal = Math.max(minLeft + minRight, window.innerWidth - chrome - minCenter);
+      left = Math.max(minLeft, left);
+      right = Math.max(minRight, right);
+      if (left + right > maxTotal) {
+        const scale = maxTotal / (left + right);
+        left = Math.max(minLeft, Math.round(left * scale));
+        right = Math.max(minRight, Math.round(maxTotal - left));
+      }
+      return { left: Math.round(left), right: Math.round(right) };
+    };
+
+    const apply = (left, right) => {
+      const c = clamp(left, right);
+      root.style.setProperty('--left-w', `${c.left}px`);
+      root.style.setProperty('--right-w', `${c.right}px`);
+      try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (_) {}
+      return c;
+    };
+
+    let saved = null;
+    try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (_) {}
+    const d = defaults();
+    apply(saved?.left || d.left, saved?.right || d.right);
+
+    const startDrag = (side, handle, ev) => {
+      ev.preventDefault();
+      handle.classList.add('dragging');
+      document.body.classList.add('resizing-cols');
+      const onMove = (e) => {
+        const rect = root.getBoundingClientRect();
+        const padL = parseFloat(getComputedStyle(root).paddingLeft) || 0;
+        const padR = parseFloat(getComputedStyle(root).paddingRight) || 0;
+        const curLeft = parseFloat(getComputedStyle(root).getPropertyValue('--left-w')) || d.left;
+        const curRight = parseFloat(getComputedStyle(root).getPropertyValue('--right-w')) || d.right;
+        if (side === 'left') apply(e.clientX - rect.left - padL, curRight);
+        else apply(curLeft, rect.right - padR - e.clientX);
+      };
+      const onUp = () => {
+        handle.classList.remove('dragging');
+        document.body.classList.remove('resizing-cols');
+        window.removeEventListener('pointermove', onMove);
+        window.removeEventListener('pointerup', onUp);
+      };
+      window.addEventListener('pointermove', onMove);
+      window.addEventListener('pointerup', onUp);
+    };
+
+    leftHandle.addEventListener('pointerdown', (e) => startDrag('left', leftHandle, e));
+    rightHandle.addEventListener('pointerdown', (e) => startDrag('right', rightHandle, e));
+    window.addEventListener('resize', () => {
+      const curLeft = parseFloat(getComputedStyle(root).getPropertyValue('--left-w')) || d.left;
+      const curRight = parseFloat(getComputedStyle(root).getPropertyValue('--right-w')) || d.right;
+      apply(curLeft, curRight);
+    });
   }
 
   updateSidebarStats() {
@@ -430,9 +569,78 @@ class TrajectoryApp {
       
       return matchesSearch && matchesStatus && matchesMode;
     });
-    
+
+    this.sortFilteredTrajectories();
+    this.paintSortButtons();
     this.renderSidebarList();
     this.updateSidebarStats();
+  }
+
+  motionKind(tag) {
+    const t = tag || '';
+    if (t.includes('Place')) return 'place';
+    if (t.includes('Wait')) return 'wait';
+    if (t.includes('Pick')) return 'pick';
+    return 'other';
+  }
+
+  destinationLabel(tag) {
+    const k = this.motionKind(tag);
+    if (k === 'pick') return 'to-pick-point';
+    if (k === 'wait') return 'to wait node';
+    if (k === 'place') return 'to-place';
+    return '';
+  }
+
+  annotateBoxCycles(list) {
+    const byPal = new Map();
+    for (const r of list) {
+      const pal = r.place_pallet || '';
+      if (!byPal.has(pal)) byPal.set(pal, []);
+      byPal.get(pal).push(r);
+    }
+    const palRank = p => (p === 'pallet-A' ? 0 : p === 'pallet-B' ? 1 : 2);
+    for (const [, rs] of byPal) {
+      rs.sort((a, b) => (a.task_id ?? 0) - (b.task_id ?? 0));
+      let cycle = 0;
+      for (const r of rs) {
+        const k = this.motionKind(r.tag);
+        if (k === 'place') cycle += 1;
+        r._pal = palRank(r.place_pallet);
+        r._cycle = cycle;
+        r._phase = k === 'place' ? 0 : k === 'wait' ? 1 : k === 'pick' ? 2 : 3;
+      }
+    }
+  }
+
+  sortFilteredTrajectories() {
+    const dir = this.listSortDir;
+    const nullLast = (va, vb) => {
+      const aN = va == null || Number.isNaN(va);
+      const bN = vb == null || Number.isNaN(vb);
+      if (aN && bN) return 0;
+      if (aN) return 1;
+      if (bN) return -1;
+      return dir * (va - vb);
+    };
+    this.filteredTrajectories.sort((a, b) => {
+      if (this.listSort === 'box') {
+        return dir * ((a._pal - b._pal) || (a._cycle - b._cycle) || (a._phase - b._phase) || ((a.task_id ?? 0) - (b.task_id ?? 0)));
+      }
+      if (this.listSort === 'mileage') return nullLast(a.mileage_sum_rad, b.mileage_sum_rad);
+      if (this.listSort === 'compute') return nullLast(a.compute_s, b.compute_s);
+      return 0;
+    });
+  }
+
+  paintSortButtons() {
+    const arrow = this.listSortDir > 0 ? '↑' : '↓';
+    const labels = { box: 'Box order', mileage: 'Mileage', compute: 'Compute' };
+    document.querySelectorAll('#sort-filters .badge-btn').forEach(btn => {
+      const on = btn.dataset.sort === this.listSort;
+      btn.classList.toggle('active', on);
+      btn.textContent = on ? `${labels[btn.dataset.sort]} ${arrow}` : labels[btn.dataset.sort];
+    });
   }
 
   async selectTrajectory(id) {
@@ -443,14 +651,20 @@ class TrajectoryApp {
     this.updatePlayPauseButtonUI();
     
     this.selectedTraj = id;
+    if (location.hash !== `#${id}`) {
+      history.replaceState(null, '', `#${id}`);
+    }
     
     // Update selected item in sidebar list
     const items = this.elements['trajectory-list'].querySelectorAll('.list-item');
     items.forEach(item => {
       if (item.dataset.id === id) {
         item.classList.add('selected');
+        item.setAttribute('aria-selected', 'true');
+        item.scrollIntoView({ block: 'nearest' });
       } else {
         item.classList.remove('selected');
+        item.setAttribute('aria-selected', 'false');
       }
     });
     
@@ -506,6 +720,8 @@ class TrajectoryApp {
         if (!reprData) {
           if (this.globalCSVRobot === 'dobot-cr30h') {
             reprData = createDobotCR30hRepr(id);
+          } else if (this.globalCSVRobot === 'aubo-is25') {
+            reprData = createAuboIS25Repr(id);
           } else {
             reprData = createDobotCR20ARepr(id);
           }
@@ -526,6 +742,22 @@ class TrajectoryApp {
         
         const trajJson = await fileResponse.json();
         trajData = parseTraj(trajJson);
+      }
+
+      if (!reprData || !reprData.equipment_model || !reprData.equipment_model.dh_parameters) {
+        const fallback = createAuboIS25Repr(id);
+        const existing = (reprData && reprData.equipment_model) || {};
+        reprData = reprData || fallback;
+        reprData.equipment_model = Object.assign({}, fallback.equipment_model, existing, {
+          dh_parameters: existing.dh_parameters || fallback.equipment_model.dh_parameters,
+          hitbox: existing.hitbox && existing.hitbox.length
+            ? existing.hitbox
+            : fallback.equipment_model.hitbox,
+          range_limits: existing.range_limits || fallback.equipment_model.range_limits,
+          position: existing.position || fallback.equipment_model.position,
+          quaternion: existing.quaternion || fallback.equipment_model.quaternion,
+          model_name: existing.model_name || 'aubo-is25',
+        });
       }
       
       this.activeRepr = reprData;

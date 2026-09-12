@@ -2,7 +2,8 @@ import os
 import json
 
 def generate_index():
-    trajectories_dir = "Trajectories"
+    # Current-scope dumps (env) or local Trajectories/. Bundled samples are not used.
+    trajectories_dir = os.environ.get("TRAJECTORIES_DIR", "Trajectories")
     if not os.path.exists(trajectories_dir):
         print(f"Error: Directory '{trajectories_dir}' not found.")
         return
@@ -123,8 +124,30 @@ def generate_index():
             "num_rows": num_rows
         })
         
+    extras_path = "palletize_corpus.json"
+    extras = {}
+    if os.path.exists(extras_path):
+        with open(extras_path, "r") as ef:
+            payload = json.load(ef)
+        extras = {row["desired_id"]: row for row in payload.get("rows", [])}
+    for item in index_data:
+        extra = extras.get(item["id"])
+        if not extra:
+            continue
+        item["box_number"] = extra.get("box_number")
+        item["place_pallet"] = extra.get("place_pallet")
+        item["compute_s"] = extra.get("compute_s")
+        item["traj_time_s"] = extra.get("traj_time_s")
+        item["mileage_rad"] = extra.get("mileage_rad")
+        item["mileage_sum_rad"] = extra.get("mileage_sum_rad")
+        item["red"] = extra.get("red")
+        item["flags"] = extra.get("flags")
+        item["task_id"] = extra.get("task_id")
+        item["tag"] = extra.get("tag")
+        item["planner_status"] = extra.get("status")
+
     # Sort index_data by number of box obstacles (ascending order)
-    index_data.sort(key=lambda x: (x["num_box_obstacles"], x["id"]))
+    index_data.sort(key=lambda x: (x.get("red") is True, x["num_box_obstacles"], x["id"]))
     
     output_path = "trajectories.json"
     with open(output_path, "w") as out:
