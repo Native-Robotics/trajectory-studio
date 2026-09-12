@@ -1,0 +1,30 @@
+CUDA tensor passed: NVIDIA GeForce RTX 4060 Ti 2.9.1+cu128
+2026-09-12T21:24:49.886 DEBUG   :curobo                                  :Self Collision skipped %: 57.805605247465714
+2026-09-12T21:24:49.886 DEBUG   :curobo                                  :Self Collision count: 3538
+2026-09-12T21:24:49.886 DEBUG   :curobo                                  :Self Collision per thread: 7
+2026-09-12T21:24:50.025 INFO    :curobo                                  :CuRobo kernel backend: 'cuda_core'
+2026-09-12T21:24:50.026 INFO    :curobo                                  :cuda.core backend initialized: sm_89
+2026-09-12T21:24:50.026 INFO    :curobo                                  :Compiling kernel: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.163 INFO    :curobo                                  :Successfully compiled kernel: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.166 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.168 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.169 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.171 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.172 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.174 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.175 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.177 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.180 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.183 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.184 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.186 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.187 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.191 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.193 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.195 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.196 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.198 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.200 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.202 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+2026-09-12T21:24:50.203 DEBUG   :curobo                                  :Cache hit: curobo::kinematics::kinematics_forward_spheres_kernel<15, 32>
+GPU AUBO FK passed 22 poses; max matrix error 1.2884328746798346e-05

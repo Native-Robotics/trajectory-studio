@@ -1,0 +1,9 @@
+part 0 ignored True gap 0.02 validation {2, 3, 4, 5, 6}
+start obstacle {ObstacleCollisionData(link_data=LinkData(link_id=6, shape_id='2a75c359cec0b9d1b613c787dcf13ba1f4094858ddef4abe346e1a1bd917a116'), obstacle_id='74ac21bc0dd5c8802c72cf6a5cae2a2fe2069fc800bff02505bea078ba992fd6', distance=np.float64(-1.0)), ObstacleCollisionData(link_data=LinkData(link_id=6, shape_id='5d50835cb5bd59112a052ab7282e08eb6c8227ac779581c9d8f305d1559bbddf'), obstacle_id='74ac21bc0dd5c8802c72cf6a5cae2a2fe2069fc800bff02505bea078ba992fd6', distance=np.float64(-1.0))} self set()
+target obstacle set() self set()
+part 1 ignored False gap 0.02 validation {2, 3, 4, 5, 6}
+start obstacle set() self set()
+target obstacle set() self set()
+part 2 ignored True gap 0.02 validation {2, 3, 4, 5, 6}
+start obstacle set() self set()
+target obstacle {ObstacleCollisionData(link_data=LinkData(link_id=6, shape_id='5d50835cb5bd59112a052ab7282e08eb6c8227ac779581c9d8f305d1559bbddf'), obstacle_id='722f617ebd63dc37cfb7a42564884e5c5a3c3876a10bd96a01293e88503e6916', distance=np.float64(-1.0)), ObstacleCollisionData(link_data=LinkData(link_id=6, shape_id='5d50835cb5bd59112a052ab7282e08eb6c8227ac779581c9d8f305d1559bbddf'), obstacle_id='cf98c083cce092d2db3f72dd3315a45a5cce4c7cbb4346a6a0b166c65bca63fb', distance=np.float64(-1.0))} self set()

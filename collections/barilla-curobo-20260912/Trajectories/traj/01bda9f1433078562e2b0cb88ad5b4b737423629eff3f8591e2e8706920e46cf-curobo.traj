@@ -1,0 +1,9 @@
+{
+  "status": 40,
+  "parts": [],
+  "planner_status": "FAILED_OPTIMIZATION",
+  "desired_id": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf",
+  "backend": "CuRoboPlanner",
+  "task_id": 81,
+  "validation": null
+}

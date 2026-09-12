@@ -46,3 +46,18 @@ branch does not substitute another renderer or claim that limitation is fixed.
 
 The instance is served separately at `http://localhost:8001/` from this worktree.
 The original Studio/replay instance remains on port 8000.
+
+## Saved cuRobo collection (September 13)
+
+`collections/barilla-curobo-20260912/` now uses this branch's renderer and navigation.
+The original 135 output pairs and replay manifest are byte-identical to the
+previous collection: 46 solved, 89 failed optimization. Box/pallet metadata is
+joined by original request ID; mileage is computed from each saved cubic's
+stationary points by `scripts/index_curobo_mileage.py`. Failed paths have unknown
+mileage. The default selection is a solved path, and result-modification controls
+are hidden because the replay is a saved result set.
+
+After reboot the in-app browser renders the robot and obstacles and playback
+advances the timeline and joint values. The earlier WebGL limitation above was
+an environment problem observed before reboot. The old `barilla` branch remains
+as a backup; this rebuild has not been merged.

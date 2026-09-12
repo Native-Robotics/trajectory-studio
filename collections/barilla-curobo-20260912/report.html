@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barilla · CuRobo replay results</title>
+<style>body{margin:0;background:#10141c;color:#e8edf5;font:15px system-ui}main{max-width:1280px;margin:auto;padding:36px}h1{font-size:30px}a{color:#87c5ff}p{color:#b9c5d8}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #2e394b;vertical-align:top}th{color:#b9c5d8}.good{color:#73d8ae}.bad{color:#ffa59f}code{font-size:12px}#summary{font-size:18px;margin:24px 0}td:last-child{max-width:600px;overflow-wrap:anywhere}</style>
+<main><a href="index.html">← Open trajectory viewer</a><h1>Barilla · CuRobo replay</h1>
+<p>Original historical requests, independently checked motion. Select a task to inspect its robot and scene.</p>
+<div id="summary">Loading results…</div><p id="details"></p>
+<table><thead><tr><th>Task</th><th>Result</th><th>Elapsed</th><th>Motion</th><th>Details</th></tr></thead><tbody id="rows"></tbody></table>
+<p><a href="manifest.json">Replay manifest</a> · <a href="trajectories.json">Collection index</a></p></main>
+<script>
+const text=(tag,value,cls)=>{const el=document.createElement(tag);el.textContent=value;if(cls)el.className=cls;return el};
+async function refresh(){try{const m=await fetch('manifest.json?v='+Date.now()).then(r=>{if(!r.ok)throw Error('Replay has not produced results yet');return r.json()});const rows=m.rows||[];document.getElementById('summary').textContent=rows.length+' / '+m.task_ids.length+' tasks completed · '+Object.entries(m.counts||{}).map(([k,v])=>v+' '+k.toLowerCase().replaceAll('_',' ')).join(' · ');document.getElementById('details').textContent='Time limit: '+m.timeout_s+' s per task, including startup and validation. Cartesian and dynamics checks are sampled; joint extrema are analytic.';const body=document.getElementById('rows');body.replaceChildren();for(const r of rows){const tr=document.createElement('tr'),cell=document.createElement('td'),a=document.createElement('a');a.href='index.html#'+encodeURIComponent(r.desired_id+'-curobo');a.textContent=String(r.task_id).padStart(3,'0');cell.append(a);tr.append(cell,text('td',r.status,r.status==='SOLVED'?'good':'bad'),text('td',(r.elapsed_s||0).toFixed(2)+' s'),text('td',r.parts?.length?r.parts.length+' parts':'No path'),text('td',r.validation?.error||r.error||r.stats?.error||(r.status==='SOLVED'?'Passed independent qualification':r.status==='TIMEOUT'?'Time limit reached':'')));body.append(tr)}}catch(e){document.getElementById('summary').textContent=e.message}}
+refresh();setInterval(refresh,15000);
+</script></html>

@@ -1,0 +1,43 @@
+{
+  "status": "FAILED_OPTIMIZATION",
+  "parts": [],
+  "stats": {
+    "backend": "curobo_v2",
+    "parts": [
+      {
+        "samples": 41,
+        "solve_time": 1.0757632617950437
+      }
+    ],
+    "error": "cuRobo failed to solve part 1",
+    "wall_time": 3.8698689020238817
+  },
+  "effective_backend_settings": {
+    "device": "cuda:0",
+    "interpolation_dt": 0.025,
+    "interpolation_buffer_size": 2000,
+    "num_ik_seeds": 16,
+    "num_trajopt_seeds": 4,
+    "max_attempts": 3,
+    "use_cuda_graph": true,
+    "default_estimated_time": 3.0,
+    "default_payload_orientation_bound": 0.05,
+    "default_jerk_bound": 10000,
+    "movel_npts": 10,
+    "start_trajectory_npts": 10,
+    "validation_frequency": 200,
+    "joint_tolerance": 0.0001,
+    "endpoint_tolerance": 0.001,
+    "linear_tolerance": 0.002,
+    "orientation_tolerance": 0.01,
+    "acceleration_limit": 100,
+    "jerk_limit": 10000
+  },
+  "configuration_sha256": {
+    "/home/luke/.local/opt/curobo-env/lib/python3.12/site-packages/nrutils/config.conf": "05e29d1bbda6333e9e4034aac68d876f2261189bf549522ef5e0f55bacaa316f",
+    "/home/luke/.codex/worktrees/tp-curobo-core/config.conf": "a42e62296ae1fd1a150a142e7aaa8b31c0b75fd8b40f188eec60ed29334b1370"
+  },
+  "solve_and_validation_s": 12.29186610900797,
+  "returncode": 0,
+  "elapsed_s": 13.569398034014739
+}

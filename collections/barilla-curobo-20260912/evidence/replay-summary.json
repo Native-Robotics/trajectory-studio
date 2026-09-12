@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "FAILED_OPTIMIZATION": 89,
+    "SOLVED": 46
+  },
+  "catalog_counts": {
+    "FAILED_OPTIMIZATION": 18
+  },
+  "catalog_task_ids": [
+    5,
+    9,
+    11,
+    14,
+    23,
+    26,
+    29,
+    32,
+    35,
+    51,
+    55,
+    65,
+    68,
+    71,
+    74,
+    94,
+    100,
+    132
+  ],
+  "timing": {
+    "min_s": 4.743021768052131,
+    "median_s": 12.568604685016908,
+    "mean_s": 15.510602648306156,
+    "max_s": 36.389014675980434,
+    "sum_s": 2093.931357521331
+  },
+  "solved_timing": {
+    "min_s": 13.785462240921333,
+    "median_s": 22.791662071016617,
+    "mean_s": 23.952816543713435,
+    "max_s": 36.389014675980434,
+    "sum_s": 1101.829561010818
+  },
+  "errors": {
+    "cuRobo failed to solve part 1": 88,
+    "Changing TCP within a part is unsupported by cuRobo": 1
+  },
+  "source_hashes_verified": 93,
+  "dependencies": {
+    "curobo": null,
+    "nvidia-curobo": "0.0.post1.dev1",
+    "torch": "2.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.0"
+  },
+  "source_sha256": "edf64b2ec695d22c08342568b72afba8ceed37a43303c3af5260e10fee178fc3"
+}

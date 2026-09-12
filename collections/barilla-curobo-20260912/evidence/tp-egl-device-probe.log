@@ -1,0 +1,5 @@
+query 1 devices 1
+device 0 eglInitialize 1 error 0x3000 version 1 5 vendor b'NVIDIA'
+chooseConfig 1 1
+context True current 1
+GL_VENDOR b'NVIDIA Corporation' GL_RENDERER b'NVIDIA GeForce RTX 4060 Ti/PCIe/SSE2' GL_VERSION b'OpenGL ES 3.2 NVIDIA 610.43.02'
