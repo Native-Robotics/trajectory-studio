@@ -1,6 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { sortRows, destinationLabel, arrowDelta } from "../barilla-ui.mjs";
+import {
+  sortRows,
+  destinationLabel,
+  arrowDelta,
+  formatFlags,
+} from "../barilla-ui.mjs";
 test("unknown metrics remain last in either direction", () => {
   for (const direction of [1, -1])
     assert.equal(
@@ -114,4 +119,20 @@ test("cycle association uses chronology across pallet transition", () => {
     sortRows(rows, "box", -1).map((r) => r.id),
     ["b", "a", "pick"],
   );
+});
+
+test("historical object flags display their codes", () => {
+  assert.equal(
+    formatFlags([
+      { code: "slow_compute", compute_s: 83.04, severity: "yellow" },
+    ]),
+    "slow_compute",
+  );
+  assert.equal(
+    formatFlags([
+      { code: "not_solved", status: "IN_PROGRESS", severity: "red" },
+    ]),
+    "not_solved",
+  );
+  assert.equal(formatFlags([]), "—");
 });

@@ -1,4 +1,4 @@
-import { sortRows, destinationLabel } from "./barilla-ui.mjs";
+import { sortRows, destinationLabel, formatFlags } from "./barilla-ui.mjs";
 let rows = [],
   key = "task_id",
   direction = 1;
@@ -26,7 +26,7 @@ function render() {
       row.place_pallet || "—",
       row.box_number ?? "—",
       row.status || "—",
-      (row.flags || []).join(", ") || "—",
+      formatFlags(row.flags),
       numeric(row.compute_s),
       numeric(row.traj_time_s),
       numeric(row.mileage_sum_rad),

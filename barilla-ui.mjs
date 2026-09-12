@@ -135,3 +135,12 @@ export function installPanelResize(root) {
   window.addEventListener("resize", apply);
   apply();
 }
+
+export function formatFlags(flags = []) {
+  return (
+    flags
+      .map((flag) => (typeof flag === "string" ? flag : flag.code))
+      .filter(Boolean)
+      .join(", ") || "—"
+  );
+}

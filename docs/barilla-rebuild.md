@@ -24,7 +24,7 @@ CuRobo runtime changes are included in this branch.
 
 ## Checks
 
-Six navigation/sorting helper tests and two index-regeneration tests pass.
+Seven navigation/sorting/flag helper tests and two index-regeneration tests pass.
 All 132 available paths were checked against the stored mileage: a 100 Hz
 reevaluation differed by at most 0.000367 rad in summed joint travel. An
 independent analytic-extrema comparison differed by less than 0.00018 rad per
