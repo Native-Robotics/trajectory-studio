@@ -70,7 +70,7 @@ body {
 /* Primary Layout Structure */
 #app-container {
   display: grid;
-  grid-template-columns: clamp(280px, 18vw, 360px) 1fr clamp(500px, 38vw, 800px);
+  grid-template-columns: var(--barilla-left, 300px) 6px minmax(280px, 1fr) 6px var(--barilla-right, 560px);
   height: 100%;
   width: 100%;
   max-height: 100vh;
@@ -101,6 +101,7 @@ body {
  * ------------------------------------------------------------- */
 #sidebar-left {
   grid-column: 1;
+  grid-row: 1;
   height: 100%;
 }
 
@@ -581,7 +582,8 @@ body {
  * CENTER VIEWER: 3D Scene and Playback
  * ------------------------------------------------------------- */
 #main-viewer {
-  grid-column: 2;
+  grid-column: 3;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1145,7 +1147,8 @@ body {
  * RIGHT SIDEBAR: Motion Analytics
  * ------------------------------------------------------------- */
 #sidebar-right {
-  grid-column: 3;
+  grid-column: 5;
+  grid-row: 1;
   height: 100%;
 }
 
@@ -1405,4 +1408,26 @@ body {
 .limit-marker.exceeded {
   background: var(--danger-color);
   box-shadow: 0 0 6px var(--danger-color);
+}
+
+/* Barilla collection navigation; the existing renderer is unchanged. */
+.corpus-link {padding: 10px 12px; font-size:12px; display:flex; justify-content:space-between; gap:8px;}
+.corpus-link a {color:var(--accent-color);}
+.corpus-link span {color:var(--text-muted);}
+.barilla-sort {display:flex;gap:6px;padding:0 12px 10px;}
+#resize-left {grid-column:2;grid-row:1;}
+#resize-right {grid-column:4;grid-row:1;}
+.panel-resizer {cursor:col-resize;touch-action:none;border-radius:4px;background:var(--panel-border);}
+.panel-resizer:hover,.panel-resizer:focus-visible {background:var(--accent-color);outline:none;}
+.destination-label {font-size:11px;color:var(--accent-color);white-space:nowrap;}
+.trajectory-anomaly {background:var(--danger-bg);}
+
+@media (max-width: 1000px) {
+  html,body {height:auto;min-height:100%;overflow:auto!important;}
+  #app-container {display:flex;flex-direction:column;height:auto;max-height:none;overflow:visible!important;}
+  #sidebar-left,#sidebar-right {width:100%;min-width:0;max-width:none;}
+  #sidebar-left {height:360px;flex:none;}
+  #main-viewer {height:480px;min-height:480px;flex:none;}
+  #sidebar-right {height:800px;flex:none;}
+  .panel-resizer {display:none;}
 }

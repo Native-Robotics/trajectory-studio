@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   
   <!-- CSS -->
-  <link rel="stylesheet" href="index.css?v=36">
+  <link rel="stylesheet" href="index.css?v=barilla1">
   
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -45,6 +45,7 @@
       </div>
 
 
+      <p class="corpus-link"><a href="corpus.html">Barilla · 135-task table →</a><span>↑↓ select</span></p>
       <div class="search-filter-box">
         <div class="search-wrapper">
           <i data-lucide="search" class="search-icon"></i>
@@ -62,8 +63,9 @@
         </div>
       </div>
       
+      <div class="barilla-sort" aria-label="Sort trajectories"><button class="badge-btn active" data-sort="box">Box order</button><button class="badge-btn" data-sort="mileage">Mileage</button><button class="badge-btn" data-sort="compute">Compute</button></div>
       <div class="trajectory-list-container">
-        <ul id="trajectory-list" class="styled-list" role="listbox" aria-label="Trajectory list">
+        <ul id="trajectory-list" class="styled-list" role="listbox" aria-label="Trajectory list" tabindex="0">
           <!-- Items will be generated dynamically -->
         </ul>
       </div>
@@ -89,6 +91,7 @@
       </div>
     </aside>
     
+    <div class="panel-resizer" id="resize-left" role="separator" tabindex="0" aria-orientation="vertical" aria-label="Resize trajectory list"></div>
     <!-- CENTER VIEW: 3D Scene and Playback Controls -->
     <main id="main-viewer">
       
@@ -149,6 +152,7 @@
       </div>
     </main>
     
+    <div class="panel-resizer" id="resize-right" role="separator" tabindex="0" aria-orientation="vertical" aria-label="Resize charts"></div>
     <!-- RIGHT SIDEBAR: Joint Graph and Joint Details -->
     <aside id="sidebar-right" class="glass-panel">
       <!-- VIEW MODE: Graph and Table -->
@@ -311,6 +315,6 @@
   </div>
 
   <!-- JavaScript Root Entry Point -->
-  <script type="module" src="app.js?v=41"></script>
+  <script type="module" src="app.js?v=barilla1"></script>
 </body>
 </html>

@@ -4,6 +4,7 @@
  */
 
 import * as THREE from 'three';
+import {sortRows, destinationLabel, arrowDelta, installPanelResize} from './barilla-ui.mjs';
 import { TrajectoryViewer } from './viewer.js?v=36';
 import { TrajectoryChart } from './charts.js?v=36';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
@@ -18,6 +19,8 @@ class TrajectoryApp {
     this.trajectories = [];
     this.filteredTrajectories = [];
     this.selectedTraj = null;
+    this.listSort = 'box';
+    this.sortDirection = 1;
     this.activeMode = 'traj'; // 'traj', 'csv', 'mcap'
     this.globalCSVRobot = 'dobot-cr20a';
     this.globalCSVTimingMode = 'hz';
@@ -53,6 +56,7 @@ class TrajectoryApp {
     
     // 3. Register Event Listeners
     this.registerEvents();
+    installPanelResize(document.getElementById('app-container'));
     
     // 4. Fetch Trajectory index
     await this.loadTrajectoryIndex();
@@ -60,10 +64,10 @@ class TrajectoryApp {
     // 5. Start animation loop
     requestAnimationFrame((timestamp) => this.playbackLoop(timestamp));
     
-    // 6. Select the first trajectory as default if available
-    if (this.filteredTrajectories.length > 0) {
-      this.selectTrajectory(this.filteredTrajectories[0].id);
-    }
+    let requested='';
+    try { requested=decodeURIComponent(location.hash.slice(1)); } catch {}
+    const initial=this.trajectories.find(row=>row.id===requested)||this.filteredTrajectories[0];
+    if(initial) this.selectTrajectory(initial.id);
     
     // 7. Start polling database changes once per second
     this.startIndexPolling();
@@ -95,6 +99,23 @@ class TrajectoryApp {
   }
 
   registerEvents() {
+    document.querySelectorAll('[data-sort]').forEach(button=>button.addEventListener('click',()=>{
+      this.sortDirection=this.listSort===button.dataset.sort?-this.sortDirection:1;
+      this.listSort=button.dataset.sort;
+      document.querySelectorAll('[data-sort]').forEach(item=>item.classList.toggle('active',item===button));
+      this.applyFilters();
+    }));
+    document.addEventListener('keydown',event=>{
+      const delta=arrowDelta(event); if(!delta || !this.filteredTrajectories.length)return;
+      event.preventDefault();
+      const current=this.filteredTrajectories.findIndex(row=>row.id===this.selectedTraj);
+      const next=Math.max(0,Math.min(this.filteredTrajectories.length-1,current<0?0:current+delta));
+      this.selectTrajectory(this.filteredTrajectories[next].id);
+    });
+    window.addEventListener('hashchange',()=>{
+      let id='';try{id=decodeURIComponent(location.hash.slice(1));}catch{}
+      if(this.trajectories.some(row=>row.id===id))this.selectTrajectory(id);
+    });
     // Search input
     this.elements['search-input'].addEventListener('input', () => this.applyFilters());
     
@@ -348,9 +369,9 @@ class TrajectoryApp {
       li.setAttribute('role', 'option');
       li.setAttribute('data-id', t.id);
       
-      const shortId = t.id.length > 33 ? `${t.id.slice(0, 15)}...${t.id.slice(-15)}` : t.id;
+      const shortId = t.id.slice(0, 8);
       const statusColor = t.status === 70 ? 'var(--success-color)' : t.status === 40 ? 'var(--danger-color)' : 'var(--warning-color)';
-      const statusLabel = t.status === 70 ? 'Planned' : t.status === 40 ? 'Collided' : 'Timeout';
+      const statusLabel = t.planner_status || (t.status === 70 ? 'Planned' : t.status === 40 ? 'Collided' : 'Timeout');
       
       li.innerHTML = `
         <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 8px;">
@@ -360,6 +381,13 @@ class TrajectoryApp {
         <span style="font-size: 0.7rem; color: var(--text-muted); flex-shrink: 0;">${t.duration.toFixed(2)}s</span>
       `;
       
+      const destination=document.createElement('span');
+      destination.className='destination-label';
+      destination.textContent=destinationLabel(t.tag);
+      li.querySelector('.item-id').after(destination);
+      li.setAttribute('aria-selected',String(this.selectedTraj===t.id));
+      li.title=[t.id,t.planner_status,t.box_number != null ? 'Box '+t.box_number : '',t.compute_s != null ? t.compute_s+' s compute' : ''].filter(Boolean).join(' · ');
+      if(t.red)li.classList.add('trajectory-anomaly');
       li.addEventListener('click', () => this.selectTrajectory(t.id));
       list.appendChild(li);
     });
@@ -431,6 +459,7 @@ class TrajectoryApp {
       return matchesSearch && matchesStatus && matchesMode;
     });
     
+    this.filteredTrajectories=sortRows(this.filteredTrajectories,this.listSort,this.sortDirection,this.trajectories);
     this.renderSidebarList();
     this.updateSidebarStats();
   }
@@ -443,14 +472,18 @@ class TrajectoryApp {
     this.updatePlayPauseButtonUI();
     
     this.selectedTraj = id;
+    history.replaceState(null,'','#'+encodeURIComponent(id));
     
     // Update selected item in sidebar list
     const items = this.elements['trajectory-list'].querySelectorAll('.list-item');
     items.forEach(item => {
       if (item.dataset.id === id) {
         item.classList.add('selected');
+        item.setAttribute('aria-selected','true');
+        item.scrollIntoView({block:'nearest'});
       } else {
         item.classList.remove('selected');
+        item.setAttribute('aria-selected','false');
       }
     });
     
@@ -528,6 +561,7 @@ class TrajectoryApp {
         trajData = parseTraj(trajJson);
       }
       
+      if (this.selectedTraj !== id) return;
       this.activeRepr = reprData;
       this.originalTraj = trajData;
       this.activeTraj = JSON.parse(JSON.stringify(this.originalTraj));
@@ -569,7 +603,9 @@ class TrajectoryApp {
         
         // Explain reason based on status code
         const reasonEl = document.getElementById('failed-trajectory-reason');
-        if (this.activeTraj.status === 40) {
+        if (trajMeta.planner_status) {
+          reasonEl.textContent = trajMeta.planner_status + ': no completed motion path is available in this historical result.';
+        } else if (this.activeTraj.status === 40) {
           reasonEl.innerHTML = `Trajectory planning was aborted due to a <strong>collision</strong> in the workspace. No motion path is available.`;
         } else if (this.activeTraj.status === 50) {
           reasonEl.innerHTML = `Trajectory planning <strong>timed out</strong> before finding a valid motion path.`;
@@ -588,10 +624,11 @@ class TrajectoryApp {
       this.updatePlaybackState(0.0);
       
     } catch (e) {
+      if (this.selectedTraj !== id) return;
       console.error("Error loading active trajectory details:", e);
       this.showLoader(`Error loading files for ID: ${id.slice(0, 8)}...`);
     } finally {
-      this.hideLoader();
+      if (this.selectedTraj === id) this.hideLoader();
     }
   }
 

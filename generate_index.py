@@ -7,13 +7,18 @@ def generate_index():
         print(f"Error: Directory '{trajectories_dir}' not found.")
         return
 
+    # Historical metadata is joined by full desired ID; JSON request geometry is untouched.
+    corpus = {}
+    if os.path.exists("palletize_corpus.json"):
+        with open("palletize_corpus.json") as source:
+            corpus = {row["desired_id"]: row for row in json.load(source)["rows"]}
     entries = []
     
     # 1. Scan traj folder
     traj_dir = os.path.join(trajectories_dir, "traj")
     if os.path.exists(traj_dir):
         for f in os.listdir(traj_dir):
-            if f.endswith(".traj"):
+            if f.endswith(".traj") and (not corpus or f[:-5] in corpus):
                 entries.append((f[:-5], "traj", os.path.join(traj_dir, f)))
                 
     # 2. Scan csv folder
@@ -49,7 +54,7 @@ def generate_index():
                 with open(file_path, "r") as tf:
                     traj_data = json.load(tf)
                 status = traj_data.get("status", 0)
-                has_parts = "parts" in traj_data
+                has_parts = bool(traj_data.get("parts"))
                 if has_parts:
                     parts = traj_data.get("parts", [])
                     if parts:
@@ -123,6 +128,13 @@ def generate_index():
             "num_rows": num_rows
         })
         
+    for entry in index_data:
+        row = corpus.get(entry["id"])
+        if row is not None:
+            for key in ("task_id", "tag", "box_number", "place_pallet", "compute_s", "mileage_rad", "mileage_sum_rad", "flags", "red"):
+                entry[key] = row.get(key)
+            entry["planner_status"] = row["status"]
+
     # Sort index_data by number of box obstacles (ascending order)
     index_data.sort(key=lambda x: (x["num_box_obstacles"], x["id"]))
     

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Barilla trajectory corpus</title>
+    <style>
+      body {
+        margin: 0;
+        background: #0b0d19;
+        color: #e2e8f0;
+        font: 14px system-ui;
+      }
+      main {
+        padding: 32px;
+        max-width: 1500px;
+        margin: auto;
+      }
+      a {
+        color: #22d3ee;
+      }
+      h1 {
+        margin-bottom: 8px;
+      }
+      p {
+        color: #94a3b8;
+      }
+      input {
+        background: #151b2b;
+        color: inherit;
+        border: 1px solid #46516a;
+        border-radius: 6px;
+        padding: 10px;
+        width: 280px;
+        margin: 12px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #293047;
+        text-align: left;
+      }
+      th button {
+        font: inherit;
+        color: inherit;
+        background: none;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+      th {
+        text-align: right;
+      }
+      th button {
+        width: 100%;
+        text-align: right;
+      }
+      th.number,
+      td.number {
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+      }
+      th.number button {
+        width: 100%;
+        text-align: right;
+      }
+      .flagged {
+        background: #4b202833;
+      }
+      .table-wrap {
+        overflow: auto;
+      }
+      #message {
+        margin: 16px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="index.html">← Trajectory Studio</a>
+      <h1>Barilla · historical trajectories</h1>
+      <p>
+        Mileage is the sum of absolute joint-angle increments across the motion,
+        in radians: Σ joints Σ samples |qᵢ₊₁ − qᵢ|. Compute is active worker
+        time; motion is trajectory duration.
+      </p>
+      <p>
+        Flags are recorded historical metadata:
+        <strong>slow_compute</strong> means active worker time exceeded 60
+        seconds; <strong>not_solved</strong> means the recorded result was not
+        SOLVED. They are not fresh motion qualification results.
+      </p>
+      <label for="search">Find a task or destination</label><br /><input
+        id="search"
+        placeholder="Task, ID, pallet, destination…"
+      />
+      <div id="message">Loading corpus…</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="number">
+                <button data-key="task_id">Task ↕</button>
+              </th>
+              <th>ID</th>
+              <th>Destination</th>
+              <th>Pallet</th>
+              <th class="number">
+                <button data-key="box_number">Box ↕</button>
+              </th>
+              <th>Status</th>
+              <th>Flags</th>
+              <th class="number">
+                <button data-key="compute_s">Compute (s) ↕</button>
+              </th>
+              <th class="number">
+                <button data-key="traj_time_s">Motion (s) ↕</button>
+              </th>
+              <th class="number">
+                <button data-key="mileage_sum_rad">Mileage (rad) ↕</button>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </main>
+    <script type="module" src="corpus.mjs"></script>
+  </body>
+</html>
