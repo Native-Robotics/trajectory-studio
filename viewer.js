@@ -4,7 +4,6 @@
  */
 
 import * as THREE from 'three';
-import { SVGRenderer } from 'three/addons/renderers/SVGRenderer.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
 import { quatToMatrix } from './robot.js?v=36';
@@ -98,27 +97,15 @@ export class TrajectoryViewer {
     this.camera.up.set(0, 0, 1); // Set Camera UP before OrbitControls
     
     // 3. Renderer
-    try {
-      this.renderer = new THREE.WebGLRenderer({canvas: this.canvas, antialias: true, alpha: false});
-      this.renderer.shadowMap.enabled = true;
-      this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-    } catch (error) {
-      // Keep the same scene, camera and controls when browser GPU access is unavailable.
-      console.warn('WebGL unavailable; using SVG trajectory rendering.', error);
-      this.renderer = new SVGRenderer();
-      this.svgMaterials = new WeakMap();
-      this.renderer.setPrecision(2);
-      this.renderer.domElement.id = this.canvas.id;
-      this.renderer.domElement.setAttribute('aria-label', 'Robot and trajectory (software rendering)');
-      this.canvas.replaceWith(this.renderer.domElement);
-      this.canvas = this.renderer.domElement;
-      const notice = document.createElement('div');
-      notice.textContent = 'Software rendering · WebGL unavailable';
-      notice.style.cssText = 'position:absolute;bottom:12px;left:12px;color:#b9c5d8;font:12px system-ui;pointer-events:none;z-index:5';
-      this.container.append(notice);
-    }
+    this.renderer = new THREE.WebGLRenderer({
+      canvas: this.canvas,
+      antialias: true,
+      alpha: false
+    });
     this.renderer.setSize(width, height);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     // 4. Controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -285,36 +272,7 @@ export class TrajectoryViewer {
     }
     
     this.controls.update();
-    // SVGRenderer supports Lambert materials, but not the GPU PBR materials.
-    const originals = [];
-    if (this.svgMaterials) {
-      const adapt = (material) => {
-        if (!material.isMeshStandardMaterial && !material.isShadowMaterial) return material;
-        let replacement = this.svgMaterials.get(material);
-        if (!replacement) {
-          replacement = new THREE.MeshLambertMaterial();
-          this.svgMaterials.set(material, replacement);
-          material.addEventListener('dispose', () => replacement.dispose());
-        }
-        replacement.color.copy(material.color || new THREE.Color(0x111222));
-        replacement.opacity = material === this.obstacleMaterial ? Math.min(material.opacity, 0.10) : material.opacity;
-        replacement.transparent = material.transparent;
-        replacement.side = material.side;
-        replacement.wireframe = material.wireframe;
-        replacement.visible = material.visible;
-        return replacement;
-      };
-      this.scene.traverseVisible(object => {
-        if (!object.material) return;
-        originals.push([object, object.material]);
-        object.material = Array.isArray(object.material) ? object.material.map(adapt) : adapt(object.material);
-      });
-    }
-    try {
-      this.renderer.render(this.scene, this.camera);
-    } finally {
-      for (const [object, material] of originals) object.material = material;
-    }
+    this.renderer.render(this.scene, this.camera);
   }
 
   // Set visibility toggles

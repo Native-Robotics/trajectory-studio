@@ -4,7 +4,7 @@
  */
 
 import * as THREE from 'three';
-import { TrajectoryViewer } from './viewer.js?v=49';
+import { TrajectoryViewer } from './viewer.js?v=50';
 import { TrajectoryChart } from './charts.js?v=36';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
 import { parseTraj, parseCSV } from './readers.js?v=36';
@@ -48,7 +48,21 @@ class TrajectoryApp {
 
   async init() {
     // 1. Instantiate 3D Viewer & Chart
-    this.viewer = new TrajectoryViewer('three-canvas');
+    try {
+      this.viewer = new TrajectoryViewer('three-canvas');
+    } catch (error) {
+      console.error('Studio 3D renderer unavailable:', error);
+      // A failed GPU context must not prevent browsing data and motion charts.
+      this.viewer = {
+        buildRobot() {}, buildSceneObstacles() {}, drawTrajectoryPath() {}, updatePose() {}
+      };
+      const notice = document.createElement('div');
+      notice.id = 'renderer-unavailable';
+      notice.setAttribute('role', 'status');
+      notice.textContent = '3D view unavailable: this browser could not start WebGL. Trajectory charts and playback remain available. GPU access must be restored before the 3D scene can be displayed.';
+      notice.style.cssText = 'position:absolute;top:80px;left:24px;right:24px;max-width:520px;padding:20px;background:#171c29;color:#dce5f5;border:1px solid #394357;border-radius:8px;font:15px/1.6 system-ui;z-index:5';
+      document.getElementById('three-canvas').parentElement.append(notice);
+    }
     this.chart = new TrajectoryChart('motion-chart');
     
     // 2. Fetch UI Element References
