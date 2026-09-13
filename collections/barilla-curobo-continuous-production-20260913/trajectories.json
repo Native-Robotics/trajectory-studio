@@ -14,7 +14,7 @@
     "num_rows": 0,
     "num_box_obstacles": 19,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 10.863864917002502,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29",
@@ -25,7 +25,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29-ref",
@@ -74,7 +75,7 @@
     "num_rows": 0,
     "num_box_obstacles": 20,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.265976926995791,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7",
@@ -85,7 +86,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7-ref",
@@ -134,7 +136,7 @@
     "num_rows": 0,
     "num_box_obstacles": 21,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.8625318220001645,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3",
@@ -145,7 +147,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-ref",
@@ -194,7 +197,7 @@
     "num_rows": 0,
     "num_box_obstacles": 21,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.7041159679938573,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "d11f7e3674a194e159d178dfd86113da494021a409ab52062aca88a210751222",
@@ -205,7 +208,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "d11f7e3674a194e159d178dfd86113da494021a409ab52062aca88a210751222-ref",
@@ -254,7 +258,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 3.9752286700022523,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815",
@@ -265,7 +269,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815-ref",
@@ -314,7 +319,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.1029344240014325,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19",
@@ -325,7 +330,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19-ref",
@@ -380,7 +386,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.7572300030005863,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "14dad0b1314d843887dfb27099e2ef3b4551d27e37832ddba80830b607eed6f7",
@@ -391,7 +397,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "14dad0b1314d843887dfb27099e2ef3b4551d27e37832ddba80830b607eed6f7-ref",
@@ -440,7 +447,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.9008749300046475,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "874c2ff6ed99371f56f5534b0e5647f78ecd31e1f64bfb060ac54a5272ed5767",
@@ -451,7 +458,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "874c2ff6ed99371f56f5534b0e5647f78ecd31e1f64bfb060ac54a5272ed5767-ref",
@@ -500,7 +508,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.1913990969987935,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "157778044707b6b38066ec220a68d9041ce05269962daec3475b8396422ab85a",
@@ -511,7 +519,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "157778044707b6b38066ec220a68d9041ce05269962daec3475b8396422ab85a-ref",
@@ -560,7 +569,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.059822741000971,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "990b4a17e4bbe938fc45f65f5c5906b48b80d60a977651ab4cca93918db60460",
@@ -571,7 +580,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "990b4a17e4bbe938fc45f65f5c5906b48b80d60a977651ab4cca93918db60460-ref",
@@ -626,7 +636,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 3.7226572149957065,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05",
@@ -637,7 +647,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05-ref",
@@ -686,7 +697,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.595174841997505,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95",
@@ -697,7 +708,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95-ref",
@@ -752,7 +764,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.0410691119977855,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43",
@@ -763,7 +775,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43-ref",
@@ -812,7 +825,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.976795051996305,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf",
@@ -823,7 +836,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf-ref",
@@ -872,7 +886,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.124706335998781,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838",
@@ -883,7 +897,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838-ref",
@@ -938,7 +953,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.046878615001333,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "c82ec835fe944eff30aab8917fa1906c8ec0b2b2169bf51f4a4b036eb089e240",
@@ -949,7 +964,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "c82ec835fe944eff30aab8917fa1906c8ec0b2b2169bf51f4a4b036eb089e240-ref",
@@ -998,7 +1014,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.779924643000413,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b",
@@ -1009,7 +1025,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b-ref",
@@ -1058,7 +1075,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.614188577004825,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06",
@@ -1069,7 +1086,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06-ref",
@@ -1118,7 +1136,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.8619766230040113,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1327e2bffb12a417a7bf56f44d3865dc9518fd7535c9d700682d477c6f789d4b",
@@ -1129,7 +1147,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1327e2bffb12a417a7bf56f44d3865dc9518fd7535c9d700682d477c6f789d4b-ref",
@@ -1178,7 +1197,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.071927517004951,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473",
@@ -1189,7 +1208,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473-ref",
@@ -1238,7 +1258,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.779218641000625,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857",
@@ -1249,7 +1269,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857-ref",
@@ -1298,7 +1319,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.06668291099777,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4534dd005e414e88e712d5e26835809ae2cb800719088e89652d6c51665b090b",
@@ -1309,7 +1330,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4534dd005e414e88e712d5e26835809ae2cb800719088e89652d6c51665b090b-ref",
@@ -1358,7 +1380,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.397099399997387,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583",
@@ -1369,7 +1391,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583-ref",
@@ -1418,7 +1441,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.265660306002246,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e",
@@ -1429,7 +1452,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e-ref",
@@ -1484,7 +1508,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.448991950004711,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "7733d0fe0777e8be858249b95aea32045ca4c9027dd26a1d6d40d633de3e73b2",
@@ -1495,7 +1519,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "7733d0fe0777e8be858249b95aea32045ca4c9027dd26a1d6d40d633de3e73b2-ref",
@@ -1544,7 +1569,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.307395561001613,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018",
@@ -1555,7 +1580,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018-ref",
@@ -1604,7 +1630,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 21.55515027299407,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74",
@@ -1615,7 +1641,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74-ref",
@@ -1670,7 +1697,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.568939274999138,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "09ace9b8946c23d6a961a3b2cf747c6b961b6ed5a3a1dec045300f2843c0b665",
@@ -1681,7 +1708,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "09ace9b8946c23d6a961a3b2cf747c6b961b6ed5a3a1dec045300f2843c0b665-ref",
@@ -1730,7 +1758,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 6.310337679002259,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c",
@@ -1741,7 +1769,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c-ref",
@@ -1790,7 +1819,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 19.995703234002576,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c",
@@ -1801,7 +1830,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c-ref",
@@ -1856,7 +1886,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.9707895269966684,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "637b8daa125b4be9dd797ab6a17346b58f42fcddb325a3348d90ce6c8ab954e7",
@@ -1867,7 +1897,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "637b8daa125b4be9dd797ab6a17346b58f42fcddb325a3348d90ce6c8ab954e7-ref",
@@ -1916,7 +1947,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 6.285384490998695,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368",
@@ -1927,7 +1958,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368-ref",
@@ -1976,7 +2008,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 14.179625973003567,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4",
@@ -1987,7 +2019,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4-ref",
@@ -2035,7 +2068,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.647862181001983,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "c3c0bcb6e33ecfb2112015a8d37c42dce013894f0690e884ca64936b48927d24",
@@ -2046,7 +2079,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "c3c0bcb6e33ecfb2112015a8d37c42dce013894f0690e884ca64936b48927d24-ref",
@@ -2095,7 +2129,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 6.043302190002578,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7",
@@ -2106,7 +2140,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7-ref",
@@ -2155,7 +2190,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 17.611409427998296,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1",
@@ -2166,7 +2201,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1-ref",
@@ -2214,7 +2250,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.970503875003487,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "763c16198f2fb926e8935cb1ce0a07d5b7e5336a3f019b72358302b0700e31f7",
@@ -2225,7 +2261,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "763c16198f2fb926e8935cb1ce0a07d5b7e5336a3f019b72358302b0700e31f7-ref",
@@ -2274,7 +2311,7 @@
     "num_rows": 0,
     "num_box_obstacles": 20,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.379578558000503,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0",
@@ -2285,7 +2322,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0-ref",
@@ -2334,7 +2372,7 @@
     "num_rows": 0,
     "num_box_obstacles": 20,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.373381586003234,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7",
@@ -2345,7 +2383,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7-ref",
@@ -2394,7 +2433,7 @@
     "num_rows": 0,
     "num_box_obstacles": 21,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 10.891337480999937,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e",
@@ -2405,7 +2444,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e-ref",
@@ -2454,7 +2494,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.474462604004657,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea",
@@ -2465,7 +2505,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea-ref",
@@ -2514,7 +2555,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.740736763000314,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e",
@@ -2525,7 +2566,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e-ref",
@@ -2574,7 +2616,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.479817746003391,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1",
@@ -2585,7 +2627,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1-ref",
@@ -2634,7 +2677,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.479564929002663,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94",
@@ -2645,7 +2688,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94-ref",
@@ -2694,7 +2738,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.6659985079968465,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352",
@@ -2705,7 +2749,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352-ref",
@@ -2754,7 +2799,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.136944464000408,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af",
@@ -2765,7 +2810,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af-ref",
@@ -2814,7 +2860,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 2.904416653000226,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "8ab37c289d3653f6f35f1555b43212e7de6a53004f746ad426ed6c7a365ed18f",
@@ -2825,7 +2871,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "8ab37c289d3653f6f35f1555b43212e7de6a53004f746ad426ed6c7a365ed18f-ref",
@@ -2874,7 +2921,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.256110912996519,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f",
@@ -2885,7 +2932,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f-ref",
@@ -2934,7 +2982,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.49037880099786,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7",
@@ -2945,7 +2993,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7-ref",
@@ -2994,7 +3043,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.572594121993461,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328",
@@ -3005,7 +3054,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328-ref",
@@ -3054,7 +3104,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.564357387003838,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a",
@@ -3065,7 +3115,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a-ref",
@@ -3114,7 +3165,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 42.55819674799568,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752",
@@ -3125,7 +3176,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752-ref",
@@ -3180,7 +3232,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.987467207000009,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b",
@@ -3191,7 +3243,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b-ref",
@@ -3240,7 +3293,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.764125722002063,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8",
@@ -3251,7 +3304,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8-ref",
@@ -3300,7 +3354,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.246179722002125,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df",
@@ -3311,7 +3365,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df-ref",
@@ -3360,7 +3415,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.378306911996333,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852",
@@ -3371,7 +3426,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852-ref",
@@ -3426,7 +3482,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 2.860050149996823,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "227de82358a9d408c4fc0b353a4179d8a7bc7ea7c3d2397bc278456ffa7b0856",
@@ -3437,7 +3493,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "227de82358a9d408c4fc0b353a4179d8a7bc7ea7c3d2397bc278456ffa7b0856-ref",
@@ -3486,7 +3543,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 16.711317879999115,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2",
@@ -3497,7 +3554,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2-ref",
@@ -3546,7 +3604,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.536241274996428,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c",
@@ -3557,7 +3615,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c-ref",
@@ -3606,7 +3665,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.189146413002163,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22",
@@ -3617,7 +3676,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22-ref",
@@ -3666,7 +3726,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 14.722583803995803,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874",
@@ -3677,7 +3737,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874-ref",
@@ -3726,7 +3787,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 5.289310162996117,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610",
@@ -3737,7 +3798,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610-ref",
@@ -3786,7 +3848,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.07657833799749,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e",
@@ -3797,7 +3859,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e-ref",
@@ -3846,7 +3909,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.226542114003678,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4",
@@ -3857,7 +3920,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4-ref",
@@ -3906,7 +3970,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.405330939000123,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae",
@@ -3917,7 +3981,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae-ref",
@@ -3966,7 +4031,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 10.129942622996168,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b",
@@ -3977,7 +4042,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b-ref",
@@ -4032,7 +4098,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.3471634489978896,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e96ea26bd2338ec705f4db36f41d1bd8b30ca40b8fdc542ab7087195afdf8793",
@@ -4043,7 +4109,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e96ea26bd2338ec705f4db36f41d1bd8b30ca40b8fdc542ab7087195afdf8793-ref",
@@ -4092,7 +4159,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.30378870399727,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377",
@@ -4103,7 +4170,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377-ref",
@@ -4152,7 +4220,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 9.164061244999175,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743",
@@ -4163,7 +4231,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743-ref",
@@ -4218,7 +4287,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.725992179999594,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "345d876fd0fc95ac0151fef0b9c6c7c74798e233d1d35a9dbeaac76c8aaed43a",
@@ -4229,7 +4298,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "345d876fd0fc95ac0151fef0b9c6c7c74798e233d1d35a9dbeaac76c8aaed43a-ref",
@@ -4278,7 +4348,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.281469185996684,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae",
@@ -4289,7 +4359,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae-ref",
@@ -4338,7 +4409,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 17.371373230002064,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669",
@@ -4349,7 +4420,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669-ref",
@@ -4404,7 +4476,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.665120130004652,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5e499e311cb80fb23e8b193d31110e52e896705d19074e81108d151dabd27627",
@@ -4415,7 +4487,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5e499e311cb80fb23e8b193d31110e52e896705d19074e81108d151dabd27627-ref",
@@ -4464,7 +4537,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.85643250800058,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743",
@@ -4475,7 +4548,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743-ref",
@@ -4524,7 +4598,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.14377315800084,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b",
@@ -4535,7 +4609,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b-ref",
@@ -4583,7 +4658,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 5.141822933997901,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "71837a5cb15736f75cdb9a5bd2374ba46d1b8216c673734312ef5990baf123f1",
@@ -4594,7 +4669,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "71837a5cb15736f75cdb9a5bd2374ba46d1b8216c673734312ef5990baf123f1-ref",
@@ -4643,7 +4719,7 @@
     "num_rows": 0,
     "num_box_obstacles": 21,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.184959778001939,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c",
@@ -4654,7 +4730,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c-ref",
@@ -4703,7 +4780,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.621548588002042,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406",
@@ -4714,7 +4791,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406-ref",
@@ -4763,7 +4841,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.959679209998285,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "869f070423e3d0c736ba34d7938a41a3feaf98227446fdb769369c8052d0e9e2",
@@ -4774,7 +4852,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "869f070423e3d0c736ba34d7938a41a3feaf98227446fdb769369c8052d0e9e2-ref",
@@ -4823,7 +4902,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.736131803998433,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef",
@@ -4834,7 +4913,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef-ref",
@@ -4883,7 +4963,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.852946758001053,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5",
@@ -4894,7 +4974,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5-ref",
@@ -4943,7 +5024,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 4.999904456999502,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf",
@@ -4954,7 +5035,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf-ref",
@@ -5003,7 +5085,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.126977915999305,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "3d33ebd8a3b7f79918b1372c6daf6331c357edf50d8cef40a0550eadf11ecfe9",
@@ -5014,7 +5096,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "3d33ebd8a3b7f79918b1372c6daf6331c357edf50d8cef40a0550eadf11ecfe9-ref",
@@ -5063,7 +5146,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.779949464005767,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101",
@@ -5074,7 +5157,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101-ref",
@@ -5123,7 +5207,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 11.944302449002862,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6",
@@ -5134,7 +5218,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6-ref",
@@ -5183,7 +5268,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 4.848366029000317,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "96f708147d9d95c483b26113d4a9d87211f67c14a3bcfc906c688efc3653c3ce",
@@ -5194,7 +5279,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "96f708147d9d95c483b26113d4a9d87211f67c14a3bcfc906c688efc3653c3ce-ref",
@@ -5243,7 +5329,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.6822516760003055,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "bc9d3ba210e336b7b6661afe1715d9879379c0ab95c97c7d210f87c15b3d79a1",
@@ -5254,7 +5340,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "bc9d3ba210e336b7b6661afe1715d9879379c0ab95c97c7d210f87c15b3d79a1-ref",
@@ -5303,7 +5390,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 3.9568520699976943,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65",
@@ -5314,7 +5401,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65-ref",
@@ -5363,7 +5451,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.247469405992888,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123",
@@ -5374,7 +5462,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123-ref",
@@ -5423,7 +5512,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.848513502998685,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d",
@@ -5434,7 +5523,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d-ref",
@@ -5483,7 +5573,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.064681461000873,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3",
@@ -5494,7 +5584,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3-ref",
@@ -5543,7 +5634,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.47367656500137,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1",
@@ -5554,7 +5645,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1-ref",
@@ -5603,7 +5695,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.5394890690004104,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec",
@@ -5614,7 +5706,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec-ref",
@@ -5663,7 +5756,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.964703986996028,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52",
@@ -5674,7 +5767,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52-ref",
@@ -5723,7 +5817,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.125747014004446,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716",
@@ -5734,7 +5828,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716-ref",
@@ -5789,7 +5884,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.559519990005356,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "a85c9e41ad745c26160fe19eddca1667a4adad081f37815ae0188254f8a8154f",
@@ -5800,7 +5895,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "a85c9e41ad745c26160fe19eddca1667a4adad081f37815ae0188254f8a8154f-ref",
@@ -5849,7 +5945,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.853641332003463,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e",
@@ -5860,7 +5956,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e-ref",
@@ -5909,7 +6006,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.234189404996869,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e",
@@ -5920,7 +6017,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e-ref",
@@ -5969,7 +6067,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.5707254860026296,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "6a437fb05c6357c93e10def63301fc07b8fb83885217794b825a843bb0e76e45",
@@ -5980,7 +6078,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "6a437fb05c6357c93e10def63301fc07b8fb83885217794b825a843bb0e76e45-ref",
@@ -6029,7 +6128,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.043687331999536,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79",
@@ -6040,7 +6139,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79-ref",
@@ -6089,7 +6189,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 13.74198004599748,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9",
@@ -6100,7 +6200,8 @@
     "continuous_motion_reason": "Conic timing failed: AlmostSolved",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9-ref",
@@ -6155,7 +6256,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.252698574004171,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5001f06ef9cb8af38b6e8cb6c75c44537203883ba12e69613260b8ff5eb58a0b",
@@ -6166,7 +6267,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5001f06ef9cb8af38b6e8cb6c75c44537203883ba12e69613260b8ff5eb58a0b-ref",
@@ -6215,7 +6317,7 @@
     "num_rows": 0,
     "num_box_obstacles": 22,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.572635817996343,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a",
@@ -6226,7 +6328,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a-ref",
@@ -6275,7 +6378,7 @@
     "num_rows": 0,
     "num_box_obstacles": 23,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.733258162996208,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92",
@@ -6286,7 +6389,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92-ref",
@@ -6335,7 +6439,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.131604272995901,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "4cefdaeac1aadee6f95cdb7597284083e9835942447325445efea0185556dea2",
@@ -6346,7 +6450,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "4cefdaeac1aadee6f95cdb7597284083e9835942447325445efea0185556dea2-ref",
@@ -6395,7 +6500,7 @@
     "num_rows": 0,
     "num_box_obstacles": 25,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.864996824995615,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "c6665a00526d4df2164127857e4add75bdec6bd6b71ef802dce6c19df2b70d9e",
@@ -6406,7 +6511,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "c6665a00526d4df2164127857e4add75bdec6bd6b71ef802dce6c19df2b70d9e-ref",
@@ -6455,7 +6561,7 @@
     "num_rows": 0,
     "num_box_obstacles": 26,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.804444961002446,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "3d1d09a173c1f703cbdca8f1496694443b355ef36faef7947eeed082411fc3f9",
@@ -6466,7 +6572,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "3d1d09a173c1f703cbdca8f1496694443b355ef36faef7947eeed082411fc3f9-ref",
@@ -6515,7 +6622,7 @@
     "num_rows": 0,
     "num_box_obstacles": 27,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.1426733219996095,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ca5b5bb5875c40b466aec21cb14a23657496bb0a935f240a822dd5220e9032e3",
@@ -6526,7 +6633,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ca5b5bb5875c40b466aec21cb14a23657496bb0a935f240a822dd5220e9032e3-ref",
@@ -6575,7 +6683,7 @@
     "num_rows": 0,
     "num_box_obstacles": 28,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.0813734580005985,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "d535f91b6132185bce5be948e9c7dc76c214a7cb86e36f9d7eed65fd6a052af3",
@@ -6586,7 +6694,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "d535f91b6132185bce5be948e9c7dc76c214a7cb86e36f9d7eed65fd6a052af3-ref",
@@ -6635,7 +6744,7 @@
     "num_rows": 0,
     "num_box_obstacles": 29,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.036105997001869,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1b303e154306ba795ffa12b17b1e33b491ddccdc3bab93bd1c6970cb9dec4b40",
@@ -6646,7 +6755,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1b303e154306ba795ffa12b17b1e33b491ddccdc3bab93bd1c6970cb9dec4b40-ref",
@@ -6695,7 +6805,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.467024488003517,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a",
@@ -6706,7 +6816,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a-ref",
@@ -6755,7 +6866,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 6.24789321100252,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13",
@@ -6766,7 +6877,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13-ref",
@@ -6815,7 +6927,7 @@
     "num_rows": 0,
     "num_box_obstacles": 30,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.427049716003239,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "cce28b55970f688433ae3270f54f9e0036432a0cdc6b20e64bc4bdecf001eb42",
@@ -6826,7 +6938,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "cce28b55970f688433ae3270f54f9e0036432a0cdc6b20e64bc4bdecf001eb42-ref",
@@ -6875,7 +6988,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 3.8395521070051473,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432",
@@ -6886,7 +6999,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432-ref",
@@ -6935,7 +7049,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.880445315000543,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52",
@@ -6946,7 +7060,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52-ref",
@@ -6995,7 +7110,7 @@
     "num_rows": 0,
     "num_box_obstacles": 31,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.217841992001922,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ad3d5831de3a7b166ebeba9722dcdb98326608b562e9782a3b55f9fc734b0274",
@@ -7006,7 +7121,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ad3d5831de3a7b166ebeba9722dcdb98326608b562e9782a3b55f9fc734b0274-ref",
@@ -7055,7 +7171,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.787293410001439,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8",
@@ -7066,7 +7182,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8-ref",
@@ -7115,7 +7232,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 5.636640787997749,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c",
@@ -7126,7 +7243,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c-ref",
@@ -7175,7 +7293,7 @@
     "num_rows": 0,
     "num_box_obstacles": 32,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 2.9298363889975008,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63",
@@ -7186,7 +7304,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63-ref",
@@ -7235,7 +7354,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.359090271005698,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b",
@@ -7246,7 +7365,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b-ref",
@@ -7295,7 +7415,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.759916257004079,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974",
@@ -7306,7 +7426,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974-ref",
@@ -7355,7 +7476,7 @@
     "num_rows": 0,
     "num_box_obstacles": 33,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.335589840004104,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "44f8fe25625bbebe24cf4181a004e924ab3a4a6a5ed6d630ab9f66b6218e78b7",
@@ -7366,7 +7487,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "44f8fe25625bbebe24cf4181a004e924ab3a4a6a5ed6d630ab9f66b6218e78b7-ref",
@@ -7415,7 +7537,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.535830608001561,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df",
@@ -7426,7 +7548,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df-ref",
@@ -7475,7 +7598,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 7.174169587000506,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e",
@@ -7486,7 +7609,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e-ref",
@@ -7535,7 +7659,7 @@
     "num_rows": 0,
     "num_box_obstacles": 34,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.600715902000957,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "780c535cd4277c9dea97ed39f857d97f5d75a1951ad924bf14109cd8621b9a23",
@@ -7546,7 +7670,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "780c535cd4277c9dea97ed39f857d97f5d75a1951ad924bf14109cd8621b9a23-ref",
@@ -7595,7 +7720,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 5.282528484000068,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294",
@@ -7606,7 +7731,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294-ref",
@@ -7655,7 +7781,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 8.304217911005253,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e",
@@ -7666,7 +7792,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e-ref",
@@ -7715,7 +7842,7 @@
     "num_rows": 0,
     "num_box_obstacles": 35,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.198794675998215,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "499c03a3f09689faf199cae6f47938020231026e4a317d093135cc22e06095d4",
@@ -7726,7 +7853,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "499c03a3f09689faf199cae6f47938020231026e4a317d093135cc22e06095d4-ref",
@@ -7775,7 +7903,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 3.9095660759994644,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326",
@@ -7786,7 +7914,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326-ref",
@@ -7835,7 +7964,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 9.295365168996796,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b",
@@ -7846,7 +7975,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b-ref",
@@ -7895,7 +8025,7 @@
     "num_rows": 0,
     "num_box_obstacles": 36,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 4.45390726000187,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "04de589e9bf012919e80ad690762d2ef652697b36f8cfece0b58e3c1570339c8",
@@ -7906,7 +8036,8 @@
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "04de589e9bf012919e80ad690762d2ef652697b36f8cfece0b58e3c1570339c8-ref",
@@ -7955,7 +8086,7 @@
     "num_rows": 0,
     "num_box_obstacles": 37,
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
-    "compute_s": 4.124861795004108,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d",
@@ -7966,7 +8097,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d-ref",
@@ -8015,7 +8147,7 @@
     "num_rows": 0,
     "num_box_obstacles": 37,
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
-    "compute_s": 12.66704043000209,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d",
@@ -8026,7 +8158,8 @@
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d-ref",
@@ -8081,7 +8214,7 @@
     "num_rows": 0,
     "num_box_obstacles": 37,
     "tag": "manipulator-part MoveToExit,MoveToWait",
-    "compute_s": 3.259844902000623,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "67745ceb8883e3de2624686a280a5dcfc89d8f3ff7586a9634d8d1dca9307d9b",
@@ -8092,7 +8225,8 @@
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "67745ceb8883e3de2624686a280a5dcfc89d8f3ff7586a9634d8d1dca9307d9b-ref",
@@ -8141,7 +8275,7 @@
     "num_rows": 0,
     "num_box_obstacles": 24,
     "tag": "manipulator-part MoveToNext,MoveToPick",
-    "compute_s": 2.4314415289991302,
+    "compute_s": null,
     "backend": "CuRoboPlanner",
     "red": false,
     "pair_id": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418",
@@ -8152,7 +8286,8 @@
     "continuous_motion_reason": "Changing TCP requires separate motion blocks",
     "recorded_joint_jerk_valid": true,
     "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "sequential full135 replay; benchmark comparison is separate"
+    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+    "compute_measurements_excluded": true
   },
   {
     "id": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418-ref",

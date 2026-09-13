@@ -2015,5 +2015,7 @@
       ]
     }
   ],
-  "scope": "One sequential same-source A/B trial on the historical fixed ten. Warm summaries use second requests. Resource samples every50ms; medians are observational, not confidence intervals. Motion quality metrics do not replace constraint checks."
+  "scope": "One sequential same-source A/B trial on the historical fixed ten. Warm summaries use second requests. Resource samples every50ms; medians are observational, not confidence intervals. Motion quality metrics do not replace constraint checks.",
+  "compute_measurements_excluded": true,
+  "exclusion_reason": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable."
 }

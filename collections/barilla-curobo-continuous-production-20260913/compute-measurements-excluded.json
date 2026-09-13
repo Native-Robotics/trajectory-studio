@@ -1,0 +1,17 @@
+{
+  "excluded": true,
+  "reported_at_utc": "2026-09-13T10:18:22Z",
+  "approximate_start_utc": "2026-09-13T09:18:22Z",
+  "reason": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
+  "runs": [
+    "curobo-continuous-production-control-fresh10-20260913",
+    "curobo-continuous-production-pilot-20260913",
+    "curobo-continuous-production-full-20260913",
+    "curobo-candidate-first-full-20260913",
+    "curobo-continuous-production-enabled-warm10-20260913",
+    "curobo-continuous-production-control-warm10-20260913",
+    "curobo-candidate-first-pilot-20260913",
+    "curobo-continuous-production-enabled-fresh10-20260913"
+  ],
+  "scope": "All timing measurements in the listed runs excluded conservatively, including the still-running replay. Preserve raw measurements as historical evidence only. Resource comparisons are also withheld because concurrent work can affect them."
+}
