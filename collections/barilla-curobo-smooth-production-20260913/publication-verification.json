@@ -3,9 +3,18 @@
   "rows": 270,
   "pairs": 135,
   "http_byte_identical_files": 545,
-  "core_commit": "38430a0d5f9abc4653ae9956030340e193c7a632",
-  "source_run": "curobo-local-clock-native-full-20260913",
+  "core_commit": "2d83bb2de91bbb08c1d6750ae3e48d2b73ca8a2e",
+  "source_run": "curobo-joint-polish-native-full-20260913",
   "independently_audited_exports": 135,
   "compute_comparisons_excluded": true,
-  "browser_verification": "Chrome existing tab 793952331 refreshed to task 81; selected 01bda9f1-curobo, 6.89 s timeline, robot/obstacles/path and position chart visually verified"
+  "browser_verification": {
+    "browser": "Chrome",
+    "tab_id": "793952331",
+    "task_id": 134,
+    "selected_id": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418-curobo",
+    "timeline_s": 1.4,
+    "reference_s": 0.92,
+    "robot_scene_and_position_chart_rendered": true
+  },
+  "reverified_utc": "2026-09-13T18:18:14.032608+00:00"
 }

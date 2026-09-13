@@ -1,6 +1,6 @@
 {
   "count": 135,
-  "curobo_source": "curobo-local-clock-native-full-20260913",
+  "curobo_source": "curobo-joint-polish-native-full-20260913",
   "reference_source": "unchanged original recordings",
   "jerk_budget_ratio": 0.95,
   "fast_collection": "barilla-curobo-continuous-production-20260913"
