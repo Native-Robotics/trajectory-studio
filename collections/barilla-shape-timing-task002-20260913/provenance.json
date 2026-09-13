@@ -1,0 +1,27 @@
+[
+  {
+    "id": "baseline-curobo",
+    "source": "/home/luke/.codex/worktrees/studio-barilla-rebuild/collections/barilla-curobo-reference-20260913/Trajectories/traj/236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-curobo.traj",
+    "sha256": "0eb37ee4fd97fcbad8bc4f049812e7b42fcd25c48c47107d34c468ae42c54a0c"
+  },
+  {
+    "id": "retimed-curobo",
+    "source": "/home/luke/.codex/visualizations/2026/09/12/01a0969d-cc8b-77e1-8566-8b3bd1679634/curobo-shape-timing-sweep-task002-20260913/candidate.traj",
+    "sha256": "ab5ed662bd1af34286e6f06a1e6b32d7c038573fab1ceff6c430484bc0aaf6d8"
+  },
+  {
+    "id": "smooth-curobo",
+    "source": "/home/luke/.codex/visualizations/2026/09/12/01a0969d-cc8b-77e1-8566-8b3bd1679634/curobo-shape-join-task002-20260913/anchors3-gain0.7.traj",
+    "sha256": "5558aac9cd3e5e493970ae42c82b70c946f565e8527bdc4eb3fc1f8ba764fc85"
+  },
+  {
+    "id": "236e7d6c-ref",
+    "source": "/home/luke/.codex/worktrees/studio-barilla-rebuild/collections/barilla-curobo-reference-20260913/Trajectories/traj/236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-ref.traj",
+    "sha256": "c020dd50f51df1742a09e6ef24890bd23fbaae6de436638a52ddef46a10ca6d3"
+  },
+  {
+    "id": "adaptive-curobo",
+    "source": "/home/luke/.codex/visualizations/2026/09/12/01a0969d-cc8b-77e1-8566-8b3bd1679634/curobo-shape-adaptive-local-task002-20260913/adaptive-local-0.7.traj",
+    "sha256": "fcbd137f7ed1e5a07c283f54f62a76db2b438d8944be9f35d5dcfa20edab614a"
+  }
+]

@@ -1,0 +1,4278 @@
+{
+  "source": "/home/luke/.codex/visualizations/2026/09/12/01a0969d-cc8b-77e1-8566-8b3bd1679634/curobo-rnd-numeric-fk-full-20260913",
+  "parts": 367,
+  "failed_parts": [
+    {
+      "task": 0,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08053972132301156,
+        "max_acceleration": 0.43677996428678534,
+        "max_jerk": 1.1244347691118108
+      },
+      "valid": false
+    },
+    {
+      "task": 4,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 10,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 11,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.10122893924346053,
+        "max_acceleration": 0.4764627833235246,
+        "max_jerk": 1.0092014021828843
+      },
+      "valid": false
+    },
+    {
+      "task": 13,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 16,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 19,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 22,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 25,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 28,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 31,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 34,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 37,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873652293
+      },
+      "valid": false
+    },
+    {
+      "task": 38,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0990332936795543,
+        "max_acceleration": 0.5335946059708949,
+        "max_jerk": 1.367279689755624
+      },
+      "valid": false
+    },
+    {
+      "task": 40,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.10766475860135573,
+        "max_acceleration": 0.5048662373329769,
+        "max_jerk": 1.121646863377183
+      },
+      "valid": false
+    },
+    {
+      "task": 41,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14425444496977669,
+        "max_acceleration": 0.6096928126496465,
+        "max_jerk": 1.2129028377753284
+      },
+      "valid": false
+    },
+    {
+      "task": 41,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 43,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14425444496977669,
+        "max_acceleration": 0.6096928126496465,
+        "max_jerk": 1.2129028377753284
+      },
+      "valid": false
+    },
+    {
+      "task": 44,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 47,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 48,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12418442425275952,
+        "max_acceleration": 0.5912337567375365,
+        "max_jerk": 1.3221468971798347
+      },
+      "valid": false
+    },
+    {
+      "task": 50,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14520593785195615,
+        "max_acceleration": 0.6164693344712235,
+        "max_jerk": 1.1969847765586197
+      },
+      "valid": false
+    },
+    {
+      "task": 50,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 51,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12833388344795407,
+        "max_acceleration": 0.6047261824172637,
+        "max_jerk": 1.367817778720813
+      },
+      "valid": false
+    },
+    {
+      "task": 52,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14520593785195615,
+        "max_acceleration": 0.6164693344712235,
+        "max_jerk": 1.1969847765586197
+      },
+      "valid": false
+    },
+    {
+      "task": 54,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.144038153851023,
+        "max_acceleration": 0.6075767868367392,
+        "max_jerk": 1.2057062531021097
+      },
+      "valid": false
+    },
+    {
+      "task": 57,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12201511677097365,
+        "max_acceleration": 0.569255666141908,
+        "max_jerk": 1.2794054438595546
+      },
+      "valid": false
+    },
+    {
+      "task": 59,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14246737810635166,
+        "max_acceleration": 0.606006007555211,
+        "max_jerk": 1.19413442689985
+      },
+      "valid": false
+    },
+    {
+      "task": 59,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 60,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.1008134033946081,
+        "max_acceleration": 0.48012959432533114,
+        "max_jerk": 1.0916165399803972
+      },
+      "valid": false
+    },
+    {
+      "task": 61,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14246737810635166,
+        "max_acceleration": 0.606006007555211,
+        "max_jerk": 1.19413442689985
+      },
+      "valid": false
+    },
+    {
+      "task": 63,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.13492208765248112,
+        "max_acceleration": 0.5619569305882214,
+        "max_jerk": 1.1147992879332576
+      },
+      "valid": false
+    },
+    {
+      "task": 64,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 67,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873652293
+      },
+      "valid": false
+    },
+    {
+      "task": 70,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 73,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 76,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.11137855724701436,
+        "max_acceleration": 0.6076009273045131,
+        "max_jerk": 1.6152492815028388
+      },
+      "valid": false
+    },
+    {
+      "task": 79,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.1267121799076757,
+        "max_acceleration": 0.6037420755328228,
+        "max_jerk": 1.376623407337789
+      },
+      "valid": false
+    },
+    {
+      "task": 83,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.13024179450773585,
+        "max_acceleration": 0.6226150527282149,
+        "max_jerk": 1.412361434492423
+      },
+      "valid": false
+    },
+    {
+      "task": 87,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14492862560485228,
+        "max_acceleration": 0.5830600383628087,
+        "max_jerk": 1.146590528944111
+      },
+      "valid": false
+    },
+    {
+      "task": 87,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 89,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14492862560485228,
+        "max_acceleration": 0.5830600383628087,
+        "max_jerk": 1.146590528944111
+      },
+      "valid": false
+    },
+    {
+      "task": 90,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.1385424827183823,
+        "max_acceleration": 0.5552260422346574,
+        "max_jerk": 1.0760408461604327
+      },
+      "valid": false
+    },
+    {
+      "task": 90,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 92,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.1385424827183823,
+        "max_acceleration": 0.5552260422346574,
+        "max_jerk": 1.0760408461604327
+      },
+      "valid": false
+    },
+    {
+      "task": 93,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 96,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 99,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 102,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.09400690456296106,
+        "max_acceleration": 0.520430826819954,
+        "max_jerk": 1.3728328540948296
+      },
+      "valid": false
+    },
+    {
+      "task": 110,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05097442104019943,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 113,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 116,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14497343084739012,
+        "max_acceleration": 0.5693789481100816,
+        "max_jerk": 1.1059606255655763
+      },
+      "valid": false
+    },
+    {
+      "task": 116,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 118,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14497343084739012,
+        "max_acceleration": 0.5693789481100816,
+        "max_jerk": 1.1059606255655763
+      },
+      "valid": false
+    },
+    {
+      "task": 119,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 122,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 125,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 128,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 131,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 134,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.05097442104020229,
+        "max_acceleration": 0.35127288286806196,
+        "max_jerk": 1.1467338873658548
+      },
+      "valid": false
+    }
+  ],
+  "rows": [
+    {
+      "task": 0,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12745831725291287,
+        "max_acceleration": 0.3232822188696645,
+        "max_jerk": 0.3830461652305268
+      },
+      "valid": true
+    },
+    {
+      "task": 0,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3056896454494908,
+        "max_acceleration": 0.43515783500332283,
+        "max_jerk": 0.23170983963729114
+      },
+      "valid": true
+    },
+    {
+      "task": 0,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08053972132301156,
+        "max_acceleration": 0.43677996428678534,
+        "max_jerk": 1.1244347691118108
+      },
+      "valid": false
+    },
+    {
+      "task": 1,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 1,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2796336173080551,
+        "max_acceleration": 0.34632845597844236,
+        "max_jerk": 0.1526691684472415
+      },
+      "valid": true
+    },
+    {
+      "task": 1,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07255665464596758,
+        "max_acceleration": 0.33939026129950406,
+        "max_jerk": 0.7822849820209774
+      },
+      "valid": true
+    },
+    {
+      "task": 2,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 2,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2769450218208979,
+        "max_acceleration": 0.3282889045291346,
+        "max_jerk": 0.18705334321926573
+      },
+      "valid": true
+    },
+    {
+      "task": 2,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.060749334806239515,
+        "max_acceleration": 0.2906622440126462,
+        "max_jerk": 0.6432642545736468
+      },
+      "valid": true
+    },
+    {
+      "task": 3,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10945363204017639,
+        "max_acceleration": 0.45010376083858417,
+        "max_jerk": 0.8868450169945994
+      },
+      "valid": true
+    },
+    {
+      "task": 3,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2557233774832674,
+        "max_acceleration": 0.31427591424564805,
+        "max_jerk": 0.1701722238362103
+      },
+      "valid": true
+    },
+    {
+      "task": 4,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10462183112835552,
+        "max_acceleration": 0.42499092450254033,
+        "max_jerk": 0.8240446523473695
+      },
+      "valid": true
+    },
+    {
+      "task": 4,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28814961415406826,
+        "max_acceleration": 0.329203741085178,
+        "max_jerk": 0.1719058129344677
+      },
+      "valid": true
+    },
+    {
+      "task": 4,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 5,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 5,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.288133960548321,
+        "max_acceleration": 0.339130446722193,
+        "max_jerk": 0.16182072173319123
+      },
+      "valid": true
+    },
+    {
+      "task": 5,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08960284141487163,
+        "max_acceleration": 0.41563762778441415,
+        "max_jerk": 0.945028733949727
+      },
+      "valid": true
+    },
+    {
+      "task": 6,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10462183112835552,
+        "max_acceleration": 0.42499092450254033,
+        "max_jerk": 0.8240446523473695
+      },
+      "valid": true
+    },
+    {
+      "task": 6,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2826630369583939,
+        "max_acceleration": 0.32873306920732825,
+        "max_jerk": 0.17485853449190736
+      },
+      "valid": true
+    },
+    {
+      "task": 7,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 7,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28343466003376583,
+        "max_acceleration": 0.31264252797828923,
+        "max_jerk": 0.1528667288665374
+      },
+      "valid": true
+    },
+    {
+      "task": 7,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07767716272584482,
+        "max_acceleration": 0.3666704500551285,
+        "max_jerk": 0.7854763567567913
+      },
+      "valid": true
+    },
+    {
+      "task": 8,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 8,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26510021418289853,
+        "max_acceleration": 0.3499741371736997,
+        "max_jerk": 0.18587232304885237
+      },
+      "valid": true
+    },
+    {
+      "task": 8,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06163008424841931,
+        "max_acceleration": 0.2936070903778921,
+        "max_jerk": 0.6593079558871415
+      },
+      "valid": true
+    },
+    {
+      "task": 9,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 9,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28147712538297637,
+        "max_acceleration": 0.3357543818121895,
+        "max_jerk": 0.1912278650825549
+      },
+      "valid": true
+    },
+    {
+      "task": 9,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08274334953312898,
+        "max_acceleration": 0.392144012780878,
+        "max_jerk": 0.8417156533986893
+      },
+      "valid": true
+    },
+    {
+      "task": 10,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10996890478447906,
+        "max_acceleration": 0.4572811875964432,
+        "max_jerk": 0.9034670464889301
+      },
+      "valid": true
+    },
+    {
+      "task": 10,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.266256192818558,
+        "max_acceleration": 0.3017954249722886,
+        "max_jerk": 0.15800891888314358
+      },
+      "valid": true
+    },
+    {
+      "task": 10,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 11,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 11,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3062408951905652,
+        "max_acceleration": 0.32922278020391077,
+        "max_jerk": 0.1440629077535599
+      },
+      "valid": true
+    },
+    {
+      "task": 11,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.10122893924346053,
+        "max_acceleration": 0.4764627833235246,
+        "max_jerk": 1.0092014021828843
+      },
+      "valid": false
+    },
+    {
+      "task": 12,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10996890478447906,
+        "max_acceleration": 0.4572811875964432,
+        "max_jerk": 0.9034670464889301
+      },
+      "valid": true
+    },
+    {
+      "task": 12,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2684203839773046,
+        "max_acceleration": 0.32053225177467237,
+        "max_jerk": 0.17328802383311911
+      },
+      "valid": true
+    },
+    {
+      "task": 13,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10622063676195138,
+        "max_acceleration": 0.4448489443697007,
+        "max_jerk": 0.8825486859248567
+      },
+      "valid": true
+    },
+    {
+      "task": 13,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2765820228392262,
+        "max_acceleration": 0.3184243064544388,
+        "max_jerk": 0.15587501639826856
+      },
+      "valid": true
+    },
+    {
+      "task": 13,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 14,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 14,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25755466925946974,
+        "max_acceleration": 0.35967297439661505,
+        "max_jerk": 0.18410814790873095
+      },
+      "valid": true
+    },
+    {
+      "task": 14,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06082432918974741,
+        "max_acceleration": 0.29271761676202945,
+        "max_jerk": 0.6189666770116455
+      },
+      "valid": true
+    },
+    {
+      "task": 15,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10622063676195138,
+        "max_acceleration": 0.4448489443697007,
+        "max_jerk": 0.8825486859248567
+      },
+      "valid": true
+    },
+    {
+      "task": 15,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26641288604601837,
+        "max_acceleration": 0.32709172071930714,
+        "max_jerk": 0.17230412334992243
+      },
+      "valid": true
+    },
+    {
+      "task": 16,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10577319530341035,
+        "max_acceleration": 0.4318128090401962,
+        "max_jerk": 0.8401821811516621
+      },
+      "valid": true
+    },
+    {
+      "task": 16,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28544977421804874,
+        "max_acceleration": 0.3268557272346962,
+        "max_jerk": 0.17021087470258806
+      },
+      "valid": true
+    },
+    {
+      "task": 16,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 17,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 17,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.330658146314802,
+        "max_acceleration": 0.32343630203237755,
+        "max_jerk": 0.1116568204184908
+      },
+      "valid": true
+    },
+    {
+      "task": 17,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0907588911363232,
+        "max_acceleration": 0.4293529689800154,
+        "max_jerk": 0.9372023812672636
+      },
+      "valid": true
+    },
+    {
+      "task": 18,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10577319530341035,
+        "max_acceleration": 0.4318128090401962,
+        "max_jerk": 0.8401821811516621
+      },
+      "valid": true
+    },
+    {
+      "task": 18,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28043268307084424,
+        "max_acceleration": 0.3299028408632001,
+        "max_jerk": 0.17720934792533108
+      },
+      "valid": true
+    },
+    {
+      "task": 19,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10986566819645227,
+        "max_acceleration": 0.45767473920372614,
+        "max_jerk": 0.9016251584609167
+      },
+      "valid": true
+    },
+    {
+      "task": 19,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3091026597695338,
+        "max_acceleration": 0.3314800003533853,
+        "max_jerk": 0.15862145301755448
+      },
+      "valid": true
+    },
+    {
+      "task": 19,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 20,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 20,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2709590163471669,
+        "max_acceleration": 0.2930285351950698,
+        "max_jerk": 0.10581359523658906
+      },
+      "valid": true
+    },
+    {
+      "task": 20,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08439958244545079,
+        "max_acceleration": 0.3970476143378527,
+        "max_jerk": 0.8541391213825328
+      },
+      "valid": true
+    },
+    {
+      "task": 21,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10986566819645227,
+        "max_acceleration": 0.45767473920372614,
+        "max_jerk": 0.9016251584609167
+      },
+      "valid": true
+    },
+    {
+      "task": 21,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.30179579659731537,
+        "max_acceleration": 0.3363516530891738,
+        "max_jerk": 0.17429971495097857
+      },
+      "valid": true
+    },
+    {
+      "task": 22,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10982202915295859,
+        "max_acceleration": 0.45692704258564354,
+        "max_jerk": 0.8964199169242503
+      },
+      "valid": true
+    },
+    {
+      "task": 22,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2446453571924981,
+        "max_acceleration": 0.32609964933888563,
+        "max_jerk": 0.12385107000946077
+      },
+      "valid": true
+    },
+    {
+      "task": 22,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 23,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 23,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27139552882008255,
+        "max_acceleration": 0.2664920364401837,
+        "max_jerk": 0.08481612300425048
+      },
+      "valid": true
+    },
+    {
+      "task": 23,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0826419743172964,
+        "max_acceleration": 0.3900356885024282,
+        "max_jerk": 0.86047877818948
+      },
+      "valid": true
+    },
+    {
+      "task": 24,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10982202915295859,
+        "max_acceleration": 0.45692704258564354,
+        "max_jerk": 0.8964199169242503
+      },
+      "valid": true
+    },
+    {
+      "task": 24,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24926448775831322,
+        "max_acceleration": 0.3087749753504085,
+        "max_jerk": 0.11465075134329832
+      },
+      "valid": true
+    },
+    {
+      "task": 25,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11001045973333516,
+        "max_acceleration": 0.4554074968644105,
+        "max_jerk": 0.8962197037205079
+      },
+      "valid": true
+    },
+    {
+      "task": 25,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26095062057088014,
+        "max_acceleration": 0.31638162960725363,
+        "max_jerk": 0.10367490188954591
+      },
+      "valid": true
+    },
+    {
+      "task": 25,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 26,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 26,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2359278025524592,
+        "max_acceleration": 0.4016481257938375,
+        "max_jerk": 0.14172165766114914
+      },
+      "valid": true
+    },
+    {
+      "task": 26,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06066311559909844,
+        "max_acceleration": 0.29189571466790964,
+        "max_jerk": 0.6857728614742352
+      },
+      "valid": true
+    },
+    {
+      "task": 27,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11001045973333516,
+        "max_acceleration": 0.4554074968644105,
+        "max_jerk": 0.8962197037205079
+      },
+      "valid": true
+    },
+    {
+      "task": 27,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2600226608358868,
+        "max_acceleration": 0.3147673818767828,
+        "max_jerk": 0.11324931746293686
+      },
+      "valid": true
+    },
+    {
+      "task": 28,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10569331722095106,
+        "max_acceleration": 0.43167613969714924,
+        "max_jerk": 0.8414195656202529
+      },
+      "valid": true
+    },
+    {
+      "task": 28,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26844289640304303,
+        "max_acceleration": 0.4350818721424826,
+        "max_jerk": 0.12930834472729094
+      },
+      "valid": true
+    },
+    {
+      "task": 28,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 29,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 29,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28891274953688145,
+        "max_acceleration": 0.446823160728695,
+        "max_jerk": 0.12392428591430271
+      },
+      "valid": true
+    },
+    {
+      "task": 29,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07446350270931679,
+        "max_acceleration": 0.3576717242772923,
+        "max_jerk": 0.806204792761506
+      },
+      "valid": true
+    },
+    {
+      "task": 30,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10569331722095106,
+        "max_acceleration": 0.43167613969714924,
+        "max_jerk": 0.8414195656202529
+      },
+      "valid": true
+    },
+    {
+      "task": 30,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3290139710047068,
+        "max_acceleration": 0.3322917261125314,
+        "max_jerk": 0.10225450588493423
+      },
+      "valid": true
+    },
+    {
+      "task": 31,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10885627822484055,
+        "max_acceleration": 0.44913315465439146,
+        "max_jerk": 0.8905458121157896
+      },
+      "valid": true
+    },
+    {
+      "task": 31,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27611107361456544,
+        "max_acceleration": 0.3082808894963909,
+        "max_jerk": 0.09356720756348223
+      },
+      "valid": true
+    },
+    {
+      "task": 31,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 32,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 32,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.5044282486658139,
+        "max_acceleration": 0.7242863494279923,
+        "max_jerk": 0.3534674911987142
+      },
+      "valid": true
+    },
+    {
+      "task": 32,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05718855474811634,
+        "max_acceleration": 0.27579158116887,
+        "max_jerk": 0.6297546106644423
+      },
+      "valid": true
+    },
+    {
+      "task": 33,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10885627822484055,
+        "max_acceleration": 0.44913315465439146,
+        "max_jerk": 0.8905458121157896
+      },
+      "valid": true
+    },
+    {
+      "task": 33,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2475589948925898,
+        "max_acceleration": 0.3197646655857338,
+        "max_jerk": 0.12482638447281354
+      },
+      "valid": true
+    },
+    {
+      "task": 34,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10538497029846734,
+        "max_acceleration": 0.42920720195785517,
+        "max_jerk": 0.85920530925169
+      },
+      "valid": true
+    },
+    {
+      "task": 34,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2750746777309721,
+        "max_acceleration": 0.3198776367321038,
+        "max_jerk": 0.09223979212101857
+      },
+      "valid": true
+    },
+    {
+      "task": 34,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 35,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 35,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24969673483738647,
+        "max_acceleration": 0.3597352059471267,
+        "max_jerk": 0.11821112229300529
+      },
+      "valid": true
+    },
+    {
+      "task": 35,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05019844858127542,
+        "max_acceleration": 0.24490960616042234,
+        "max_jerk": 0.5404359817216393
+      },
+      "valid": true
+    },
+    {
+      "task": 36,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10538497029846734,
+        "max_acceleration": 0.42920720195785517,
+        "max_jerk": 0.85920530925169
+      },
+      "valid": true
+    },
+    {
+      "task": 36,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3076321125171626,
+        "max_acceleration": 0.342267338142784,
+        "max_jerk": 0.15579473133758162
+      },
+      "valid": true
+    },
+    {
+      "task": 37,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10432621799099252,
+        "max_acceleration": 0.42420151256835964,
+        "max_jerk": 0.8296474946690107
+      },
+      "valid": true
+    },
+    {
+      "task": 37,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24903933280629878,
+        "max_acceleration": 0.289287024303134,
+        "max_jerk": 0.14254956971051788
+      },
+      "valid": true
+    },
+    {
+      "task": 37,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873652293
+      },
+      "valid": false
+    },
+    {
+      "task": 38,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 38,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26058941844121664,
+        "max_acceleration": 0.35184782597636505,
+        "max_jerk": 0.19053911113216995
+      },
+      "valid": true
+    },
+    {
+      "task": 38,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0990332936795543,
+        "max_acceleration": 0.5335946059708949,
+        "max_jerk": 1.367279689755624
+      },
+      "valid": false
+    },
+    {
+      "task": 39,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 39,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25000434290478285,
+        "max_acceleration": 0.32117570588226035,
+        "max_jerk": 0.18963354806517133
+      },
+      "valid": true
+    },
+    {
+      "task": 39,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07041387632194371,
+        "max_acceleration": 0.3326697577771131,
+        "max_jerk": 0.7294016587824128
+      },
+      "valid": true
+    },
+    {
+      "task": 40,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 40,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25460212614695443,
+        "max_acceleration": 0.35186015335576454,
+        "max_jerk": 0.1896627533845741
+      },
+      "valid": true
+    },
+    {
+      "task": 40,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.10766475860135573,
+        "max_acceleration": 0.5048662373329769,
+        "max_jerk": 1.121646863377183
+      },
+      "valid": false
+    },
+    {
+      "task": 41,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14425444496977669,
+        "max_acceleration": 0.6096928126496465,
+        "max_jerk": 1.2129028377753284
+      },
+      "valid": false
+    },
+    {
+      "task": 41,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.22805121734300096,
+        "max_acceleration": 0.29690564144617776,
+        "max_jerk": 0.1532615836817683
+      },
+      "valid": true
+    },
+    {
+      "task": 41,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 42,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 42,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2686888174635719,
+        "max_acceleration": 0.4060230842192797,
+        "max_jerk": 0.22053346006155217
+      },
+      "valid": true
+    },
+    {
+      "task": 42,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0759135237897945,
+        "max_acceleration": 0.3586901995823662,
+        "max_jerk": 0.7885241536281997
+      },
+      "valid": true
+    },
+    {
+      "task": 43,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14425444496977669,
+        "max_acceleration": 0.6096928126496465,
+        "max_jerk": 1.2129028377753284
+      },
+      "valid": false
+    },
+    {
+      "task": 43,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.22291114841860402,
+        "max_acceleration": 0.3128222318772878,
+        "max_jerk": 0.18131596444155534
+      },
+      "valid": true
+    },
+    {
+      "task": 44,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12029576369802644,
+        "max_acceleration": 0.4923519266397482,
+        "max_jerk": 0.9646037073350142
+      },
+      "valid": true
+    },
+    {
+      "task": 44,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2654141267875009,
+        "max_acceleration": 0.3173964622215922,
+        "max_jerk": 0.17774519568134334
+      },
+      "valid": true
+    },
+    {
+      "task": 44,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 45,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 45,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28466981086307813,
+        "max_acceleration": 0.3165263138411877,
+        "max_jerk": 0.1347325597539329
+      },
+      "valid": true
+    },
+    {
+      "task": 45,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05676547301513488,
+        "max_acceleration": 0.27249237243841884,
+        "max_jerk": 0.6330208332494357
+      },
+      "valid": true
+    },
+    {
+      "task": 46,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12029576369802644,
+        "max_acceleration": 0.4923519266397482,
+        "max_jerk": 0.9646037073350142
+      },
+      "valid": true
+    },
+    {
+      "task": 46,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2584845896670742,
+        "max_acceleration": 0.3245550965464435,
+        "max_jerk": 0.19083289313829851
+      },
+      "valid": true
+    },
+    {
+      "task": 47,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10134432252637368,
+        "max_acceleration": 0.40991464863752936,
+        "max_jerk": 0.7980739552881959
+      },
+      "valid": true
+    },
+    {
+      "task": 47,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2484574081866944,
+        "max_acceleration": 0.31173834029586805,
+        "max_jerk": 0.14949357763400026
+      },
+      "valid": true
+    },
+    {
+      "task": 47,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 48,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 48,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28761669622677644,
+        "max_acceleration": 0.3071394819680106,
+        "max_jerk": 0.1635995876429077
+      },
+      "valid": true
+    },
+    {
+      "task": 48,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12418442425275952,
+        "max_acceleration": 0.5912337567375365,
+        "max_jerk": 1.3221468971798347
+      },
+      "valid": false
+    },
+    {
+      "task": 49,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10134432252637368,
+        "max_acceleration": 0.40991464863752936,
+        "max_jerk": 0.7980739552881959
+      },
+      "valid": true
+    },
+    {
+      "task": 49,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.239823459889552,
+        "max_acceleration": 0.31882630429386244,
+        "max_jerk": 0.18884599936781665
+      },
+      "valid": true
+    },
+    {
+      "task": 50,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14520593785195615,
+        "max_acceleration": 0.6164693344712235,
+        "max_jerk": 1.1969847765586197
+      },
+      "valid": false
+    },
+    {
+      "task": 50,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24003888241851074,
+        "max_acceleration": 0.29544743689983444,
+        "max_jerk": 0.14790952235898605
+      },
+      "valid": true
+    },
+    {
+      "task": 50,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 51,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12745831725291287,
+        "max_acceleration": 0.3232822188696645,
+        "max_jerk": 0.3830461652305268
+      },
+      "valid": true
+    },
+    {
+      "task": 51,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.34742149301537517,
+        "max_acceleration": 0.4033887778939219,
+        "max_jerk": 0.09885406475973801
+      },
+      "valid": true
+    },
+    {
+      "task": 51,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12833388344795407,
+        "max_acceleration": 0.6047261824172637,
+        "max_jerk": 1.367817778720813
+      },
+      "valid": false
+    },
+    {
+      "task": 52,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14520593785195615,
+        "max_acceleration": 0.6164693344712235,
+        "max_jerk": 1.1969847765586197
+      },
+      "valid": false
+    },
+    {
+      "task": 52,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25052052407103914,
+        "max_acceleration": 0.3154173523032912,
+        "max_jerk": 0.18237120089054737
+      },
+      "valid": true
+    },
+    {
+      "task": 53,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 53,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.30695028500688915,
+        "max_acceleration": 0.3240714570534182,
+        "max_jerk": 0.19251956526035577
+      },
+      "valid": true
+    },
+    {
+      "task": 53,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.078077828005178,
+        "max_acceleration": 0.3619886014827483,
+        "max_jerk": 0.8218569580708313
+      },
+      "valid": true
+    },
+    {
+      "task": 54,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.144038153851023,
+        "max_acceleration": 0.6075767868367392,
+        "max_jerk": 1.2057062531021097
+      },
+      "valid": false
+    },
+    {
+      "task": 54,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.22674028572417756,
+        "max_acceleration": 0.31154146691811124,
+        "max_jerk": 0.12350232494967818
+      },
+      "valid": true
+    },
+    {
+      "task": 55,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 55,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3009659936492612,
+        "max_acceleration": 0.31499744694880766,
+        "max_jerk": 0.1705734308534069
+      },
+      "valid": true
+    },
+    {
+      "task": 55,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05791577951928735,
+        "max_acceleration": 0.2821200266011895,
+        "max_jerk": 0.6404928886473503
+      },
+      "valid": true
+    },
+    {
+      "task": 56,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12194611285198657,
+        "max_acceleration": 0.5039951797411439,
+        "max_jerk": 0.9944263919739443
+      },
+      "valid": true
+    },
+    {
+      "task": 56,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2687098983760992,
+        "max_acceleration": 0.3276217889554226,
+        "max_jerk": 0.18731561918848957
+      },
+      "valid": true
+    },
+    {
+      "task": 57,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 57,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.32122758885298286,
+        "max_acceleration": 0.31231201249350593,
+        "max_jerk": 0.08199232235108056
+      },
+      "valid": true
+    },
+    {
+      "task": 57,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.12201511677097365,
+        "max_acceleration": 0.569255666141908,
+        "max_jerk": 1.2794054438595546
+      },
+      "valid": false
+    },
+    {
+      "task": 58,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10585537020476586,
+        "max_acceleration": 0.4317624053672139,
+        "max_jerk": 0.8326682832447035
+      },
+      "valid": true
+    },
+    {
+      "task": 58,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26100589467716334,
+        "max_acceleration": 0.32048900219388976,
+        "max_jerk": 0.17435451783997222
+      },
+      "valid": true
+    },
+    {
+      "task": 59,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14246737810635166,
+        "max_acceleration": 0.606006007555211,
+        "max_jerk": 1.19413442689985
+      },
+      "valid": false
+    },
+    {
+      "task": 59,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2644481322438332,
+        "max_acceleration": 0.31468629045262086,
+        "max_jerk": 0.11485990650106845
+      },
+      "valid": true
+    },
+    {
+      "task": 59,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 60,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 60,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3438652669719708,
+        "max_acceleration": 0.3555925795045117,
+        "max_jerk": 0.11664202208751306
+      },
+      "valid": true
+    },
+    {
+      "task": 60,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.1008134033946081,
+        "max_acceleration": 0.48012959432533114,
+        "max_jerk": 1.0916165399803972
+      },
+      "valid": false
+    },
+    {
+      "task": 61,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14246737810635166,
+        "max_acceleration": 0.606006007555211,
+        "max_jerk": 1.19413442689985
+      },
+      "valid": false
+    },
+    {
+      "task": 61,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2038499534050654,
+        "max_acceleration": 0.3002121903226753,
+        "max_jerk": 0.08664402362094521
+      },
+      "valid": true
+    },
+    {
+      "task": 62,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 62,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2869355363639105,
+        "max_acceleration": 0.2667764665034004,
+        "max_jerk": 0.08607087418928908
+      },
+      "valid": true
+    },
+    {
+      "task": 62,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0779629504884325,
+        "max_acceleration": 0.36801725911659827,
+        "max_jerk": 0.8301483879828696
+      },
+      "valid": true
+    },
+    {
+      "task": 63,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.13492208765248112,
+        "max_acceleration": 0.5619569305882214,
+        "max_jerk": 1.1147992879332576
+      },
+      "valid": false
+    },
+    {
+      "task": 63,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27263899926428814,
+        "max_acceleration": 0.326851379752335,
+        "max_jerk": 0.15423080084844915
+      },
+      "valid": true
+    },
+    {
+      "task": 64,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12208816114077621,
+        "max_acceleration": 0.5030615950614116,
+        "max_jerk": 0.9944411528294937
+      },
+      "valid": true
+    },
+    {
+      "task": 64,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.4622917056949557,
+        "max_acceleration": 0.5718971981236203,
+        "max_jerk": 0.3274045270390916
+      },
+      "valid": true
+    },
+    {
+      "task": 64,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 65,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 65,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.21291950769669168,
+        "max_acceleration": 0.3784996542118694,
+        "max_jerk": 0.10134521185708861
+      },
+      "valid": true
+    },
+    {
+      "task": 65,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07291780575788818,
+        "max_acceleration": 0.35131664411467567,
+        "max_jerk": 0.796079858102182
+      },
+      "valid": true
+    },
+    {
+      "task": 66,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12208816114077621,
+        "max_acceleration": 0.5030615950614116,
+        "max_jerk": 0.9944411528294937
+      },
+      "valid": true
+    },
+    {
+      "task": 66,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.38736649300243664,
+        "max_acceleration": 0.5112645282380863,
+        "max_jerk": 0.30649039567029324
+      },
+      "valid": true
+    },
+    {
+      "task": 67,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11876952772389296,
+        "max_acceleration": 0.4886241252513791,
+        "max_jerk": 0.9515500993445137
+      },
+      "valid": true
+    },
+    {
+      "task": 67,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.19944454401671655,
+        "max_acceleration": 0.3259143437865856,
+        "max_jerk": 0.14051249965596543
+      },
+      "valid": true
+    },
+    {
+      "task": 67,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873652293
+      },
+      "valid": false
+    },
+    {
+      "task": 68,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 68,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3022789746787181,
+        "max_acceleration": 0.3194155420059398,
+        "max_jerk": 0.17623189011998608
+      },
+      "valid": true
+    },
+    {
+      "task": 68,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05388307238919773,
+        "max_acceleration": 0.26641513175444487,
+        "max_jerk": 0.5899798654779449
+      },
+      "valid": true
+    },
+    {
+      "task": 69,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11876952772389296,
+        "max_acceleration": 0.4886241252513791,
+        "max_jerk": 0.9515500993445137
+      },
+      "valid": true
+    },
+    {
+      "task": 69,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24154300565408357,
+        "max_acceleration": 0.3069794942352737,
+        "max_jerk": 0.1425327270540438
+      },
+      "valid": true
+    },
+    {
+      "task": 70,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10597106906938955,
+        "max_acceleration": 0.4303723791254701,
+        "max_jerk": 0.8486399131118469
+      },
+      "valid": true
+    },
+    {
+      "task": 70,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2715262170053414,
+        "max_acceleration": 0.3186659864778502,
+        "max_jerk": 0.16485268448326953
+      },
+      "valid": true
+    },
+    {
+      "task": 70,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 71,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 71,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24547697516345554,
+        "max_acceleration": 0.3502069962548139,
+        "max_jerk": 0.10687940565824376
+      },
+      "valid": true
+    },
+    {
+      "task": 71,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06205252867750806,
+        "max_acceleration": 0.30612517327117994,
+        "max_jerk": 0.6918953660901989
+      },
+      "valid": true
+    },
+    {
+      "task": 72,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.10597106906938955,
+        "max_acceleration": 0.4303723791254701,
+        "max_jerk": 0.8486399131118469
+      },
+      "valid": true
+    },
+    {
+      "task": 72,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2902386914883127,
+        "max_acceleration": 0.32148226408159736,
+        "max_jerk": 0.1735274259491078
+      },
+      "valid": true
+    },
+    {
+      "task": 73,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11174273525888659,
+        "max_acceleration": 0.46041742191751966,
+        "max_jerk": 0.8898462932194485
+      },
+      "valid": true
+    },
+    {
+      "task": 73,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2694720634229589,
+        "max_acceleration": 0.3256248230372569,
+        "max_jerk": 0.11383703195823795
+      },
+      "valid": true
+    },
+    {
+      "task": 73,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 74,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 74,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2332668374738032,
+        "max_acceleration": 0.33061220570582833,
+        "max_jerk": 0.14132724374603767
+      },
+      "valid": true
+    },
+    {
+      "task": 74,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.04746665510487247,
+        "max_acceleration": 0.22191139881438843,
+        "max_jerk": 0.4970774640033912
+      },
+      "valid": true
+    },
+    {
+      "task": 75,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.11174273525888659,
+        "max_acceleration": 0.46041742191751966,
+        "max_jerk": 0.8898462932194485
+      },
+      "valid": true
+    },
+    {
+      "task": 75,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.228393946801228,
+        "max_acceleration": 0.2980685988422883,
+        "max_jerk": 0.10404720278001296
+      },
+      "valid": true
+    },
+    {
+      "task": 76,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 76,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2941661385394669,
+        "max_acceleration": 0.3775550660180883,
+        "max_jerk": 0.19754613369718138
+      },
+      "valid": true
+    },
+    {
+      "task": 76,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.11137855724701436,
+        "max_acceleration": 0.6076009273045131,
+        "max_jerk": 1.6152492815028388
+      },
+      "valid": false
+    },
+    {
+      "task": 77,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 77,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2637469508775092,
+        "max_acceleration": 0.2850285346792806,
+        "max_jerk": 0.11805404432186356
+      },
+      "valid": true
+    },
+    {
+      "task": 77,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07259402496727527,
+        "max_acceleration": 0.34449330870258116,
+        "max_jerk": 0.7893283664802966
+      },
+      "valid": true
+    },
+    {
+      "task": 78,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 78,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27772887332912993,
+        "max_acceleration": 0.35509296587832756,
+        "max_jerk": 0.184069388517221
+      },
+      "valid": true
+    },
+    {
+      "task": 78,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.045135721293675754,
+        "max_acceleration": 0.22313746312437294,
+        "max_jerk": 0.5148986719885927
+      },
+      "valid": true
+    },
+    {
+      "task": 79,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 79,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28556981953077604,
+        "max_acceleration": 0.32801284769153477,
+        "max_jerk": 0.14456174032565128
+      },
+      "valid": true
+    },
+    {
+      "task": 79,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.1267121799076757,
+        "max_acceleration": 0.6037420755328228,
+        "max_jerk": 1.376623407337789
+      },
+      "valid": false
+    },
+    {
+      "task": 80,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 80,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.31911625218809014,
+        "max_acceleration": 0.34124452656833515,
+        "max_jerk": 0.09828211966010394
+      },
+      "valid": true
+    },
+    {
+      "task": 80,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0790551383779839,
+        "max_acceleration": 0.38228969295296433,
+        "max_jerk": 0.8617122543684669
+      },
+      "valid": true
+    },
+    {
+      "task": 81,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 81,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.33667276490871795,
+        "max_acceleration": 0.4363926135484892,
+        "max_jerk": 0.2543104742198298
+      },
+      "valid": true
+    },
+    {
+      "task": 81,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.04534062851604377,
+        "max_acceleration": 0.2249842631056802,
+        "max_jerk": 0.5148259518236171
+      },
+      "valid": true
+    },
+    {
+      "task": 82,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 82,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3052080678114356,
+        "max_acceleration": 0.292128675376103,
+        "max_jerk": 0.07570127702973088
+      },
+      "valid": true
+    },
+    {
+      "task": 82,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0824828999486215,
+        "max_acceleration": 0.3900979384811357,
+        "max_jerk": 0.8744583618622337
+      },
+      "valid": true
+    },
+    {
+      "task": 83,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 83,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25191650156156375,
+        "max_acceleration": 0.29830910202572436,
+        "max_jerk": 0.17790475997460817
+      },
+      "valid": true
+    },
+    {
+      "task": 83,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.13024179450773585,
+        "max_acceleration": 0.6226150527282149,
+        "max_jerk": 1.412361434492423
+      },
+      "valid": false
+    },
+    {
+      "task": 84,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 84,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.3160793659939292,
+        "max_acceleration": 0.36192053755578196,
+        "max_jerk": 0.177887488903099
+      },
+      "valid": true
+    },
+    {
+      "task": 84,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.047937625141870686,
+        "max_acceleration": 0.22364691157641947,
+        "max_jerk": 0.5006998583229497
+      },
+      "valid": true
+    },
+    {
+      "task": 85,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 85,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24565625969857993,
+        "max_acceleration": 0.3079852851967654,
+        "max_jerk": 0.21442951306433322
+      },
+      "valid": true
+    },
+    {
+      "task": 85,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08835652485872733,
+        "max_acceleration": 0.4294748516791881,
+        "max_jerk": 0.9786569340847754
+      },
+      "valid": true
+    },
+    {
+      "task": 86,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 86,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27922264681938347,
+        "max_acceleration": 0.31713600549204807,
+        "max_jerk": 0.12105706468538434
+      },
+      "valid": true
+    },
+    {
+      "task": 86,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08191892841897931,
+        "max_acceleration": 0.39619530126190333,
+        "max_jerk": 0.9024388165678718
+      },
+      "valid": true
+    },
+    {
+      "task": 87,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14492862560485228,
+        "max_acceleration": 0.5830600383628087,
+        "max_jerk": 1.146590528944111
+      },
+      "valid": false
+    },
+    {
+      "task": 87,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28223817914603444,
+        "max_acceleration": 0.31920627842596794,
+        "max_jerk": 0.1833689274602859
+      },
+      "valid": true
+    },
+    {
+      "task": 87,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 88,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 88,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2693708677162075,
+        "max_acceleration": 0.3244803931932263,
+        "max_jerk": 0.16410071532447107
+      },
+      "valid": true
+    },
+    {
+      "task": 88,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07387412371953565,
+        "max_acceleration": 0.3617419918365788,
+        "max_jerk": 0.8261264684615235
+      },
+      "valid": true
+    },
+    {
+      "task": 89,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14492862560485228,
+        "max_acceleration": 0.5830600383628087,
+        "max_jerk": 1.146590528944111
+      },
+      "valid": false
+    },
+    {
+      "task": 89,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28656274637797274,
+        "max_acceleration": 0.32378999057199986,
+        "max_jerk": 0.1989305443133305
+      },
+      "valid": true
+    },
+    {
+      "task": 90,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.1385424827183823,
+        "max_acceleration": 0.5552260422346574,
+        "max_jerk": 1.0760408461604327
+      },
+      "valid": false
+    },
+    {
+      "task": 90,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25926188149671225,
+        "max_acceleration": 0.31669681412973505,
+        "max_jerk": 0.18333598905362494
+      },
+      "valid": true
+    },
+    {
+      "task": 90,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 91,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 91,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2765419184155376,
+        "max_acceleration": 0.2911091783253749,
+        "max_jerk": 0.12373496611495108
+      },
+      "valid": true
+    },
+    {
+      "task": 91,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.04922880879596663,
+        "max_acceleration": 0.23167221798525178,
+        "max_jerk": 0.5318433230353335
+      },
+      "valid": true
+    },
+    {
+      "task": 92,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.1385424827183823,
+        "max_acceleration": 0.5552260422346574,
+        "max_jerk": 1.0760408461604327
+      },
+      "valid": false
+    },
+    {
+      "task": 92,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2719497369311171,
+        "max_acceleration": 0.3230662788666827,
+        "max_jerk": 0.2026336088759361
+      },
+      "valid": true
+    },
+    {
+      "task": 93,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09993035276626801,
+        "max_acceleration": 0.39926228690924154,
+        "max_jerk": 0.7683529736881499
+      },
+      "valid": true
+    },
+    {
+      "task": 93,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.23795042735247512,
+        "max_acceleration": 0.3226145213748055,
+        "max_jerk": 0.14236404991842042
+      },
+      "valid": true
+    },
+    {
+      "task": 93,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 94,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 94,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2311788477385378,
+        "max_acceleration": 0.31395048221276245,
+        "max_jerk": 0.17161152064601448
+      },
+      "valid": true
+    },
+    {
+      "task": 94,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06387960743698635,
+        "max_acceleration": 0.29717489299595023,
+        "max_jerk": 0.6769047030568363
+      },
+      "valid": true
+    },
+    {
+      "task": 95,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09993035276626801,
+        "max_acceleration": 0.39926228690924154,
+        "max_jerk": 0.7683529736881499
+      },
+      "valid": true
+    },
+    {
+      "task": 95,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.29477000141412585,
+        "max_acceleration": 0.3346799383177115,
+        "max_jerk": 0.20534992023768728
+      },
+      "valid": true
+    },
+    {
+      "task": 96,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12358142821508922,
+        "max_acceleration": 0.49810214323344676,
+        "max_jerk": 0.966961472102477
+      },
+      "valid": true
+    },
+    {
+      "task": 96,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.22874852632675607,
+        "max_acceleration": 0.32049689369226636,
+        "max_jerk": 0.17531263245300083
+      },
+      "valid": true
+    },
+    {
+      "task": 96,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 97,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 97,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25879688680402196,
+        "max_acceleration": 0.3220486085532386,
+        "max_jerk": 0.12162184608004493
+      },
+      "valid": true
+    },
+    {
+      "task": 97,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05597040749235821,
+        "max_acceleration": 0.2711552509609904,
+        "max_jerk": 0.6061522986477148
+      },
+      "valid": true
+    },
+    {
+      "task": 98,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12358142821508922,
+        "max_acceleration": 0.49810214323344676,
+        "max_jerk": 0.966961472102477
+      },
+      "valid": true
+    },
+    {
+      "task": 98,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.25813946359154827,
+        "max_acceleration": 0.3256498444200546,
+        "max_jerk": 0.21790831762362
+      },
+      "valid": true
+    },
+    {
+      "task": 99,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09704148667947343,
+        "max_acceleration": 0.38921904402749896,
+        "max_jerk": 0.7280783760870227
+      },
+      "valid": true
+    },
+    {
+      "task": 99,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.277065881949162,
+        "max_acceleration": 0.3281028953133133,
+        "max_jerk": 0.19658982963377497
+      },
+      "valid": true
+    },
+    {
+      "task": 99,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 100,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 100,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.21487690442601465,
+        "max_acceleration": 0.3192698989854391,
+        "max_jerk": 0.13243548564951074
+      },
+      "valid": true
+    },
+    {
+      "task": 100,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06415942960525675,
+        "max_acceleration": 0.29962252999197336,
+        "max_jerk": 0.6539155916571504
+      },
+      "valid": true
+    },
+    {
+      "task": 101,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09704148667947343,
+        "max_acceleration": 0.38921904402749896,
+        "max_jerk": 0.7280783760870227
+      },
+      "valid": true
+    },
+    {
+      "task": 101,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2816717159988759,
+        "max_acceleration": 0.32963273889678674,
+        "max_jerk": 0.21171130306460126
+      },
+      "valid": true
+    },
+    {
+      "task": 102,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 102,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2013005895412411,
+        "max_acceleration": 0.32087370526568065,
+        "max_jerk": 0.10411165995037028
+      },
+      "valid": true
+    },
+    {
+      "task": 102,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.09400690456296106,
+        "max_acceleration": 0.520430826819954,
+        "max_jerk": 1.3728328540948296
+      },
+      "valid": false
+    },
+    {
+      "task": 103,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 103,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2506712827151026,
+        "max_acceleration": 0.2907010087708585,
+        "max_jerk": 0.1145268174562819
+      },
+      "valid": true
+    },
+    {
+      "task": 103,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.04648256348959168,
+        "max_acceleration": 0.22040558487504613,
+        "max_jerk": 0.5020523901341128
+      },
+      "valid": true
+    },
+    {
+      "task": 104,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 104,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24422660547731478,
+        "max_acceleration": 0.31232268180698,
+        "max_jerk": 0.1352915549865706
+      },
+      "valid": true
+    },
+    {
+      "task": 104,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0752044614256068,
+        "max_acceleration": 0.36969745753383004,
+        "max_jerk": 0.8569446869299565
+      },
+      "valid": true
+    },
+    {
+      "task": 105,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 105,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2522706193301315,
+        "max_acceleration": 0.3133911653976249,
+        "max_jerk": 0.14326479759630875
+      },
+      "valid": true
+    },
+    {
+      "task": 105,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.052050624664805964,
+        "max_acceleration": 0.25696480512365055,
+        "max_jerk": 0.5871709274083879
+      },
+      "valid": true
+    },
+    {
+      "task": 106,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 106,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2773360568923826,
+        "max_acceleration": 0.29227044124336854,
+        "max_jerk": 0.1270472929054549
+      },
+      "valid": true
+    },
+    {
+      "task": 106,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.045527667143269133,
+        "max_acceleration": 0.21496830231212508,
+        "max_jerk": 0.4793122879195685
+      },
+      "valid": true
+    },
+    {
+      "task": 107,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 107,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.37400063576224774,
+        "max_acceleration": 0.4172691764276127,
+        "max_jerk": 0.24391478801374875
+      },
+      "valid": true
+    },
+    {
+      "task": 107,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07484656199078783,
+        "max_acceleration": 0.3565804097593402,
+        "max_jerk": 0.8188856420736217
+      },
+      "valid": true
+    },
+    {
+      "task": 108,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 108,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2286976634940563,
+        "max_acceleration": 0.33748624831993607,
+        "max_jerk": 0.22486635921634512
+      },
+      "valid": true
+    },
+    {
+      "task": 108,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.0752978576341327,
+        "max_acceleration": 0.35509105314431894,
+        "max_jerk": 0.8366967232089296
+      },
+      "valid": true
+    },
+    {
+      "task": 109,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 109,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.18199747250444828,
+        "max_acceleration": 0.2760259621890609,
+        "max_jerk": 0.08293302397690024
+      },
+      "valid": true
+    },
+    {
+      "task": 109,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06340064142323174,
+        "max_acceleration": 0.30529212404968264,
+        "max_jerk": 0.6844044245149609
+      },
+      "valid": true
+    },
+    {
+      "task": 110,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09817374859308682,
+        "max_acceleration": 0.3981650828954801,
+        "max_jerk": 0.774158117165025
+      },
+      "valid": true
+    },
+    {
+      "task": 110,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.21132260451955062,
+        "max_acceleration": 0.39167670760772566,
+        "max_jerk": 0.1714516908439511
+      },
+      "valid": true
+    },
+    {
+      "task": 110,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.05097442104019943,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.146733887366318
+      },
+      "valid": false
+    },
+    {
+      "task": 111,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 111,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26310363979841633,
+        "max_acceleration": 0.30947360938091556,
+        "max_jerk": 0.15062827859426842
+      },
+      "valid": true
+    },
+    {
+      "task": 111,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.060490168354179294,
+        "max_acceleration": 0.28419012189713805,
+        "max_jerk": 0.6253670221326564
+      },
+      "valid": true
+    },
+    {
+      "task": 112,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09817374859308682,
+        "max_acceleration": 0.3981650828954801,
+        "max_jerk": 0.774158117165025
+      },
+      "valid": true
+    },
+    {
+      "task": 112,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.22615366636511303,
+        "max_acceleration": 0.5196042698515262,
+        "max_jerk": 0.24786484631698086
+      },
+      "valid": true
+    },
+    {
+      "task": 113,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.07673654508163491,
+        "max_acceleration": 0.3103528451868744,
+        "max_jerk": 0.5940832836906688
+      },
+      "valid": true
+    },
+    {
+      "task": 113,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.29562462933389466,
+        "max_acceleration": 0.3231451634133131,
+        "max_jerk": 0.18902015332187624
+      },
+      "valid": true
+    },
+    {
+      "task": 113,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 114,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 114,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.19641516684873872,
+        "max_acceleration": 0.32726248828785276,
+        "max_jerk": 0.22533460378429718
+      },
+      "valid": true
+    },
+    {
+      "task": 114,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08155301630223337,
+        "max_acceleration": 0.39082087790955256,
+        "max_jerk": 0.8932551171534487
+      },
+      "valid": true
+    },
+    {
+      "task": 115,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.07673654508163491,
+        "max_acceleration": 0.3103528451868744,
+        "max_jerk": 0.5940832836906688
+      },
+      "valid": true
+    },
+    {
+      "task": 115,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2981921699493571,
+        "max_acceleration": 0.32208245647983086,
+        "max_jerk": 0.18441763218569066
+      },
+      "valid": true
+    },
+    {
+      "task": 116,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14497343084739012,
+        "max_acceleration": 0.5693789481100816,
+        "max_jerk": 1.1059606255655763
+      },
+      "valid": false
+    },
+    {
+      "task": 116,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.23849185402199435,
+        "max_acceleration": 0.3077104297835339,
+        "max_jerk": 0.17695761160473975
+      },
+      "valid": true
+    },
+    {
+      "task": 116,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 117,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 117,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.19846619442549632,
+        "max_acceleration": 0.2776157659153063,
+        "max_jerk": 0.21974492203987683
+      },
+      "valid": true
+    },
+    {
+      "task": 117,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08445389874401706,
+        "max_acceleration": 0.4010929752916464,
+        "max_jerk": 0.9145521977437197
+      },
+      "valid": true
+    },
+    {
+      "task": 118,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.14497343084739012,
+        "max_acceleration": 0.5693789481100816,
+        "max_jerk": 1.1059606255655763
+      },
+      "valid": false
+    },
+    {
+      "task": 118,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26410044687628276,
+        "max_acceleration": 0.3189214579731498,
+        "max_jerk": 0.21849296071667498
+      },
+      "valid": true
+    },
+    {
+      "task": 119,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12412331374557015,
+        "max_acceleration": 0.5030769180937797,
+        "max_jerk": 0.9772719496867366
+      },
+      "valid": true
+    },
+    {
+      "task": 119,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2379831186262562,
+        "max_acceleration": 0.30304715065857896,
+        "max_jerk": 0.19595055818659407
+      },
+      "valid": true
+    },
+    {
+      "task": 119,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 120,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 120,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2846366603661618,
+        "max_acceleration": 0.33374849227021774,
+        "max_jerk": 0.155470003669119
+      },
+      "valid": true
+    },
+    {
+      "task": 120,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.06794593413250515,
+        "max_acceleration": 0.32766399466617974,
+        "max_jerk": 0.7469579340016219
+      },
+      "valid": true
+    },
+    {
+      "task": 121,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12412331374557015,
+        "max_acceleration": 0.5030769180937797,
+        "max_jerk": 0.9772719496867366
+      },
+      "valid": true
+    },
+    {
+      "task": 121,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.24158580960958673,
+        "max_acceleration": 0.3110154385389517,
+        "max_jerk": 0.21628619738486868
+      },
+      "valid": true
+    },
+    {
+      "task": 122,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09894702180468684,
+        "max_acceleration": 0.4016206643884345,
+        "max_jerk": 0.7792117995023122
+      },
+      "valid": true
+    },
+    {
+      "task": 122,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2839596122492697,
+        "max_acceleration": 0.33705129384798477,
+        "max_jerk": 0.2045185501836077
+      },
+      "valid": true
+    },
+    {
+      "task": 122,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 123,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 123,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2369165924116905,
+        "max_acceleration": 0.3286610394614213,
+        "max_jerk": 0.25380944526994914
+      },
+      "valid": true
+    },
+    {
+      "task": 123,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07575605971765884,
+        "max_acceleration": 0.3491952292854192,
+        "max_jerk": 0.7941169171733156
+      },
+      "valid": true
+    },
+    {
+      "task": 124,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09894702180468684,
+        "max_acceleration": 0.4016206643884345,
+        "max_jerk": 0.7792117995023122
+      },
+      "valid": true
+    },
+    {
+      "task": 124,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.28259122490037,
+        "max_acceleration": 0.32824984373170785,
+        "max_jerk": 0.20383882597217318
+      },
+      "valid": true
+    },
+    {
+      "task": 125,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09505837527278307,
+        "max_acceleration": 0.38360363267168496,
+        "max_jerk": 0.7345185885851412
+      },
+      "valid": true
+    },
+    {
+      "task": 125,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27412718646382944,
+        "max_acceleration": 0.327072387649049,
+        "max_jerk": 0.19602665605608804
+      },
+      "valid": true
+    },
+    {
+      "task": 125,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 126,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 126,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.18159634603997352,
+        "max_acceleration": 0.2936238328892554,
+        "max_jerk": 0.09349278750229525
+      },
+      "valid": true
+    },
+    {
+      "task": 126,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.07430967499303968,
+        "max_acceleration": 0.346150652703229,
+        "max_jerk": 0.7656512947929585
+      },
+      "valid": true
+    },
+    {
+      "task": 127,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09505837527278307,
+        "max_acceleration": 0.38360363267168496,
+        "max_jerk": 0.7345185885851412
+      },
+      "valid": true
+    },
+    {
+      "task": 127,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26815107595913784,
+        "max_acceleration": 0.32908055093393274,
+        "max_jerk": 0.20624722677022872
+      },
+      "valid": true
+    },
+    {
+      "task": 128,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.07738190073381086,
+        "max_acceleration": 0.3182236526231606,
+        "max_jerk": 0.6193271742846903
+      },
+      "valid": true
+    },
+    {
+      "task": 128,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27395006508628433,
+        "max_acceleration": 0.3213331099938454,
+        "max_jerk": 0.17393136925545527
+      },
+      "valid": true
+    },
+    {
+      "task": 128,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.3512728828679908,
+        "max_jerk": 1.1467338873540276
+      },
+      "valid": false
+    },
+    {
+      "task": 129,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 129,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.17150789419156007,
+        "max_acceleration": 0.2639417525062896,
+        "max_jerk": 0.1264256017364085
+      },
+      "valid": true
+    },
+    {
+      "task": 129,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08116357468844485,
+        "max_acceleration": 0.3800573357422181,
+        "max_jerk": 0.8534469355490043
+      },
+      "valid": true
+    },
+    {
+      "task": 130,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.07738190073381086,
+        "max_acceleration": 0.3182236526231606,
+        "max_jerk": 0.6193271742846903
+      },
+      "valid": true
+    },
+    {
+      "task": 130,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.27525690496046396,
+        "max_acceleration": 0.3198768466905571,
+        "max_jerk": 0.19560390254781773
+      },
+      "valid": true
+    },
+    {
+      "task": 131,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.08741242922707834,
+        "max_acceleration": 0.3539640954543585,
+        "max_jerk": 0.669794630240186
+      },
+      "valid": true
+    },
+    {
+      "task": 131,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.26621504172639804,
+        "max_acceleration": 0.3288246953872301,
+        "max_jerk": 0.21265235602748292
+      },
+      "valid": true
+    },
+    {
+      "task": 131,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.050974421040200044,
+        "max_acceleration": 0.35127288286825514,
+        "max_jerk": 1.1467338873628965
+      },
+      "valid": false
+    },
+    {
+      "task": 132,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.12737961007232473,
+        "max_acceleration": 0.32473118045219146,
+        "max_jerk": 0.38543466421075173
+      },
+      "valid": true
+    },
+    {
+      "task": 132,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.16977810189432996,
+        "max_acceleration": 0.2814591739771277,
+        "max_jerk": 0.15883338068096378
+      },
+      "valid": true
+    },
+    {
+      "task": 132,
+      "part": 2,
+      "ratios": {
+        "max_velocity": 0.08686697004992601,
+        "max_acceleration": 0.4001681445162096,
+        "max_jerk": 0.9010339598113062
+      },
+      "valid": true
+    },
+    {
+      "task": 133,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.08741242922707834,
+        "max_acceleration": 0.3539640954543585,
+        "max_jerk": 0.669794630240186
+      },
+      "valid": true
+    },
+    {
+      "task": 133,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.2581486306132374,
+        "max_acceleration": 0.330764763109688,
+        "max_jerk": 0.2162580218046863
+      },
+      "valid": true
+    },
+    {
+      "task": 134,
+      "part": 0,
+      "ratios": {
+        "max_velocity": 0.09249045030103654,
+        "max_acceleration": 0.3768884002258357,
+        "max_jerk": 0.7942116720977581
+      },
+      "valid": true
+    },
+    {
+      "task": 134,
+      "part": 1,
+      "ratios": {
+        "max_velocity": 0.05097442104020229,
+        "max_acceleration": 0.35127288286806196,
+        "max_jerk": 1.1467338873658548
+      },
+      "valid": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "Fixed-input timing optimization only; 6 problems, 5 measured repetitions per solver after warmup, alternating order, single-thread BLAS. Excludes native planning, polishing and validation. Observational local benchmark, not a confidence interval.",
+  "median_wall_s": {
+    "slsqp": 1.2471396014989296,
+    "conic": 0.03187285549938679
+  },
+  "median_cpu_s": {
+    "slsqp": 1.2470427605000012,
+    "conic": 0.03186997750000131
+  },
+  "median_wall_ratio": 39.128580792609675,
+  "maximum_objective_delta_s": 7.011022873371076e-10
+}

@@ -1,0 +1,6 @@
+{
+  "count": 135,
+  "curobo_source": "offline continuous candidates with corrected baseline fallback",
+  "reference_source": "original recorded Barilla",
+  "selection": "exact-export valid and strictly faster only"
+}

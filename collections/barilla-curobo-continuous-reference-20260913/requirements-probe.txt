@@ -1,0 +1,3 @@
+clarabel==0.11.1
+# Other dependencies come from the pinned cuRobo/TrajectoryPlanner environment.
+# Probe used /tmp/curobo-rnd/solver-deps; no planner environment dependency was changed.

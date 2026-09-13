@@ -1,0 +1,13 @@
+{
+  "browser": "user Chrome",
+  "url": "http://localhost:8001/collections/barilla-curobo-continuous-reference-20260913/index.html",
+  "task_id": 2,
+  "checked": [
+    "270 rows / 135 pairs",
+    "improved task 2 selected at 6.32 seconds",
+    "reference task 2 selected at 2.57 seconds",
+    "both 3D paths and charts rendered",
+    "returned to improved task 2 and Velocity chart"
+  ],
+  "scope": "Manual browser inspection through CUA; no production planner integration claim"
+}

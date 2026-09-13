@@ -677,7 +677,7 @@
     }
   ],
   "count": 135,
-  "curobo_source": "barilla-curobo-rnd-numeric-fk-20260913",
+  "curobo_source": "barilla-curobo-joint-limits-20260913",
   "reference_source": "original root Barilla collection",
   "note": "Reference paths are original recorded results, not newly qualified cuRobo outputs. Source trajectory and representation files are copied byte-for-byte; sorting uses cuRobo metrics for each pair."
 }

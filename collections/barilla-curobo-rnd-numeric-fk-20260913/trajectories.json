@@ -4,7 +4,7 @@
     "desired_id": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29",
     "task_id": 0,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.143915039322891,
     "num_parts": 3,
@@ -16,8 +16,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 12.457145544001833,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.522210459392909
+    "red": true,
+    "mileage_sum_rad": 8.522210459392909,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7-curobo",
@@ -84,7 +86,7 @@
     "desired_id": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815",
     "task_id": 4,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.2826273122426555,
     "num_parts": 3,
@@ -96,8 +98,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.239566572003241,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.928510755166382
+    "red": true,
+    "mileage_sum_rad": 4.928510755166382,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19-curobo",
@@ -204,7 +208,7 @@
     "desired_id": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05",
     "task_id": 10,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.119729326076046,
     "num_parts": 3,
@@ -216,15 +220,17 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.6064142550021643,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 6.086352598125272
+    "red": true,
+    "mileage_sum_rad": 6.086352598125272,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95-curobo",
     "desired_id": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95",
     "task_id": 11,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.968811576674384,
     "num_parts": 3,
@@ -236,8 +242,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 5.484060576003685,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.359679629782661
+    "red": true,
+    "mileage_sum_rad": 10.359679629782661,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43-curobo",
@@ -264,7 +272,7 @@
     "desired_id": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf",
     "task_id": 13,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.34800433003787,
     "num_parts": 3,
@@ -276,8 +284,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.8651092709988006,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.5223592367606
+    "red": true,
+    "mileage_sum_rad": 8.5223592367606,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838-curobo",
@@ -324,7 +334,7 @@
     "desired_id": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b",
     "task_id": 16,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.160005133505667,
     "num_parts": 3,
@@ -336,8 +346,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.55001365699718,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 5.567994443297875
+    "red": true,
+    "mileage_sum_rad": 5.567994443297875,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06-curobo",
@@ -384,7 +396,7 @@
     "desired_id": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473",
     "task_id": 19,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.532888557572821,
     "num_parts": 3,
@@ -396,8 +408,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.086163373001909,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.804301346889705
+    "red": true,
+    "mileage_sum_rad": 8.804301346889705,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857-curobo",
@@ -444,7 +458,7 @@
     "desired_id": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583",
     "task_id": 22,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 9.278462617507417,
     "num_parts": 3,
@@ -456,8 +470,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.25599424399843,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.646338312466924
+    "red": true,
+    "mileage_sum_rad": 10.646338312466924,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e-curobo",
@@ -504,7 +520,7 @@
     "desired_id": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018",
     "task_id": 25,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 8.638641755725553,
     "num_parts": 3,
@@ -516,8 +532,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.245304666001175,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.580559934139508
+    "red": true,
+    "mileage_sum_rad": 10.580559934139508,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74-curobo",
@@ -564,7 +582,7 @@
     "desired_id": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c",
     "task_id": 28,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 10.412850827211612,
     "num_parts": 3,
@@ -576,8 +594,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 5.496191856997029,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.407233466000896
+    "red": true,
+    "mileage_sum_rad": 10.407233466000896,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c-curobo",
@@ -624,7 +644,7 @@
     "desired_id": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368",
     "task_id": 31,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 9.170204301953126,
     "num_parts": 3,
@@ -636,8 +656,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 5.180903524000314,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 11.077349825024621
+    "red": true,
+    "mileage_sum_rad": 11.077349825024621,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4-curobo",
@@ -684,7 +706,7 @@
     "desired_id": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7",
     "task_id": 34,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 8.943377541710428,
     "num_parts": 3,
@@ -696,8 +718,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 5.096857579002972,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.368611372522556
+    "red": true,
+    "mileage_sum_rad": 10.368611372522556,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1-curobo",
@@ -744,7 +768,7 @@
     "desired_id": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0",
     "task_id": 37,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 9.009189615159332,
     "num_parts": 3,
@@ -756,15 +780,17 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.2850826299982145,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 11.032363709714376
+    "red": true,
+    "mileage_sum_rad": 11.032363709714376,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7-curobo",
     "desired_id": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7",
     "task_id": 38,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.743381948603546,
     "num_parts": 3,
@@ -776,8 +802,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 5.664531066999189,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 6.376260454232064
+    "red": true,
+    "mileage_sum_rad": 6.376260454232064,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e-curobo",
@@ -804,7 +832,7 @@
     "desired_id": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea",
     "task_id": 40,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.046631652970365,
     "num_parts": 3,
@@ -816,15 +844,17 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 5.415282740999828,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 7.7724542498261995
+    "red": true,
+    "mileage_sum_rad": 7.7724542498261995,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e-curobo",
     "desired_id": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e",
     "task_id": 41,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.500190465627585,
     "num_parts": 3,
@@ -836,8 +866,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.6882187990049715,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 5.413316929324113
+    "red": true,
+    "mileage_sum_rad": 5.413316929324113,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1-curobo",
@@ -864,7 +896,7 @@
     "desired_id": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94",
     "task_id": 43,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.923608446576535,
     "num_parts": 2,
@@ -876,15 +908,17 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 2.7848229610026465,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 5.307137559690747
+    "red": true,
+    "mileage_sum_rad": 5.307137559690747,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352-curobo",
     "desired_id": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352",
     "task_id": 44,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.5325627780760405,
     "num_parts": 3,
@@ -896,8 +930,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.9235957639975823,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.785339144546342
+    "red": true,
+    "mileage_sum_rad": 4.785339144546342,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af-curobo",
@@ -944,7 +980,7 @@
     "desired_id": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f",
     "task_id": 47,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.992662924597836,
     "num_parts": 3,
@@ -956,15 +992,17 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.50315075799881,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.5217959387672084
+    "red": true,
+    "mileage_sum_rad": 3.5217959387672084,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7-curobo",
     "desired_id": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7",
     "task_id": 48,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.541029783501285,
     "num_parts": 3,
@@ -976,8 +1014,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 5.762185360006697,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.320436419658453
+    "red": true,
+    "mileage_sum_rad": 8.320436419658453,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328-curobo",
@@ -1004,7 +1044,7 @@
     "desired_id": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a",
     "task_id": 50,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.019078273054041,
     "num_parts": 3,
@@ -1016,15 +1056,17 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.755566452993662,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 6.200532872130925
+    "red": true,
+    "mileage_sum_rad": 6.200532872130925,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752-curobo",
     "desired_id": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752",
     "task_id": 51,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 14.5654883945218,
     "num_parts": 3,
@@ -1036,15 +1078,17 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 49.232629245998396,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 12.975812990105359
+    "red": true,
+    "mileage_sum_rad": 12.975812990105359,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b-curobo",
     "desired_id": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b",
     "task_id": 52,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.035871320346546,
     "num_parts": 2,
@@ -1056,8 +1100,10 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 2.7580491400003666,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 6.0668662295964655
+    "red": true,
+    "mileage_sum_rad": 6.0668662295964655,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8-curobo",
@@ -1084,7 +1130,7 @@
     "desired_id": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df",
     "task_id": 54,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 8.427331564590878,
     "num_parts": 2,
@@ -1096,8 +1142,10 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 3.5851342309979373,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.137970607526473
+    "red": true,
+    "mileage_sum_rad": 10.137970607526473,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852-curobo",
@@ -1144,7 +1192,7 @@
     "desired_id": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2",
     "task_id": 57,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 13.7185345500158,
     "num_parts": 3,
@@ -1156,8 +1204,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 15.672043908998603,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 12.680035390334039
+    "red": true,
+    "mileage_sum_rad": 12.680035390334039,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c-curobo",
@@ -1184,7 +1234,7 @@
     "desired_id": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22",
     "task_id": 59,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.64912491056116,
     "num_parts": 3,
@@ -1196,15 +1246,17 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.071340672999213,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.283724677290351
+    "red": true,
+    "mileage_sum_rad": 10.283724677290351,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874-curobo",
     "desired_id": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874",
     "task_id": 60,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 12.938894473530674,
     "num_parts": 3,
@@ -1216,15 +1268,17 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 14.194642924005166,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 13.902245601597855
+    "red": true,
+    "mileage_sum_rad": 13.902245601597855,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610-curobo",
     "desired_id": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610",
     "task_id": 61,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 11.255714004180629,
     "num_parts": 2,
@@ -1236,8 +1290,10 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 4.477831922995392,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.962834427561194
+    "red": true,
+    "mileage_sum_rad": 10.962834427561194,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e-curobo",
@@ -1264,7 +1320,7 @@
     "desired_id": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4",
     "task_id": 63,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.223500618156949,
     "num_parts": 2,
@@ -1276,15 +1332,17 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 3.1888222839988885,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 10.360201042486754
+    "red": true,
+    "mileage_sum_rad": 10.360201042486754,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae-curobo",
     "desired_id": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae",
     "task_id": 64,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.061806528935125,
     "num_parts": 3,
@@ -1296,8 +1354,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.306106970005203,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 9.095205256917787
+    "red": true,
+    "mileage_sum_rad": 9.095205256917787,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b-curobo",
@@ -1344,7 +1404,7 @@
     "desired_id": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377",
     "task_id": 67,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 9.14819351594792,
     "num_parts": 3,
@@ -1356,8 +1416,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.187814005999826,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 9.789340851038526
+    "red": true,
+    "mileage_sum_rad": 9.789340851038526,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743-curobo",
@@ -1404,7 +1466,7 @@
     "desired_id": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae",
     "task_id": 70,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.361743825195335,
     "num_parts": 3,
@@ -1416,8 +1478,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.293618470997899,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.6692653100598096
+    "red": true,
+    "mileage_sum_rad": 3.6692653100598096,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669-curobo",
@@ -1464,7 +1528,7 @@
     "desired_id": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743",
     "task_id": 73,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.859947078309004,
     "num_parts": 3,
@@ -1476,8 +1540,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.778775755999959,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 9.427212547458101
+    "red": true,
+    "mileage_sum_rad": 9.427212547458101,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b-curobo",
@@ -1524,7 +1590,7 @@
     "desired_id": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c",
     "task_id": 76,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 7.321299678546556,
     "num_parts": 3,
@@ -1536,8 +1602,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 4.940760347999458,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 9.37699785054272
+    "red": true,
+    "mileage_sum_rad": 9.37699785054272,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406-curobo",
@@ -1584,7 +1652,7 @@
     "desired_id": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef",
     "task_id": 79,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.8890091825647914,
     "num_parts": 3,
@@ -1596,8 +1664,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 4.649134028994013,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.969747801581732
+    "red": true,
+    "mileage_sum_rad": 8.969747801581732,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5-curobo",
@@ -1664,7 +1734,7 @@
     "desired_id": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101",
     "task_id": 83,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.733956047943974,
     "num_parts": 3,
@@ -1676,8 +1746,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 4.681123547001334,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 8.203266822611171
+    "red": true,
+    "mileage_sum_rad": 8.203266822611171,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6-curobo",
@@ -1744,7 +1816,7 @@
     "desired_id": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65",
     "task_id": 87,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.533608182783484,
     "num_parts": 3,
@@ -1756,8 +1828,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.79922420100047,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.832200065836946
+    "red": true,
+    "mileage_sum_rad": 4.832200065836946,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123-curobo",
@@ -1784,7 +1858,7 @@
     "desired_id": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d",
     "task_id": 89,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.754689875921548,
     "num_parts": 2,
@@ -1796,15 +1870,17 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 2.9729334210060188,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.746199620312831
+    "red": true,
+    "mileage_sum_rad": 4.746199620312831,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3-curobo",
     "desired_id": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3",
     "task_id": 90,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.345363167494196,
     "num_parts": 3,
@@ -1816,8 +1892,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.053579510000418,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.277792323618351
+    "red": true,
+    "mileage_sum_rad": 4.277792323618351,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1-curobo",
@@ -1844,7 +1922,7 @@
     "desired_id": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec",
     "task_id": 92,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.441776433449885,
     "num_parts": 2,
@@ -1856,15 +1934,17 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 3.437128773999575,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.198210011923335
+    "red": true,
+    "mileage_sum_rad": 4.198210011923335,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52-curobo",
     "desired_id": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52",
     "task_id": 93,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 6.52358788765403,
     "num_parts": 3,
@@ -1876,8 +1956,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.864577475003898,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.301072606578342
+    "red": true,
+    "mileage_sum_rad": 4.301072606578342,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716-curobo",
@@ -1924,7 +2006,7 @@
     "desired_id": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e",
     "task_id": 96,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.405751077425594,
     "num_parts": 3,
@@ -1936,8 +2018,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.811944136999955,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.6741346361109013
+    "red": true,
+    "mileage_sum_rad": 3.6741346361109013,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e-curobo",
@@ -1984,7 +2068,7 @@
     "desired_id": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79",
     "task_id": 99,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.428109288832851,
     "num_parts": 3,
@@ -1996,8 +2080,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.578659054997843,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.8405109452697963
+    "red": true,
+    "mileage_sum_rad": 3.8405109452697963,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9-curobo",
@@ -2044,7 +2130,7 @@
     "desired_id": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a",
     "task_id": 102,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 11.42897847879485,
     "num_parts": 3,
@@ -2056,8 +2142,10 @@
     "tag": "manipulator-part MoveToExit,MoveToNext,MoveToPlace",
     "compute_s": 7.059703169004933,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 12.739972374274837
+    "red": true,
+    "mileage_sum_rad": 12.739972374274837,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92-curobo",
@@ -2204,7 +2292,7 @@
     "desired_id": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a",
     "task_id": 110,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 8.242958875392022,
     "num_parts": 3,
@@ -2216,8 +2304,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.456223237000813,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 7.914260917296633
+    "red": true,
+    "mileage_sum_rad": 7.914260917296633,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13-curobo",
@@ -2264,7 +2354,7 @@
     "desired_id": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432",
     "task_id": 113,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.996480672563134,
     "num_parts": 3,
@@ -2276,8 +2366,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.887285195000004,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 2.899823454141583
+    "red": true,
+    "mileage_sum_rad": 2.899823454141583,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52-curobo",
@@ -2324,7 +2416,7 @@
     "desired_id": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8",
     "task_id": 116,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.2584693985348965,
     "num_parts": 3,
@@ -2336,8 +2428,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 3.495124091001344,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.280325874951592
+    "red": true,
+    "mileage_sum_rad": 4.280325874951592,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c-curobo",
@@ -2364,7 +2458,7 @@
     "desired_id": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63",
     "task_id": 118,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.213580206473606,
     "num_parts": 2,
@@ -2376,15 +2470,17 @@
     "tag": "manipulator-part MoveToExit,MoveToWait",
     "compute_s": 3.0550938390006195,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.175712040602403
+    "red": true,
+    "mileage_sum_rad": 4.175712040602403,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b-curobo",
     "desired_id": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b",
     "task_id": 119,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.6527349026054985,
     "num_parts": 3,
@@ -2396,8 +2492,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.355137954000384,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.53695414805377
+    "red": true,
+    "mileage_sum_rad": 3.53695414805377,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974-curobo",
@@ -2444,7 +2542,7 @@
     "desired_id": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df",
     "task_id": 122,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.50344066622811,
     "num_parts": 3,
@@ -2456,8 +2554,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.696975705999648,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 4.4808285981217875
+    "red": true,
+    "mileage_sum_rad": 4.4808285981217875,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e-curobo",
@@ -2504,7 +2604,7 @@
     "desired_id": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294",
     "task_id": 125,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.2164728589300156,
     "num_parts": 3,
@@ -2516,8 +2616,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.5983839179971255,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.935564939422717
+    "red": true,
+    "mileage_sum_rad": 3.935564939422717,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e-curobo",
@@ -2564,7 +2666,7 @@
     "desired_id": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326",
     "task_id": 128,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 5.766966069736021,
     "num_parts": 3,
@@ -2576,8 +2678,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.073999050000566,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 2.338426359740083
+    "red": true,
+    "mileage_sum_rad": 2.338426359740083,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b-curobo",
@@ -2624,7 +2728,7 @@
     "desired_id": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d",
     "task_id": 131,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 4.917572395243689,
     "num_parts": 3,
@@ -2636,8 +2740,10 @@
     "tag": "manipulator-part MoveToExit,MoveToPickHover,MoveToPick",
     "compute_s": 4.4032238380023045,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 3.349202246555303
+    "red": true,
+    "mileage_sum_rad": 3.349202246555303,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   },
   {
     "id": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d-curobo",
@@ -2684,7 +2790,7 @@
     "desired_id": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418",
     "task_id": 134,
     "status": 70,
-    "planner_status": "SOLVED",
+    "planner_status": "SOLVED \u00b7 recorded jerk cap exceeded (later audit)",
     "model": "aubo-is25",
     "duration": 1.579813139875219,
     "num_parts": 2,
@@ -2696,7 +2802,9 @@
     "tag": "manipulator-part MoveToNext,MoveToPick",
     "compute_s": 2.7691872340001282,
     "backend": "CuRoboPlanner",
-    "red": false,
-    "mileage_sum_rad": 0.4475486934414552
+    "red": true,
+    "mileage_sum_rad": 0.4475486934414552,
+    "recorded_joint_jerk_valid": false,
+    "recorded_planner_status": "SOLVED"
   }
 ]

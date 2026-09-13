@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NAME = 'barilla-curobo-reference-20260913'
-CURRENT = ROOT / 'collections/barilla-curobo-rnd-numeric-fk-20260913'
+CURRENT = ROOT / 'collections/barilla-curobo-joint-limits-20260913'
 OUT = ROOT / 'collections' / NAME
 
 def read(path):
@@ -45,8 +45,9 @@ def main():
     shutil.copytree(ROOT / 'robots', OUT / 'robots', dirs_exist_ok=True)
     page = (CURRENT / 'index.html').read_text()
     page = page.replace('<title>Trajectory Studio - 6DOF Robot Trajectory Viewer</title>', '<title>cuRobo + Reference pairs · Trajectory Studio</title>')
-    page = page.replace('href="report.html"', 'href="../barilla-curobo-rnd-numeric-fk-20260913/report.html"').replace('135-task results →', 'Latest cuRobo benchmark →')
+    page = page.replace('href="report.html"', f'href="../{CURRENT.name}/report.html"').replace('135-task results →', 'Latest cuRobo benchmark →')
     page = page.replace('<span>↑↓ select</span>', '<span>cuRobo / ref pairs · ↑↓ select</span>')
+    page = page.replace('href="corpus.html"', 'href="../../corpus.html"').replace('href="collections/', 'href="../')
     page = page.replace('data-sort="compute"', 'title="Sort pairs by cuRobo compute time" data-sort="compute"').replace('data-sort="mileage"', 'title="Sort pairs by cuRobo mileage" data-sort="mileage"')
     (OUT / 'index.html').write_text(page)
     (OUT / 'pairing.json').write_text(json.dumps({'pairs': evidence, 'count':135,
