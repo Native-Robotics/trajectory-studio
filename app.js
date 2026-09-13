@@ -5,7 +5,7 @@
 
 import * as THREE from 'three';
 import {sortRows, destinationLabel, trajectoryLabel, arrowDelta, installPanelResize} from './barilla-ui.mjs';
-import { TrajectoryViewer } from './viewer.js?v=36';
+import { TrajectoryViewer } from './viewer.js?v=idle-render-1';
 import { TrajectoryChart } from './charts.js?v=36';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
 import { parseTraj, parseCSV } from './readers.js?v=36';
