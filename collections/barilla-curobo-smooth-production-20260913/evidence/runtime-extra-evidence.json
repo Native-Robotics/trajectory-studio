@@ -1,0 +1,24 @@
+{
+  "python": "3.12.13 (main, Jun 23 2026, 15:18:55) [Clang 22.1.3 ]",
+  "versions": {
+    "nrutils": "0.1.0",
+    "clarabel": "0.11.1",
+    "psutil": "7.2.2",
+    "nvidia-ml-py": "13.610.43",
+    "python-fcl": "0.7.0.11"
+  },
+  "nrutils_python_sha256": {
+    "__init__.py": "d248daa90530cbca41bd5500c97e620fd409cb3b1e65154a6b8e472eb8855387",
+    "codetimer.py": "55a647ac53474b7b48faa95d28c23581fecb4091b5fa2d52fb81ccf2f78019b6",
+    "config.py": "660a4c39dc3bf52ff72dfc86728243500e2a4e5c9eb90ba2e23a9ddcb0c063f5",
+    "dict_npstructarray_converters.py": "c34ed205f12301b2d69ad708cd615fa02d2bc3c8b28fffedbb17b03dcff12f13",
+    "inspect_utils.py": "142afd679bbafac15089b2f4dce9f19e8992058a46f2b94b937345e84aa8115a",
+    "log.py": "369d150bec18815f89c67465d5e067b527d52dd5beba18a14cca98e3bae6ee2a",
+    "loggable.py": "c422c44ed77e18c5e995db4a3e4acc41aa6339ca866d9867eae5426abcf75efc",
+    "managedthread.py": "2f85742af11bf623baa2db96e3a6bd9ca40b8d26c44b5e977bbf1f9806b6e65d",
+    "object_composer.py": "6ab7ce14f26c729a45de0abe57ff9c90f7140437efc6dc0f72bffa54939a7c0b",
+    "rotations.py": "3ae2559006c48ed01653478a4920993089a3cf26d91e7a9e088708bd99fdbe06",
+    "spline.py": "f5875fd3b89b14357b9df1f954b815f8532d0d34f784f8079b86f26a2324cf67",
+    "unit_conversion.py": "876af640429af61add8d18c543e58b3b2ce2c7f85e6e667be43e3bb5c8aa83f7"
+  }
+}

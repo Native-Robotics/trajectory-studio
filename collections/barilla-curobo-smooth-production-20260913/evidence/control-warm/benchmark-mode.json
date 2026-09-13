@@ -1,0 +1,18 @@
+{
+  "mode": "control",
+  "kind": "warm",
+  "task_ids": [
+    3,
+    4,
+    21,
+    54,
+    59,
+    69,
+    95,
+    118,
+    119,
+    133
+  ],
+  "runtime_override": "continuous_motion flag only",
+  "wrapper_sha256": "7d256bd0dfb0ca8305adc4fdaf0573982aabf34599dae9c930facc2f8104a356"
+}
