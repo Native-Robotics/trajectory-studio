@@ -3,9 +3,9 @@
   "rows": 270,
   "pairs": 135,
   "http_byte_identical_files": 545,
-  "core_commit": "49701efe141896cfdac9dad6d32ce6e5c585ad09",
-  "source_run": "curobo-jerk-budget-native-full-20260913",
+  "core_commit": "ffa3c3dd473bf7271114036831474cb0067f4816",
+  "source_run": "curobo-smoothing-recovery-native-full-20260913",
   "independently_audited_exports": 135,
   "compute_comparisons_excluded": true,
-  "browser_verification": "Chrome:270 paired rows,267Success3original reference non-success; task29 selected11.47s;3Dpath andpositionchart rendered;report shows17budget115continuous3baseline andfast/smooth links"
+  "browser_verification": "Chrome existing tab: task 107 selected at 6.53 s; 270 paired rows, 267 successes and three original reference non-successes; 3D scene and position chart visually inspected"
 }

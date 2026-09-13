@@ -2,13 +2,13 @@
   "complete": true,
   "source_files_verified": 108,
   "audited_exports": 135,
-  "budget_accepted": 17,
+  "budget_accepted": 18,
   "continuous_accepted": 115,
-  "baseline_retained": 3,
+  "baseline_retained": 2,
   "duration_sums": {
     "baseline": 800.4225477452111,
     "fast": 787.2948531587056,
-    "smooth": 792.9276121718567
+    "smooth": 792.8637655009734
   },
   "compute_comparisons_excluded": true,
   "rows": [
@@ -3993,20 +3993,20 @@
         "max_acceleration_jump_rad_s2": 1.347391039959909e-10
       },
       "smooth": {
-        "duration_s": 6.592415950380296,
-        "rms_jerk_rad_s3": 6.462602322527524,
-        "peak_jerk_rad_s3": 27.15450855385724,
-        "integrated_squared_jerk": 275.33376037487255,
+        "duration_s": 6.528569279496937,
+        "rms_jerk_rad_s3": 6.139472206390973,
+        "peak_jerk_rad_s3": 25.7967831251439,
+        "integrated_squared_jerk": 246.08213857585935,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.141872337976937e-14,
-        "max_acceleration_jump_rad_s2": 7.518957350879908e-12
+        "max_velocity_jump_rad_s": 2.389243898209967e-13,
+        "max_acceleration_jump_rad_s2": 6.382648973669327e-11
       },
-      "budget_accepted": false,
+      "budget_accepted": true,
       "continuous_accepted": false,
       "byte_identical_to_fast": false,
-      "byte_identical_to_baseline": true,
-      "reason": "Jerk-budget candidate is not shorter than baseline",
-      "audited_sha256": "e2457385a884b77b51083709a2117ed3d68482013d07114e386c042f98b15837"
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "5875dc6e313759276b9c4eb4d10c90493ded35dbb876c6bf241eb2f75a061f96"
     },
     {
       "task_id": 108,
@@ -5007,5 +5007,8 @@
       "reason": null,
       "audited_sha256": "b099df8272999f098a0d44b0fb6b4026f32c9133016617828d987dab68f7e370"
     }
+  ],
+  "changed_from_previous_smooth": [
+    107
   ]
 }

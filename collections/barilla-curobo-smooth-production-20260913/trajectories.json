@@ -7363,7 +7363,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.592415950380296,
+    "duration": 6.528569279496937,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -7387,9 +7387,9 @@
     "smoothing_sigma": 10,
     "geometry_anchor_count": 3,
     "geometry_samples": null,
-    "stopped_path_retiming_selected": false,
+    "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
-    "jerk_budget_selected": false,
+    "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
   {
