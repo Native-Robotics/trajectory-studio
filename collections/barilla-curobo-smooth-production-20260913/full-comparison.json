@@ -6,11 +6,12 @@
   "continuous_accepted": 115,
   "local_clock_accepted": 1,
   "joint_polish_accepted": 1,
+  "continuous_clock_polish_accepted": 39,
   "baseline_retained": 0,
   "duration_sums": {
     "baseline": 800.4225477452111,
     "fast": 787.2948531587056,
-    "smooth": 792.5422668806767
+    "smooth": 785.4236383958096
   },
   "compute_comparisons_excluded": true,
   "rows": [
@@ -36,6 +37,24 @@
         "max_acceleration_jump_rad_s2": 4.279771405026273e-10
       },
       "smooth": {
+        "duration_s": 6.017444321474992,
+        "rms_jerk_rad_s3": 4.76569951586139,
+        "peak_jerk_rad_s3": 16.471678928715523,
+        "integrated_squared_jerk": 136.66754479607008,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.7151616380010589e-12,
+        "max_acceleration_jump_rad_s2": 4.680504608889358e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "61a833b4ef30d3fed1710a6755d6325f376e823b89467350edf483ca400a663f",
+      "previous_smooth": {
         "duration_s": 6.1882433969296535,
         "rms_jerk_rad_s3": 5.016525807730327,
         "peak_jerk_rad_s3": 19.868938991012183,
@@ -43,15 +62,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 2.9128444890709053e-13,
         "max_acceleration_jump_rad_s2": 4.279771405026273e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "6c60dde4dab47e52e8d6d991274d17d146e37aec05dc055a10dd5079d192a151"
+      }
     },
     {
       "task_id": 1,
@@ -75,6 +86,24 @@
         "max_acceleration_jump_rad_s2": 5.967429328457285e-10
       },
       "smooth": {
+        "duration_s": 6.000587510640406,
+        "rms_jerk_rad_s3": 3.6366870913911313,
+        "peak_jerk_rad_s3": 11.610595723835049,
+        "integrated_squared_jerk": 79.36072812200784,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.811176209010057e-12,
+        "max_acceleration_jump_rad_s2": 6.891764436911529e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "b0fed027e794924d7a089ecf38602161678437b4b2997cb9f6fe46ca6cb7fbfa",
+      "previous_smooth": {
         "duration_s": 6.088888970772193,
         "rms_jerk_rad_s3": 3.828091677333781,
         "peak_jerk_rad_s3": 16.074444892753927,
@@ -82,15 +111,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 4.367294695321362e-13,
         "max_acceleration_jump_rad_s2": 5.967429328457285e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "fbb26c4d61c61d45373b19b4387c4c56b5a07e62cf9c268038e38b950cd6f132"
+      }
     },
     {
       "task_id": 2,
@@ -126,10 +147,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "61995a4e383b3c6e407dc22e2c9bb40174d591621e967d9fec70243547cb0d64"
+      "audited_sha256": "61995a4e383b3c6e407dc22e2c9bb40174d591621e967d9fec70243547cb0d64",
+      "previous_smooth": {
+        "duration_s": 6.322808730335006,
+        "rms_jerk_rad_s3": 3.781434790290327,
+        "peak_jerk_rad_s3": 16.228109852191174,
+        "integrated_squared_jerk": 90.41141687737782,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 9.023060076884803e-13,
+        "max_acceleration_jump_rad_s2": 2.7488782108142727e-10
+      }
     },
     {
       "task_id": 3,
@@ -165,10 +196,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "cffd405da42db35c2049163af09ff09b10f0c3396d2cb4c32f74d2e5be60e7ea"
+      "audited_sha256": "cffd405da42db35c2049163af09ff09b10f0c3396d2cb4c32f74d2e5be60e7ea",
+      "previous_smooth": {
+        "duration_s": 4.546062621820322,
+        "rms_jerk_rad_s3": 4.6275681308411745,
+        "peak_jerk_rad_s3": 19.100879952526622,
+        "integrated_squared_jerk": 97.35114342603535,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.114714096200666e-13,
+        "max_acceleration_jump_rad_s2": 3.2693847412321175e-10
+      }
     },
     {
       "task_id": 4,
@@ -204,10 +245,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "db72defc8a218a2417d0b33599364875608a3467bcab675646da22bf205ba8b6"
+      "audited_sha256": "db72defc8a218a2417d0b33599364875608a3467bcab675646da22bf205ba8b6",
+      "previous_smooth": {
+        "duration_s": 5.953543191450587,
+        "rms_jerk_rad_s3": 4.546252793785002,
+        "peak_jerk_rad_s3": 11.680652046694542,
+        "integrated_squared_jerk": 123.05029821616729,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.200075982673642e-13,
+        "max_acceleration_jump_rad_s2": 7.387772107380973e-11
+      }
     },
     {
       "task_id": 5,
@@ -243,10 +294,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "fb67e9be89447ec8945f480ae0cb1f92f966ed8677b623508cbdf22f78595758"
+      "audited_sha256": "fb67e9be89447ec8945f480ae0cb1f92f966ed8677b623508cbdf22f78595758",
+      "previous_smooth": {
+        "duration_s": 6.071282771042714,
+        "rms_jerk_rad_s3": 4.61890767329259,
+        "peak_jerk_rad_s3": 17.29286221196175,
+        "integrated_squared_jerk": 129.52661716565493,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.8199664825478976e-13,
+        "max_acceleration_jump_rad_s2": 6.707258637383973e-10
+      }
     },
     {
       "task_id": 6,
@@ -270,6 +331,24 @@
         "max_acceleration_jump_rad_s2": 3.171935257133553e-10
       },
       "smooth": {
+        "duration_s": 4.504478416202608,
+        "rms_jerk_rad_s3": 3.7972544927638627,
+        "peak_jerk_rad_s3": 9.566730310988502,
+        "integrated_squared_jerk": 64.95071249040906,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.056932319443149e-12,
+        "max_acceleration_jump_rad_s2": 8.364145684110029e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "fbd4e74d13b6fd336a60297183b3c1c35ed58251757279e9e29517040e16e7c1",
+      "previous_smooth": {
         "duration_s": 4.799989775217069,
         "rms_jerk_rad_s3": 3.997109995225413,
         "peak_jerk_rad_s3": 12.370135504794856,
@@ -277,15 +356,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 1.9667600881234648e-13,
         "max_acceleration_jump_rad_s2": 3.171935257133553e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "fb771c70bc6e0e8d5e68ae12e9e858e5c4cfa261977d3e3420415bf53b0caa8c"
+      }
     },
     {
       "task_id": 7,
@@ -309,6 +380,24 @@
         "max_acceleration_jump_rad_s2": 6.915985006905601e-10
       },
       "smooth": {
+        "duration_s": 5.922267083150247,
+        "rms_jerk_rad_s3": 3.9206090355170082,
+        "peak_jerk_rad_s3": 11.656323459539124,
+        "integrated_squared_jerk": 91.0322049718321,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.3840985569355553e-12,
+        "max_acceleration_jump_rad_s2": 6.8526657681644565e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "3d164523a00895cb8876a4dfadbcc6d342d14b1fa73927e278f4cd42d66d073d",
+      "previous_smooth": {
         "duration_s": 6.001046855667981,
         "rms_jerk_rad_s3": 4.126956880349095,
         "peak_jerk_rad_s3": 17.65827387450978,
@@ -316,15 +405,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.9898306053155466e-13,
         "max_acceleration_jump_rad_s2": 6.915985006905601e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "3d6c1c694fb1762836a22507dcc4f2ca33f54b9c33bf40973b430dd82696b967"
+      }
     },
     {
       "task_id": 8,
@@ -360,10 +441,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "167aedb1ccf902f60523d03fb30c5fa447cc4c78667e76393187907a0ce30ea9"
+      "audited_sha256": "167aedb1ccf902f60523d03fb30c5fa447cc4c78667e76393187907a0ce30ea9",
+      "previous_smooth": {
+        "duration_s": 6.51492454958434,
+        "rms_jerk_rad_s3": 4.452013219148597,
+        "peak_jerk_rad_s3": 14.301980296955335,
+        "integrated_squared_jerk": 129.12855193907606,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.204103649068202e-13,
+        "max_acceleration_jump_rad_s2": 2.609848882145771e-10
+      }
     },
     {
       "task_id": 9,
@@ -399,10 +490,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "5126880446facff5dca1c74f9118152aa4793e17e67a47c3be7b75d378d08714"
+      "audited_sha256": "5126880446facff5dca1c74f9118152aa4793e17e67a47c3be7b75d378d08714",
+      "previous_smooth": {
+        "duration_s": 6.790413599804433,
+        "rms_jerk_rad_s3": 2.942775270142345,
+        "peak_jerk_rad_s3": 16.22810986692561,
+        "integrated_squared_jerk": 58.80448125673176,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.581579477440755e-13,
+        "max_acceleration_jump_rad_s2": 3.142538451683663e-10
+      }
     },
     {
       "task_id": 10,
@@ -438,10 +539,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "861d9030ccd4125ce35c5178d50fe9a7d5bd442b47fb7d2d1dd7e2f4e4ae46fa"
+      "audited_sha256": "861d9030ccd4125ce35c5178d50fe9a7d5bd442b47fb7d2d1dd7e2f4e4ae46fa",
+      "previous_smooth": {
+        "duration_s": 5.465155453307632,
+        "rms_jerk_rad_s3": 4.775949507756167,
+        "peak_jerk_rad_s3": 12.553795928375422,
+        "integrated_squared_jerk": 124.65852191630961,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.6290060967748799e-13,
+        "max_acceleration_jump_rad_s2": 6.950661861292434e-11
+      }
     },
     {
       "task_id": 11,
@@ -477,10 +588,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "f021be9d445cca254c5799479475122b366c4b12d9f65f5abf0b69a3eef8f875"
+      "audited_sha256": "f021be9d445cca254c5799479475122b366c4b12d9f65f5abf0b69a3eef8f875",
+      "previous_smooth": {
+        "duration_s": 7.295352515416411,
+        "rms_jerk_rad_s3": 4.201659107344974,
+        "peak_jerk_rad_s3": 9.478592838878193,
+        "integrated_squared_jerk": 128.79171014612112,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.0533006066032346e-13,
+        "max_acceleration_jump_rad_s2": 1.2318832912092034e-10
+      }
     },
     {
       "task_id": 12,
@@ -504,6 +625,24 @@
         "max_acceleration_jump_rad_s2": 2.874948828264154e-10
       },
       "smooth": {
+        "duration_s": 4.407661913685064,
+        "rms_jerk_rad_s3": 3.1478355697412366,
+        "peak_jerk_rad_s3": 6.883454118646665,
+        "integrated_squared_jerk": 43.67494350342779,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.017675989080582e-12,
+        "max_acceleration_jump_rad_s2": 1.2785147486711612e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "9c650a7f74885e2fef024bb6f0a23b7d6317e6bce3bec541d72d30d186ea5442",
+      "previous_smooth": {
         "duration_s": 4.457056907940838,
         "rms_jerk_rad_s3": 3.31351113029387,
         "peak_jerk_rad_s3": 9.87387138235104,
@@ -511,15 +650,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.9676261448230434e-13,
         "max_acceleration_jump_rad_s2": 2.874948828264154e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "6b01b0f108ec86fd4ec4592849aa29cb088e7c2a6de4b914754fbab81638a156"
+      }
     },
     {
       "task_id": 13,
@@ -543,6 +674,24 @@
         "max_acceleration_jump_rad_s2": 1.1715824699276567e-09
       },
       "smooth": {
+        "duration_s": 5.140956111469045,
+        "rms_jerk_rad_s3": 4.284758713442038,
+        "peak_jerk_rad_s3": 10.75097481469613,
+        "integrated_squared_jerk": 94.38362157541769,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.9832169498011664e-12,
+        "max_acceleration_jump_rad_s2": 1.1167187358531762e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "6e02bf25377ffcb0f1f12c610452ec2d7391faaed8f55e21cfea3979109f4dd2",
+      "previous_smooth": {
         "duration_s": 5.189888908013801,
         "rms_jerk_rad_s3": 4.510272329771237,
         "peak_jerk_rad_s3": 14.193533758858184,
@@ -550,15 +699,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 9.014733404200115e-13,
         "max_acceleration_jump_rad_s2": 1.1715824699276567e-09
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "27ab11c2b585132d3b8065fb09b605e7fa83b0812c371e3e328334838466d0f1"
+      }
     },
     {
       "task_id": 14,
@@ -594,10 +735,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "6cdf6b47a6ca8585bf6e22e2fbb3a0d0672b66902220f6c606a04bcdb9d33958"
+      "audited_sha256": "6cdf6b47a6ca8585bf6e22e2fbb3a0d0672b66902220f6c606a04bcdb9d33958",
+      "previous_smooth": {
+        "duration_s": 7.285829010854664,
+        "rms_jerk_rad_s3": 2.3391219819669042,
+        "peak_jerk_rad_s3": 16.22810985756671,
+        "integrated_squared_jerk": 39.86435257087004,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 3.6555025330245027e-13,
+        "max_acceleration_jump_rad_s2": 2.067285786999662e-10
+      }
     },
     {
       "task_id": 15,
@@ -633,10 +784,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "521c17fc10d32c188be0d505b932fdc5e64ca5ccad2f424e78e8dfc917fffdcd"
+      "audited_sha256": "521c17fc10d32c188be0d505b932fdc5e64ca5ccad2f424e78e8dfc917fffdcd",
+      "previous_smooth": {
+        "duration_s": 5.114606080082555,
+        "rms_jerk_rad_s3": 3.4479246256669387,
+        "peak_jerk_rad_s3": 23.730605625710385,
+        "integrated_squared_jerk": 60.80337931464656,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.569122857844832e-13,
+        "max_acceleration_jump_rad_s2": 6.626877961310451e-10
+      }
     },
     {
       "task_id": 16,
@@ -672,10 +833,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "c2d764e828842858ea793c6435680c53877e785f491c27a182b2670b4192a80c"
+      "audited_sha256": "c2d764e828842858ea793c6435680c53877e785f491c27a182b2670b4192a80c",
+      "previous_smooth": {
+        "duration_s": 5.443444399147502,
+        "rms_jerk_rad_s3": 2.983729118146572,
+        "peak_jerk_rad_s3": 19.517662889805067,
+        "integrated_squared_jerk": 48.46102285432165,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.611655667398963e-13,
+        "max_acceleration_jump_rad_s2": 1.1808343861096152e-09
+      }
     },
     {
       "task_id": 17,
@@ -711,10 +882,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "8079d07af9d5d08618f12dcbde94ede7caebb3e6c3dc1569572d14b844e35c05"
+      "audited_sha256": "8079d07af9d5d08618f12dcbde94ede7caebb3e6c3dc1569572d14b844e35c05",
+      "previous_smooth": {
+        "duration_s": 7.085016036623827,
+        "rms_jerk_rad_s3": 3.5491648053848386,
+        "peak_jerk_rad_s3": 11.922175696237812,
+        "integrated_squared_jerk": 89.24690623628598,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 6.65981159109208e-13,
+        "max_acceleration_jump_rad_s2": 3.161206574286979e-10
+      }
     },
     {
       "task_id": 18,
@@ -750,10 +931,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "4ca021d2a413dbd7c3f782db4be848aaad57876f7d07a62f54972d073e14dd0b"
+      "audited_sha256": "4ca021d2a413dbd7c3f782db4be848aaad57876f7d07a62f54972d073e14dd0b",
+      "previous_smooth": {
+        "duration_s": 4.589589671800295,
+        "rms_jerk_rad_s3": 3.0653732869444372,
+        "peak_jerk_rad_s3": 15.707191784719853,
+        "integrated_squared_jerk": 43.126140797932436,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.807221522956488e-13,
+        "max_acceleration_jump_rad_s2": 3.4652830604997575e-10
+      }
     },
     {
       "task_id": 19,
@@ -789,10 +980,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "950c0acfa76d383705f3ae739c4e262a7e3967644407b12784248071f9534006"
+      "audited_sha256": "950c0acfa76d383705f3ae739c4e262a7e3967644407b12784248071f9534006",
+      "previous_smooth": {
+        "duration_s": 6.312224170759199,
+        "rms_jerk_rad_s3": 4.691500838655377,
+        "peak_jerk_rad_s3": 18.851027423073695,
+        "integrated_squared_jerk": 138.9331909505725,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.0359292274300056e-13,
+        "max_acceleration_jump_rad_s2": 5.985527511971164e-11
+      }
     },
     {
       "task_id": 20,
@@ -816,6 +1017,24 @@
         "max_acceleration_jump_rad_s2": 3.3802094456802934e-10
       },
       "smooth": {
+        "duration_s": 6.874292065145212,
+        "rms_jerk_rad_s3": 4.765406511653912,
+        "peak_jerk_rad_s3": 13.092176206576163,
+        "integrated_squared_jerk": 156.10898058367076,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.673244875988189e-12,
+        "max_acceleration_jump_rad_s2": 4.410032894419658e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "05dbc15967c2cdd5fbdc510bc3c8957bac276e4b9aae4b18d1d4334fc09d65c1",
+      "previous_smooth": {
         "duration_s": 7.550111704989488,
         "rms_jerk_rad_s3": 5.3934516629302305,
         "peak_jerk_rad_s3": 32.45631393677828,
@@ -823,15 +1042,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 3.8882785879934545e-13,
         "max_acceleration_jump_rad_s2": 3.3802094456802934e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "c4d4991d35f100580a33dfc23501e54f03ce0eefaf9fa30e3b5286ff22806e66"
+      }
     },
     {
       "task_id": 21,
@@ -867,10 +1078,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "478f7833659079e444c5cce80afe06af9b019515f48b4898cfeae2f26c914903"
+      "audited_sha256": "478f7833659079e444c5cce80afe06af9b019515f48b4898cfeae2f26c914903",
+      "previous_smooth": {
+        "duration_s": 5.398783543242168,
+        "rms_jerk_rad_s3": 3.3589584484133046,
+        "peak_jerk_rad_s3": 10.265652881642785,
+        "integrated_squared_jerk": 60.91232523682613,
+        "max_position_jump_rad": 2.220446049250313e-15,
+        "max_velocity_jump_rad_s": 4.0376259803566635e-13,
+        "max_acceleration_jump_rad_s2": 4.4403364318768013e-10
+      }
     },
     {
       "task_id": 22,
@@ -894,6 +1115,24 @@
         "max_acceleration_jump_rad_s2": 3.9821407109286167e-10
       },
       "smooth": {
+        "duration_s": 5.6557921366207635,
+        "rms_jerk_rad_s3": 4.887750164223469,
+        "peak_jerk_rad_s3": 20.14445976254049,
+        "integrated_squared_jerk": 135.1174491561902,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 3.481583116791815e-12,
+        "max_acceleration_jump_rad_s2": 3.0378041166552114e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "10d0dc2bf1869f35df9bed2443411f3a11574e3a03474f0adb78fc4d486ab90a",
+      "previous_smooth": {
         "duration_s": 5.986421800509126,
         "rms_jerk_rad_s3": 5.145000181995164,
         "peak_jerk_rad_s3": 32.456313936871425,
@@ -901,15 +1140,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 7.822095858399656e-13,
         "max_acceleration_jump_rad_s2": 3.9821407109286167e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "2980458ecda9bb8425eccecdbfc894acbf3c02fa6874fb148fc012a721decb68"
+      }
     },
     {
       "task_id": 23,
@@ -933,6 +1164,24 @@
         "max_acceleration_jump_rad_s2": 6.632241422721563e-10
       },
       "smooth": {
+        "duration_s": 6.985282317597833,
+        "rms_jerk_rad_s3": 5.478546852241588,
+        "peak_jerk_rad_s3": 22.516858664912917,
+        "integrated_squared_jerk": 209.65958576591544,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.072425564492164e-12,
+        "max_acceleration_jump_rad_s2": 7.525963185983642e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "acc8c0daa26ab552a234b98390274bd5727bfd9b2646542a30024d1cec1a7be6",
+      "previous_smooth": {
         "duration_s": 7.08941157147384,
         "rms_jerk_rad_s3": 5.766891423466453,
         "peak_jerk_rad_s3": 29.63884248627076,
@@ -940,15 +1189,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 7.152889391903727e-13,
         "max_acceleration_jump_rad_s2": 6.632241422721563e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "244766aa4432fd74192a798be523466f254faf8f8a620177a36b39b77d8b9527"
+      }
     },
     {
       "task_id": 24,
@@ -972,6 +1213,24 @@
         "max_acceleration_jump_rad_s2": 1.4011242676064545e-10
       },
       "smooth": {
+        "duration_s": 5.635037795463033,
+        "rms_jerk_rad_s3": 4.1331637811978315,
+        "peak_jerk_rad_s3": 17.154859456022553,
+        "integrated_squared_jerk": 96.26359207734254,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.59843315939679e-13,
+        "max_acceleration_jump_rad_s2": 7.745226789920368e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "5dd5c886d17783716e93f3dc54d507eb860e5674bfed3ef01e99b0c5b3c7fdfa",
+      "previous_smooth": {
         "duration_s": 6.194236373545753,
         "rms_jerk_rad_s3": 4.3506987194284505,
         "peak_jerk_rad_s3": 32.45631393624187,
@@ -979,15 +1238,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 2.603989958129525e-13,
         "max_acceleration_jump_rad_s2": 1.4011242676064545e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "f80d50f44e0030c25b1d3fc556d5db4d002f208a2415ddb7e16a40f43ae5bd7f"
+      }
     },
     {
       "task_id": 25,
@@ -1011,6 +1262,24 @@
         "max_acceleration_jump_rad_s2": 8.991268449719779e-10
       },
       "smooth": {
+        "duration_s": 5.355893138785352,
+        "rms_jerk_rad_s3": 5.470657980673767,
+        "peak_jerk_rad_s3": 19.34822734121147,
+        "integrated_squared_jerk": 160.29169870654167,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 4.5502496981010245e-12,
+        "max_acceleration_jump_rad_s2": 1.4570879495209941e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "9ed4c01f85309b7a3a6c612bfe24d7e5261d9e0c40c354849bab62803555ecee",
+      "previous_smooth": {
         "duration_s": 5.517766591014236,
         "rms_jerk_rad_s3": 5.75858735064,
         "peak_jerk_rad_s3": 32.45631393705944,
@@ -1018,15 +1287,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 5.893063814710331e-13,
         "max_acceleration_jump_rad_s2": 8.991268449719779e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "8870502587d114258cbc446b6670010b1245e36f0b339b9d0a7bcefb6f0dafdd"
+      }
     },
     {
       "task_id": 26,
@@ -1062,10 +1323,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "e989b5cbc8a7c8f32ca34d3b78cbb069d1c05306da0334c982b6718c7835a671"
+      "audited_sha256": "e989b5cbc8a7c8f32ca34d3b78cbb069d1c05306da0334c982b6718c7835a671",
+      "previous_smooth": {
+        "duration_s": 9.331716986615454,
+        "rms_jerk_rad_s3": 2.247356632353781,
+        "peak_jerk_rad_s3": 16.228109850605474,
+        "integrated_squared_jerk": 47.13088023466273,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.3955837313849315e-13,
+        "max_acceleration_jump_rad_s2": 2.621633465871298e-10
+      }
     },
     {
       "task_id": 27,
@@ -1101,10 +1372,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "ea86bb8bfd6e876bcc918f4b047ea33d85e30490f5967963fe7b0cabda3d0f0c"
+      "audited_sha256": "ea86bb8bfd6e876bcc918f4b047ea33d85e30490f5967963fe7b0cabda3d0f0c",
+      "previous_smooth": {
+        "duration_s": 5.8629125528804895,
+        "rms_jerk_rad_s3": 4.435936674681396,
+        "peak_jerk_rad_s3": 30.46043171423461,
+        "integrated_squared_jerk": 115.36766216411307,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.700650896831803e-13,
+        "max_acceleration_jump_rad_s2": 5.623153533654496e-10
+      }
     },
     {
       "task_id": 28,
@@ -1128,6 +1409,24 @@
         "max_acceleration_jump_rad_s2": 1.0083339163635685e-09
       },
       "smooth": {
+        "duration_s": 5.185335126915306,
+        "rms_jerk_rad_s3": 5.73621851286329,
+        "peak_jerk_rad_s3": 20.06870071962404,
+        "integrated_squared_jerk": 170.61931874362514,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.746307821154063e-12,
+        "max_acceleration_jump_rad_s2": 2.2199776743265067e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "7b52fbedd80b4a5f957467ea277e1a9f7e9d344ded64a82f17d2559c5ff02042",
+      "previous_smooth": {
         "duration_s": 5.583117250270932,
         "rms_jerk_rad_s3": 6.038124747506063,
         "peak_jerk_rad_s3": 32.456313936644676,
@@ -1135,15 +1434,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 7.835703449579439e-13,
         "max_acceleration_jump_rad_s2": 1.0083339163635685e-09
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "e09f8ab9c59ee2b591d5cc5df19e4ce356346b4bb7a0e2b8e2bac75329a8c95b"
+      }
     },
     {
       "task_id": 29,
@@ -1179,10 +1470,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "d5cd8c799684ff57c8d3e555087b40bed5a9583faede68ca65ce6a57ebca0f9f"
+      "audited_sha256": "d5cd8c799684ff57c8d3e555087b40bed5a9583faede68ca65ce6a57ebca0f9f",
+      "previous_smooth": {
+        "duration_s": 11.473471308576196,
+        "rms_jerk_rad_s3": 3.117015528565252,
+        "peak_jerk_rad_s3": 10.983933881014488,
+        "integrated_squared_jerk": 111.47378967757551,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.1164206549350149e-13,
+        "max_acceleration_jump_rad_s2": 1.8710881375370475e-11
+      }
     },
     {
       "task_id": 30,
@@ -1206,6 +1507,24 @@
         "max_acceleration_jump_rad_s2": 6.41250894533674e-10
       },
       "smooth": {
+        "duration_s": 5.532088283441937,
+        "rms_jerk_rad_s3": 4.951997701507654,
+        "peak_jerk_rad_s3": 12.321419262217042,
+        "integrated_squared_jerk": 135.65942470748922,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 8.778468289231316e-13,
+        "max_acceleration_jump_rad_s2": 4.9765319365402405e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "766b624769c197d2633ea58e8896f099889f6f8f1c67165c7e682b2a2ed78d85",
+      "previous_smooth": {
         "duration_s": 5.581876455470234,
         "rms_jerk_rad_s3": 5.212629160610535,
         "peak_jerk_rad_s3": 22.27402159225446,
@@ -1213,15 +1532,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.631624227112753e-13,
         "max_acceleration_jump_rad_s2": 6.41250894533674e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "5f9e0b89bd915bf4c3d86a8971d16a618a97a7473aff59c822d0a2fbf68b03bd"
+      }
     },
     {
       "task_id": 31,
@@ -1257,10 +1568,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "724327d779a2b4dcb8cbc8c359f373261ac41cef88c95826b3f8548e66f97444"
+      "audited_sha256": "724327d779a2b4dcb8cbc8c359f373261ac41cef88c95826b3f8548e66f97444",
+      "previous_smooth": {
+        "duration_s": 7.846900022743627,
+        "rms_jerk_rad_s3": 2.063632884575179,
+        "peak_jerk_rad_s3": 19.51766284427339,
+        "integrated_squared_jerk": 33.416656852796024,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.850255321931995e-13,
+        "max_acceleration_jump_rad_s2": 5.351716573696007e-10
+      }
     },
     {
       "task_id": 32,
@@ -1296,10 +1617,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "32cfa09411779377009f9970d96849ef37dedbf12016cf8820e771c16e77a032"
+      "audited_sha256": "32cfa09411779377009f9970d96849ef37dedbf12016cf8820e771c16e77a032",
+      "previous_smooth": {
+        "duration_s": 7.136144408741676,
+        "rms_jerk_rad_s3": 3.7143660032398165,
+        "peak_jerk_rad_s3": 21.219593338861767,
+        "integrated_squared_jerk": 98.45392199312799,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.993993941657891e-13,
+        "max_acceleration_jump_rad_s2": 4.350671767294756e-10
+      }
     },
     {
       "task_id": 33,
@@ -1323,6 +1654,24 @@
         "max_acceleration_jump_rad_s2": 4.556047943429786e-10
       },
       "smooth": {
+        "duration_s": 5.2316613267191725,
+        "rms_jerk_rad_s3": 4.530310434027865,
+        "peak_jerk_rad_s3": 11.8250130931031,
+        "integrated_squared_jerk": 107.37311364006752,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.4111133314563518e-12,
+        "max_acceleration_jump_rad_s2": 1.1953631005499031e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "d90e70fb14f595856a18df8257ddfcac98ff8a9a6c31c4d50fdbcea546187404",
+      "previous_smooth": {
         "duration_s": 5.358798953668105,
         "rms_jerk_rad_s3": 4.768747826093453,
         "peak_jerk_rad_s3": 32.456313936326865,
@@ -1330,15 +1679,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 3.801710567175303e-13,
         "max_acceleration_jump_rad_s2": 4.556047943429786e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "5ae746a1054f14bca9afafd618a82d5c47f28ede6d84e6a479e8d683dc8485b9"
+      }
     },
     {
       "task_id": 34,
@@ -1374,10 +1715,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "f128456306b348d9f0a206428d6e8a9a6641ce30739ed6b740433798ad983e24"
+      "audited_sha256": "f128456306b348d9f0a206428d6e8a9a6641ce30739ed6b740433798ad983e24",
+      "previous_smooth": {
+        "duration_s": 5.792400798026463,
+        "rms_jerk_rad_s3": 5.281003871276183,
+        "peak_jerk_rad_s3": 30.453121920519912,
+        "integrated_squared_jerk": 161.54427679472684,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.9905066872929252e-12,
+        "max_acceleration_jump_rad_s2": 1.2290065199262526e-09
+      }
     },
     {
       "task_id": 35,
@@ -1401,6 +1752,24 @@
         "max_acceleration_jump_rad_s2": 4.428382244237028e-10
       },
       "smooth": {
+        "duration_s": 8.95184081524351,
+        "rms_jerk_rad_s3": 4.669591299306823,
+        "peak_jerk_rad_s3": 18.74493492226215,
+        "integrated_squared_jerk": 195.19563110692286,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.0538667338046435e-12,
+        "max_acceleration_jump_rad_s2": 1.4139135667834424e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "e6811a6e31c1c0af477e5c43130398a42f71522296dc4ef3937ba21e5ac09d92",
+      "previous_smooth": {
         "duration_s": 9.075308837971047,
         "rms_jerk_rad_s3": 4.915359266577241,
         "peak_jerk_rad_s3": 30.430127868891603,
@@ -1408,15 +1777,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 7.69419250534753e-13,
         "max_acceleration_jump_rad_s2": 4.428382244237028e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "955e176351438362c697febc00940d99c99cce73e34c2cf860eb64a9deca7f6f"
+      }
     },
     {
       "task_id": 36,
@@ -1440,6 +1801,24 @@
         "max_acceleration_jump_rad_s2": 3.536553854670624e-10
       },
       "smooth": {
+        "duration_s": 5.494688323618396,
+        "rms_jerk_rad_s3": 4.68138918227362,
+        "peak_jerk_rad_s3": 15.650519335362361,
+        "integrated_squared_jerk": 120.41831818008633,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.1828687003143361e-12,
+        "max_acceleration_jump_rad_s2": 6.479951528484684e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "b06c072b56a859f61ee37f00631b94b36e6470251931c0a2bd4f3e01555b1b64",
+      "previous_smooth": {
         "duration_s": 5.807303506461267,
         "rms_jerk_rad_s3": 4.9277780878017134,
         "peak_jerk_rad_s3": 32.456313936587826,
@@ -1447,15 +1826,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.989454353280376e-13,
         "max_acceleration_jump_rad_s2": 3.536553854670624e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "02b883daeb3a0e320348545ae14454225ace02bdc65f131cb675b3433782e203"
+      }
     },
     {
       "task_id": 37,
@@ -1491,10 +1862,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "6743383ffb9492b91ac1e0ed5e61f6dad67e9fae81e60e5a11215be547ea1ccb"
+      "audited_sha256": "6743383ffb9492b91ac1e0ed5e61f6dad67e9fae81e60e5a11215be547ea1ccb",
+      "previous_smooth": {
+        "duration_s": 7.797768957827686,
+        "rms_jerk_rad_s3": 2.194167800950321,
+        "peak_jerk_rad_s3": 19.517662839741647,
+        "integrated_squared_jerk": 37.541363174350984,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 8.756998227479906e-13,
+        "max_acceleration_jump_rad_s2": 4.77557243749871e-10
+      }
     },
     {
       "task_id": 38,
@@ -1530,10 +1911,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "f24266d0f2f58d97e4f1d05b2492d74ada65ab0bf645266868ef4b2077c029f2"
+      "audited_sha256": "f24266d0f2f58d97e4f1d05b2492d74ada65ab0bf645266868ef4b2077c029f2",
+      "previous_smooth": {
+        "duration_s": 6.103957355426657,
+        "rms_jerk_rad_s3": 5.598477800888048,
+        "peak_jerk_rad_s3": 19.517662762405244,
+        "integrated_squared_jerk": 191.31605269878216,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.932164095851186e-13,
+        "max_acceleration_jump_rad_s2": 7.439554703075717e-10
+      }
     },
     {
       "task_id": 39,
@@ -1569,10 +1960,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "7486afa0876af39b20eff3205c9c3c7fde454b14586baf0344d45188175e2adb"
+      "audited_sha256": "7486afa0876af39b20eff3205c9c3c7fde454b14586baf0344d45188175e2adb",
+      "previous_smooth": {
+        "duration_s": 5.9536961465394,
+        "rms_jerk_rad_s3": 4.258049974683698,
+        "peak_jerk_rad_s3": 16.036747932285984,
+        "integrated_squared_jerk": 107.94640283649541,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 4.743150316954825e-13,
+        "max_acceleration_jump_rad_s2": 4.2006636537250674e-10
+      }
     },
     {
       "task_id": 40,
@@ -1608,10 +2009,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "acdb10206a38318fb109470813cd2846bd9af00a5d9ad53cd702ce4bcff9217c"
+      "audited_sha256": "acdb10206a38318fb109470813cd2846bd9af00a5d9ad53cd702ce4bcff9217c",
+      "previous_smooth": {
+        "duration_s": 6.815165118630286,
+        "rms_jerk_rad_s3": 2.787475215103897,
+        "peak_jerk_rad_s3": 16.228109850126955,
+        "integrated_squared_jerk": 52.95395615463,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.118194922384191e-13,
+        "max_acceleration_jump_rad_s2": 3.1389259420866455e-10
+      }
     },
     {
       "task_id": 41,
@@ -1647,10 +2058,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "1f5d4d070912fa9898014112484d54769a83e92843ef825fbd4e4034210730a0"
+      "audited_sha256": "1f5d4d070912fa9898014112484d54769a83e92843ef825fbd4e4034210730a0",
+      "previous_smooth": {
+        "duration_s": 4.379027031922585,
+        "rms_jerk_rad_s3": 4.188948345229197,
+        "peak_jerk_rad_s3": 19.296969546710315,
+        "integrated_squared_jerk": 76.84004953551138,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.7014960539693882e-12,
+        "max_acceleration_jump_rad_s2": 1.3485724457171049e-09
+      }
     },
     {
       "task_id": 42,
@@ -1686,10 +2107,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "0b4d234d5e19696f2559e477aafab9dd31256201082c92ff9ec890a4bf888a18"
+      "audited_sha256": "0b4d234d5e19696f2559e477aafab9dd31256201082c92ff9ec890a4bf888a18",
+      "previous_smooth": {
+        "duration_s": 6.833937527977844,
+        "rms_jerk_rad_s3": 2.7057760851835777,
+        "peak_jerk_rad_s3": 16.2281098501129,
+        "integrated_squared_jerk": 50.03278896933456,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.159517340620368e-13,
+        "max_acceleration_jump_rad_s2": 3.9643494043062333e-10
+      }
     },
     {
       "task_id": 43,
@@ -1725,10 +2156,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "9d4baa96fa5dbfd986a06f91a858898471cbfed05f9404d5e53101997747e039"
+      "audited_sha256": "9d4baa96fa5dbfd986a06f91a858898471cbfed05f9404d5e53101997747e039",
+      "previous_smooth": {
+        "duration_s": 4.041836867573365,
+        "rms_jerk_rad_s3": 4.053748230344275,
+        "peak_jerk_rad_s3": 22.301194854025493,
+        "integrated_squared_jerk": 66.41899886337933,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.260480856999038e-13,
+        "max_acceleration_jump_rad_s2": 4.136590792125361e-10
+      }
     },
     {
       "task_id": 44,
@@ -1764,10 +2205,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "5c886575015ee260d7cfe55f2fabb66f8065388d1b166c535d86d656f6d0a5a5"
+      "audited_sha256": "5c886575015ee260d7cfe55f2fabb66f8065388d1b166c535d86d656f6d0a5a5",
+      "previous_smooth": {
+        "duration_s": 4.57528025752965,
+        "rms_jerk_rad_s3": 3.5648775750867263,
+        "peak_jerk_rad_s3": 13.555732832996823,
+        "integrated_squared_jerk": 58.14427258487728,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.473244482216335e-13,
+        "max_acceleration_jump_rad_s2": 5.170252576763845e-10
+      }
     },
     {
       "task_id": 45,
@@ -1803,10 +2254,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "01b003e4b0cd84e5e232ba83bccff4e059c567cdc91dd62dabd0d940c467e8e5"
+      "audited_sha256": "01b003e4b0cd84e5e232ba83bccff4e059c567cdc91dd62dabd0d940c467e8e5",
+      "previous_smooth": {
+        "duration_s": 7.100649038947326,
+        "rms_jerk_rad_s3": 3.5345213499532164,
+        "peak_jerk_rad_s3": 10.35642972931814,
+        "integrated_squared_jerk": 88.70728067073748,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.0191240968120384e-13,
+        "max_acceleration_jump_rad_s2": 9.091206682303437e-11
+      }
     },
     {
       "task_id": 46,
@@ -1842,10 +2303,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "f880fbe0c57b913c00c10bbdc94f3a670654b3ea8c1da9f7ad7daa53a8d4a58b"
+      "audited_sha256": "f880fbe0c57b913c00c10bbdc94f3a670654b3ea8c1da9f7ad7daa53a8d4a58b",
+      "previous_smooth": {
+        "duration_s": 4.37471825105942,
+        "rms_jerk_rad_s3": 3.777942111652763,
+        "peak_jerk_rad_s3": 10.618377060867168,
+        "integrated_squared_jerk": 62.43968251121377,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.83874173572579e-13,
+        "max_acceleration_jump_rad_s2": 9.073013330893888e-11
+      }
     },
     {
       "task_id": 47,
@@ -1881,10 +2352,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "3971753b39a760cfdb1ee415b241c5a804ad8dd1469dbc74cf2d93d53b68916b"
+      "audited_sha256": "3971753b39a760cfdb1ee415b241c5a804ad8dd1469dbc74cf2d93d53b68916b",
+      "previous_smooth": {
+        "duration_s": 4.558375824330055,
+        "rms_jerk_rad_s3": 3.4499882332187286,
+        "peak_jerk_rad_s3": 19.517663109326453,
+        "integrated_squared_jerk": 54.25569815158179,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.498377502773211e-13,
+        "max_acceleration_jump_rad_s2": 4.887500959505076e-10
+      }
     },
     {
       "task_id": 48,
@@ -1908,6 +2389,24 @@
         "max_acceleration_jump_rad_s2": 9.493778541092013e-10
       },
       "smooth": {
+        "duration_s": 5.918987624756461,
+        "rms_jerk_rad_s3": 4.372352026475685,
+        "peak_jerk_rad_s3": 11.446917884002858,
+        "integrated_squared_jerk": 113.15602243558756,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.5598967390294547e-12,
+        "max_acceleration_jump_rad_s2": 8.565679165961626e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "68606d5af60c70a4e652720d5aab4f208f4ee06f8bdcf2e2d7172f967675bf4f",
+      "previous_smooth": {
         "duration_s": 5.9727379243132335,
         "rms_jerk_rad_s3": 4.60247581990485,
         "peak_jerk_rad_s3": 18.858620600874982,
@@ -1915,15 +2414,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 1.0075273948473296e-12,
         "max_acceleration_jump_rad_s2": 9.493778541092013e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "d75093ab2e9a7eeae80c39a5a93ef1bec52f42b27ecc8111f468c94564dfac01"
+      }
     },
     {
       "task_id": 49,
@@ -1959,10 +2450,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "40ea3a60c92ca68e5e31f90e8d90d910523c8f4a5f4ff044449bcc1013ba14ed"
+      "audited_sha256": "40ea3a60c92ca68e5e31f90e8d90d910523c8f4a5f4ff044449bcc1013ba14ed",
+      "previous_smooth": {
+        "duration_s": 4.125435240739914,
+        "rms_jerk_rad_s3": 2.6778259525258092,
+        "peak_jerk_rad_s3": 10.946937230975324,
+        "integrated_squared_jerk": 29.582472310418733,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.7047808437430376e-13,
+        "max_acceleration_jump_rad_s2": 4.797945894345667e-10
+      }
     },
     {
       "task_id": 50,
@@ -1998,10 +2499,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "fcfd67be5bc135564ad194f02a3ab62113cac9562f39660cbb81b03e80591145"
+      "audited_sha256": "fcfd67be5bc135564ad194f02a3ab62113cac9562f39660cbb81b03e80591145",
+      "previous_smooth": {
+        "duration_s": 4.77025561705429,
+        "rms_jerk_rad_s3": 4.0375858235748225,
+        "peak_jerk_rad_s3": 24.830707354222106,
+        "integrated_squared_jerk": 77.76518067323082,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.4859743713170034e-13,
+        "max_acceleration_jump_rad_s2": 9.199185072548965e-10
+      }
     },
     {
       "task_id": 51,
@@ -2025,6 +2536,24 @@
         "max_acceleration_jump_rad_s2": 2.1170857428254308e-10
       },
       "smooth": {
+        "duration_s": 6.28474041147357,
+        "rms_jerk_rad_s3": 5.112893678685288,
+        "peak_jerk_rad_s3": 16.23981227137152,
+        "integrated_squared_jerk": 164.29368384090984,
+        "max_position_jump_rad": 2.220446049250313e-15,
+        "max_velocity_jump_rad_s": 2.1913304504295184e-12,
+        "max_acceleration_jump_rad_s2": 1.9641639981138326e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "822f61f76aa585cbd1e657a3e70bb9091f475ddaf4acee7796ae086a07f9f277",
+      "previous_smooth": {
         "duration_s": 6.304346784343068,
         "rms_jerk_rad_s3": 5.3819933519247005,
         "peak_jerk_rad_s3": 28.641606171157967,
@@ -2032,15 +2561,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 4.340512892075303e-13,
         "max_acceleration_jump_rad_s2": 2.1170857428254308e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "6bbc4fad7e58bed5ef3e1c915b7120e10e32131d61ae93f1a2d78956a8b22e9d"
+      }
     },
     {
       "task_id": 52,
@@ -2076,10 +2597,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "5aed5211e100f51dc536e492da2141ae7db8c2c88f00e559ec8a602f48fe6fb6"
+      "audited_sha256": "5aed5211e100f51dc536e492da2141ae7db8c2c88f00e559ec8a602f48fe6fb6",
+      "previous_smooth": {
+        "duration_s": 5.106308951109932,
+        "rms_jerk_rad_s3": 2.6490246282579784,
+        "peak_jerk_rad_s3": 32.4563139913188,
+        "integrated_squared_jerk": 35.83266255493489,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.738977359533542e-13,
+        "max_acceleration_jump_rad_s2": 2.0787438437253059e-10
+      }
     },
     {
       "task_id": 53,
@@ -2115,10 +2646,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "4e565090152d0538a92760986541bfe1d731366db3510cda0093aa5620eb533e"
+      "audited_sha256": "4e565090152d0538a92760986541bfe1d731366db3510cda0093aa5620eb533e",
+      "previous_smooth": {
+        "duration_s": 6.721513657182209,
+        "rms_jerk_rad_s3": 4.346077231541942,
+        "peak_jerk_rad_s3": 10.775418860134403,
+        "integrated_squared_jerk": 126.9585532160841,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.118876387386041e-13,
+        "max_acceleration_jump_rad_s2": 4.2993899996232316e-11
+      }
     },
     {
       "task_id": 54,
@@ -2154,10 +2695,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "a94453aaebe428e5e9d4e6df0334ec9263cd82039c486e7a73ad294d89d3312b"
+      "audited_sha256": "a94453aaebe428e5e9d4e6df0334ec9263cd82039c486e7a73ad294d89d3312b",
+      "previous_smooth": {
+        "duration_s": 6.156452100384526,
+        "rms_jerk_rad_s3": 3.241738753358658,
+        "peak_jerk_rad_s3": 27.629990941831696,
+        "integrated_squared_jerk": 64.69735567702185,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 3.715428378683994e-13,
+        "max_acceleration_jump_rad_s2": 1.8275147400156205e-10
+      }
     },
     {
       "task_id": 55,
@@ -2193,10 +2744,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "e24ce120eed44704b07796ed4cee0c5e909afecdfcc2aac235e1a3ac605ed0d0"
+      "audited_sha256": "e24ce120eed44704b07796ed4cee0c5e909afecdfcc2aac235e1a3ac605ed0d0",
+      "previous_smooth": {
+        "duration_s": 6.28123651363623,
+        "rms_jerk_rad_s3": 3.4878910238863323,
+        "peak_jerk_rad_s3": 16.89103364023182,
+        "integrated_squared_jerk": 76.41365289245489,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.0169642905566434e-12,
+        "max_acceleration_jump_rad_s2": 7.808824975530371e-10
+      }
     },
     {
       "task_id": 56,
@@ -2232,10 +2793,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "5d859d056771665d11b193bc5eedebe11baf274fbf6986761d3fe14dbed46873"
+      "audited_sha256": "5d859d056771665d11b193bc5eedebe11baf274fbf6986761d3fe14dbed46873",
+      "previous_smooth": {
+        "duration_s": 4.59150562518055,
+        "rms_jerk_rad_s3": 3.6917812037746685,
+        "peak_jerk_rad_s3": 11.517754346518576,
+        "integrated_squared_jerk": 62.57877095520483,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.657239515876568e-13,
+        "max_acceleration_jump_rad_s2": 1.1042293986741253e-10
+      }
     },
     {
       "task_id": 57,
@@ -2271,10 +2842,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "d367fd3025e1c938cffd746e97a9fac3eed350ceec8f5962ada6498bc4835cd4"
+      "audited_sha256": "d367fd3025e1c938cffd746e97a9fac3eed350ceec8f5962ada6498bc4835cd4",
+      "previous_smooth": {
+        "duration_s": 9.120962458184561,
+        "rms_jerk_rad_s3": 1.8826628996877677,
+        "peak_jerk_rad_s3": 16.805591525290335,
+        "integrated_squared_jerk": 32.3285180516577,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 7.16468551154037e-13,
+        "max_acceleration_jump_rad_s2": 2.0614633210432943e-10
+      }
     },
     {
       "task_id": 58,
@@ -2310,10 +2891,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "af8061b371371529b300c9dcbc9ce743cb118dbe790031762627c90523555ce6"
+      "audited_sha256": "af8061b371371529b300c9dcbc9ce743cb118dbe790031762627c90523555ce6",
+      "previous_smooth": {
+        "duration_s": 4.517030716206559,
+        "rms_jerk_rad_s3": 2.282655854656775,
+        "peak_jerk_rad_s3": 8.379522489039621,
+        "integrated_squared_jerk": 23.536068727697927,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.707833957060757e-13,
+        "max_acceleration_jump_rad_s2": 5.169142336391985e-10
+      }
     },
     {
       "task_id": 59,
@@ -2337,6 +2928,24 @@
         "max_acceleration_jump_rad_s2": 7.930868223433862e-10
       },
       "smooth": {
+        "duration_s": 5.308568500381305,
+        "rms_jerk_rad_s3": 4.768245506794559,
+        "peak_jerk_rad_s3": 13.824006405594268,
+        "integrated_squared_jerk": 120.69649046955001,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 4.118386187634826e-12,
+        "max_acceleration_jump_rad_s2": 2.4107616699675476e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "32e9d3dfd9a4d9c8c1c8d83bb43eb1542f7f869c422b92a4edf74e996188fe4a",
+      "previous_smooth": {
         "duration_s": 5.33378324313301,
         "rms_jerk_rad_s3": 5.0192058005923865,
         "peak_jerk_rad_s3": 21.4788291519557,
@@ -2344,15 +2953,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 5.511147094239277e-13,
         "max_acceleration_jump_rad_s2": 7.930868223433862e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "1d34955b3680c5d1116b64455b10645172030db504de5e6a88963cc2e8f19415"
+      }
     },
     {
       "task_id": 60,
@@ -2376,6 +2977,24 @@
         "max_acceleration_jump_rad_s2": 5.374795608581451e-10
       },
       "smooth": {
+        "duration_s": 7.166640545792502,
+        "rms_jerk_rad_s3": 4.278593827126867,
+        "peak_jerk_rad_s3": 16.517955797962674,
+        "integrated_squared_jerk": 131.19513864069145,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 3.234676415608817e-12,
+        "max_acceleration_jump_rad_s2": 4.926772767532839e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "599a07cfeb317d30f85b3f4be8ce9488b9dfe119124271c824859c5dbc358482",
+      "previous_smooth": {
         "duration_s": 7.193430972935673,
         "rms_jerk_rad_s3": 4.503782977738554,
         "peak_jerk_rad_s3": 24.23552629837974,
@@ -2383,15 +3002,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 4.729688862781245e-13,
         "max_acceleration_jump_rad_s2": 5.374795608581451e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "8d52a62d91566fd5886fe58e3237ef7dcdaec27f9594986561cc0f3c7c7c4190"
+      }
     },
     {
       "task_id": 61,
@@ -2427,10 +3038,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "8f4d988a926a78cc00bc30d6c8a855343dd054393840c3607c9b73f7b62b9652"
+      "audited_sha256": "8f4d988a926a78cc00bc30d6c8a855343dd054393840c3607c9b73f7b62b9652",
+      "previous_smooth": {
+        "duration_s": 5.452533298031733,
+        "rms_jerk_rad_s3": 4.562412266490712,
+        "peak_jerk_rad_s3": 26.359298395450388,
+        "integrated_squared_jerk": 113.49778314028816,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.438327317833e-13,
+        "max_acceleration_jump_rad_s2": 4.053074820209446e-10
+      }
     },
     {
       "task_id": 62,
@@ -2466,10 +3087,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "3103d39b48680c55bd14b1bce12a6215edbeca53091b07ed30463ee9c216dd21"
+      "audited_sha256": "3103d39b48680c55bd14b1bce12a6215edbeca53091b07ed30463ee9c216dd21",
+      "previous_smooth": {
+        "duration_s": 7.341899571568429,
+        "rms_jerk_rad_s3": 4.027366728913973,
+        "peak_jerk_rad_s3": 19.517662886270283,
+        "integrated_squared_jerk": 119.08328197389538,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.7220226900558373e-13,
+        "max_acceleration_jump_rad_s2": 3.81904868840266e-10
+      }
     },
     {
       "task_id": 63,
@@ -2505,10 +3136,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "35d86034db625e9439d7adea6498c1a160d00c267cb282f69df8fd960b8f8555"
+      "audited_sha256": "35d86034db625e9439d7adea6498c1a160d00c267cb282f69df8fd960b8f8555",
+      "previous_smooth": {
+        "duration_s": 6.20940783112514,
+        "rms_jerk_rad_s3": 2.75899897002255,
+        "peak_jerk_rad_s3": 19.5176630623888,
+        "integrated_squared_jerk": 47.266480081920335,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.8210517187082498e-13,
+        "max_acceleration_jump_rad_s2": 5.354882648411774e-10
+      }
     },
     {
       "task_id": 64,
@@ -2532,6 +3173,24 @@
         "max_acceleration_jump_rad_s2": 2.1976953590296944e-10
       },
       "smooth": {
+        "duration_s": 5.541089861284801,
+        "rms_jerk_rad_s3": 3.9713446165956072,
+        "peak_jerk_rad_s3": 17.32517939977126,
+        "integrated_squared_jerk": 87.39173130557845,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 3.7078087961864205e-12,
+        "max_acceleration_jump_rad_s2": 8.117738467539048e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "3ab1c5aa63e5596915fcc960fbb76b15bedb82e2b2cdaa61ae0ca2524204e29e",
+      "previous_smooth": {
         "duration_s": 6.052072884436377,
         "rms_jerk_rad_s3": 4.180362743001277,
         "peak_jerk_rad_s3": 32.4563139364437,
@@ -2539,15 +3198,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 5.765870230269379e-13,
         "max_acceleration_jump_rad_s2": 2.1976953590296944e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "4373b37fb0f2088aa715f15cf5cedc5cffe1ca1917f5261984a68820dd1f0651"
+      }
     },
     {
       "task_id": 65,
@@ -2583,10 +3234,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "bd45ac420a399013f5a15af0dd69b6ecc73c71e837458f74de54cfb5a441361f"
+      "audited_sha256": "bd45ac420a399013f5a15af0dd69b6ecc73c71e837458f74de54cfb5a441361f",
+      "previous_smooth": {
+        "duration_s": 7.52936580926102,
+        "rms_jerk_rad_s3": 2.974278440327103,
+        "peak_jerk_rad_s3": 16.228109830530794,
+        "integrated_squared_jerk": 66.6072715096966,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.315398287133235e-13,
+        "max_acceleration_jump_rad_s2": 4.693346544737409e-10
+      }
     },
     {
       "task_id": 66,
@@ -2610,6 +3271,24 @@
         "max_acceleration_jump_rad_s2": 4.9665088708295e-10
       },
       "smooth": {
+        "duration_s": 4.887596751075615,
+        "rms_jerk_rad_s3": 4.62601834641687,
+        "peak_jerk_rad_s3": 14.88136483528718,
+        "integrated_squared_jerk": 104.59479403846517,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.1293094571282908e-12,
+        "max_acceleration_jump_rad_s2": 1.1769437903322126e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "9c3a583eb61596e220f826f70647753e920d4c59dcf55b090e31d6e34b60c634",
+      "previous_smooth": {
         "duration_s": 5.146526243298258,
         "rms_jerk_rad_s3": 4.869492996533439,
         "peak_jerk_rad_s3": 32.456313936570126,
@@ -2617,15 +3296,7 @@
         "max_position_jump_rad": 8.881784197001252e-16,
         "max_velocity_jump_rad_s": 2.105260410445453e-13,
         "max_acceleration_jump_rad_s2": 4.9665088708295e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "b73996896babf69ff95ed914d669c652b286ffa866f1ece05a1fab8e0ad9e96b"
+      }
     },
     {
       "task_id": 67,
@@ -2661,10 +3332,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "4a86c140117a331a23b5fa5647de82de10c3cc971876b91c83d6d5d209c962d9"
+      "audited_sha256": "4a86c140117a331a23b5fa5647de82de10c3cc971876b91c83d6d5d209c962d9",
+      "previous_smooth": {
+        "duration_s": 6.700416223972647,
+        "rms_jerk_rad_s3": 2.610980113843228,
+        "peak_jerk_rad_s3": 19.51766293356857,
+        "integrated_squared_jerk": 45.67819242693473,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.494583763061204e-13,
+        "max_acceleration_jump_rad_s2": 3.8911962541021694e-10
+      }
     },
     {
       "task_id": 68,
@@ -2700,10 +3381,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "bf69bddf7523efd79c5b11232b82e7cf81fc58a8b12e08084f60f460ba943b85"
+      "audited_sha256": "bf69bddf7523efd79c5b11232b82e7cf81fc58a8b12e08084f60f460ba943b85",
+      "previous_smooth": {
+        "duration_s": 6.496600540876159,
+        "rms_jerk_rad_s3": 3.412438595581258,
+        "peak_jerk_rad_s3": 13.721641484335464,
+        "integrated_squared_jerk": 75.65120578796925,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.393324675750932e-13,
+        "max_acceleration_jump_rad_s2": 3.8373115796019874e-10
+      }
     },
     {
       "task_id": 69,
@@ -2727,6 +3418,24 @@
         "max_acceleration_jump_rad_s2": 3.2901950890347476e-10
       },
       "smooth": {
+        "duration_s": 4.924676184927689,
+        "rms_jerk_rad_s3": 4.338335817683654,
+        "peak_jerk_rad_s3": 15.653055410330962,
+        "integrated_squared_jerk": 92.6881069354288,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.6329322495347849e-12,
+        "max_acceleration_jump_rad_s2": 7.365971579120279e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "0add85df4e61f0a0efb66b8a04501bd81170c48d05ed336dcfd51ae7c0e8850e",
+      "previous_smooth": {
         "duration_s": 5.140756694754892,
         "rms_jerk_rad_s3": 4.566669284826263,
         "peak_jerk_rad_s3": 26.272596329313743,
@@ -2734,15 +3443,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.7348656879658153e-13,
         "max_acceleration_jump_rad_s2": 3.2901950890347476e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "9522ce73030abdbc45fbe06f8ead66f52b90f85d6fdf1d2c0662577e462152d7"
+      }
     },
     {
       "task_id": 70,
@@ -2778,10 +3479,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "543aa5e0edac9ea845e967eb8680fed7701c8932e2e469fe830a5f08f98c2d74"
+      "audited_sha256": "543aa5e0edac9ea845e967eb8680fed7701c8932e2e469fe830a5f08f98c2d74",
+      "previous_smooth": {
+        "duration_s": 5.437283016559608,
+        "rms_jerk_rad_s3": 2.9747869860704945,
+        "peak_jerk_rad_s3": 16.17826516708499,
+        "integrated_squared_jerk": 48.11646185387815,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.53945256121358e-13,
+        "max_acceleration_jump_rad_s2": 7.717476935287237e-10
+      }
     },
     {
       "task_id": 71,
@@ -2817,10 +3528,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "1956e4c59cde4c7764107ae4f2bf80c5ec84fbb88607c662158599ae1e532f57"
+      "audited_sha256": "1956e4c59cde4c7764107ae4f2bf80c5ec84fbb88607c662158599ae1e532f57",
+      "previous_smooth": {
+        "duration_s": 8.5327776297477,
+        "rms_jerk_rad_s3": 2.307425852041188,
+        "peak_jerk_rad_s3": 16.228109863350323,
+        "integrated_squared_jerk": 45.430334649921654,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 8.397726958264684e-13,
+        "max_acceleration_jump_rad_s2": 3.8779643385389306e-10
+      }
     },
     {
       "task_id": 72,
@@ -2856,10 +3577,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "3ac9f28eec7df107501cfbfe53ab51dd581a8bf3f808a67b836ffcdf480ff317"
+      "audited_sha256": "3ac9f28eec7df107501cfbfe53ab51dd581a8bf3f808a67b836ffcdf480ff317",
+      "previous_smooth": {
+        "duration_s": 4.9765180485618705,
+        "rms_jerk_rad_s3": 2.254091286313271,
+        "peak_jerk_rad_s3": 9.046067746841269,
+        "integrated_squared_jerk": 25.285327541716633,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.974621611449827e-13,
+        "max_acceleration_jump_rad_s2": 2.8618635239396895e-10
+      }
     },
     {
       "task_id": 73,
@@ -2883,6 +3614,24 @@
         "max_acceleration_jump_rad_s2": 6.458206306975828e-10
       },
       "smooth": {
+        "duration_s": 5.6094772077638195,
+        "rms_jerk_rad_s3": 4.231532160908002,
+        "peak_jerk_rad_s3": 12.79167466088538,
+        "integrated_squared_jerk": 100.4425383986555,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.2240202521549854e-12,
+        "max_acceleration_jump_rad_s2": 5.450015674651407e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "d5bdb0811f5b8602204a19f6ebf26d060e12cfa5a3b01587af0042a538b771cd",
+      "previous_smooth": {
         "duration_s": 5.620201489552216,
         "rms_jerk_rad_s3": 4.454244379312061,
         "peak_jerk_rad_s3": 24.739534831045418,
@@ -2890,15 +3639,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 4.506048312258315e-13,
         "max_acceleration_jump_rad_s2": 6.458206306975828e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "9c52a52f896a1cab3ea3a62a1c26937680a32dcb3c45ded47887b6bbd84f16b0"
+      }
     },
     {
       "task_id": 74,
@@ -2934,10 +3675,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "ed48f27c7e417f72e5abec9b8077b2900273022cce1ecaa362982a3dda86a437"
+      "audited_sha256": "ed48f27c7e417f72e5abec9b8077b2900273022cce1ecaa362982a3dda86a437",
+      "previous_smooth": {
+        "duration_s": 6.645481941123041,
+        "rms_jerk_rad_s3": 3.202275655079897,
+        "peak_jerk_rad_s3": 10.94077473497519,
+        "integrated_squared_jerk": 68.14655556975404,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.497963195821853e-13,
+        "max_acceleration_jump_rad_s2": 6.903975446892474e-10
+      }
     },
     {
       "task_id": 75,
@@ -2973,10 +3724,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "978483c9698376ba866d3f98a2408c09859e4ef0843dc07365e8ee9b4fa5979f"
+      "audited_sha256": "978483c9698376ba866d3f98a2408c09859e4ef0843dc07365e8ee9b4fa5979f",
+      "previous_smooth": {
+        "duration_s": 6.258669020985785,
+        "rms_jerk_rad_s3": 3.112611646422453,
+        "peak_jerk_rad_s3": 19.51766291342487,
+        "integrated_squared_jerk": 60.63618390443246,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.362970167706915e-13,
+        "max_acceleration_jump_rad_s2": 4.3114803654348277e-10
+      }
     },
     {
       "task_id": 76,
@@ -3012,10 +3773,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "fe2aabc7bb3645be871fd613dc9c9e5fcebaf31b2e5b60e39023329394214e87"
+      "audited_sha256": "fe2aabc7bb3645be871fd613dc9c9e5fcebaf31b2e5b60e39023329394214e87",
+      "previous_smooth": {
+        "duration_s": 6.811738762062533,
+        "rms_jerk_rad_s3": 3.9302114058615727,
+        "peak_jerk_rad_s3": 16.41881599728631,
+        "integrated_squared_jerk": 105.21794303681699,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.337708136072706e-13,
+        "max_acceleration_jump_rad_s2": 4.646597551172249e-10
+      }
     },
     {
       "task_id": 77,
@@ -3051,10 +3822,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "55cdcb5f9dc3ba95f0cd0f6eafdd5ba60be67e262ca8cecb5a8675742b7b2dab"
+      "audited_sha256": "55cdcb5f9dc3ba95f0cd0f6eafdd5ba60be67e262ca8cecb5a8675742b7b2dab",
+      "previous_smooth": {
+        "duration_s": 6.166954667153852,
+        "rms_jerk_rad_s3": 4.3810715859724665,
+        "peak_jerk_rad_s3": 29.5358103176928,
+        "integrated_squared_jerk": 118.36722197575882,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.172385073696887e-13,
+        "max_acceleration_jump_rad_s2": 3.942883797236618e-10
+      }
     },
     {
       "task_id": 78,
@@ -3078,6 +3859,24 @@
         "max_acceleration_jump_rad_s2": 9.140655177208856e-10
       },
       "smooth": {
+        "duration_s": 6.391965971822702,
+        "rms_jerk_rad_s3": 3.4534486111792972,
+        "peak_jerk_rad_s3": 11.054843307338794,
+        "integrated_squared_jerk": 76.23255049537968,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.629907568443059e-12,
+        "max_acceleration_jump_rad_s2": 7.357746245606478e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "7c5f7452e1f4fb17366e2f1097413a270007c139ab91883c55b758d121026bc1",
+      "previous_smooth": {
         "duration_s": 6.470790491444677,
         "rms_jerk_rad_s3": 3.6352090648568596,
         "peak_jerk_rad_s3": 21.463201057412284,
@@ -3085,15 +3884,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 1.4752365995462924e-12,
         "max_acceleration_jump_rad_s2": 9.140655177208856e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "9551220c1ed17ddeee4830eedf10c59de53c328d3ca38a625398451403bff7b2"
+      }
     },
     {
       "task_id": 79,
@@ -3117,6 +3908,24 @@
         "max_acceleration_jump_rad_s2": 1.060329102298141e-09
       },
       "smooth": {
+        "duration_s": 5.541471986285788,
+        "rms_jerk_rad_s3": 5.460553650966742,
+        "peak_jerk_rad_s3": 16.02129681684822,
+        "integrated_squared_jerk": 165.2336509762218,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.368427291800516e-13,
+        "max_acceleration_jump_rad_s2": 4.94071478676638e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "9c332b0e34811a252de764470009a5f45527b5633ffc6656e356e06b8540112f",
+      "previous_smooth": {
         "duration_s": 5.626805250607009,
         "rms_jerk_rad_s3": 5.747951212954175,
         "peak_jerk_rad_s3": 27.899466650207643,
@@ -3124,15 +3933,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 1.180638919962007e-12,
         "max_acceleration_jump_rad_s2": 1.060329102298141e-09
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "1666db5ae593476a2be7239ee2bf06320fc6c8cd2751dbdb04e0761a726bbc2c"
+      }
     },
     {
       "task_id": 80,
@@ -3156,6 +3957,24 @@
         "max_acceleration_jump_rad_s2": 3.7771222261007154e-10
       },
       "smooth": {
+        "duration_s": 6.102364464746857,
+        "rms_jerk_rad_s3": 4.675367140536224,
+        "peak_jerk_rad_s3": 21.098525463571463,
+        "integrated_squared_jerk": 133.39193815451702,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.536373888695209e-12,
+        "max_acceleration_jump_rad_s2": 5.0177121000365364e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "5d5dae5df08bdb7c2b32ac16ea905df69b93aa2ffe846064cd157a1830087ae6",
+      "previous_smooth": {
         "duration_s": 6.423127680666527,
         "rms_jerk_rad_s3": 4.92143909572551,
         "peak_jerk_rad_s3": 32.456313936338965,
@@ -3163,15 +3982,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 4.3999204287452484e-13,
         "max_acceleration_jump_rad_s2": 3.7771222261007154e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "a71c0ae9c0d60034d2a42f4c7048745174e93884a51930c1b46dea733c1d09c7"
+      }
     },
     {
       "task_id": 81,
@@ -3207,10 +4018,20 @@
       "local_clock_accepted": true,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": "Jerk-budget candidate is not shorter than baseline",
-      "audited_sha256": "bbc1e0350d67a5a1ff2655c26006f5bbefbbdb8db209f31bc5aff0de4a23a68b"
+      "audited_sha256": "bbc1e0350d67a5a1ff2655c26006f5bbefbbdb8db209f31bc5aff0de4a23a68b",
+      "previous_smooth": {
+        "duration_s": 6.885004691371111,
+        "rms_jerk_rad_s3": 4.5012511846625705,
+        "peak_jerk_rad_s3": 11.761509673668469,
+        "integrated_squared_jerk": 139.49888548892966,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.8894608100339383e-12,
+        "max_acceleration_jump_rad_s2": 1.0550579854218256e-09
+      }
     },
     {
       "task_id": 82,
@@ -3246,10 +4067,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "d72a56b5ac8c71f8c08f6de97bdf2f08e34f3aa269cc4aca8f340fc2527060e7"
+      "audited_sha256": "d72a56b5ac8c71f8c08f6de97bdf2f08e34f3aa269cc4aca8f340fc2527060e7",
+      "previous_smooth": {
+        "duration_s": 7.998550226833811,
+        "rms_jerk_rad_s3": 2.426337366132101,
+        "peak_jerk_rad_s3": 16.228109843199817,
+        "integrated_squared_jerk": 47.088369135836444,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.3824332223986175e-13,
+        "max_acceleration_jump_rad_s2": 2.2290719270401382e-10
+      }
     },
     {
       "task_id": 83,
@@ -3273,6 +4104,24 @@
         "max_acceleration_jump_rad_s2": 4.780593074182882e-10
       },
       "smooth": {
+        "duration_s": 5.323363174371979,
+        "rms_jerk_rad_s3": 5.528248067844877,
+        "peak_jerk_rad_s3": 14.422539626748396,
+        "integrated_squared_jerk": 162.6901057853996,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.718018646913708e-12,
+        "max_acceleration_jump_rad_s2": 4.935198798281689e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "39108b73aec3dc54369c96afc7af584f0356856a37d82f6fa77613a6061a8695",
+      "previous_smooth": {
         "duration_s": 5.391292413993563,
         "rms_jerk_rad_s3": 5.819208495648286,
         "peak_jerk_rad_s3": 28.4129031949438,
@@ -3280,15 +4129,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 8.393702399800418e-13,
         "max_acceleration_jump_rad_s2": 4.780593074182882e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "01f6d3d3831da0e9acc4614eecf3cfed2489e9eff25313a40dafaa99030b0947"
+      }
     },
     {
       "task_id": 84,
@@ -3312,6 +4153,24 @@
         "max_acceleration_jump_rad_s2": 3.767309532907992e-10
       },
       "smooth": {
+        "duration_s": 6.367904041239117,
+        "rms_jerk_rad_s3": 3.714584420876944,
+        "peak_jerk_rad_s3": 12.991644837573858,
+        "integrated_squared_jerk": 87.8652150372553,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.1731310367579795e-12,
+        "max_acceleration_jump_rad_s2": 4.972494319077647e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "ca505b93cd29912f5f4d3b992ef5ab831f24db561d20a7b1e0cc1c25d0fdf05f",
+      "previous_smooth": {
         "duration_s": 6.956351100669123,
         "rms_jerk_rad_s3": 3.9100888651908505,
         "peak_jerk_rad_s3": 32.45631393634164,
@@ -3319,15 +4178,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 2.67619260085894e-13,
         "max_acceleration_jump_rad_s2": 3.767309532907992e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "f44c1baa8ad26f1f3799d8f3a5953354041493f14214a18424fe5f2051e19d52"
+      }
     },
     {
       "task_id": 85,
@@ -3351,6 +4202,24 @@
         "max_acceleration_jump_rad_s2": 4.5176148065484423e-10
       },
       "smooth": {
+        "duration_s": 5.944721124572466,
+        "rms_jerk_rad_s3": 7.50866169287121,
+        "peak_jerk_rad_s3": 22.036475752368304,
+        "integrated_squared_jerk": 335.1633794882388,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.7243381162112e-12,
+        "max_acceleration_jump_rad_s2": 5.1151511325231436e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "ec9e6b1d1ad604bbc0ed79924a69a56770c9e74f4dde34db0ea364d1a662f082",
+      "previous_smooth": {
         "duration_s": 6.20699149428288,
         "rms_jerk_rad_s3": 7.903854414999988,
         "peak_jerk_rad_s3": 32.456313936498695,
@@ -3358,15 +4227,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 7.334965967942253e-13,
         "max_acceleration_jump_rad_s2": 4.5176148065484423e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "b79f5681ed630f190ab32226fd3830735b9815abe0c1fe861e9fdddcf143c33d"
+      }
     },
     {
       "task_id": 86,
@@ -3402,10 +4263,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "b8077cc07277dabd4d287185eaa0996918de9efefacc6a10ddda6b7cdc0818d8"
+      "audited_sha256": "b8077cc07277dabd4d287185eaa0996918de9efefacc6a10ddda6b7cdc0818d8",
+      "previous_smooth": {
+        "duration_s": 5.430446493061849,
+        "rms_jerk_rad_s3": 4.425713354626433,
+        "peak_jerk_rad_s3": 21.682486471777505,
+        "integrated_squared_jerk": 106.36582255867205,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 8.273659535262823e-13,
+        "max_acceleration_jump_rad_s2": 4.655876240100554e-10
+      }
     },
     {
       "task_id": 87,
@@ -3441,10 +4312,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "25a306afa3a7a2963ec2e58fce95679d0f38f76dce8d86819435ad5aa9f88147"
+      "audited_sha256": "25a306afa3a7a2963ec2e58fce95679d0f38f76dce8d86819435ad5aa9f88147",
+      "previous_smooth": {
+        "duration_s": 5.283444615195377,
+        "rms_jerk_rad_s3": 5.324773183608239,
+        "peak_jerk_rad_s3": 18.496357618083298,
+        "integrated_squared_jerk": 149.80261182842452,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 5.263966227621802e-13,
+        "max_acceleration_jump_rad_s2": 1.5598971913153448e-10
+      }
     },
     {
       "task_id": 88,
@@ -3480,10 +4361,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "7674dd77e75d27f7f0c4e0e47a429ee7f78e9df3f18c3efec5e2e506cb64c6cf"
+      "audited_sha256": "7674dd77e75d27f7f0c4e0e47a429ee7f78e9df3f18c3efec5e2e506cb64c6cf",
+      "previous_smooth": {
+        "duration_s": 5.5295333861775,
+        "rms_jerk_rad_s3": 3.9788562416219584,
+        "peak_jerk_rad_s3": 14.6302720072804,
+        "integrated_squared_jerk": 87.53968526095757,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 1.621341949586963e-12,
+        "max_acceleration_jump_rad_s2": 7.212531821787493e-10
+      }
     },
     {
       "task_id": 89,
@@ -3519,10 +4410,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "1f0d571ec2d7ed1d2a569f27e08115118bca337987db321b745d27d7b678a51d"
+      "audited_sha256": "1f0d571ec2d7ed1d2a569f27e08115118bca337987db321b745d27d7b678a51d",
+      "previous_smooth": {
+        "duration_s": 4.516552609787652,
+        "rms_jerk_rad_s3": 3.6552759748902353,
+        "peak_jerk_rad_s3": 11.562418687364573,
+        "integrated_squared_jerk": 60.34585115881822,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.905944068756823e-13,
+        "max_acceleration_jump_rad_s2": 5.198976839315694e-10
+      }
     },
     {
       "task_id": 90,
@@ -3558,10 +4459,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "5750a46709b2472db66b229686bc6fed28101b65c0786a8f9e57f1a5fdb71c44"
+      "audited_sha256": "5750a46709b2472db66b229686bc6fed28101b65c0786a8f9e57f1a5fdb71c44",
+      "previous_smooth": {
+        "duration_s": 5.388544919072886,
+        "rms_jerk_rad_s3": 2.755225432263233,
+        "peak_jerk_rad_s3": 26.073280925365637,
+        "integrated_squared_jerk": 40.90588420607072,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.639652799262819e-13,
+        "max_acceleration_jump_rad_s2": 5.467028509585636e-10
+      }
     },
     {
       "task_id": 91,
@@ -3597,10 +4508,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "950eb0e84f776c6e9d4c799a31b44f980eab7b690bd6927cf19970acba216097"
+      "audited_sha256": "950eb0e84f776c6e9d4c799a31b44f980eab7b690bd6927cf19970acba216097",
+      "previous_smooth": {
+        "duration_s": 6.620946867320542,
+        "rms_jerk_rad_s3": 2.5469175350581965,
+        "peak_jerk_rad_s3": 16.228109819995215,
+        "integrated_squared_jerk": 42.94868484761484,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.3256037823619e-13,
+        "max_acceleration_jump_rad_s2": 4.230477763348013e-10
+      }
     },
     {
       "task_id": 92,
@@ -3636,10 +4557,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "308a29dc7bd6541c5c140d3766fb81a7d72f8c130cc3d6b39eb5ad92217446d7"
+      "audited_sha256": "308a29dc7bd6541c5c140d3766fb81a7d72f8c130cc3d6b39eb5ad92217446d7",
+      "previous_smooth": {
+        "duration_s": 4.159028366862063,
+        "rms_jerk_rad_s3": 4.56832146494185,
+        "peak_jerk_rad_s3": 13.00820885079765,
+        "integrated_squared_jerk": 86.79709623227292,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 1.5035079555798628e-13,
+        "max_acceleration_jump_rad_s2": 1.0067050755976513e-10
+      }
     },
     {
       "task_id": 93,
@@ -3675,10 +4606,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "7f39f824fe9d62f0d128fbcfabbe39e2b9f13ebc299bce7362127db794c4ffc0"
+      "audited_sha256": "7f39f824fe9d62f0d128fbcfabbe39e2b9f13ebc299bce7362127db794c4ffc0",
+      "previous_smooth": {
+        "duration_s": 5.323805773576669,
+        "rms_jerk_rad_s3": 3.088512675302807,
+        "peak_jerk_rad_s3": 19.51766267401977,
+        "integrated_squared_jerk": 50.78330703579675,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.102852411580561e-12,
+        "max_acceleration_jump_rad_s2": 1.432864518008392e-09
+      }
     },
     {
       "task_id": 94,
@@ -3714,10 +4655,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "69cc88b0a1bb7261689c3e91ffaa13bf2f1a5a539b87cfed3e9877e9cda1b071"
+      "audited_sha256": "69cc88b0a1bb7261689c3e91ffaa13bf2f1a5a539b87cfed3e9877e9cda1b071",
+      "previous_smooth": {
+        "duration_s": 5.926283476657892,
+        "rms_jerk_rad_s3": 3.336481506777497,
+        "peak_jerk_rad_s3": 16.228109837545276,
+        "integrated_squared_jerk": 65.97203270888505,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 4.567232009256017e-13,
+        "max_acceleration_jump_rad_s2": 2.998177799778956e-10
+      }
     },
     {
       "task_id": 95,
@@ -3753,10 +4704,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "dd837c52adc4563ca21a63d2cda94eb79feac71b2977b9cbeca3829fc6da6b04"
+      "audited_sha256": "dd837c52adc4563ca21a63d2cda94eb79feac71b2977b9cbeca3829fc6da6b04",
+      "previous_smooth": {
+        "duration_s": 4.724719420783139,
+        "rms_jerk_rad_s3": 2.8903787734944517,
+        "peak_jerk_rad_s3": 9.795177606935896,
+        "integrated_squared_jerk": 39.471673631420444,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.6814930287186673e-13,
+        "max_acceleration_jump_rad_s2": 4.215372469487666e-10
+      }
     },
     {
       "task_id": 96,
@@ -3792,10 +4753,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "b79cc6f20e32347b7aaf78c756b91f2360c9db53451ccebe54550fcc0c3c8aa3"
+      "audited_sha256": "b79cc6f20e32347b7aaf78c756b91f2360c9db53451ccebe54550fcc0c3c8aa3",
+      "previous_smooth": {
+        "duration_s": 4.420175690017068,
+        "rms_jerk_rad_s3": 4.165037275065145,
+        "peak_jerk_rad_s3": 17.47645410603361,
+        "integrated_squared_jerk": 76.67915471066337,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.675399657005013e-13,
+        "max_acceleration_jump_rad_s2": 7.85826959059932e-10
+      }
     },
     {
       "task_id": 97,
@@ -3831,10 +4802,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "a61f96a7a9c465075147cd902385ea4117446bf8bdf1436e3bec52ed19d16954"
+      "audited_sha256": "a61f96a7a9c465075147cd902385ea4117446bf8bdf1436e3bec52ed19d16954",
+      "previous_smooth": {
+        "duration_s": 5.821166121742893,
+        "rms_jerk_rad_s3": 3.7052533715868705,
+        "peak_jerk_rad_s3": 13.07545628190817,
+        "integrated_squared_jerk": 79.91822239912405,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 8.150355390590391e-13,
+        "max_acceleration_jump_rad_s2": 9.758398533676882e-10
+      }
     },
     {
       "task_id": 98,
@@ -3870,10 +4851,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "f16a6e0e7a266621e723180d13a123de6a45a5232c38bed48184746755aac141"
+      "audited_sha256": "f16a6e0e7a266621e723180d13a123de6a45a5232c38bed48184746755aac141",
+      "previous_smooth": {
+        "duration_s": 4.0699223311925214,
+        "rms_jerk_rad_s3": 3.862974599863491,
+        "peak_jerk_rad_s3": 19.389784350026975,
+        "integrated_squared_jerk": 60.7337121114746,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 6.027850473541013e-13,
+        "max_acceleration_jump_rad_s2": 2.630376778477335e-10
+      }
     },
     {
       "task_id": 99,
@@ -3909,10 +4900,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "317f8c0ee37a11c6922d4ec3a05a4ae502aaa3fb6f31b616ea4dc0780ae67d7b"
+      "audited_sha256": "317f8c0ee37a11c6922d4ec3a05a4ae502aaa3fb6f31b616ea4dc0780ae67d7b",
+      "previous_smooth": {
+        "duration_s": 4.942849913854716,
+        "rms_jerk_rad_s3": 3.1715137323281875,
+        "peak_jerk_rad_s3": 17.1224496572955,
+        "integrated_squared_jerk": 49.717652667138175,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.7201726154603136e-12,
+        "max_acceleration_jump_rad_s2": 1.1696952850748232e-09
+      }
     },
     {
       "task_id": 100,
@@ -3936,6 +4937,24 @@
         "max_acceleration_jump_rad_s2": 4.108265394542343e-10
       },
       "smooth": {
+        "duration_s": 5.810500122559534,
+        "rms_jerk_rad_s3": 3.6090409845813607,
+        "peak_jerk_rad_s3": 11.186866456691416,
+        "integrated_squared_jerk": 75.68279155770806,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.640067414156789e-12,
+        "max_acceleration_jump_rad_s2": 9.894334240811986e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "5752d9691b8f46a0660ee84f179e29a1281da76d7490d4377f67604e5a6d820c",
+      "previous_smooth": {
         "duration_s": 6.0072611809837175,
         "rms_jerk_rad_s3": 3.798990511688624,
         "peak_jerk_rad_s3": 16.228109852306755,
@@ -3943,15 +4962,7 @@
         "max_position_jump_rad": 1.7763568394002505e-15,
         "max_velocity_jump_rad_s": 5.99525721112516e-13,
         "max_acceleration_jump_rad_s2": 4.108265394542343e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "3dba1abf518e458bbb6b36eafaa685624338c4bb5628e70f3a76c735a4184f31"
+      }
     },
     {
       "task_id": 101,
@@ -3987,10 +4998,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "2184928203a18c3aff48cf47087432a2d9eb14b7de6b6ef55102cea4c07b2920"
+      "audited_sha256": "2184928203a18c3aff48cf47087432a2d9eb14b7de6b6ef55102cea4c07b2920",
+      "previous_smooth": {
+        "duration_s": 4.517494096055791,
+        "rms_jerk_rad_s3": 3.2324768486732953,
+        "peak_jerk_rad_s3": 15.231076464098274,
+        "integrated_squared_jerk": 47.20287377277945,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.0988854063471157e-13,
+        "max_acceleration_jump_rad_s2": 1.7790524609040403e-10
+      }
     },
     {
       "task_id": 102,
@@ -4026,10 +5047,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "cc75a01d6ef2eb4b3067e869f09e07fd30f0065adc5615afd8b55d50639f82be"
+      "audited_sha256": "cc75a01d6ef2eb4b3067e869f09e07fd30f0065adc5615afd8b55d50639f82be",
+      "previous_smooth": {
+        "duration_s": 6.461337622299115,
+        "rms_jerk_rad_s3": 4.384114602575977,
+        "peak_jerk_rad_s3": 15.937933065236829,
+        "integrated_squared_jerk": 124.18988679846888,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 8.665570041724692e-13,
+        "max_acceleration_jump_rad_s2": 2.713654652548858e-10
+      }
     },
     {
       "task_id": 103,
@@ -4053,6 +5084,24 @@
         "max_acceleration_jump_rad_s2": 4.657904617566544e-10
       },
       "smooth": {
+        "duration_s": 5.973443947519145,
+        "rms_jerk_rad_s3": 4.511457181776839,
+        "peak_jerk_rad_s3": 17.228201421947656,
+        "integrated_squared_jerk": 121.57897355167894,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.7464239622055726e-12,
+        "max_acceleration_jump_rad_s2": 3.869314452176198e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "202a8015c9e576f7ff4272f39ef9ce86275f8236d75d3cb7a3b56ebeaad313c1",
+      "previous_smooth": {
         "duration_s": 6.035756006975452,
         "rms_jerk_rad_s3": 4.748902298095672,
         "peak_jerk_rad_s3": 30.722049079279735,
@@ -4060,15 +5109,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 1.026873031051423e-12,
         "max_acceleration_jump_rad_s2": 4.657904617566544e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "dd52a38500a196f9f8c6099b7d3c8cbac266f1e9d4f7f065a6a1876809117120"
+      }
     },
     {
       "task_id": 104,
@@ -4092,6 +5133,24 @@
         "max_acceleration_jump_rad_s2": 3.482658050835141e-10
       },
       "smooth": {
+        "duration_s": 5.798996627517044,
+        "rms_jerk_rad_s3": 5.241461804989204,
+        "peak_jerk_rad_s3": 17.658572283391408,
+        "integrated_squared_jerk": 159.31538117451817,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.8353708270145717e-12,
+        "max_acceleration_jump_rad_s2": 7.92753984679706e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "7f4dcc44c6de20f6543f9b6014d422f8a85191e875841b8f4c170dc7980f0470",
+      "previous_smooth": {
         "duration_s": 5.837584437014359,
         "rms_jerk_rad_s3": 5.517328217834214,
         "peak_jerk_rad_s3": 32.45631393702689,
@@ -4099,15 +5158,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 1.5065726444163374e-13,
         "max_acceleration_jump_rad_s2": 3.482658050835141e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "ae9ba93e31d97230982c352ef6620a04defaf7fa46a6f0b67d322565ffc67e82"
+      }
     },
     {
       "task_id": 105,
@@ -4131,6 +5182,24 @@
         "max_acceleration_jump_rad_s2": 4.410908860386087e-10
       },
       "smooth": {
+        "duration_s": 6.065454493171382,
+        "rms_jerk_rad_s3": 4.4111627461399046,
+        "peak_jerk_rad_s3": 18.215923897525578,
+        "integrated_squared_jerk": 118.02377751811551,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.2372381724977686e-12,
+        "max_acceleration_jump_rad_s2": 4.754743765378322e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "85bcfb88404c812b9167849f30c1c6f4ee6ae91d051b8c1a9dcf21b909d82494",
+      "previous_smooth": {
         "duration_s": 6.1026397705651005,
         "rms_jerk_rad_s3": 4.643329214595328,
         "peak_jerk_rad_s3": 31.251146699300506,
@@ -4138,15 +5207,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 8.083950175929999e-13,
         "max_acceleration_jump_rad_s2": 4.410908860386087e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "a29fe0974045578f108c4837ed1360a8d88dc8472b8fe6d5301a9c004289b11b"
+      }
     },
     {
       "task_id": 106,
@@ -4182,10 +5243,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "6c05a90b2f33c245bc73ef1b4774aa9099456596a538c0f48a3b6ff7dafc1014"
+      "audited_sha256": "6c05a90b2f33c245bc73ef1b4774aa9099456596a538c0f48a3b6ff7dafc1014",
+      "previous_smooth": {
+        "duration_s": 7.022843637402776,
+        "rms_jerk_rad_s3": 2.666582765661179,
+        "peak_jerk_rad_s3": 14.67920332457454,
+        "integrated_squared_jerk": 49.937078944873655,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 6.589728762662617e-13,
+        "max_acceleration_jump_rad_s2": 4.767419792273131e-10
+      }
     },
     {
       "task_id": 107,
@@ -4221,10 +5292,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "5875dc6e313759276b9c4eb4d10c90493ded35dbb876c6bf241eb2f75a061f96"
+      "audited_sha256": "5875dc6e313759276b9c4eb4d10c90493ded35dbb876c6bf241eb2f75a061f96",
+      "previous_smooth": {
+        "duration_s": 6.528569279496937,
+        "rms_jerk_rad_s3": 6.139472206390973,
+        "peak_jerk_rad_s3": 25.7967831251439,
+        "integrated_squared_jerk": 246.08213857585935,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.389243898209967e-13,
+        "max_acceleration_jump_rad_s2": 6.382648973669327e-11
+      }
     },
     {
       "task_id": 108,
@@ -4260,10 +5341,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "ee2ceea270c04f29684d2f9602364775927a01d3e6146631b21536321cd5d364"
+      "audited_sha256": "ee2ceea270c04f29684d2f9602364775927a01d3e6146631b21536321cd5d364",
+      "previous_smooth": {
+        "duration_s": 5.4003887717321275,
+        "rms_jerk_rad_s3": 4.93414407378,
+        "peak_jerk_rad_s3": 25.39093247568252,
+        "integrated_squared_jerk": 131.4766647506011,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 9.237055564881302e-13,
+        "max_acceleration_jump_rad_s2": 3.433903439375996e-10
+      }
     },
     {
       "task_id": 109,
@@ -4287,6 +5378,24 @@
         "max_acceleration_jump_rad_s2": 2.591597370732446e-10
       },
       "smooth": {
+        "duration_s": 6.426367751615977,
+        "rms_jerk_rad_s3": 3.85153124199505,
+        "peak_jerk_rad_s3": 10.940353327417006,
+        "integrated_squared_jerk": 95.33062156240763,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.2523732051406e-12,
+        "max_acceleration_jump_rad_s2": 1.1318855630548796e-08
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "df72f1778c163ccf1f06a9d00692ef87cc5f1ecf9a1747591e64204f781c9295",
+      "previous_smooth": {
         "duration_s": 6.627676158622057,
         "rms_jerk_rad_s3": 4.054243412721756,
         "peak_jerk_rad_s3": 20.626887821398835,
@@ -4294,15 +5403,7 @@
         "max_position_jump_rad": 8.881784197001252e-16,
         "max_velocity_jump_rad_s": 2.4333035569525053e-13,
         "max_acceleration_jump_rad_s2": 2.591597370732446e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "b6fb1615902382bf45f460f132d96f52721bae67b00dc771eaf8a99b4b88481d"
+      }
     },
     {
       "task_id": 110,
@@ -4338,10 +5439,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "578019953ae27321f4274c8953deb1e10b77385aa212cfad2cd5079128bac943"
+      "audited_sha256": "578019953ae27321f4274c8953deb1e10b77385aa212cfad2cd5079128bac943",
+      "previous_smooth": {
+        "duration_s": 6.888881776034007,
+        "rms_jerk_rad_s3": 2.226843297281499,
+        "peak_jerk_rad_s3": 19.517662582590287,
+        "integrated_squared_jerk": 34.16080099301503,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.1230342861440288e-12,
+        "max_acceleration_jump_rad_s2": 7.751960256433682e-10
+      }
     },
     {
       "task_id": 111,
@@ -4377,10 +5488,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "e8a1757d15016bc8a139448624fc908b9af4c5c9fb444a5e935657bb4fbb1bc7"
+      "audited_sha256": "e8a1757d15016bc8a139448624fc908b9af4c5c9fb444a5e935657bb4fbb1bc7",
+      "previous_smooth": {
+        "duration_s": 6.191932405497135,
+        "rms_jerk_rad_s3": 3.690835864628078,
+        "peak_jerk_rad_s3": 19.03280079607016,
+        "integrated_squared_jerk": 84.34817120811071,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 6.74058031613356e-13,
+        "max_acceleration_jump_rad_s2": 3.9219680281199487e-10
+      }
     },
     {
       "task_id": 112,
@@ -4404,6 +5525,24 @@
         "max_acceleration_jump_rad_s2": 3.099152106819658e-10
       },
       "smooth": {
+        "duration_s": 4.817214329356981,
+        "rms_jerk_rad_s3": 4.863421203352343,
+        "peak_jerk_rad_s3": 19.833130349079955,
+        "integrated_squared_jerk": 113.94092406798092,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.473876043667818e-13,
+        "max_acceleration_jump_rad_s2": 4.629720004069304e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "4bcc9326c1cc7a13018780f72c37dfed3f78646311b1dc3f10c0b5cdc913655f",
+      "previous_smooth": {
         "duration_s": 4.994750503789597,
         "rms_jerk_rad_s3": 5.119390741083032,
         "peak_jerk_rad_s3": 24.614683559646107,
@@ -4411,15 +5550,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 9.536815781530095e-14,
         "max_acceleration_jump_rad_s2": 3.099152106819658e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "c0d44af3c62d07c99ad97fb1bae4ffee0028e5932cd8c6ce16f89265462ab782"
+      }
     },
     {
       "task_id": 113,
@@ -4455,10 +5586,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "620de2643bf00d4615d046b2bbf38b9a9c74d6900dc2abc57b98be3ca998fdd0"
+      "audited_sha256": "620de2643bf00d4615d046b2bbf38b9a9c74d6900dc2abc57b98be3ca998fdd0",
+      "previous_smooth": {
+        "duration_s": 5.752133587609968,
+        "rms_jerk_rad_s3": 4.622316054146979,
+        "peak_jerk_rad_s3": 15.724098961000461,
+        "integrated_squared_jerk": 122.89896861877112,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.2429078556407748e-13,
+        "max_acceleration_jump_rad_s2": 7.693405321606343e-11
+      }
     },
     {
       "task_id": 114,
@@ -4494,10 +5635,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "cabc31f96b7728fdb11fb6f9e1658b4fc496e043bd882817f569ced657bf82fd"
+      "audited_sha256": "cabc31f96b7728fdb11fb6f9e1658b4fc496e043bd882817f569ced657bf82fd",
+      "previous_smooth": {
+        "duration_s": 6.584239003194461,
+        "rms_jerk_rad_s3": 5.746173896696758,
+        "peak_jerk_rad_s3": 20.347889551058,
+        "integrated_squared_jerk": 217.4017906763357,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.383308870403426e-13,
+        "max_acceleration_jump_rad_s2": 1.696504381481352e-10
+      }
     },
     {
       "task_id": 115,
@@ -4533,10 +5684,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "35843814678bd9f15c2ff21d8e7176d030a7c1c90c8fcd6111f35e4ae9c9d3d9"
+      "audited_sha256": "35843814678bd9f15c2ff21d8e7176d030a7c1c90c8fcd6111f35e4ae9c9d3d9",
+      "previous_smooth": {
+        "duration_s": 5.049419612548906,
+        "rms_jerk_rad_s3": 2.2811698599913974,
+        "peak_jerk_rad_s3": 6.903018457724976,
+        "integrated_squared_jerk": 26.27584626413986,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.951977583817017e-13,
+        "max_acceleration_jump_rad_s2": 3.033220341563947e-10
+      }
     },
     {
       "task_id": 116,
@@ -4572,10 +5733,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "554232dfafb64afe068300c5d82113661be0908bae25238aa1559eaadfd841a4"
+      "audited_sha256": "554232dfafb64afe068300c5d82113661be0908bae25238aa1559eaadfd841a4",
+      "previous_smooth": {
+        "duration_s": 4.7796095819361035,
+        "rms_jerk_rad_s3": 4.56083823093844,
+        "peak_jerk_rad_s3": 20.83984925236104,
+        "integrated_squared_jerk": 99.42183168087115,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.481648865703943e-13,
+        "max_acceleration_jump_rad_s2": 2.1135351437745475e-09
+      }
     },
     {
       "task_id": 117,
@@ -4611,10 +5782,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "42be04d82ce61bd4e3d25621eef3acdfac2841f914116dc3b363c66059b4807b"
+      "audited_sha256": "42be04d82ce61bd4e3d25621eef3acdfac2841f914116dc3b363c66059b4807b",
+      "previous_smooth": {
+        "duration_s": 5.471697162244564,
+        "rms_jerk_rad_s3": 3.8574174037189666,
+        "peak_jerk_rad_s3": 16.3580678310514,
+        "integrated_squared_jerk": 81.41704278751484,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.013628401329129e-13,
+        "max_acceleration_jump_rad_s2": 3.8836086083127164e-10
+      }
     },
     {
       "task_id": 118,
@@ -4650,10 +5831,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "186856c85fcc2a94e866c3a62f774ee07e35d34545af12f3a0173d3ef11920cb"
+      "audited_sha256": "186856c85fcc2a94e866c3a62f774ee07e35d34545af12f3a0173d3ef11920cb",
+      "previous_smooth": {
+        "duration_s": 3.990853391134182,
+        "rms_jerk_rad_s3": 5.876452691128234,
+        "peak_jerk_rad_s3": 19.965882712561243,
+        "integrated_squared_jerk": 137.81492785876537,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.1958892566501756e-13,
+        "max_acceleration_jump_rad_s2": 1.5550574114582024e-10
+      }
     },
     {
       "task_id": 119,
@@ -4689,10 +5880,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "e8a55db27457c22a1028f38242cde296c02daaa2f01edcddc8bf7b7b17632143"
+      "audited_sha256": "e8a55db27457c22a1028f38242cde296c02daaa2f01edcddc8bf7b7b17632143",
+      "previous_smooth": {
+        "duration_s": 4.455220218749987,
+        "rms_jerk_rad_s3": 6.590846446611062,
+        "peak_jerk_rad_s3": 16.55514596431105,
+        "integrated_squared_jerk": 193.5314555517503,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 3.331284561263155e-13,
+        "max_acceleration_jump_rad_s2": 2.3171020125215009e-10
+      }
     },
     {
       "task_id": 120,
@@ -4716,6 +5917,24 @@
         "max_acceleration_jump_rad_s2": 2.7100049981854113e-10
       },
       "smooth": {
+        "duration_s": 6.059073534083226,
+        "rms_jerk_rad_s3": 4.755635682927103,
+        "peak_jerk_rad_s3": 17.091589705466852,
+        "integrated_squared_jerk": 137.03243571858096,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.8952396036174832e-12,
+        "max_acceleration_jump_rad_s2": 8.297879716678835e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "a5dd07c9927b501816704f4ec2d5863c0978374c2794990aeade65f05779c023",
+      "previous_smooth": {
         "duration_s": 6.224331878673594,
         "rms_jerk_rad_s3": 5.005932299722624,
         "peak_jerk_rad_s3": 21.587431637895296,
@@ -4723,15 +5942,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 7.02327085377874e-13,
         "max_acceleration_jump_rad_s2": 2.7100049981854113e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "bab1756103962dcd14a784cd2f9dd28ea484f5e8ddcce20a313e0ac4974a9eb1"
+      }
     },
     {
       "task_id": 121,
@@ -4767,10 +5978,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "27ad377baf96c492d88ada006d539d87f55c54aafd5f03f2506e4023a424280a"
+      "audited_sha256": "27ad377baf96c492d88ada006d539d87f55c54aafd5f03f2506e4023a424280a",
+      "previous_smooth": {
+        "duration_s": 3.711804467945614,
+        "rms_jerk_rad_s3": 5.943001069225528,
+        "peak_jerk_rad_s3": 16.81693940220271,
+        "integrated_squared_jerk": 131.09819341532284,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 3.50823851276047e-13,
+        "max_acceleration_jump_rad_s2": 9.461241341808035e-11
+      }
     },
     {
       "task_id": 122,
@@ -4806,10 +6027,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "e165235daae5bf95ba3a3f32657f2c0f16b8c2c0e13841ea15b5c871c45dbed4"
+      "audited_sha256": "e165235daae5bf95ba3a3f32657f2c0f16b8c2c0e13841ea15b5c871c45dbed4",
+      "previous_smooth": {
+        "duration_s": 4.961199166254609,
+        "rms_jerk_rad_s3": 3.6112427470428585,
+        "peak_jerk_rad_s3": 18.289744978289736,
+        "integrated_squared_jerk": 64.69936633930365,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.444965056979962e-12,
+        "max_acceleration_jump_rad_s2": 9.68827290636666e-10
+      }
     },
     {
       "task_id": 123,
@@ -4845,10 +6076,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "ac4b30e991456c63c5317944c5f91f25ac07d9e0846eaef813da28b7289c27ca"
+      "audited_sha256": "ac4b30e991456c63c5317944c5f91f25ac07d9e0846eaef813da28b7289c27ca",
+      "previous_smooth": {
+        "duration_s": 6.454836763371812,
+        "rms_jerk_rad_s3": 4.204325183677578,
+        "peak_jerk_rad_s3": 14.108831140930024,
+        "integrated_squared_jerk": 114.0979554366175,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.947670299657261e-13,
+        "max_acceleration_jump_rad_s2": 6.131169738576858e-10
+      }
     },
     {
       "task_id": 124,
@@ -4884,10 +6125,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "a0cbb57f55192b2dfc806f6a006e328992958c0a2e9932aaa281eb18950854f7"
+      "audited_sha256": "a0cbb57f55192b2dfc806f6a006e328992958c0a2e9932aaa281eb18950854f7",
+      "previous_smooth": {
+        "duration_s": 4.551885533859078,
+        "rms_jerk_rad_s3": 3.233528698677513,
+        "peak_jerk_rad_s3": 17.9416820314374,
+        "integrated_squared_jerk": 47.59318528669116,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 5.430450707929075e-13,
+        "max_acceleration_jump_rad_s2": 1.6439673290757385e-10
+      }
     },
     {
       "task_id": 125,
@@ -4923,10 +6174,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "fc5287e4beaaa46a4d9f0a14888f62c2c57e2f13e33766b0a8fa00247e191689"
+      "audited_sha256": "fc5287e4beaaa46a4d9f0a14888f62c2c57e2f13e33766b0a8fa00247e191689",
+      "previous_smooth": {
+        "duration_s": 4.7043018159811325,
+        "rms_jerk_rad_s3": 3.862087215692433,
+        "peak_jerk_rad_s3": 19.517663199748334,
+        "integrated_squared_jerk": 70.16803768219697,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.7107355350978173e-12,
+        "max_acceleration_jump_rad_s2": 7.556140990683247e-10
+      }
     },
     {
       "task_id": 126,
@@ -4950,6 +6211,24 @@
         "max_acceleration_jump_rad_s2": 3.1680872175318155e-10
       },
       "smooth": {
+        "duration_s": 6.013151828539805,
+        "rms_jerk_rad_s3": 4.486167067182428,
+        "peak_jerk_rad_s3": 13.827386706246948,
+        "integrated_squared_jerk": 121.01885941732138,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 2.938857490697444e-12,
+        "max_acceleration_jump_rad_s2": 7.0800972862272715e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "af295b865c1423bc7bcde86446f031c3b5c178af9040b85a7a23c576e1160f8f",
+      "previous_smooth": {
         "duration_s": 6.1150317099931595,
         "rms_jerk_rad_s3": 4.722281124528049,
         "peak_jerk_rad_s3": 23.14816815859787,
@@ -4957,15 +6236,7 @@
         "max_position_jump_rad": 1.3322676295501878e-15,
         "max_velocity_jump_rad_s": 3.3254046624643305e-13,
         "max_acceleration_jump_rad_s2": 3.1680872175318155e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "94503ef950c0372e558db443dafbfccc6dba3f279e641d50950ea305807d52b0"
+      }
     },
     {
       "task_id": 127,
@@ -5001,10 +6272,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "e460a37312872ac444e68ea30029af7e5ece5f137e6dddc0453af6a76d7983e3"
+      "audited_sha256": "e460a37312872ac444e68ea30029af7e5ece5f137e6dddc0453af6a76d7983e3",
+      "previous_smooth": {
+        "duration_s": 4.294584942041058,
+        "rms_jerk_rad_s3": 3.5852713553950917,
+        "peak_jerk_rad_s3": 17.35719114288069,
+        "integrated_squared_jerk": 55.20332789550088,
+        "max_position_jump_rad": 2.220446049250313e-15,
+        "max_velocity_jump_rad_s": 5.971056982190248e-13,
+        "max_acceleration_jump_rad_s2": 6.361993913454878e-10
+      }
     },
     {
       "task_id": 128,
@@ -5040,10 +6321,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "a92fffa2c10ff8202cd2d8d86060ead686fb88bbe6d9f69428c7461750c3f9f7"
+      "audited_sha256": "a92fffa2c10ff8202cd2d8d86060ead686fb88bbe6d9f69428c7461750c3f9f7",
+      "previous_smooth": {
+        "duration_s": 5.319876513725116,
+        "rms_jerk_rad_s3": 4.721078625954545,
+        "peak_jerk_rad_s3": 15.235226480614106,
+        "integrated_squared_jerk": 118.57251131367104,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.5031727332534027e-13,
+        "max_acceleration_jump_rad_s2": 1.3831763952096986e-10
+      }
     },
     {
       "task_id": 129,
@@ -5079,10 +6370,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "578365157ceda4c131f113f68c859fa42d0f27e9b1d8bbe8b3e921f018a6d0ec"
+      "audited_sha256": "578365157ceda4c131f113f68c859fa42d0f27e9b1d8bbe8b3e921f018a6d0ec",
+      "previous_smooth": {
+        "duration_s": 5.811201862116352,
+        "rms_jerk_rad_s3": 3.7183534450865094,
+        "peak_jerk_rad_s3": 16.228109831496592,
+        "integrated_squared_jerk": 80.34656223914428,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.428510460691878e-13,
+        "max_acceleration_jump_rad_s2": 1.541960448214752e-10
+      }
     },
     {
       "task_id": 130,
@@ -5118,10 +6419,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "1d6a63dbcfa24c3dc3b36ec2891d0ec94b15f3a06bda6bbb178dfc7ae982b622"
+      "audited_sha256": "1d6a63dbcfa24c3dc3b36ec2891d0ec94b15f3a06bda6bbb178dfc7ae982b622",
+      "previous_smooth": {
+        "duration_s": 4.689283275330486,
+        "rms_jerk_rad_s3": 2.434246197843215,
+        "peak_jerk_rad_s3": 7.868395845334197,
+        "integrated_squared_jerk": 27.7866038564116,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.2264820810500705e-13,
+        "max_acceleration_jump_rad_s2": 3.7263292451683583e-10
+      }
     },
     {
       "task_id": 131,
@@ -5157,10 +6468,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "a6e17015cf21671f5ad387f35aa00fd0b648a3e7e33beeeb4ffea4e9f01833dc"
+      "audited_sha256": "a6e17015cf21671f5ad387f35aa00fd0b648a3e7e33beeeb4ffea4e9f01833dc",
+      "previous_smooth": {
+        "duration_s": 4.7608133446982075,
+        "rms_jerk_rad_s3": 3.354177939162797,
+        "peak_jerk_rad_s3": 19.517662921962426,
+        "integrated_squared_jerk": 53.56157646478998,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.857842549032461e-12,
+        "max_acceleration_jump_rad_s2": 1.765580294704576e-09
+      }
     },
     {
       "task_id": 132,
@@ -5196,10 +6517,20 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": false,
       "continuous_accepted": true,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": true,
       "byte_identical_to_baseline": true,
       "reason": null,
-      "audited_sha256": "59111fad23164753a7d1d28cc60923c849873672f550dfc80f1b9aadfcd34b12"
+      "audited_sha256": "59111fad23164753a7d1d28cc60923c849873672f550dfc80f1b9aadfcd34b12",
+      "previous_smooth": {
+        "duration_s": 7.1352983020539185,
+        "rms_jerk_rad_s3": 3.816739447122175,
+        "peak_jerk_rad_s3": 19.517662877814,
+        "integrated_squared_jerk": 103.94345806667651,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.313731142984145e-13,
+        "max_acceleration_jump_rad_s2": 4.665752836169323e-10
+      }
     },
     {
       "task_id": 133,
@@ -5223,6 +6554,24 @@
         "max_acceleration_jump_rad_s2": 2.7937089013690963e-10
       },
       "smooth": {
+        "duration_s": 4.202694289977803,
+        "rms_jerk_rad_s3": 3.3253131064270547,
+        "peak_jerk_rad_s3": 7.803205499288557,
+        "integrated_squared_jerk": 46.47216314409401,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 7.027281724190579e-13,
+        "max_acceleration_jump_rad_s2": 6.803603348022255e-09
+      },
+      "budget_accepted": false,
+      "local_clock_accepted": false,
+      "joint_polish_accepted": false,
+      "continuous_accepted": true,
+      "continuous_clock_polish_accepted": true,
+      "byte_identical_to_fast": false,
+      "byte_identical_to_baseline": false,
+      "reason": null,
+      "audited_sha256": "f9650eac21fb1b70dd56aaf5f832d00ed308c22e6a8f0f0f79251355cd63d80a",
+      "previous_smooth": {
         "duration_s": 4.240685770912488,
         "rms_jerk_rad_s3": 3.5003295873882077,
         "peak_jerk_rad_s3": 11.312307534793955,
@@ -5230,15 +6579,7 @@
         "max_position_jump_rad": 8.881784197001252e-16,
         "max_velocity_jump_rad_s": 3.250316682468224e-13,
         "max_acceleration_jump_rad_s2": 2.7937089013690963e-10
-      },
-      "budget_accepted": false,
-      "local_clock_accepted": false,
-      "joint_polish_accepted": false,
-      "continuous_accepted": true,
-      "byte_identical_to_fast": true,
-      "byte_identical_to_baseline": true,
-      "reason": null,
-      "audited_sha256": "1bd23b9ac5828bf79a6118f2210af5ed412e6ff6350abc5f21fd493a17111345"
+      }
     },
     {
       "task_id": 134,
@@ -5274,13 +6615,61 @@
       "local_clock_accepted": false,
       "joint_polish_accepted": true,
       "continuous_accepted": false,
+      "continuous_clock_polish_accepted": false,
       "byte_identical_to_fast": false,
       "byte_identical_to_baseline": false,
       "reason": null,
-      "audited_sha256": "89b48cebedd7f043e18395ff1400ceeb87371134eca6991458732ff277c517b0"
+      "audited_sha256": "89b48cebedd7f043e18395ff1400ceeb87371134eca6991458732ff277c517b0",
+      "previous_smooth": {
+        "duration_s": 1.3998438566518983,
+        "rms_jerk_rad_s3": 9.343132132991066,
+        "peak_jerk_rad_s3": 16.51672465268842,
+        "integrated_squared_jerk": 122.19813488047961,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 4.521373169148916e-14,
+        "max_acceleration_jump_rad_s2": 3.244738965360594e-10
+      }
     }
   ],
   "changed_from_previous_smooth": [
-    134
+    0,
+    1,
+    6,
+    7,
+    12,
+    13,
+    20,
+    22,
+    23,
+    24,
+    25,
+    28,
+    30,
+    33,
+    35,
+    36,
+    48,
+    51,
+    59,
+    60,
+    64,
+    66,
+    69,
+    73,
+    78,
+    79,
+    80,
+    83,
+    84,
+    85,
+    100,
+    103,
+    104,
+    105,
+    109,
+    112,
+    120,
+    126,
+    133
   ]
 }
