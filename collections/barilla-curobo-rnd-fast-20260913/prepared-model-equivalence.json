@@ -1,0 +1,110 @@
+[
+  {
+    "task_id": 0,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 0,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 0,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "903574ed93bc89563517101f501db8931ead27c1bcef669f0c1015aa778a07fe"
+  },
+  {
+    "task_id": 2,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 2,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 2,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "fbf2a300e5863fa9f7af63d74eb800e7bf3af44bcf51bbb95eecc749047c397f"
+  },
+  {
+    "task_id": 29,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 29,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 29,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "af700cc4c503d0e360905c6b823ce235fae06364d65fe2bf1401bd6f00fb39b2"
+  },
+  {
+    "task_id": 38,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 38,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 38,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "b2afd40d46c0f4ca3757ba2c610aa251ba613aea6a52b75b91cb4444f357c24a"
+  },
+  {
+    "task_id": 40,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 40,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 40,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "33e735ad5f00e8addbd3bfbb904d89acfadb3793814ee3aef5b38159a99caa36"
+  },
+  {
+    "task_id": 57,
+    "part": 0,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "7eab3910fc7ab4ad7fc7beb4fdc3a01e7816d72088071903757374813c4d314e"
+  },
+  {
+    "task_id": 57,
+    "part": 1,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "018c550f594d57642ed37cd2329cd1245e08891bf91b43611b6e20e98a1e24f5"
+  },
+  {
+    "task_id": 57,
+    "part": 2,
+    "native_inputs_exactly_equal": true,
+    "urdf_sha256": "10b48a0b475c22cef02dedf30efd311d310da53b3e1caff24f1e4885fe74e696"
+  }
+]

@@ -1,0 +1,546 @@
+{
+  "baseline": "curobo-rnd-final-20260913",
+  "exact_matches": 129,
+  "rows": [
+    {
+      "task_id": 0,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 1,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 2,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 3,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 4,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 5,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 6,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 7,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 8,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 9,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 10,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 11,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 12,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 13,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 14,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 15,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 16,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 17,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 18,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 19,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 20,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 21,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 22,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 23,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 24,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 25,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 26,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 27,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 28,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 29,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 30,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 31,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 32,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 33,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 34,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 35,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 36,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 37,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 38,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 39,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 40,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 41,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 42,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 43,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 44,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 45,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 46,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 47,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 48,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 49,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 50,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 51,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 52,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 53,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 54,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 55,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 56,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 57,
+      "parts_exactly_equal": false
+    },
+    {
+      "task_id": 58,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 59,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 60,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 61,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 62,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 63,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 64,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 65,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 66,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 67,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 68,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 69,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 70,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 71,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 72,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 73,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 74,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 75,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 76,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 77,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 78,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 79,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 80,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 81,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 82,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 83,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 84,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 85,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 86,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 87,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 88,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 89,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 90,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 91,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 92,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 93,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 94,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 95,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 96,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 97,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 98,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 99,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 100,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 101,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 102,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 103,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 104,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 105,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 106,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 107,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 108,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 109,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 110,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 111,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 112,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 113,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 114,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 115,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 116,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 117,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 118,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 119,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 120,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 121,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 122,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 123,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 124,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 125,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 126,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 127,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 128,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 129,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 130,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 131,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 132,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 133,
+      "parts_exactly_equal": true
+    },
+    {
+      "task_id": 134,
+      "parts_exactly_equal": true
+    }
+  ]
+}
