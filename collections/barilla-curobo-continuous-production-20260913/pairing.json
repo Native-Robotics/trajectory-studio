@@ -1,6 +1,6 @@
 {
   "count": 135,
-  "curobo_source": "curobo-geometry-recovery-full-20260913",
+  "curobo_source": "curobo-dense-geometry-full-20260913",
   "reference_source": "original recorded Barilla",
   "continuous_default": false,
   "smoothing_portfolio_default": false,
