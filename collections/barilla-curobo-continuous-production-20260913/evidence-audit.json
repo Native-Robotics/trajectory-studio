@@ -1,0 +1,13 @@
+{
+  "tasks": 135,
+  "parts": 367,
+  "matching_source_files": 105,
+  "recorded_constraint_passes": 135,
+  "recorded_core_FCL_passes": 135,
+  "production_SOLVED": 135,
+  "payload_and_export_fidelity": true,
+  "allowed_input_normalization": "DH joint_type enum names uppercased by deserialization; all other fields equal",
+  "scope": "Saved-evidence audit, not a new continuous-time or collision proof.",
+  "continuous_accepted": 97,
+  "continuous_rejected": 38
+}

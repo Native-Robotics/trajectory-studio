@@ -1,0 +1,96 @@
+[
+  {
+    "kind": "fresh",
+    "requests_per_mode": 10,
+    "measured_per_mode": 10,
+    "metrics_control_enabled": {
+      "elapsed_s": [
+        6.940584369502176,
+        8.156858544996794
+      ],
+      "sampled_cpu_s": [
+        7.495000000000001,
+        9.195
+      ],
+      "peak_summed_rss_mb": [
+        1594.185546875,
+        1617.654296875
+      ],
+      "peak_gpu_compute_mb": [
+        594.0,
+        594.0
+      ]
+    },
+    "motion_metrics_control_enabled": {
+      "duration_s": [
+        5.6373571800195865,
+        5.411059375383806
+      ],
+      "rms_jerk_rad_s3": [
+        4.221410686692006,
+        4.197206973061233
+      ],
+      "normalized_jerk": [
+        62251.587443410135,
+        32912.69149996702
+      ],
+      "total_mileage_rad": [
+        5.004389107135951,
+        5.004389107135951
+      ],
+      "peak_jerk_rad_s3": [
+        16.87150381552348,
+        21.417001989962763
+      ]
+    },
+    "continuous_accepted_measured": 5,
+    "scope": "One sequential same-source A/B trial on the historical fixed ten. Warm summaries use second requests. Resource samples every50ms; medians are observational, not confidence intervals. Motion quality metrics do not replace constraint checks."
+  },
+  {
+    "kind": "warm",
+    "requests_per_mode": 20,
+    "measured_per_mode": 10,
+    "metrics_control_enabled": {
+      "elapsed_s": [
+        3.6994186225019803,
+        3.707577136498003
+      ],
+      "sampled_cpu_s": [
+        3.8749999999999973,
+        4.1800000000000015
+      ],
+      "peak_summed_rss_mb": [
+        1625.21484375,
+        1651.765625
+      ],
+      "peak_gpu_compute_mb": [
+        914.0,
+        914.0
+      ]
+    },
+    "motion_metrics_control_enabled": {
+      "duration_s": [
+        5.6373571800195865,
+        5.411059375383806
+      ],
+      "rms_jerk_rad_s3": [
+        4.221410686692006,
+        4.197206973061233
+      ],
+      "normalized_jerk": [
+        62251.587443410135,
+        32912.69149996702
+      ],
+      "total_mileage_rad": [
+        5.004389107135951,
+        5.004389107135951
+      ],
+      "peak_jerk_rad_s3": [
+        16.87150381552348,
+        21.417001989962763
+      ]
+    },
+    "continuous_accepted_measured": 5,
+    "scope": "One sequential same-source A/B trial on the historical fixed ten. Warm summaries use second requests. Resource samples every50ms; medians are observational, not confidence intervals. Motion quality metrics do not replace constraint checks."
+  }
+]
