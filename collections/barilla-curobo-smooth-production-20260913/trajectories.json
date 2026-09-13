@@ -32,6 +32,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -100,6 +101,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -168,6 +170,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -236,6 +239,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -304,6 +308,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -372,6 +377,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -446,6 +452,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -514,6 +521,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -582,6 +590,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -650,6 +659,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -724,6 +734,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -792,6 +803,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -866,6 +878,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -934,6 +947,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1002,6 +1016,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1076,6 +1091,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1144,6 +1160,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1212,6 +1229,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1280,6 +1298,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1348,6 +1367,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -1416,6 +1436,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1484,6 +1505,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1552,6 +1574,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1620,6 +1643,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1694,6 +1718,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1762,6 +1787,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1830,6 +1856,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1904,6 +1931,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -1972,6 +2000,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2040,6 +2069,7 @@
     "geometry_samples": 1801,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -2114,6 +2144,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2182,6 +2213,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2250,6 +2282,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2317,6 +2350,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2385,6 +2419,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2453,6 +2488,7 @@
     "geometry_samples": 1801,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2520,6 +2556,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2588,6 +2625,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2656,6 +2694,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2724,6 +2763,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2792,6 +2832,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2860,6 +2901,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2928,6 +2970,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -2996,6 +3039,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3064,6 +3108,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3132,6 +3177,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -3200,6 +3246,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -3268,6 +3315,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3336,6 +3384,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3404,6 +3453,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3472,6 +3522,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3540,6 +3591,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3614,6 +3666,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3682,6 +3735,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -3750,6 +3804,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3818,6 +3873,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -3892,6 +3948,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -3960,6 +4017,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4028,6 +4086,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4096,6 +4155,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4164,6 +4224,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4232,6 +4293,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4300,6 +4362,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4368,6 +4431,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4436,6 +4500,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4504,6 +4569,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4578,6 +4644,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4646,6 +4713,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4714,6 +4782,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4788,6 +4857,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4856,6 +4926,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4924,6 +4995,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -4998,6 +5070,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5066,6 +5139,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5134,6 +5208,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5201,6 +5276,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5269,6 +5345,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5337,6 +5414,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5405,6 +5483,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5473,6 +5552,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5541,6 +5621,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5583,7 +5664,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.992042370399925,
+    "duration": 6.885004691371112,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5609,7 +5690,8 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "stopped-path conic timing",
-    "jerk_budget_selected": false,
+    "local_clock_recovery_selected": true,
+    "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
   {
@@ -5677,6 +5759,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5745,6 +5828,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5813,6 +5897,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5881,6 +5966,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -5949,6 +6035,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6017,6 +6104,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -6085,6 +6173,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6153,6 +6242,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6221,6 +6311,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6289,6 +6380,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6357,6 +6449,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -6425,6 +6518,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6493,6 +6587,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6567,6 +6662,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6635,6 +6731,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6703,6 +6800,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6771,6 +6869,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6839,6 +6938,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6907,6 +7007,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -6981,6 +7082,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7049,6 +7151,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7117,6 +7220,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7185,6 +7289,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7253,6 +7358,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7321,6 +7427,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7389,6 +7496,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -7457,6 +7565,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7525,6 +7634,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7593,6 +7703,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7661,6 +7772,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7729,6 +7841,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -7797,6 +7910,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -7865,6 +7979,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -7933,6 +8048,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8001,6 +8117,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8069,6 +8186,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8137,6 +8255,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -8205,6 +8324,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -8273,6 +8393,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8341,6 +8462,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -8409,6 +8531,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8477,6 +8600,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8545,6 +8669,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8613,6 +8738,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8681,6 +8807,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8749,6 +8876,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8817,6 +8945,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": true,
     "retiming_mode": "stopped-path conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": true,
     "jerk_budget_ratio": 0.95
   },
@@ -8885,6 +9014,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -8953,6 +9083,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -9021,6 +9152,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -9089,6 +9221,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -9163,6 +9296,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "continuous conic timing",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
@@ -9231,6 +9365,7 @@
     "geometry_samples": null,
     "stopped_path_retiming_selected": false,
     "retiming_mode": "per-part rest-to-rest",
+    "local_clock_recovery_selected": false,
     "jerk_budget_selected": false,
     "jerk_budget_ratio": 0.95
   },
