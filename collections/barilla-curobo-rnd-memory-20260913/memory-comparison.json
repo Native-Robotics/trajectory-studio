@@ -1,0 +1,28 @@
+{
+  "scope": "Sampled per-worker GPU allocation in sequential full replays; not isolated latency evidence. Different recovery results can produce different valid paths.",
+  "audit": {
+    "tasks": 135,
+    "parts": 367,
+    "matching_source_files": 99,
+    "recorded_constraint_passes": 135,
+    "recorded_core_FCL_passes": 135,
+    "production_SOLVED": 135,
+    "payload_and_export_fidelity": true,
+    "allowed_input_normalization": "DH joint_type enum names uppercased by deserialization; all other fields equal",
+    "scope": "Saved-evidence audit, not a new continuous-time or collision proof."
+  },
+  "recovery_tasks": [
+    {
+      "task_id": 0,
+      "previous_peak_gpu_mib": 5726.0,
+      "current_peak_gpu_mib": 2902.0,
+      "buffer_sequence": [
+        256,
+        512
+      ],
+      "status": "SOLVED"
+    }
+  ],
+  "previous_full_peak_gpu_mib": 5732.0,
+  "current_full_peak_gpu_mib": 3766.0
+}

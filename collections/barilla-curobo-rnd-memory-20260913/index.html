@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trajectory Studio - 6DOF Robot Trajectory Viewer</title>
+  <meta name="description" content="Interactive 3D viewer and analysis dashboard for 6DOF robot arm joint trajectories with motion curves.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css?v=barilla1">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Import map for Three.js -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="app-container">
+    
+    <!-- LEFT SIDEBAR: Trajectory List -->
+    <aside id="sidebar-left" class="glass-panel">
+      <!-- Format Switch -->
+      <div class="mode-switch-container">
+        <button class="mode-btn active" data-mode="traj" id="mode-btn-traj">TRAJ</button>
+        <button class="mode-btn" data-mode="csv" id="mode-btn-csv">CSV</button>
+        <button class="mode-btn" data-mode="mcap" id="mode-btn-mcap" disabled>MCAP</button>
+      </div>
+
+
+      <p class="corpus-link"><a href="report.html">135-task results →</a><a href="collections/barilla-curobo-improved-20260913/index.html">Original cuRobo results →</a><a href="../barilla-benchmark-20260913/report.html">Previous comparison →</a><span>↑↓ select</span></p>
+      <div class="search-filter-box">
+        <div class="search-wrapper">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search by Trajectory ID..." aria-label="Search by Trajectory ID">
+        </div>
+        
+        <div class="filters-row">
+          <div class="filter-group" style="display: flex; align-items: center; gap: 8px;">
+            <div class="filter-badges" id="status-filters">
+              <button class="badge-btn active" data-filter="status" data-val="all" id="filter-status-all">All</button>
+              <button class="badge-btn" data-filter="status" data-val="70" id="filter-status-success">Success</button>
+              <button class="badge-btn" data-filter="status" data-val="fail" id="filter-status-fail">Failed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="barilla-sort" aria-label="Sort trajectories"><button class="badge-btn active" data-sort="box">Box order</button><button class="badge-btn" data-sort="mileage">Mileage</button><button class="badge-btn" data-sort="compute">Compute</button></div>
+      <div class="trajectory-list-container">
+        <ul id="trajectory-list" class="styled-list" role="listbox" aria-label="Trajectory list" tabindex="0">
+          <!-- Items will be generated dynamically -->
+        </ul>
+      </div>
+      
+      <!-- Scale Tools Panel -->
+      <div id="scale-tools-panel" class="scale-tools-panel">
+        <div class="scale-meta-row">
+          <span class="meta-label">Segments:</span>
+          <span class="meta-val monospace" id="meta-parts">--</span>
+        </div>
+        <div class="scale-slider-row">
+          <label for="time-scale-slider" class="scale-label">Time Adjust: <span id="time-scale-val">0%</span></label>
+          <div class="scale-slider-wrapper">
+            <input type="range" id="time-scale-slider" min="-100" max="100" value="0" step="5">
+            <div class="scale-slider-zero-marker" title="Original Time (0%)"></div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 4px;">
+          <button id="btn-edit-traj" class="action-btn" title="Edit Trajectory Geometry" style="flex: 1; background: var(--warning-color); color: #000; display: flex; justify-content: center; align-items: center; gap: 4px;"><i data-lucide="edit-3" style="width: 14px; height: 14px;"></i> Edit</button>
+          <button id="btn-rename-traj" class="action-btn" title="Rename Trajectory" style="flex: 1; display: flex; justify-content: center; align-items: center; gap: 4px;"><i data-lucide="type" style="width: 14px; height: 14px;"></i> Rename</button>
+          <button id="btn-delete-traj" class="action-btn" title="Delete Trajectory" style="flex: 1; background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: rgba(239, 68, 68, 0.3); display: flex; justify-content: center; align-items: center; gap: 4px;"><i data-lucide="trash-2" style="width: 14px; height: 14px;"></i> Delete</button>
+        </div>
+      </div>
+    </aside>
+    
+    <div class="panel-resizer" id="resize-left" role="separator" tabindex="0" aria-orientation="vertical" aria-label="Resize trajectory list"></div>
+    <!-- CENTER VIEW: 3D Scene and Playback Controls -->
+    <main id="main-viewer">
+      
+      <div id="canvas-container">
+        <canvas id="three-canvas"></canvas>
+        
+        <!-- Floating Scene Control Panel (Top Left) -->
+        <div id="scene-control-panel" class="scene-control-panel glass-panel">
+          <div id="scene-model-text" class="scene-model-text">
+            <span class="meta-label">Model:</span>
+            <span id="meta-robot-model" class="meta-val monospace">--</span>
+          </div>
+          <div id="scene-csv-controls" class="scene-csv-controls hidden">
+            <select id="csv-robot-select" class="config-select" style="width: 125px;">
+              <option value="dobot-cr20a">Dobot CR20A</option>
+              <option value="dobot-cr30h">Dobot CR30H</option>
+            </select>
+            <select id="csv-timing-mode" class="config-select" style="width: 140px;">
+              <option value="hz">Frequency (Hz)</option>
+              <option value="step">Time Step (s)</option>
+            </select>
+            <input type="number" id="csv-timing-val" class="config-input" value="20" min="0.0001" step="any" style="width: 70px; text-align: right;">
+          </div>
+        </div>
+
+        <!-- Floating TCP Position Panel (Bottom Left) -->
+        <div id="scene-tcp-panel" class="scene-tcp-panel glass-panel">
+          <div class="tcp-coord">
+            <span class="tcp-label" style="color: #ef4444;">X</span>
+            <span class="tcp-val monospace" id="tcp-x">0.000</span>
+          </div>
+          <div class="tcp-coord">
+            <span class="tcp-label" style="color: #22c55e;">Y</span>
+            <span class="tcp-val monospace" id="tcp-y">0.000</span>
+          </div>
+          <div class="tcp-coord">
+            <span class="tcp-label" style="color: #3b82f6;">Z</span>
+            <span class="tcp-val monospace" id="tcp-z">0.000</span>
+          </div>
+        </div>
+
+
+        
+        <!-- Warning Overlay for Failed Trajectories -->
+        <div id="failed-trajectory-overlay" class="hidden">
+          <div class="warning-card glass-panel">
+            <i data-lucide="alert-triangle" class="warning-icon"></i>
+            <h3>No Motion Path Planned</h3>
+            <p id="failed-trajectory-reason">This trajectory planning request failed (Status <span id="warning-status-code">--</span>). The robot remains static at the target state.</p>
+          </div>
+        </div>
+        
+        <!-- Center loading spinner -->
+        <div id="canvas-loader" class="hidden">
+          <div class="spinner"></div>
+          <span id="loader-text">Loading trajectory data...</span>
+        </div>
+      </div>
+    </main>
+    
+    <div class="panel-resizer" id="resize-right" role="separator" tabindex="0" aria-orientation="vertical" aria-label="Resize charts"></div>
+    <!-- RIGHT SIDEBAR: Joint Graph and Joint Details -->
+    <aside id="sidebar-right" class="glass-panel">
+      <!-- VIEW MODE: Graph and Table -->
+      <div id="view-mode-panels" style="display: flex; flex-direction: column; height: 100%; flex: 1; overflow: hidden; min-height: 0;">
+      
+      <!-- Graph Metric Selector Tabs -->
+      <nav class="graph-tabs" aria-label="Metric tabs">
+        <button class="tab-btn active" data-tab="position" id="tab-position">Position</button>
+        <button class="tab-btn" data-tab="velocity" id="tab-velocity">Velocity</button>
+        <button class="tab-btn" data-tab="acceleration" id="tab-acceleration">Accel</button>
+        <button class="tab-btn" data-tab="jerk" id="tab-jerk">Jerk</button>
+      </nav>
+      
+      <!-- Chart Canvas Wrapper -->
+      <div class="chart-container">
+        <canvas id="motion-chart"></canvas>
+        <div id="timeline-slider-wrapper">
+          <input type="range" id="timeline-slider" min="0" max="100" value="0" step="0.01" aria-label="Trajectory timeline slider">
+          <div id="timeline-progress-bar"></div>
+        </div>
+        
+        <!-- Controls row at the bottom line of the chart container, matching ticks/label line -->
+        <div id="timeline-controls-row">
+          <div class="controls-left">
+            <div class="speed-badges">
+              <button class="speed-btn" data-speed="0.25">0.25x</button>
+              <button class="speed-btn" data-speed="0.5">0.5x</button>
+              <button class="speed-btn active" data-speed="1.0">1x</button>
+              <button class="speed-btn" data-speed="2.0">2x</button>
+            </div>
+            <button id="btn-loop" class="playback-btn" title="Toggle Loop" aria-label="Toggle loop playback">
+              <i data-lucide="repeat"></i>
+            </button>
+          </div>
+          
+          <button id="btn-play-pause" class="playback-btn primary" title="Play / Pause" aria-label="Play or Pause animation">
+            <i data-lucide="play" id="play-icon"></i>
+          </button>
+          
+          <div class="controls-right">
+            <div class="time-display monospace">
+              <span id="time-current">0.00s</span>
+              <span class="divider">/</span>
+              <span id="time-total">0.00s</span>
+            </div>
+            <span class="graph-axis-title">Time (seconds)</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Joint Values Table -->
+      <section class="joint-table-section">
+        <!-- Removed section-title-row to save space -->
+        
+        <div class="table-container">
+          <table id="joint-states-table">
+            <thead>
+              <tr>
+                <th style="width: 12%; text-align: left;">Joint</th>
+                <th style="width: 38%; text-align: center;">Position</th>
+                <th style="width: 38%; text-align: center;">Velocity</th>
+                <th style="width: 12%; text-align: right;">Accel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 6 rows generated dynamically -->
+              <tr id="joint-row-1" data-joint="0">
+                <td><span class="joint-dot" style="background-color: var(--j1-color);"></span>J1</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 4.57</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+              <tr id="joint-row-2" data-joint="1">
+                <td><span class="joint-dot" style="background-color: var(--j2-color);"></span>J2</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 6.28</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+              <tr id="joint-row-3" data-joint="2">
+                <td><span class="joint-dot" style="background-color: var(--j3-color);"></span>J3</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 2.78</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+              <tr id="joint-row-4" data-joint="3">
+                <td><span class="joint-dot" style="background-color: var(--j4-color);"></span>J4</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 6.28</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+              <tr id="joint-row-5" data-joint="4">
+                <td><span class="joint-dot" style="background-color: var(--j5-color);"></span>J5</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 6.28</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+              <tr id="joint-row-6" data-joint="5">
+                <td><span class="joint-dot" style="background-color: var(--j6-color);"></span>J6</td>
+                <td class="monospace val-cell"><span class="j-val">0.000</span> <span class="j-lim">/ 3.32</span></td>
+                <td class="monospace vel-cell">0.00</td>
+                <td class="monospace accel-cell">0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      </div>
+      
+      <!-- EDIT MODE: Limits Control Form -->
+      <div id="edit-mode-panels" class="hidden" style="display: flex; flex-direction: column; height: 100%; flex: 1; overflow-y: auto; padding: 20px; gap: 16px;">
+        <h2 style="font-size: 1.1rem; color: var(--accent-color); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+          <i data-lucide="sliders" style="width: 18px; height: 18px;"></i> Limits Control
+        </h2>
+        
+        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 8px;">
+          Adjust physical limits. The backend will recalculate the optimal time-parametrization to respect these bounds.
+        </p>
+
+        <div class="config-row">
+          <label class="config-label" for="limit-tcp-speed">Max TCP Speed (mm/s)</label>
+          <input type="number" id="limit-tcp-speed" class="config-input" value="1000" min="10" step="10">
+        </div>
+        
+        <div class="config-row">
+          <label class="config-label" for="limit-centripetal">Max Centripetal Force (N)</label>
+          <input type="number" id="limit-centripetal" class="config-input" value="150" min="10" step="5">
+        </div>
+        
+        <div class="config-row" style="margin-top: 12px;">
+          <label class="config-label">Dobot CR20A Parameters (Read-Only)</label>
+          <div style="background: rgba(0,0,0,0.3); padding: 12px; border-radius: 8px; border: 1px solid var(--panel-border); font-size: 0.75rem; color: var(--text-muted); font-family: 'JetBrains Mono', monospace;">
+            Payload: 20kg<br>
+            Max Vel: [120, 120, 150, 180, 180, 180] deg/s<br>
+            Max Trq: [1353, 1353, 676, 268, 268, 268] Nm
+          </div>
+        </div>
+
+        <div style="flex: 1;"></div>
+
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 20px;">
+          <button id="btn-recalculate" class="action-btn" style="padding: 12px; font-size: 0.9rem; display: flex; justify-content: center; align-items: center; gap: 8px;">
+            <i data-lucide="refresh-cw" style="width: 16px; height: 16px;"></i> Recalculate Trajectory
+          </button>
+
+          <button id="btn-cancel-edit" class="action-btn" style="background: rgba(255,255,255,0.05); color: var(--text-primary); border: 1px solid var(--panel-border);">
+            Cancel Edit
+          </button>
+        </div>
+      </div>
+    </aside>
+    
+  </div>
+  
+  <!-- Hidden elements to prevent app.js errors -->
+  <div style="display: none;">
+    <span id="active-trajectory-id">None</span>
+    <button id="copy-id-btn"></button>
+    <span id="meta-duration"></span>
+    <span id="meta-interpolation"></span>
+  </div>
+
+  <!-- JavaScript Root Entry Point -->
+  <script type="module" src="app.js?v=barilla1"></script>
+</body>
+</html>
