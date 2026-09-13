@@ -6,7 +6,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.182931669447183,
+    "duration": 6.188243396929654,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -21,12 +21,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29-ref",
@@ -85,9 +86,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7-ref",
@@ -146,9 +148,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-ref",
@@ -207,9 +210,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "d11f7e3674a194e159d178dfd86113da494021a409ab52062aca88a210751222-ref",
@@ -268,9 +272,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815-ref",
@@ -329,9 +334,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19-ref",
@@ -396,9 +402,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "14dad0b1314d843887dfb27099e2ef3b4551d27e37832ddba80830b607eed6f7-ref",
@@ -457,9 +464,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "874c2ff6ed99371f56f5534b0e5647f78ecd31e1f64bfb060ac54a5272ed5767-ref",
@@ -500,7 +508,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.517582569148638,
+    "duration": 6.51492454958434,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -518,9 +526,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "157778044707b6b38066ec220a68d9041ce05269962daec3475b8396422ab85a-ref",
@@ -561,7 +570,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.987505818018492,
+    "duration": 6.790413599804433,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -579,9 +588,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "990b4a17e4bbe938fc45f65f5c5906b48b80d60a977651ab4cca93918db60460-ref",
@@ -646,9 +656,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05-ref",
@@ -707,9 +718,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95-ref",
@@ -774,9 +786,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43-ref",
@@ -835,9 +848,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf-ref",
@@ -878,7 +892,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.559603233688864,
+    "duration": 7.285829010854664,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -896,9 +910,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838-ref",
@@ -945,7 +960,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.335633995229767,
+    "duration": 5.114606080082555,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -963,9 +978,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "c82ec835fe944eff30aab8917fa1906c8ec0b2b2169bf51f4a4b036eb089e240-ref",
@@ -1006,7 +1022,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.571648334559231,
+    "duration": 5.443444399147502,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1024,9 +1040,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b-ref",
@@ -1085,9 +1102,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06-ref",
@@ -1146,9 +1164,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "1327e2bffb12a417a7bf56f44d3865dc9518fd7535c9d700682d477c6f789d4b-ref",
@@ -1207,9 +1226,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473-ref",
@@ -1250,7 +1270,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.595158712147047,
+    "duration": 7.550111704989488,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1268,9 +1288,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857-ref",
@@ -1329,9 +1350,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "4534dd005e414e88e712d5e26835809ae2cb800719088e89652d6c51665b090b-ref",
@@ -1372,7 +1394,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.331746666365754,
+    "duration": 5.9864218005091265,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1390,9 +1412,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583-ref",
@@ -1433,7 +1456,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.42126185846899,
+    "duration": 7.08941157147384,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1451,9 +1474,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e-ref",
@@ -1500,7 +1524,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.444484527198826,
+    "duration": 6.194236373545753,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -1518,9 +1542,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "7733d0fe0777e8be858249b95aea32045ca4c9027dd26a1d6d40d633de3e73b2-ref",
@@ -1561,7 +1586,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.814568148015356,
+    "duration": 5.517766591014236,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1579,9 +1604,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018-ref",
@@ -1622,7 +1648,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 9.677180544787207,
+    "duration": 9.331716986615454,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1640,9 +1666,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74-ref",
@@ -1689,7 +1716,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.846874446687471,
+    "duration": 5.8629125528804895,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -1707,9 +1734,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "09ace9b8946c23d6a961a3b2cf747c6b961b6ed5a3a1dec045300f2843c0b665-ref",
@@ -1750,7 +1778,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.630440622466632,
+    "duration": 5.5831172502709325,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1768,9 +1796,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c-ref",
@@ -1829,9 +1858,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c-ref",
@@ -1878,7 +1908,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.884894538466075,
+    "duration": 5.581876455470234,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -1896,9 +1926,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "637b8daa125b4be9dd797ab6a17346b58f42fcddb325a3348d90ce6c8ab954e7-ref",
@@ -1939,7 +1970,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.092913877202442,
+    "duration": 7.846900022743626,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -1957,9 +1988,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368-ref",
@@ -2000,7 +2032,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.4356888983538045,
+    "duration": 7.136144408741676,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2018,9 +2050,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4-ref",
@@ -2078,9 +2111,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "c3c0bcb6e33ecfb2112015a8d37c42dce013894f0690e884ca64936b48927d24-ref",
@@ -2121,7 +2155,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.806484106729227,
+    "duration": 5.792400798026463,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2139,9 +2173,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7-ref",
@@ -2200,9 +2235,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1-ref",
@@ -2242,7 +2278,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.960658450827332,
+    "duration": 5.807303506461267,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -2260,9 +2296,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "763c16198f2fb926e8935cb1ce0a07d5b7e5336a3f019b72358302b0700e31f7-ref",
@@ -2303,7 +2340,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.004025936166913,
+    "duration": 7.797768957827685,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2321,9 +2358,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0-ref",
@@ -2382,9 +2420,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7-ref",
@@ -2425,7 +2464,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.141629877656048,
+    "duration": 5.9536961465394,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2443,9 +2482,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e-ref",
@@ -2486,7 +2526,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.900490219518412,
+    "duration": 6.815165118630286,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2504,9 +2544,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea-ref",
@@ -2547,7 +2588,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.426713988906283,
+    "duration": 4.379027031922585,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2565,9 +2606,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e-ref",
@@ -2608,7 +2650,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.991631195816415,
+    "duration": 6.833937527977844,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2626,9 +2668,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1-ref",
@@ -2687,9 +2730,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94-ref",
@@ -2730,7 +2774,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.626797992933892,
+    "duration": 4.57528025752965,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2748,9 +2792,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352-ref",
@@ -2809,9 +2854,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af-ref",
@@ -2870,9 +2916,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "8ab37c289d3653f6f35f1555b43212e7de6a53004f746ad426ed6c7a365ed18f-ref",
@@ -2913,7 +2960,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.101732547667189,
+    "duration": 4.558375824330055,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -2931,9 +2978,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f-ref",
@@ -2992,9 +3040,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7-ref",
@@ -3053,9 +3102,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328-ref",
@@ -3096,7 +3146,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.782586099502664,
+    "duration": 4.77025561705429,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3114,9 +3164,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a-ref",
@@ -3175,9 +3226,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752-ref",
@@ -3242,9 +3294,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b-ref",
@@ -3303,9 +3356,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8-ref",
@@ -3346,7 +3400,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.605490105253677,
+    "duration": 6.156452100384526,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -3364,9 +3418,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df-ref",
@@ -3425,9 +3480,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852-ref",
@@ -3492,9 +3548,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "227de82358a9d408c4fc0b353a4179d8a7bc7ea7c3d2397bc278456ffa7b0856-ref",
@@ -3535,7 +3592,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 9.58851920236079,
+    "duration": 9.120962458184561,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3553,9 +3610,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2-ref",
@@ -3614,9 +3672,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c-ref",
@@ -3657,7 +3716,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.491778412465376,
+    "duration": 5.33378324313301,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3675,9 +3734,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22-ref",
@@ -3718,7 +3778,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.94653410186643,
+    "duration": 7.193430972935673,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3736,9 +3796,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874-ref",
@@ -3779,7 +3840,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.789012338722177,
+    "duration": 5.452533298031733,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -3797,9 +3858,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610-ref",
@@ -3840,7 +3902,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.366004160512513,
+    "duration": 7.341899571568429,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3858,9 +3920,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e-ref",
@@ -3901,7 +3964,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.377281829390041,
+    "duration": 6.20940783112514,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -3919,9 +3982,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4-ref",
@@ -3962,7 +4026,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.111819281400509,
+    "duration": 6.052072884436377,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -3977,12 +4041,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae-ref",
@@ -4023,7 +4088,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.819200144837534,
+    "duration": 7.52936580926102,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4041,9 +4106,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b-ref",
@@ -4090,7 +4156,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.242264434213617,
+    "duration": 5.146526243298258,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -4105,12 +4171,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "e96ea26bd2338ec705f4db36f41d1bd8b30ca40b8fdc542ab7087195afdf8793-ref",
@@ -4151,7 +4218,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.824357786008914,
+    "duration": 6.700416223972647,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4169,9 +4236,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377-ref",
@@ -4230,9 +4298,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743-ref",
@@ -4279,7 +4348,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.926578585334785,
+    "duration": 5.140756694754893,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -4297,9 +4366,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "345d876fd0fc95ac0151fef0b9c6c7c74798e233d1d35a9dbeaac76c8aaed43a-ref",
@@ -4358,9 +4428,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae-ref",
@@ -4401,7 +4472,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.910848314389563,
+    "duration": 8.5327776297477,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4419,9 +4490,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669-ref",
@@ -4486,9 +4558,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "5e499e311cb80fb23e8b193d31110e52e896705d19074e81108d151dabd27627-ref",
@@ -4547,9 +4620,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743-ref",
@@ -4608,9 +4682,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b-ref",
@@ -4650,7 +4725,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.561726553632168,
+    "duration": 6.258669020985784,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -4668,9 +4743,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "71837a5cb15736f75cdb9a5bd2374ba46d1b8216c673734312ef5990baf123f1-ref",
@@ -4729,9 +4805,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c-ref",
@@ -4772,7 +4849,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.289836297773373,
+    "duration": 6.166954667153852,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4790,9 +4867,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406-ref",
@@ -4833,7 +4911,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.9207048089165015,
+    "duration": 6.470790491444677,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4851,9 +4929,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "869f070423e3d0c736ba34d7938a41a3feaf98227446fdb769369c8052d0e9e2-ref",
@@ -4912,9 +4991,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef-ref",
@@ -4955,7 +5035,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.767570046286472,
+    "duration": 6.423127680666528,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -4973,9 +5053,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5-ref",
@@ -5034,9 +5115,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf-ref",
@@ -5077,7 +5159,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.17934959428968,
+    "duration": 7.998550226833811,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5095,9 +5177,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "3d33ebd8a3b7f79918b1372c6daf6331c357edf50d8cef40a0550eadf11ecfe9-ref",
@@ -5138,7 +5221,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.163099925478837,
+    "duration": 5.391292413993563,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5156,9 +5239,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101-ref",
@@ -5199,7 +5283,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 8.638752084289123,
+    "duration": 6.9563511006691225,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5217,9 +5301,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6-ref",
@@ -5278,9 +5363,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "96f708147d9d95c483b26113d4a9d87211f67c14a3bcfc906c688efc3653c3ce-ref",
@@ -5339,9 +5425,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "bc9d3ba210e336b7b6661afe1715d9879379c0ab95c97c7d210f87c15b3d79a1-ref",
@@ -5400,9 +5487,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65-ref",
@@ -5443,7 +5531,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.889068364633045,
+    "duration": 5.5295333861775,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5461,9 +5549,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123-ref",
@@ -5522,9 +5611,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d-ref",
@@ -5565,7 +5655,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.418790167544743,
+    "duration": 5.388544919072886,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5580,12 +5670,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3-ref",
@@ -5626,7 +5717,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.663250567807792,
+    "duration": 6.6209468673205425,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5644,9 +5735,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1-ref",
@@ -5705,9 +5797,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec-ref",
@@ -5766,9 +5859,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52-ref",
@@ -5809,7 +5903,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.41258326631327,
+    "duration": 5.926283476657892,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5827,9 +5921,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716-ref",
@@ -5894,9 +5989,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "a85c9e41ad745c26160fe19eddca1667a4adad081f37815ae0188254f8a8154f-ref",
@@ -5937,7 +6033,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.749654436291061,
+    "duration": 4.420175690017068,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -5955,9 +6051,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e-ref",
@@ -5998,7 +6095,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.564267152145047,
+    "duration": 5.821166121742893,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -6016,9 +6113,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e-ref",
@@ -6059,7 +6157,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.156499569397537,
+    "duration": 4.0699223311925214,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -6074,12 +6172,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "6a437fb05c6357c93e10def63301fc07b8fb83885217794b825a843bb0e76e45-ref",
@@ -6138,9 +6237,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79-ref",
@@ -6199,9 +6299,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Conic timing failed: AlmostSolved",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": null
   },
   {
     "id": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9-ref",
@@ -6266,9 +6367,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "5001f06ef9cb8af38b6e8cb6c75c44537203883ba12e69613260b8ff5eb58a0b-ref",
@@ -6327,9 +6429,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a-ref",
@@ -6388,9 +6491,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92-ref",
@@ -6449,9 +6553,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "4cefdaeac1aadee6f95cdb7597284083e9835942447325445efea0185556dea2-ref",
@@ -6510,9 +6615,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "c6665a00526d4df2164127857e4add75bdec6bd6b71ef802dce6c19df2b70d9e-ref",
@@ -6553,7 +6659,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.049323592422851,
+    "duration": 7.022843637402776,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -6571,9 +6677,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "3d1d09a173c1f703cbdca8f1496694443b355ef36faef7947eeed082411fc3f9-ref",
@@ -6632,9 +6739,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "ca5b5bb5875c40b466aec21cb14a23657496bb0a935f240a822dd5220e9032e3-ref",
@@ -6693,9 +6801,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "d535f91b6132185bce5be948e9c7dc76c214a7cb86e36f9d7eed65fd6a052af3-ref",
@@ -6736,7 +6845,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 7.211753251037755,
+    "duration": 6.627676158622057,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -6754,9 +6863,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "1b303e154306ba795ffa12b17b1e33b491ddccdc3bab93bd1c6970cb9dec4b40-ref",
@@ -6815,9 +6925,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a-ref",
@@ -6876,9 +6987,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13-ref",
@@ -6919,7 +7031,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.392260907890684,
+    "duration": 4.994750503789597,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -6937,9 +7049,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "cce28b55970f688433ae3270f54f9e0036432a0cdc6b20e64bc4bdecf001eb42-ref",
@@ -6998,9 +7111,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432-ref",
@@ -7059,9 +7173,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52-ref",
@@ -7120,9 +7235,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "ad3d5831de3a7b166ebeba9722dcdb98326608b562e9782a3b55f9fc734b0274-ref",
@@ -7163,7 +7279,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.258406721772113,
+    "duration": 4.7796095819361035,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -7181,9 +7297,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8-ref",
@@ -7224,7 +7341,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 6.07063744464935,
+    "duration": 5.471697162244564,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -7239,12 +7356,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c-ref",
@@ -7303,9 +7421,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63-ref",
@@ -7364,9 +7483,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b-ref",
@@ -7425,9 +7545,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974-ref",
@@ -7486,9 +7607,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "44f8fe25625bbebe24cf4181a004e924ab3a4a6a5ed6d630ab9f66b6218e78b7-ref",
@@ -7547,9 +7669,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df-ref",
@@ -7608,9 +7731,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e-ref",
@@ -7669,9 +7793,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "780c535cd4277c9dea97ed39f857d97f5d75a1951ad924bf14109cd8621b9a23-ref",
@@ -7712,7 +7837,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.225057124696613,
+    "duration": 4.7043018159811325,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -7730,9 +7855,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294-ref",
@@ -7791,9 +7917,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e-ref",
@@ -7852,9 +7979,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "499c03a3f09689faf199cae6f47938020231026e4a317d093135cc22e06095d4-ref",
@@ -7913,9 +8041,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Continuous candidate is not faster",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326-ref",
@@ -7956,7 +8085,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 5.911289517485278,
+    "duration": 5.811201862116352,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -7974,9 +8103,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b-ref",
@@ -8035,9 +8165,10 @@
     "continuous_motion_selected": true,
     "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 10
   },
   {
     "id": "04de589e9bf012919e80ad690762d2ef652697b36f8cfece0b58e3c1570339c8-ref",
@@ -8078,7 +8209,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.952064053288165,
+    "duration": 4.7608133446982075,
     "num_parts": 3,
     "linear": true,
     "has_path": true,
@@ -8093,12 +8224,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d-ref",
@@ -8157,9 +8289,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Original collision validator rejected continuous candidate",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d-ref",
@@ -8206,7 +8339,7 @@
     "status": 70,
     "planner_status": "SOLVED",
     "model": "aubo-is25",
-    "duration": 4.263911691474058,
+    "duration": 4.240685770912488,
     "num_parts": 2,
     "linear": true,
     "has_path": true,
@@ -8221,12 +8354,13 @@
     "pair_role": "curobo",
     "box_number": 6,
     "place_pallet": "pallet-B",
-    "continuous_motion_selected": false,
-    "continuous_motion_reason": "Continuous candidate is not faster",
+    "continuous_motion_selected": true,
+    "continuous_motion_reason": null,
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": 20
   },
   {
     "id": "67745ceb8883e3de2624686a280a5dcfc89d8f3ff7586a9634d8d1dca9307d9b-ref",
@@ -8285,9 +8419,10 @@
     "continuous_motion_selected": false,
     "continuous_motion_reason": "Changing TCP requires separate motion blocks",
     "recorded_joint_jerk_valid": true,
-    "reference_source": "production worker, continuous motion enabled; baseline fallback where needed",
-    "compute_source": "User reported concurrent TrajectoryPlanner service use during the preceding approximately one hour. Do not use these compute-time measurements for comparisons or speedup claims. Motion duration and validation evidence remain usable.",
-    "compute_measurements_excluded": true
+    "reference_source": "production worker, per-task smoothing selection; validated fallback where needed",
+    "compute_source": "Excluded: concurrent workload was not controlled",
+    "compute_measurements_excluded": true,
+    "smoothing_sigma": null
   },
   {
     "id": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418-ref",

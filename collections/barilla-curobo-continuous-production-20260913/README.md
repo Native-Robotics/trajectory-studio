@@ -1,5 +1,3 @@
-# Production continuous-motion replay
+# Per-trajectory continuous smoothing
 
-Core60eb607a, option enabled explicitly; default remains off. 135 production outputs plus 135 unchanged original references. See report.html for acceptance, exact-export audit and same-source end-to-end benchmark.
-
-Recent compute-time and resource comparisons are excluded due to concurrent service use; see compute-measurements-excluded.json. Motion duration and validation results remain usable.
+135 audited worker exports plus135 unchanged reference recordings. Source hashes are in manifest.json. Continuous motion and smoothing portfolio were explicitly enabled for this run. No compute-performance comparisons.

@@ -1,7 +1,7 @@
 {
   "count": 135,
-  "curobo_source": "curobo-continuous-production-full-20260913",
+  "curobo_source": "curobo-smoothing-portfolio-full-20260913",
   "reference_source": "original recorded Barilla",
-  "production_core": "60eb607a",
-  "continuous_default": false
+  "continuous_default": false,
+  "smoothing_portfolio_default": false
 }
