@@ -1,0 +1,833 @@
+{
+  "audit": {
+    "tasks": 135,
+    "parts": 367,
+    "matching_source_files": 103,
+    "recorded_constraint_passes": 135,
+    "recorded_core_FCL_passes": 135,
+    "production_SOLVED": 135,
+    "payload_and_export_fidelity": true,
+    "allowed_input_normalization": "DH joint_type enum names uppercased by deserialization; all other fields equal",
+    "scope": "Saved-evidence audit, not a new continuous-time or collision proof."
+  },
+  "benchmarks": {
+    "fresh": {
+      "kind": "fresh",
+      "requests_per_mode": 10,
+      "metrics_control_enabled": {
+        "elapsed_s": [
+          6.640134778495849,
+          6.166868165000778
+        ],
+        "sampled_cpu_s": [
+          7.115,
+          6.57
+        ],
+        "peak_summed_rss_mb": [
+          1588.228515625,
+          1588.318359375
+        ],
+        "peak_gpu_compute_mb": [
+          594.0,
+          594.0
+        ]
+      },
+      "exact_output_matches": 10,
+      "rows": [
+        {
+          "iteration": 0,
+          "task_id": 3,
+          "exact_output_match": true,
+          "control_s": 5.854600250000658,
+          "enabled_s": 5.312775999002042
+        },
+        {
+          "iteration": 1,
+          "task_id": 4,
+          "exact_output_match": true,
+          "control_s": 7.156258405993867,
+          "enabled_s": 6.528985753997404
+        },
+        {
+          "iteration": 2,
+          "task_id": 21,
+          "exact_output_match": true,
+          "control_s": 6.256085668996093,
+          "enabled_s": 5.857561643999361
+        },
+        {
+          "iteration": 3,
+          "task_id": 54,
+          "exact_output_match": true,
+          "control_s": 6.5220710129942745,
+          "enabled_s": 6.015392586996313
+        },
+        {
+          "iteration": 4,
+          "task_id": 59,
+          "exact_output_match": true,
+          "control_s": 7.257271150003362,
+          "enabled_s": 6.747689240000909
+        },
+        {
+          "iteration": 5,
+          "task_id": 69,
+          "exact_output_match": true,
+          "control_s": 7.21125353500247,
+          "enabled_s": 6.730696889993851
+        },
+        {
+          "iteration": 6,
+          "task_id": 95,
+          "exact_output_match": true,
+          "control_s": 6.758198543997423,
+          "enabled_s": 6.318343743005244
+        },
+        {
+          "iteration": 7,
+          "task_id": 118,
+          "exact_output_match": true,
+          "control_s": 5.836436138997669,
+          "enabled_s": 5.453561529000581
+        },
+        {
+          "iteration": 8,
+          "task_id": 119,
+          "exact_output_match": true,
+          "control_s": 7.23766532800073,
+          "enabled_s": 6.826584526999795
+        },
+        {
+          "iteration": 9,
+          "task_id": 133,
+          "exact_output_match": true,
+          "control_s": 6.2470664709981065,
+          "enabled_s": 5.847650110001268
+        }
+      ],
+      "scope": "Same-runner elapsed request time, one sequential A/B trial; warm metrics use second requests only; sampled resources."
+    },
+    "warm": {
+      "kind": "warm",
+      "requests_per_mode": 20,
+      "metrics_control_enabled": {
+        "elapsed_s": [
+          3.099753681497532,
+          2.6329934679997677
+        ],
+        "sampled_cpu_s": [
+          3.2649999999999997,
+          2.779999999999999
+        ],
+        "peak_summed_rss_mb": [
+          1634.5390625,
+          1631.748046875
+        ],
+        "peak_gpu_compute_mb": [
+          914.0,
+          914.0
+        ]
+      },
+      "exact_output_matches": 20,
+      "rows": [
+        {
+          "iteration": 0,
+          "task_id": 3,
+          "exact_output_match": true,
+          "control_s": 5.8110637919962755,
+          "enabled_s": 5.346010858003865
+        },
+        {
+          "iteration": 1,
+          "task_id": 3,
+          "exact_output_match": true,
+          "control_s": 2.318891460003215,
+          "enabled_s": 1.884386377001647
+        },
+        {
+          "iteration": 2,
+          "task_id": 4,
+          "exact_output_match": true,
+          "control_s": 4.8745092949975515,
+          "enabled_s": 4.1857443539993255
+        },
+        {
+          "iteration": 3,
+          "task_id": 4,
+          "exact_output_match": true,
+          "control_s": 3.108382221995271,
+          "enabled_s": 2.6047007310044137
+        },
+        {
+          "iteration": 4,
+          "task_id": 21,
+          "exact_output_match": true,
+          "control_s": 3.66182834799838,
+          "enabled_s": 3.281539371004328
+        },
+        {
+          "iteration": 5,
+          "task_id": 21,
+          "exact_output_match": true,
+          "control_s": 2.7233373449998908,
+          "enabled_s": 2.2749385720017017
+        },
+        {
+          "iteration": 6,
+          "task_id": 54,
+          "exact_output_match": true,
+          "control_s": 3.6661663800041424,
+          "enabled_s": 3.1121723870019196
+        },
+        {
+          "iteration": 7,
+          "task_id": 54,
+          "exact_output_match": true,
+          "control_s": 3.140044369996758,
+          "enabled_s": 2.661286204995122
+        },
+        {
+          "iteration": 8,
+          "task_id": 59,
+          "exact_output_match": true,
+          "control_s": 4.964805599003739,
+          "enabled_s": 4.497134331999405
+        },
+        {
+          "iteration": 9,
+          "task_id": 59,
+          "exact_output_match": true,
+          "control_s": 3.2815822460033814,
+          "enabled_s": 2.8923791339984746
+        },
+        {
+          "iteration": 10,
+          "task_id": 69,
+          "exact_output_match": true,
+          "control_s": 5.009686849996797,
+          "enabled_s": 4.603681155997037
+        },
+        {
+          "iteration": 11,
+          "task_id": 69,
+          "exact_output_match": true,
+          "control_s": 3.787047290003102,
+          "enabled_s": 3.365762219997123
+        },
+        {
+          "iteration": 12,
+          "task_id": 95,
+          "exact_output_match": true,
+          "control_s": 3.880510010996659,
+          "enabled_s": 3.6218748960018274
+        },
+        {
+          "iteration": 13,
+          "task_id": 95,
+          "exact_output_match": true,
+          "control_s": 3.303486345001147,
+          "enabled_s": 3.086575197005004
+        },
+        {
+          "iteration": 14,
+          "task_id": 118,
+          "exact_output_match": true,
+          "control_s": 3.3898522309973487,
+          "enabled_s": 3.273970398004167
+        },
+        {
+          "iteration": 15,
+          "task_id": 118,
+          "exact_output_match": true,
+          "control_s": 2.281432098003279,
+          "enabled_s": 2.2264124020002782
+        },
+        {
+          "iteration": 16,
+          "task_id": 119,
+          "exact_output_match": true,
+          "control_s": 4.907762280003226,
+          "enabled_s": 4.879341423998994
+        },
+        {
+          "iteration": 17,
+          "task_id": 119,
+          "exact_output_match": true,
+          "control_s": 3.091125140999793,
+          "enabled_s": 2.7556349559963564
+        },
+        {
+          "iteration": 18,
+          "task_id": 133,
+          "exact_output_match": true,
+          "control_s": 3.97711553699628,
+          "enabled_s": 3.7074452610031585
+        },
+        {
+          "iteration": 19,
+          "task_id": 133,
+          "exact_output_match": true,
+          "control_s": 2.676844608002284,
+          "enabled_s": 2.3775890920005622
+        }
+      ],
+      "scope": "Same-runner elapsed request time, one sequential A/B trial; warm metrics use second requests only; sampled resources."
+    }
+  },
+  "collision_comparison": {
+    "cases": 380,
+    "all_reports_exact": true,
+    "nonempty_collision_cases": 5,
+    "original_seconds": 97.52509649698914,
+    "candidate_seconds": 63.057854222046444,
+    "scope": "CPU-only exact exported-spline FCL reports; not end-to-end latency"
+  },
+  "exact_output_comparison": {
+    "baseline": "curobo-rnd-linear-fast-final-full-20260913",
+    "exact_matches": 135,
+    "rows": [
+      {
+        "task_id": 0,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 1,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 2,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 3,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 4,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 5,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 6,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 7,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 8,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 9,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 10,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 11,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 12,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 13,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 14,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 15,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 16,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 17,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 18,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 19,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 20,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 21,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 22,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 23,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 24,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 25,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 26,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 27,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 28,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 29,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 30,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 31,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 32,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 33,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 34,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 35,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 36,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 37,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 38,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 39,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 40,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 41,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 42,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 43,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 44,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 45,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 46,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 47,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 48,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 49,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 50,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 51,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 52,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 53,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 54,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 55,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 56,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 57,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 58,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 59,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 60,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 61,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 62,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 63,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 64,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 65,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 66,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 67,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 68,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 69,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 70,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 71,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 72,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 73,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 74,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 75,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 76,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 77,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 78,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 79,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 80,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 81,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 82,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 83,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 84,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 85,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 86,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 87,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 88,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 89,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 90,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 91,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 92,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 93,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 94,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 95,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 96,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 97,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 98,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 99,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 100,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 101,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 102,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 103,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 104,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 105,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 106,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 107,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 108,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 109,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 110,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 111,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 112,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 113,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 114,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 115,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 116,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 117,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 118,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 119,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 120,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 121,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 122,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 123,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 124,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 125,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 126,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 127,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 128,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 129,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 130,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 131,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 132,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 133,
+        "parts_exactly_equal": true
+      },
+      {
+        "task_id": 134,
+        "parts_exactly_equal": true
+      }
+    ]
+  },
+  "linear_fast_path": true,
+  "scope": "Single sequential A/B trials; sampled resources; original recorded checks retained, not a continuous-time proof."
+}
