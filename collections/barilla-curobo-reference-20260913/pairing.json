@@ -1,0 +1,683 @@
+{
+  "pairs": [
+    {
+      "task_id": 0,
+      "curobo": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29-curobo",
+      "reference": "8a8ddaf4df6b649825207c045607280d71738a46f2bdc784808b276156181a29-ref"
+    },
+    {
+      "task_id": 1,
+      "curobo": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7-curobo",
+      "reference": "5ec0425abcfd1ddbba907989465fdeea37351a3c928d1fbc0f0688efdb2dc6e7-ref"
+    },
+    {
+      "task_id": 2,
+      "curobo": "236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-curobo",
+      "reference": "236e7d6c7f2343a27196c7806774659f42f95dbe607e08c39d807c06659060f3-ref"
+    },
+    {
+      "task_id": 3,
+      "curobo": "d11f7e3674a194e159d178dfd86113da494021a409ab52062aca88a210751222-curobo",
+      "reference": "d11f7e3674a194e159d178dfd86113da494021a409ab52062aca88a210751222-ref"
+    },
+    {
+      "task_id": 4,
+      "curobo": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815-curobo",
+      "reference": "1fe518293663051f682bc433aef49c035880ad988e21871c1aed491a99642815-ref"
+    },
+    {
+      "task_id": 5,
+      "curobo": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19-curobo",
+      "reference": "d34f5d1a676ed74000aeb376421dcab2c4210a7746df4028cac938720c422a19-ref"
+    },
+    {
+      "task_id": 6,
+      "curobo": "14dad0b1314d843887dfb27099e2ef3b4551d27e37832ddba80830b607eed6f7-curobo",
+      "reference": "14dad0b1314d843887dfb27099e2ef3b4551d27e37832ddba80830b607eed6f7-ref"
+    },
+    {
+      "task_id": 7,
+      "curobo": "874c2ff6ed99371f56f5534b0e5647f78ecd31e1f64bfb060ac54a5272ed5767-curobo",
+      "reference": "874c2ff6ed99371f56f5534b0e5647f78ecd31e1f64bfb060ac54a5272ed5767-ref"
+    },
+    {
+      "task_id": 8,
+      "curobo": "157778044707b6b38066ec220a68d9041ce05269962daec3475b8396422ab85a-curobo",
+      "reference": "157778044707b6b38066ec220a68d9041ce05269962daec3475b8396422ab85a-ref"
+    },
+    {
+      "task_id": 9,
+      "curobo": "990b4a17e4bbe938fc45f65f5c5906b48b80d60a977651ab4cca93918db60460-curobo",
+      "reference": "990b4a17e4bbe938fc45f65f5c5906b48b80d60a977651ab4cca93918db60460-ref"
+    },
+    {
+      "task_id": 10,
+      "curobo": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05-curobo",
+      "reference": "4669b0add291cb1840e127a15e95ac71c69d31ae66310e3febbf98ef128e2a05-ref"
+    },
+    {
+      "task_id": 11,
+      "curobo": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95-curobo",
+      "reference": "f7fe241f51ceed34d82d9905d0a026a00956115d82779a7777ca72f95d870e95-ref"
+    },
+    {
+      "task_id": 12,
+      "curobo": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43-curobo",
+      "reference": "67fd7e6ecb9b1d55bbc1a6f5884b05b950b490367c6e46425db4fcb5da887f43-ref"
+    },
+    {
+      "task_id": 13,
+      "curobo": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf-curobo",
+      "reference": "65ae9262939ee84049590871f8f39c96dc6e8dfa537644b01aeb4f5f9a7989bf-ref"
+    },
+    {
+      "task_id": 14,
+      "curobo": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838-curobo",
+      "reference": "783a0b36e747e15823b50bb53e6ed467e361112a23fcb9e4a898883b6785c838-ref"
+    },
+    {
+      "task_id": 15,
+      "curobo": "c82ec835fe944eff30aab8917fa1906c8ec0b2b2169bf51f4a4b036eb089e240-curobo",
+      "reference": "c82ec835fe944eff30aab8917fa1906c8ec0b2b2169bf51f4a4b036eb089e240-ref"
+    },
+    {
+      "task_id": 16,
+      "curobo": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b-curobo",
+      "reference": "ff51eac0fb305749a0b576535bfcc5646e4198417271fb7acc213d73d7790f7b-ref"
+    },
+    {
+      "task_id": 17,
+      "curobo": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06-curobo",
+      "reference": "e2e58e342e85c79a2dd921678efc9adbc8318d0750c58d7c1fdad071cb3ffc06-ref"
+    },
+    {
+      "task_id": 18,
+      "curobo": "1327e2bffb12a417a7bf56f44d3865dc9518fd7535c9d700682d477c6f789d4b-curobo",
+      "reference": "1327e2bffb12a417a7bf56f44d3865dc9518fd7535c9d700682d477c6f789d4b-ref"
+    },
+    {
+      "task_id": 19,
+      "curobo": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473-curobo",
+      "reference": "cdfe50e6501abd720ddab2d018f396d281c935a71283ff7ee0b2958ac2128473-ref"
+    },
+    {
+      "task_id": 20,
+      "curobo": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857-curobo",
+      "reference": "b1b1ac1cca245324e658d7a0088299f8cc568d71cbb75469e533c4c3bd002857-ref"
+    },
+    {
+      "task_id": 21,
+      "curobo": "4534dd005e414e88e712d5e26835809ae2cb800719088e89652d6c51665b090b-curobo",
+      "reference": "4534dd005e414e88e712d5e26835809ae2cb800719088e89652d6c51665b090b-ref"
+    },
+    {
+      "task_id": 22,
+      "curobo": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583-curobo",
+      "reference": "0c734fba9f3ac973cef401117d12dba0fb92e1dfd0141e1f8950b84834a5b583-ref"
+    },
+    {
+      "task_id": 23,
+      "curobo": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e-curobo",
+      "reference": "4420c1ba15a9f9f4647aee9b87f9cea70aa69c39c555fde596e9e879b8949b6e-ref"
+    },
+    {
+      "task_id": 24,
+      "curobo": "7733d0fe0777e8be858249b95aea32045ca4c9027dd26a1d6d40d633de3e73b2-curobo",
+      "reference": "7733d0fe0777e8be858249b95aea32045ca4c9027dd26a1d6d40d633de3e73b2-ref"
+    },
+    {
+      "task_id": 25,
+      "curobo": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018-curobo",
+      "reference": "5e7e6dc69fed087aa0561b802e4856b091b494602708f6bc5a86ad9667b78018-ref"
+    },
+    {
+      "task_id": 26,
+      "curobo": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74-curobo",
+      "reference": "30530dc6123a455aee737bac0143d5fbdcd3af27041b0faf47fddb64f9f67c74-ref"
+    },
+    {
+      "task_id": 27,
+      "curobo": "09ace9b8946c23d6a961a3b2cf747c6b961b6ed5a3a1dec045300f2843c0b665-curobo",
+      "reference": "09ace9b8946c23d6a961a3b2cf747c6b961b6ed5a3a1dec045300f2843c0b665-ref"
+    },
+    {
+      "task_id": 28,
+      "curobo": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c-curobo",
+      "reference": "e704290c065a7a6f906d1e1712005222e139a9d452c5fe6cb1089d6443636c6c-ref"
+    },
+    {
+      "task_id": 29,
+      "curobo": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c-curobo",
+      "reference": "aa329637486d5889d002b13a941467b9323ef35664410d5e7884091b3447de8c-ref"
+    },
+    {
+      "task_id": 30,
+      "curobo": "637b8daa125b4be9dd797ab6a17346b58f42fcddb325a3348d90ce6c8ab954e7-curobo",
+      "reference": "637b8daa125b4be9dd797ab6a17346b58f42fcddb325a3348d90ce6c8ab954e7-ref"
+    },
+    {
+      "task_id": 31,
+      "curobo": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368-curobo",
+      "reference": "8985758efd9744de84c67f0ac421aa8d8c511a6a65e420311f880b35354a6368-ref"
+    },
+    {
+      "task_id": 32,
+      "curobo": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4-curobo",
+      "reference": "4dd61fe30a89a5ed02fd537e7dcb2dd66fc4463ebe132868fbc4f727a1e382c4-ref"
+    },
+    {
+      "task_id": 33,
+      "curobo": "c3c0bcb6e33ecfb2112015a8d37c42dce013894f0690e884ca64936b48927d24-curobo",
+      "reference": "c3c0bcb6e33ecfb2112015a8d37c42dce013894f0690e884ca64936b48927d24-ref"
+    },
+    {
+      "task_id": 34,
+      "curobo": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7-curobo",
+      "reference": "8141b5e91d8cb3c68e51899df31a9c9d80809e7ed2dd1b89bc54b619b1f587e7-ref"
+    },
+    {
+      "task_id": 35,
+      "curobo": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1-curobo",
+      "reference": "d069b37b66b1d41c81251cfea60d3b252cee286101bf5df09953410f12ab6be1-ref"
+    },
+    {
+      "task_id": 36,
+      "curobo": "763c16198f2fb926e8935cb1ce0a07d5b7e5336a3f019b72358302b0700e31f7-curobo",
+      "reference": "763c16198f2fb926e8935cb1ce0a07d5b7e5336a3f019b72358302b0700e31f7-ref"
+    },
+    {
+      "task_id": 37,
+      "curobo": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0-curobo",
+      "reference": "24b002cf8d129dd361c832e6778abace2907e3117f9b4e32cf43fc536599b1d0-ref"
+    },
+    {
+      "task_id": 38,
+      "curobo": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7-curobo",
+      "reference": "9ad11ec668c886435ff5dd801c01b54942626ab51dd4ab144d28e47c660208e7-ref"
+    },
+    {
+      "task_id": 39,
+      "curobo": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e-curobo",
+      "reference": "33e4a6207e3dab0b3fc8109aae69ee9bdddd9bce057f63f9dc7c27fb6ef5fa0e-ref"
+    },
+    {
+      "task_id": 40,
+      "curobo": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea-curobo",
+      "reference": "0e7ffe1a4f7b5ff1b5c177f7922a9771761ae07a91671f301a4e4d4823c54aea-ref"
+    },
+    {
+      "task_id": 41,
+      "curobo": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e-curobo",
+      "reference": "cbe58dce5dfe7225b68f50dd900f0d153dc97de450baf96eb68534e9b503a76e-ref"
+    },
+    {
+      "task_id": 42,
+      "curobo": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1-curobo",
+      "reference": "e7cedb57a03526cdc098d5be05f441367847a971c057f0cf37576c6415b961d1-ref"
+    },
+    {
+      "task_id": 43,
+      "curobo": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94-curobo",
+      "reference": "8f4a1848561c6b0481d0aabfd7a1f571c5c22973d2215c770cb59ea8754c7e94-ref"
+    },
+    {
+      "task_id": 44,
+      "curobo": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352-curobo",
+      "reference": "b3e3aa9d895fdfda3efdefd2ae590d75c2ececcf14c1e186c1d88a847eae5352-ref"
+    },
+    {
+      "task_id": 45,
+      "curobo": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af-curobo",
+      "reference": "da8fd8fb136d8413134c46b398ef9ca69ab9075d6d46c84390c641c0c72951af-ref"
+    },
+    {
+      "task_id": 46,
+      "curobo": "8ab37c289d3653f6f35f1555b43212e7de6a53004f746ad426ed6c7a365ed18f-curobo",
+      "reference": "8ab37c289d3653f6f35f1555b43212e7de6a53004f746ad426ed6c7a365ed18f-ref"
+    },
+    {
+      "task_id": 47,
+      "curobo": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f-curobo",
+      "reference": "4d081814e8fc880ebdce04406d4e0196f0241b0d95f738533a44afd0e5217f5f-ref"
+    },
+    {
+      "task_id": 48,
+      "curobo": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7-curobo",
+      "reference": "e240fbe29a5ce182ccb8795707b119ea851f496f35bf07ab43a65644ead6d7e7-ref"
+    },
+    {
+      "task_id": 49,
+      "curobo": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328-curobo",
+      "reference": "e5dd98e0d6bb34a919f64a2d32db4c71b928c217f9055d563b302dd6d51ad328-ref"
+    },
+    {
+      "task_id": 50,
+      "curobo": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a-curobo",
+      "reference": "1b35f6b527105f98c7e206def5bec2869b3e84fb5fa8ae765f71ce8c2d88365a-ref"
+    },
+    {
+      "task_id": 51,
+      "curobo": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752-curobo",
+      "reference": "cca725669f41282089b22f19a06dcd7048473b791c898f66ae55c9fb2ef90752-ref"
+    },
+    {
+      "task_id": 52,
+      "curobo": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b-curobo",
+      "reference": "112d53ea58de51f07ed99c0721ee21b9b8475bb0a7123a7f9926f8d4d6c61e0b-ref"
+    },
+    {
+      "task_id": 53,
+      "curobo": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8-curobo",
+      "reference": "982c6c56f60923b151ff2a7c2d07e0a811815ec4ef46470e921f62a5cfc4c0e8-ref"
+    },
+    {
+      "task_id": 54,
+      "curobo": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df-curobo",
+      "reference": "fe9d57153f6c5b7fd2f6e245232fbf45e7ed69464f192a8375112aee4c5c94df-ref"
+    },
+    {
+      "task_id": 55,
+      "curobo": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852-curobo",
+      "reference": "888c893a10c23064efa0fabd5e4cc73ed77fa082e38f4bdb17a3456b5616d852-ref"
+    },
+    {
+      "task_id": 56,
+      "curobo": "227de82358a9d408c4fc0b353a4179d8a7bc7ea7c3d2397bc278456ffa7b0856-curobo",
+      "reference": "227de82358a9d408c4fc0b353a4179d8a7bc7ea7c3d2397bc278456ffa7b0856-ref"
+    },
+    {
+      "task_id": 57,
+      "curobo": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2-curobo",
+      "reference": "31c6b4c06c35d130d20be9c68f41fa77efb1847edfa7324187a25b50d04480e2-ref"
+    },
+    {
+      "task_id": 58,
+      "curobo": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c-curobo",
+      "reference": "d6936b0636d7dcebbcf939eb6c69a902513bb3f35c34c2b3274c65b189483e7c-ref"
+    },
+    {
+      "task_id": 59,
+      "curobo": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22-curobo",
+      "reference": "3b7198671eafb52f81108f96154f8560cf6498efbf86e16a87078e1d77de5f22-ref"
+    },
+    {
+      "task_id": 60,
+      "curobo": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874-curobo",
+      "reference": "9822f921fa845c3bfd710ad59557848746e0a6dfbab3f68a86c1c57a34856874-ref"
+    },
+    {
+      "task_id": 61,
+      "curobo": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610-curobo",
+      "reference": "804dee9f7056c1d029d0b79fbe6d907db91799b2305c88a7dd3c7b4b0a06d610-ref"
+    },
+    {
+      "task_id": 62,
+      "curobo": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e-curobo",
+      "reference": "431c3a24cce6527a75f725f7b271417a0aa92f31ec83b8a652ea4e540702771e-ref"
+    },
+    {
+      "task_id": 63,
+      "curobo": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4-curobo",
+      "reference": "dd9aacd13c2ade6745669747cbc76894ee5d2a9d9d9b4ee06d2efbb8c5ccabd4-ref"
+    },
+    {
+      "task_id": 64,
+      "curobo": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae-curobo",
+      "reference": "66258ebd02eb8021eb5f8971fead92e9836612b16d5f71d3ad3adecd4696aeae-ref"
+    },
+    {
+      "task_id": 65,
+      "curobo": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b-curobo",
+      "reference": "b7e09cccb0e65e05310addb02ff898db0211cc43157f6441779a744e7a0fb18b-ref"
+    },
+    {
+      "task_id": 66,
+      "curobo": "e96ea26bd2338ec705f4db36f41d1bd8b30ca40b8fdc542ab7087195afdf8793-curobo",
+      "reference": "e96ea26bd2338ec705f4db36f41d1bd8b30ca40b8fdc542ab7087195afdf8793-ref"
+    },
+    {
+      "task_id": 67,
+      "curobo": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377-curobo",
+      "reference": "1b93f5804a233180e209a9010892362fa3b2b92ade5cba3b65f5eb6a549bd377-ref"
+    },
+    {
+      "task_id": 68,
+      "curobo": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743-curobo",
+      "reference": "742b222cac1e5779c87c9bd6a4f9234ed0a02d6b12f533c21e4def9230b18743-ref"
+    },
+    {
+      "task_id": 69,
+      "curobo": "345d876fd0fc95ac0151fef0b9c6c7c74798e233d1d35a9dbeaac76c8aaed43a-curobo",
+      "reference": "345d876fd0fc95ac0151fef0b9c6c7c74798e233d1d35a9dbeaac76c8aaed43a-ref"
+    },
+    {
+      "task_id": 70,
+      "curobo": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae-curobo",
+      "reference": "2a2d5e19cd08f574edf0847e5d4c397f30429bd3ea6db9b0af7298726524d6ae-ref"
+    },
+    {
+      "task_id": 71,
+      "curobo": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669-curobo",
+      "reference": "6e59033d1635a3b2f095bc3263efb3ec16914e0f90e5e4f7d6a930480bf69669-ref"
+    },
+    {
+      "task_id": 72,
+      "curobo": "5e499e311cb80fb23e8b193d31110e52e896705d19074e81108d151dabd27627-curobo",
+      "reference": "5e499e311cb80fb23e8b193d31110e52e896705d19074e81108d151dabd27627-ref"
+    },
+    {
+      "task_id": 73,
+      "curobo": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743-curobo",
+      "reference": "2ec4c9744327816ea59c42d226461c14d56405b4e55e09b6f7d39e45e32e8743-ref"
+    },
+    {
+      "task_id": 74,
+      "curobo": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b-curobo",
+      "reference": "f445e97f46fb9f916c2a6eb460df8cdacf57c383fe6b01f0f051557d47f7769b-ref"
+    },
+    {
+      "task_id": 75,
+      "curobo": "71837a5cb15736f75cdb9a5bd2374ba46d1b8216c673734312ef5990baf123f1-curobo",
+      "reference": "71837a5cb15736f75cdb9a5bd2374ba46d1b8216c673734312ef5990baf123f1-ref"
+    },
+    {
+      "task_id": 76,
+      "curobo": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c-curobo",
+      "reference": "a26127aac6e378746ea0c47fede339653070bb00409548511632d36b122a8a1c-ref"
+    },
+    {
+      "task_id": 77,
+      "curobo": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406-curobo",
+      "reference": "6a5f8ea3118c31d3f60930a7df7f0a6f03d38eff661bd1d13f4b76aca4e7a406-ref"
+    },
+    {
+      "task_id": 78,
+      "curobo": "869f070423e3d0c736ba34d7938a41a3feaf98227446fdb769369c8052d0e9e2-curobo",
+      "reference": "869f070423e3d0c736ba34d7938a41a3feaf98227446fdb769369c8052d0e9e2-ref"
+    },
+    {
+      "task_id": 79,
+      "curobo": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef-curobo",
+      "reference": "7b1a482499831cda3e71671cf062709e725e411fb942c312434d6f05cac139ef-ref"
+    },
+    {
+      "task_id": 80,
+      "curobo": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5-curobo",
+      "reference": "958b253c80f575b409bd9a458acc6a04c6c76150efcb43904629d7adda7ab6d5-ref"
+    },
+    {
+      "task_id": 81,
+      "curobo": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf-curobo",
+      "reference": "01bda9f1433078562e2b0cb88ad5b4b737423629eff3f8591e2e8706920e46cf-ref"
+    },
+    {
+      "task_id": 82,
+      "curobo": "3d33ebd8a3b7f79918b1372c6daf6331c357edf50d8cef40a0550eadf11ecfe9-curobo",
+      "reference": "3d33ebd8a3b7f79918b1372c6daf6331c357edf50d8cef40a0550eadf11ecfe9-ref"
+    },
+    {
+      "task_id": 83,
+      "curobo": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101-curobo",
+      "reference": "28086cf6c71a1f3dfc8a729bed8bbd960203ef7512ab7f0e12eec65ca8c4a101-ref"
+    },
+    {
+      "task_id": 84,
+      "curobo": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6-curobo",
+      "reference": "87392729615302071d9a74394a89b77557d3c0b0dd0be9cf5008072c501908f6-ref"
+    },
+    {
+      "task_id": 85,
+      "curobo": "96f708147d9d95c483b26113d4a9d87211f67c14a3bcfc906c688efc3653c3ce-curobo",
+      "reference": "96f708147d9d95c483b26113d4a9d87211f67c14a3bcfc906c688efc3653c3ce-ref"
+    },
+    {
+      "task_id": 86,
+      "curobo": "bc9d3ba210e336b7b6661afe1715d9879379c0ab95c97c7d210f87c15b3d79a1-curobo",
+      "reference": "bc9d3ba210e336b7b6661afe1715d9879379c0ab95c97c7d210f87c15b3d79a1-ref"
+    },
+    {
+      "task_id": 87,
+      "curobo": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65-curobo",
+      "reference": "db4b62f1e13011124c31100513dd79570a9612c6e783634cd58dc25fa9721c65-ref"
+    },
+    {
+      "task_id": 88,
+      "curobo": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123-curobo",
+      "reference": "21ebe498a10bb43332e4188d2b0de486a0aae0ef3e8482acde8b8efcbae8d123-ref"
+    },
+    {
+      "task_id": 89,
+      "curobo": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d-curobo",
+      "reference": "c5a4aa5303d5f84eff8f62f04e0deabdb2ccc4cd7ee1cf7a5469669c91f8d47d-ref"
+    },
+    {
+      "task_id": 90,
+      "curobo": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3-curobo",
+      "reference": "40fe3beaa86a5f79013c8edb66f0262d1ce6bd41c438f0901df481964e8999b3-ref"
+    },
+    {
+      "task_id": 91,
+      "curobo": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1-curobo",
+      "reference": "9d630805839dec2bece9888927e7a9445f3269813c426929ccd8e7459512e8a1-ref"
+    },
+    {
+      "task_id": 92,
+      "curobo": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec-curobo",
+      "reference": "b49321899a1b75128020909ec14d74ec2568acaafbed07d999094e99dbf6e1ec-ref"
+    },
+    {
+      "task_id": 93,
+      "curobo": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52-curobo",
+      "reference": "f8b38d7e79e2041a5125528c4d185971d6d2addca8dbe7161273b72313694a52-ref"
+    },
+    {
+      "task_id": 94,
+      "curobo": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716-curobo",
+      "reference": "7ef9efcad87480f35d34fcdc0ce90aea09149214e6e81f95baaab1541851d716-ref"
+    },
+    {
+      "task_id": 95,
+      "curobo": "a85c9e41ad745c26160fe19eddca1667a4adad081f37815ae0188254f8a8154f-curobo",
+      "reference": "a85c9e41ad745c26160fe19eddca1667a4adad081f37815ae0188254f8a8154f-ref"
+    },
+    {
+      "task_id": 96,
+      "curobo": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e-curobo",
+      "reference": "456c57de38c1cc4d36022e8d157e7a81ca4c2173e8d0ae99351a1e31b60ba13e-ref"
+    },
+    {
+      "task_id": 97,
+      "curobo": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e-curobo",
+      "reference": "b4de76070055fbdc047e75e28a625b59dd4d74d5d97410fde4c9bb1cce87601e-ref"
+    },
+    {
+      "task_id": 98,
+      "curobo": "6a437fb05c6357c93e10def63301fc07b8fb83885217794b825a843bb0e76e45-curobo",
+      "reference": "6a437fb05c6357c93e10def63301fc07b8fb83885217794b825a843bb0e76e45-ref"
+    },
+    {
+      "task_id": 99,
+      "curobo": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79-curobo",
+      "reference": "dcbcfaebb091b3d7bdffcedc7f396fc50637d574f2f53b23c820175e9904bb79-ref"
+    },
+    {
+      "task_id": 100,
+      "curobo": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9-curobo",
+      "reference": "05f86a85796b4f5b28b612a3d0d87b73e2e972a470c1dfc2ba503b8561cfcfb9-ref"
+    },
+    {
+      "task_id": 101,
+      "curobo": "5001f06ef9cb8af38b6e8cb6c75c44537203883ba12e69613260b8ff5eb58a0b-curobo",
+      "reference": "5001f06ef9cb8af38b6e8cb6c75c44537203883ba12e69613260b8ff5eb58a0b-ref"
+    },
+    {
+      "task_id": 102,
+      "curobo": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a-curobo",
+      "reference": "83187667e10a3759711f81492f1e4cb77b6d8867970e0207d53cd72d7b73b32a-ref"
+    },
+    {
+      "task_id": 103,
+      "curobo": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92-curobo",
+      "reference": "f1d6937ee124a9cc2fc3733dc7934568b463bdf0d2bca0c790029fc1cf2dcd92-ref"
+    },
+    {
+      "task_id": 104,
+      "curobo": "4cefdaeac1aadee6f95cdb7597284083e9835942447325445efea0185556dea2-curobo",
+      "reference": "4cefdaeac1aadee6f95cdb7597284083e9835942447325445efea0185556dea2-ref"
+    },
+    {
+      "task_id": 105,
+      "curobo": "c6665a00526d4df2164127857e4add75bdec6bd6b71ef802dce6c19df2b70d9e-curobo",
+      "reference": "c6665a00526d4df2164127857e4add75bdec6bd6b71ef802dce6c19df2b70d9e-ref"
+    },
+    {
+      "task_id": 106,
+      "curobo": "3d1d09a173c1f703cbdca8f1496694443b355ef36faef7947eeed082411fc3f9-curobo",
+      "reference": "3d1d09a173c1f703cbdca8f1496694443b355ef36faef7947eeed082411fc3f9-ref"
+    },
+    {
+      "task_id": 107,
+      "curobo": "ca5b5bb5875c40b466aec21cb14a23657496bb0a935f240a822dd5220e9032e3-curobo",
+      "reference": "ca5b5bb5875c40b466aec21cb14a23657496bb0a935f240a822dd5220e9032e3-ref"
+    },
+    {
+      "task_id": 108,
+      "curobo": "d535f91b6132185bce5be948e9c7dc76c214a7cb86e36f9d7eed65fd6a052af3-curobo",
+      "reference": "d535f91b6132185bce5be948e9c7dc76c214a7cb86e36f9d7eed65fd6a052af3-ref"
+    },
+    {
+      "task_id": 109,
+      "curobo": "1b303e154306ba795ffa12b17b1e33b491ddccdc3bab93bd1c6970cb9dec4b40-curobo",
+      "reference": "1b303e154306ba795ffa12b17b1e33b491ddccdc3bab93bd1c6970cb9dec4b40-ref"
+    },
+    {
+      "task_id": 110,
+      "curobo": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a-curobo",
+      "reference": "e470ca2078a3a5d3f316378826cbeb090ede1a237da9fade3d7e1a045c072f7a-ref"
+    },
+    {
+      "task_id": 111,
+      "curobo": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13-curobo",
+      "reference": "0912a6a491d9518d6c6c61229155c9f3a5cd6dea50074c4e320502cc4a0a2c13-ref"
+    },
+    {
+      "task_id": 112,
+      "curobo": "cce28b55970f688433ae3270f54f9e0036432a0cdc6b20e64bc4bdecf001eb42-curobo",
+      "reference": "cce28b55970f688433ae3270f54f9e0036432a0cdc6b20e64bc4bdecf001eb42-ref"
+    },
+    {
+      "task_id": 113,
+      "curobo": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432-curobo",
+      "reference": "238f10b4362ebbb9db94e56412c673f51bc404d976e263d886e30f2577811432-ref"
+    },
+    {
+      "task_id": 114,
+      "curobo": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52-curobo",
+      "reference": "ed9a42ca2340e12556739855c8703760405b075336604457a3e83174e23d9a52-ref"
+    },
+    {
+      "task_id": 115,
+      "curobo": "ad3d5831de3a7b166ebeba9722dcdb98326608b562e9782a3b55f9fc734b0274-curobo",
+      "reference": "ad3d5831de3a7b166ebeba9722dcdb98326608b562e9782a3b55f9fc734b0274-ref"
+    },
+    {
+      "task_id": 116,
+      "curobo": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8-curobo",
+      "reference": "ddef37c608ea11aa2258d1fe80b7ca7840b359a894d4b367bfb2fdfabcf7f4f8-ref"
+    },
+    {
+      "task_id": 117,
+      "curobo": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c-curobo",
+      "reference": "7fe4d262bbe946f86d8647f445d7532834cbb2b01e39d61dfc51050b07b9f91c-ref"
+    },
+    {
+      "task_id": 118,
+      "curobo": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63-curobo",
+      "reference": "2002018bb663a96dd8b345964ad7cd86d97dac28e575a7cc3253674e0d0bab63-ref"
+    },
+    {
+      "task_id": 119,
+      "curobo": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b-curobo",
+      "reference": "91d725b4fecb997ee58578a303f680b527cffc7bcb9411b22d9a74298a3b6c3b-ref"
+    },
+    {
+      "task_id": 120,
+      "curobo": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974-curobo",
+      "reference": "1f84dfac252acd51f09607023f7f39d4d3c835dadc88e06cd9df2b4903cbd974-ref"
+    },
+    {
+      "task_id": 121,
+      "curobo": "44f8fe25625bbebe24cf4181a004e924ab3a4a6a5ed6d630ab9f66b6218e78b7-curobo",
+      "reference": "44f8fe25625bbebe24cf4181a004e924ab3a4a6a5ed6d630ab9f66b6218e78b7-ref"
+    },
+    {
+      "task_id": 122,
+      "curobo": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df-curobo",
+      "reference": "ae52343668153759404058ccd22e337e87743b963fba0f00d5e408decb9798df-ref"
+    },
+    {
+      "task_id": 123,
+      "curobo": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e-curobo",
+      "reference": "5cafdab26d209f9d7becea720347933dce38179df82b759cf8af5ab2fcab693e-ref"
+    },
+    {
+      "task_id": 124,
+      "curobo": "780c535cd4277c9dea97ed39f857d97f5d75a1951ad924bf14109cd8621b9a23-curobo",
+      "reference": "780c535cd4277c9dea97ed39f857d97f5d75a1951ad924bf14109cd8621b9a23-ref"
+    },
+    {
+      "task_id": 125,
+      "curobo": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294-curobo",
+      "reference": "00db71c591a1cdbe9b19ecb437c6f3ad850e04fd35888f16474a7a15f73a7294-ref"
+    },
+    {
+      "task_id": 126,
+      "curobo": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e-curobo",
+      "reference": "5184a18819f4000d819bf18c25df9c6dc2c824f2fdf78256f539f57f29b64d6e-ref"
+    },
+    {
+      "task_id": 127,
+      "curobo": "499c03a3f09689faf199cae6f47938020231026e4a317d093135cc22e06095d4-curobo",
+      "reference": "499c03a3f09689faf199cae6f47938020231026e4a317d093135cc22e06095d4-ref"
+    },
+    {
+      "task_id": 128,
+      "curobo": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326-curobo",
+      "reference": "7271cc305a51225178b98efa70c2bcd8667175ae778b673099c6acab72084326-ref"
+    },
+    {
+      "task_id": 129,
+      "curobo": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b-curobo",
+      "reference": "a7a1b9e090dd9a95aeafcea70476149acbfb714fdf217964c85833775c60f04b-ref"
+    },
+    {
+      "task_id": 130,
+      "curobo": "04de589e9bf012919e80ad690762d2ef652697b36f8cfece0b58e3c1570339c8-curobo",
+      "reference": "04de589e9bf012919e80ad690762d2ef652697b36f8cfece0b58e3c1570339c8-ref"
+    },
+    {
+      "task_id": 131,
+      "curobo": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d-curobo",
+      "reference": "fe639e5939c63f39a020645344669bf4b4b74716f3243b4b90dd78d8f8dcc09d-ref"
+    },
+    {
+      "task_id": 132,
+      "curobo": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d-curobo",
+      "reference": "b8566bd8bebdd6dd62770b473a4135d9929b4afbc0301eff08c7b223081f8c7d-ref"
+    },
+    {
+      "task_id": 133,
+      "curobo": "67745ceb8883e3de2624686a280a5dcfc89d8f3ff7586a9634d8d1dca9307d9b-curobo",
+      "reference": "67745ceb8883e3de2624686a280a5dcfc89d8f3ff7586a9634d8d1dca9307d9b-ref"
+    },
+    {
+      "task_id": 134,
+      "curobo": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418-curobo",
+      "reference": "650d86a604f523befc71a7c1d1c1a7eb438b6485b8d544b601405f3f69004418-ref"
+    }
+  ],
+  "count": 135,
+  "curobo_source": "barilla-curobo-rnd-numeric-fk-20260913",
+  "reference_source": "original root Barilla collection",
+  "note": "Reference paths are original recorded results, not newly qualified cuRobo outputs. Source trajectory and representation files are copied byte-for-byte; sorting uses cuRobo metrics for each pair."
+}

@@ -136,3 +136,23 @@ test("historical object flags display their codes", () => {
   );
   assert.equal(formatFlags([]), "—");
 });
+
+test('comparison names keep ref and curobo suffixes visible', async () => {
+  const ui = await import('../barilla-ui.mjs');
+  assert.equal(typeof ui.trajectoryLabel, 'function');
+  assert.equal(ui.trajectoryLabel({id:'0123456789abcdef-ref'}), '01234567-ref');
+  assert.equal(ui.trajectoryLabel({id:'0123456789abcdef-curobo'}), '01234567-curobo');
+  assert.equal(ui.trajectoryLabel({id:'0123456789abcdef'}), '01234567');
+});
+
+test('comparison pairs stay together when sorting by curobo metrics', () => {
+  const rows = [
+    {id:'a-ref',pair_id:'a',compute_s:1},
+    {id:'b-curobo',pair_id:'b',compute_s:3},
+    {id:'a-curobo',pair_id:'a',compute_s:5},
+    {id:'b-ref',pair_id:'b',compute_s:9},
+  ];
+  assert.deepEqual(sortRows(rows,'compute').map(r=>r.id), ['b-curobo','b-ref','a-curobo','a-ref']);
+  assert.deepEqual(sortRows(rows,'compute',-1).map(r=>r.id), ['a-curobo','a-ref','b-curobo','b-ref']);
+  assert.deepEqual(sortRows(rows.filter(r=>r.id.endsWith('-ref')),'compute',1,rows).map(r=>r.id), ['b-ref','a-ref']);
+});
