@@ -2,7 +2,12 @@
   "source_exact_files": 540,
   "rows": 270,
   "pairs": 135,
-  "http_bytes_and_links": "passed",
-  "chrome": "Both task2 ref and cuRobo 3D paths and velocity charts rendered; cuRobo selected",
-  "core_commit": "60eb607a"
+  "http_byte_identical_files": 545,
+  "chrome": "Task29 cuRobo 9.39s selected; paired reference 2.72s; 3D path and position chart rendered; All270 Success267 Failed3",
+  "core_commit": "cb88df75",
+  "source_run": "curobo-stopped-native-full-20260913",
+  "independently_audited_exports": 135,
+  "shorter": 19,
+  "unchanged": 116,
+  "compute_comparisons_excluded": true
 }

@@ -2,12 +2,30 @@
   "complete": true,
   "worker_provenance_valid": true,
   "tasks": 135,
-  "faster": 1,
+  "faster": 19,
   "slower": 0,
   "changed_exports": [
-    35
+    4,
+    10,
+    11,
+    19,
+    29,
+    45,
+    46,
+    53,
+    56,
+    81,
+    87,
+    92,
+    107,
+    113,
+    114,
+    118,
+    119,
+    121,
+    128
   ],
-  "sum_travel_reduction_s": 2.3545192893805194,
+  "sum_travel_reduction_s": 13.127694586505502,
   "compute_comparisons_excluded": true,
   "independent_dense_audit_pending": false,
   "rows": [
@@ -39,6 +57,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -69,6 +88,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -99,6 +119,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -129,6 +150,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 5,
       "geometry_attempts": 2,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -143,23 +165,24 @@
         "max_acceleration_jump_rad_s2": 7.190001573636084e-12
       },
       "new": {
-        "duration_s": 6.317118970287131,
-        "rms_jerk_rad_s3": 4.7855292566165355,
+        "duration_s": 5.7710128969062024,
+        "rms_jerk_rad_s3": 5.708702396571613,
         "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 144.6701751829762,
+        "integrated_squared_jerk": 188.073172797611,
         "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 5.4310614028665906e-14,
-        "max_acceleration_jump_rad_s2": 7.190001573636084e-12
+        "max_velocity_jump_rad_s": 2.200075982673642e-13,
+        "max_acceleration_jump_rad_s2": 7.550199924906187e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "9c03850bf9891eddb393a461d5fec6bc8f213d32d6842c1feb7d4a618f04f3d8",
+      "travel_reduction_s": 0.5461060733809289,
+      "same_export": false,
+      "sha256": "6745bfef7ea78efec87121d5502ed9a256a20b821522ffffd82b16e4788cbeba",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 5,
@@ -189,6 +212,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -219,6 +243,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 5,
       "geometry_attempts": 2,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -249,6 +274,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -279,6 +305,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -309,6 +336,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -323,23 +351,24 @@
         "max_acceleration_jump_rad_s2": 1.0133879676499019e-11
       },
       "new": {
-        "duration_s": 6.1542209841205215,
-        "rms_jerk_rad_s3": 5.027315271331183,
+        "duration_s": 5.266397051293467,
+        "rms_jerk_rad_s3": 6.1115102549826155,
         "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 155.54115857541848,
+        "integrated_squared_jerk": 196.70286639173142,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.138158721601803e-14,
-        "max_acceleration_jump_rad_s2": 1.0133879676499019e-11
+        "max_velocity_jump_rad_s": 4.969276755357012e-13,
+        "max_acceleration_jump_rad_s2": 2.2306744435173432e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "4ee4a8ff30fe136acd4fec93c67e5e25143927d0b409da94f6692f8b169c85c2",
+      "travel_reduction_s": 0.8878239328270547,
+      "same_export": false,
+      "sha256": "2a10fb9620cc7ee748c1331e33271ed5f1242c1c6282ae1b19d6f9b663da2742",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 11,
@@ -353,23 +382,24 @@
         "max_acceleration_jump_rad_s2": 5.521598061973467e-12
       },
       "new": {
-        "duration_s": 7.986006909036647,
-        "rms_jerk_rad_s3": 4.422799060364127,
-        "peak_jerk_rad_s3": 16.2281098520634,
-        "integrated_squared_jerk": 156.21549125417823,
-        "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.002973826099072e-14,
-        "max_acceleration_jump_rad_s2": 5.521598061973467e-12
+        "duration_s": 6.979627774798531,
+        "rms_jerk_rad_s3": 5.566115007385473,
+        "peak_jerk_rad_s3": 16.228109852032766,
+        "integrated_squared_jerk": 216.24028905677912,
+        "max_position_jump_rad": 1.7763568394002505e-15,
+        "max_velocity_jump_rad_s": 1.0266503033015825e-13,
+        "max_acceleration_jump_rad_s2": 3.532668437480508e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "2c468f5a15275bcd0561171bf5413c264660baeb357d9bb3259f73e033f793c0",
+      "travel_reduction_s": 1.0063791342381156,
+      "same_export": false,
+      "sha256": "b2a8f21277269d5f600e26caf552ae55f10a83d58a23367ba05e44af5dd9df42",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 12,
@@ -399,6 +429,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -429,6 +460,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -459,6 +491,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -489,6 +522,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -519,6 +553,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -549,6 +584,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -579,6 +615,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -593,23 +630,24 @@
         "max_acceleration_jump_rad_s2": 8.190197678096361e-12
       },
       "new": {
-        "duration_s": 6.5673802156172965,
-        "rms_jerk_rad_s3": 4.938421935431278,
-        "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 160.16534233423238,
+        "duration_s": 5.996099773539921,
+        "rms_jerk_rad_s3": 6.047251451988684,
+        "peak_jerk_rad_s3": 20.386598434776396,
+        "integrated_squared_jerk": 219.27287238451822,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 5.16241976992043e-14,
-        "max_acceleration_jump_rad_s2": 8.190197678096361e-12
+        "max_velocity_jump_rad_s": 2.0897736861073932e-13,
+        "max_acceleration_jump_rad_s2": 8.051352123181094e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "aa499fa314c99badcb000ac5165d6b8fdbad672d6fbd8158b8f63aa9d7a773fc",
+      "travel_reduction_s": 0.5712804420773754,
+      "same_export": false,
+      "sha256": "db20d237a1822787c5097d5bb4067e42c199e036360555a20f72acc6d07fde51",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 20,
@@ -639,6 +677,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -669,6 +708,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -699,6 +739,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -729,6 +770,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -759,6 +801,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -789,6 +832,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -819,6 +863,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -849,6 +894,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -879,6 +925,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -893,23 +940,24 @@
         "max_acceleration_jump_rad_s2": 5.780153884059325e-12
       },
       "new": {
-        "duration_s": 13.137299847065934,
-        "rms_jerk_rad_s3": 3.2810689774363535,
-        "peak_jerk_rad_s3": 14.26917090273695,
-        "integrated_squared_jerk": 141.4284668966833,
+        "duration_s": 9.389656928201761,
+        "rms_jerk_rad_s3": 5.842153350552221,
+        "peak_jerk_rad_s3": 19.474754054014696,
+        "integrated_squared_jerk": 320.4760873933928,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.16505962457206e-14,
-        "max_acceleration_jump_rad_s2": 5.780153884059325e-12
+        "max_velocity_jump_rad_s": 1.3512401880410804e-13,
+        "max_acceleration_jump_rad_s2": 5.267479569791248e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "7f510bcb7a9497d6c50d86108e787cead2be36592a939f1042af29f530547dbe",
+      "travel_reduction_s": 3.747642918864173,
+      "same_export": false,
+      "sha256": "5cf5de1a5a2262c35cfc18a04e259c6cd995d900ceb2efc7c5270003dc02388c",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": 1801,
       "geometry_anchor_count": 7,
       "geometry_attempts": 4,
-      "reason": "Emitted spline violates linear angular velocity"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 30,
@@ -939,6 +987,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -969,6 +1018,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -999,6 +1049,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1029,6 +1080,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1059,18 +1111,19 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
       "task_id": 35,
       "old": {
-        "duration_s": 11.429828127351566,
-        "rms_jerk_rad_s3": 3.168389407989942,
-        "peak_jerk_rad_s3": 13.078054892319777,
-        "integrated_squared_jerk": 114.74051779029173,
+        "duration_s": 9.075308837971047,
+        "rms_jerk_rad_s3": 4.915359266577241,
+        "peak_jerk_rad_s3": 30.430127868891603,
+        "integrated_squared_jerk": 219.26632898878947,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.164246308320988e-14,
-        "max_acceleration_jump_rad_s2": 4.4778502948889545e-12
+        "max_velocity_jump_rad_s": 7.69419250534753e-13,
+        "max_acceleration_jump_rad_s2": 4.428382244237028e-10
       },
       "new": {
         "duration_s": 9.075308837971047,
@@ -1081,14 +1134,15 @@
         "max_velocity_jump_rad_s": 7.69419250534753e-13,
         "max_acceleration_jump_rad_s2": 4.428382244237028e-10
       },
-      "travel_reduction_s": 2.3545192893805194,
-      "same_export": false,
+      "travel_reduction_s": 0.0,
+      "same_export": true,
       "sha256": "955e176351438362c697febc00940d99c99cce73e34c2cf860eb64a9deca7f6f",
       "continuous_accepted": true,
       "smoothing_sigma": 10,
       "geometry_samples": 1801,
       "geometry_anchor_count": 7,
       "geometry_attempts": 4,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1119,6 +1173,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1149,6 +1204,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1179,6 +1235,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 7,
       "geometry_attempts": 3,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1209,6 +1266,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1239,6 +1297,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1269,6 +1328,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1299,6 +1359,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1329,6 +1390,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1359,6 +1421,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1373,23 +1436,24 @@
         "max_acceleration_jump_rad_s2": 5.3518150014742544e-12
       },
       "new": {
-        "duration_s": 7.116502020925961,
-        "rms_jerk_rad_s3": 3.7205487894180393,
-        "peak_jerk_rad_s3": 10.901504977721832,
-        "integrated_squared_jerk": 98.51006033951639,
+        "duration_s": 6.432334310716491,
+        "rms_jerk_rad_s3": 4.342314181883214,
+        "peak_jerk_rad_s3": 15.592332898273458,
+        "integrated_squared_jerk": 121.28611752536635,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 3.5991909009331855e-14,
-        "max_acceleration_jump_rad_s2": 5.3518150014742544e-12
+        "max_velocity_jump_rad_s": 7.198381780690203e-14,
+        "max_acceleration_jump_rad_s2": 4.2142445413947666e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "b0b2424cc9852f69bf2646d81a4296c436d4bb36fb71de5bd7fb0eb0c69f0db8",
+      "travel_reduction_s": 0.6841677102094703,
+      "same_export": false,
+      "sha256": "7cbf31633cb0c4e6c80713d5e09c9bc39de7e61ddef27dc6c86205633b2ea578",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 46,
@@ -1403,23 +1467,24 @@
         "max_acceleration_jump_rad_s2": 3.1761957051511227e-12
       },
       "new": {
-        "duration_s": 4.91988114729716,
-        "rms_jerk_rad_s3": 3.976781170162138,
+        "duration_s": 4.243446864505766,
+        "rms_jerk_rad_s3": 4.771039178634738,
         "peak_jerk_rad_s3": 16.22810985219486,
-        "integrated_squared_jerk": 77.8068796683971,
-        "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 1.1826285569641935e-13,
-        "max_acceleration_jump_rad_s2": 3.1761957051511227e-12
+        "integrated_squared_jerk": 96.59279527738411,
+        "max_position_jump_rad": 8.881784197001252e-16,
+        "max_velocity_jump_rad_s": 2.838741735725791e-13,
+        "max_acceleration_jump_rad_s2": 9.358320203235745e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "4b2e4a2fb856f8e530dd2514eb65e3633c1ee4ae522783a359d339a922492bcc",
+      "travel_reduction_s": 0.6764342827913943,
+      "same_export": false,
+      "sha256": "3f2293dbb1f631aad874d6c8f8cca3c88ae433930f1782ac8636487cc74e187f",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 47,
@@ -1449,6 +1514,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1479,6 +1545,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1509,6 +1576,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1539,6 +1607,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1569,6 +1638,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1599,6 +1669,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1613,23 +1684,24 @@
         "max_acceleration_jump_rad_s2": 7.784501524685319e-12
       },
       "new": {
-        "duration_s": 7.287428421880476,
-        "rms_jerk_rad_s3": 4.574818138464907,
+        "duration_s": 6.573622465919262,
+        "rms_jerk_rad_s3": 5.328128815152956,
         "peak_jerk_rad_s3": 17.07219885699215,
-        "integrated_squared_jerk": 152.51830523202852,
+        "integrated_squared_jerk": 186.6182833555951,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.201055272934364e-14,
-        "max_acceleration_jump_rad_s2": 7.784501524685319e-12
+        "max_velocity_jump_rad_s": 1.118876387386041e-13,
+        "max_acceleration_jump_rad_s2": 3.758657322337674e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "a672bcb6fea9155b05543beba92e8a45aae18906d68556cf95a33d83c9d0369f",
+      "travel_reduction_s": 0.713805955961214,
+      "same_export": false,
+      "sha256": "a658899d42720678a9a46e7330b6802559560cae3c3729742a2dddf3cddd676a",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 54,
@@ -1659,6 +1731,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1689,6 +1762,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1703,23 +1777,24 @@
         "max_acceleration_jump_rad_s2": 3.740538141922596e-12
       },
       "new": {
-        "duration_s": 5.089750850639355,
-        "rms_jerk_rad_s3": 3.8860854776559077,
+        "duration_s": 4.485494079098979,
+        "rms_jerk_rad_s3": 4.512654147352142,
         "peak_jerk_rad_s3": 16.228109852234656,
-        "integrated_squared_jerk": 76.86368855979076,
+        "integrated_squared_jerk": 91.34281427967844,
         "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 5.0582745660651225e-14,
-        "max_acceleration_jump_rad_s2": 3.740538141922596e-12
+        "max_velocity_jump_rad_s": 2.6572395158765097e-13,
+        "max_acceleration_jump_rad_s2": 1.0599854996281188e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "482d7697d3f3e5bee61d1012e54a4c1dc1e2e7d1f6d4f1900b4588602cbe5b83",
+      "travel_reduction_s": 0.6042567715403759,
+      "same_export": false,
+      "sha256": "d90494be3150f1e3f8cdab1a9528c4ea707d1d82547d1589bdcdb63f440d183d",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 57,
@@ -1749,6 +1824,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1779,6 +1855,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1809,6 +1886,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1839,6 +1917,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1869,6 +1948,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1899,6 +1979,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1929,6 +2010,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1959,6 +2041,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -1989,6 +2072,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2019,6 +2103,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2049,6 +2134,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2079,6 +2165,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2109,6 +2196,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2139,6 +2227,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2169,6 +2258,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2199,6 +2289,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2229,6 +2320,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2259,6 +2351,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2289,6 +2382,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2319,6 +2413,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2349,6 +2444,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2379,6 +2475,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2409,6 +2506,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2439,6 +2537,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2453,23 +2552,24 @@
         "max_acceleration_jump_rad_s2": 9.376476435710105e-12
       },
       "new": {
-        "duration_s": 6.992042370399925,
-        "rms_jerk_rad_s3": 4.738159143569219,
-        "peak_jerk_rad_s3": 15.628010811326007,
-        "integrated_squared_jerk": 156.9724144938834,
+        "duration_s": 6.876327149848317,
+        "rms_jerk_rad_s3": 5.996186747660498,
+        "peak_jerk_rad_s3": 32.456313936561166,
+        "integrated_squared_jerk": 247.23322333538343,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.225499926387974e-14,
-        "max_acceleration_jump_rad_s2": 9.376476435710105e-12
+        "max_velocity_jump_rad_s": 7.225499929034952e-14,
+        "max_acceleration_jump_rad_s2": 6.46213148024608e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "c4f1f823263b818698d6d3d1dd1a8b8657d06cb9fb2ffb8f5a6465445f581638",
+      "travel_reduction_s": 0.11571522055160788,
+      "same_export": false,
+      "sha256": "97142de804cf6937c852627772004e18a7d126132b81bb296bcd943f2220c412",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 82,
@@ -2499,6 +2599,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2529,6 +2630,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2559,6 +2661,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2589,6 +2692,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 7,
       "geometry_attempts": 3,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2619,6 +2723,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2633,23 +2738,24 @@
         "max_acceleration_jump_rad_s2": 9.611495416026246e-12
       },
       "new": {
-        "duration_s": 5.625991516138573,
-        "rms_jerk_rad_s3": 5.6050244038002335,
+        "duration_s": 5.103468307886534,
+        "rms_jerk_rad_s3": 6.624502287482702,
         "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 176.747829207522,
-        "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 4.893619921309672e-14,
-        "max_acceleration_jump_rad_s2": 9.611495416026246e-12
+        "integrated_squared_jerk": 223.96075916927742,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.631983113844038e-13,
+        "max_acceleration_jump_rad_s2": 7.439985877894832e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "b59c569d87fd32fa3740a9ce1262f23ede509c3c5c5a8a8f52869da99b149c2c",
+      "travel_reduction_s": 0.5225232082520384,
+      "same_export": false,
+      "sha256": "bc9ce14924707f4de6f76d04120e07ea969d2c5b27aebb6e9bd93c2bb589e0f7",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 88,
@@ -2679,6 +2785,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2709,6 +2816,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2739,6 +2847,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2769,6 +2878,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2783,23 +2893,24 @@
         "max_acceleration_jump_rad_s2": 3.768721523329902e-12
       },
       "new": {
-        "duration_s": 4.480711775455955,
-        "rms_jerk_rad_s3": 4.808759436778793,
+        "duration_s": 4.089844069674293,
+        "rms_jerk_rad_s3": 5.298299500245231,
         "peak_jerk_rad_s3": 16.245135792045712,
-        "integrated_squared_jerk": 103.6127288119631,
-        "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 4.464641752412172e-14,
-        "max_acceleration_jump_rad_s2": 3.768721523329902e-12
+        "integrated_squared_jerk": 114.81001108807284,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.007015911159586e-13,
+        "max_acceleration_jump_rad_s2": 6.787033242727599e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "2fc216e1e7166dcaf636b6eafaabcd74ddff5e870d87d314c1bbb40d754644d4",
+      "travel_reduction_s": 0.39086770578166163,
+      "same_export": false,
+      "sha256": "d1dd9b2c4913ea622aded45fdb7c3513fa11083e31c35d2ffbf3ef5375b81d1b",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 93,
@@ -2829,6 +2940,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2859,6 +2971,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2889,6 +3002,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2919,6 +3033,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2949,6 +3064,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -2979,6 +3095,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3009,6 +3126,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3039,6 +3157,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3069,6 +3188,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3099,6 +3219,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3129,6 +3250,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3159,6 +3281,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3189,6 +3312,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3219,6 +3343,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3233,23 +3358,24 @@
         "max_acceleration_jump_rad_s2": 7.518957350879908e-12
       },
       "new": {
-        "duration_s": 6.592415950380296,
-        "rms_jerk_rad_s3": 6.462602322527524,
-        "peak_jerk_rad_s3": 27.15450855385724,
-        "integrated_squared_jerk": 275.33376037487255,
+        "duration_s": 6.227599859023662,
+        "rms_jerk_rad_s3": 7.9119992361612494,
+        "peak_jerk_rad_s3": 32.45631393637551,
+        "integrated_squared_jerk": 389.84608163641866,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.141872337976937e-14,
-        "max_acceleration_jump_rad_s2": 7.518957350879908e-12
+        "max_velocity_jump_rad_s": 2.4380448922752e-13,
+        "max_acceleration_jump_rad_s2": 1.347391039959909e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "e2457385a884b77b51083709a2117ed3d68482013d07114e386c042f98b15837",
+      "travel_reduction_s": 0.3648160913566345,
+      "same_export": false,
+      "sha256": "ad6655f48ac32b7bc41d4f27cae7cf55127e5e08bee7e8bbd155d6ede6cdc16d",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 108,
@@ -3279,6 +3405,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3309,6 +3436,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3339,6 +3467,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3369,6 +3498,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3399,6 +3529,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3413,23 +3544,24 @@
         "max_acceleration_jump_rad_s2": 9.586360509574343e-12
       },
       "new": {
-        "duration_s": 6.03097233060761,
-        "rms_jerk_rad_s3": 4.865595846475909,
+        "duration_s": 5.687247137037863,
+        "rms_jerk_rad_s3": 5.219188615075118,
         "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 142.77737731281005,
-        "max_position_jump_rad": 1.7763568394002505e-15,
-        "max_velocity_jump_rad_s": 4.893619921309672e-14,
-        "max_acceleration_jump_rad_s2": 9.586360509574343e-12
+        "integrated_squared_jerk": 154.92021276662524,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 1.1214539278204043e-13,
+        "max_acceleration_jump_rad_s2": 4.0602164264954425e-11
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "fdadbd749ffe744be90b02f5a253c611f6ca55b801adf5fd3413a23c8f7c79f4",
+      "travel_reduction_s": 0.34372519356974696,
+      "same_export": false,
+      "sha256": "2435e2c374b0d3fb013c7be49e2aee803c1a29f6089a6168b36d63b34742c34d",
       "continuous_accepted": false,
       "smoothing_sigma": 20,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 114,
@@ -3443,23 +3575,24 @@
         "max_acceleration_jump_rad_s2": 6.836418653206801e-12
       },
       "new": {
-        "duration_s": 6.641232143300891,
-        "rms_jerk_rad_s3": 6.0486041017879275,
+        "duration_s": 6.2844185669183625,
+        "rms_jerk_rad_s3": 7.588240301082234,
         "peak_jerk_rad_s3": 28.211976174607088,
-        "integrated_squared_jerk": 242.97353960851802,
+        "integrated_squared_jerk": 361.8655618733608,
         "max_position_jump_rad": 1.3322676295501878e-15,
-        "max_velocity_jump_rad_s": 7.229880732823056e-14,
-        "max_acceleration_jump_rad_s2": 6.836418653206801e-12
+        "max_velocity_jump_rad_s": 4.79576078592524e-13,
+        "max_acceleration_jump_rad_s2": 1.7174218625236366e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "e5fd2015d5f527fca3059057c48174fcb4b34e2053f1d1e477117094bfafccc2",
+      "travel_reduction_s": 0.3568135763825282,
+      "same_export": false,
+      "sha256": "a51f111499799b54ddb5cc048b29e699d789b78024518ea6c6c07c946ec4e955",
       "continuous_accepted": false,
       "smoothing_sigma": 20,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 115,
@@ -3489,6 +3622,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3519,6 +3653,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3549,6 +3684,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3563,23 +3699,24 @@
         "max_acceleration_jump_rad_s2": 4.379649870644835e-12
       },
       "new": {
-        "duration_s": 4.261891599785584,
-        "rms_jerk_rad_s3": 6.185739674872066,
+        "duration_s": 3.930975839924143,
+        "rms_jerk_rad_s3": 6.723140614035522,
         "peak_jerk_rad_s3": 24.078252495105165,
-        "integrated_squared_jerk": 163.07435787828098,
-        "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 4.7975447452122836e-14,
-        "max_acceleration_jump_rad_s2": 4.379649870644835e-12
+        "integrated_squared_jerk": 177.6825440535641,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.1958892566501756e-13,
+        "max_acceleration_jump_rad_s2": 1.582624775006169e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "4660524d56bf149fc7edd66ba4a80f760ad0c8f1e4fe21c619ec615241fe02bf",
+      "travel_reduction_s": 0.3309157598614414,
+      "same_export": false,
+      "sha256": "62d9199decb15c7228207d2775b510a5d59c866ce4de8a8cf6592de4bb776fb1",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 119,
@@ -3593,23 +3730,24 @@
         "max_acceleration_jump_rad_s2": 8.981350381206704e-12
       },
       "new": {
-        "duration_s": 4.697854218744693,
-        "rms_jerk_rad_s3": 6.937733101697518,
+        "duration_s": 4.304767483522378,
+        "rms_jerk_rad_s3": 8.035374608875975,
         "peak_jerk_rad_s3": 22.990817218546916,
-        "integrated_squared_jerk": 226.11777972977382,
+        "integrated_squared_jerk": 277.9469772284888,
         "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 4.8936198736640687e-14,
-        "max_acceleration_jump_rad_s2": 8.981350381206704e-12
+        "max_velocity_jump_rad_s": 3.331284561263155e-13,
+        "max_acceleration_jump_rad_s2": 2.498925121791685e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "b23f240426a39acaa18a6c3442ca5becbac99f6246fe349e5594ccc15c27dcf7",
+      "travel_reduction_s": 0.3930867352223153,
+      "same_export": false,
+      "sha256": "cf7549cfe15fb634eaf50091170518f341dbd74ac40c9b9d376e6bb9b6d04fe3",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 120,
@@ -3639,6 +3777,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 5,
       "geometry_attempts": 2,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3653,23 +3792,24 @@
         "max_acceleration_jump_rad_s2": 9.638328023015731e-12
       },
       "new": {
-        "duration_s": 3.923968270966408,
-        "rms_jerk_rad_s3": 6.255790599185362,
+        "duration_s": 3.615036769952259,
+        "rms_jerk_rad_s3": 7.202541434320061,
         "peak_jerk_rad_s3": 22.990817218546916,
-        "integrated_squared_jerk": 153.56416875277372,
-        "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 5.253489708885391e-14,
-        "max_acceleration_jump_rad_s2": 9.638328023015731e-12
+        "integrated_squared_jerk": 187.53582775406647,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 3.508238512694193e-13,
+        "max_acceleration_jump_rad_s2": 2.7439803756277727e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "ea4e9c5ee33720194d28a712df166aac92a1b96e26252877a26c100ec5476f4b",
+      "travel_reduction_s": 0.3089315010141487,
+      "same_export": false,
+      "sha256": "9ef5d32d0a3c4f193bad387bc19b7972211b2f64bd0999f2165eb85642d4e91f",
       "continuous_accepted": false,
       "smoothing_sigma": 20,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 122,
@@ -3699,6 +3839,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3729,6 +3870,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 5,
       "geometry_attempts": 2,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3759,6 +3901,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3789,6 +3932,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3819,6 +3963,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 5,
       "geometry_attempts": 2,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3849,6 +3994,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3863,23 +4009,24 @@
         "max_acceleration_jump_rad_s2": 1.1029295016302825e-11
       },
       "new": {
-        "duration_s": 5.801457727780496,
-        "rms_jerk_rad_s3": 4.969556448374034,
+        "duration_s": 5.23905535515722,
+        "rms_jerk_rad_s3": 5.460667644464213,
         "peak_jerk_rad_s3": 19.843186761378607,
-        "integrated_squared_jerk": 143.2756502641799,
-        "max_position_jump_rad": 8.881784197001252e-16,
-        "max_velocity_jump_rad_s": 7.318972976085738e-14,
-        "max_acceleration_jump_rad_s2": 1.1029295016302825e-11
+        "integrated_squared_jerk": 156.2228212243662,
+        "max_position_jump_rad": 1.3322676295501878e-15,
+        "max_velocity_jump_rad_s": 2.5031727332534027e-13,
+        "max_acceleration_jump_rad_s2": 1.439604112453215e-10
       },
-      "travel_reduction_s": 0.0,
-      "same_export": true,
-      "sha256": "d8e22814bbe618276611d3cd2b49114e6d3905a4ea3ccbfd3b54f369efd1df63",
+      "travel_reduction_s": 0.5624023726232767,
+      "same_export": false,
+      "sha256": "e107f94f266cf39c72caa0c1cac1fd2bf217099717f4f94d4461915fcddf7ea6",
       "continuous_accepted": false,
       "smoothing_sigma": 10,
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
-      "reason": "Continuous candidate is not faster"
+      "stopped_accepted": true,
+      "reason": "Validated stopped-path timing"
     },
     {
       "task_id": 129,
@@ -3909,6 +4056,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3939,6 +4087,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3969,6 +4118,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -3999,6 +4149,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 7,
       "geometry_attempts": 3,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -4029,6 +4180,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": null
     },
     {
@@ -4059,6 +4211,7 @@
       "geometry_samples": null,
       "geometry_anchor_count": 3,
       "geometry_attempts": 0,
+      "stopped_accepted": false,
       "reason": "Changing TCP requires separate motion blocks"
     }
   ]
