@@ -5,7 +5,7 @@
 
 import * as THREE from 'three';
 import { TrajectoryViewer } from './viewer.js?v=50';
-import { TrajectoryChart } from './charts.js?v=36';
+import { TrajectoryChart } from './charts.js?v=38';
 import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
 import { parseTraj, parseCSV } from './readers.js?v=36';
 import { createAuboIS25Repr } from './robots/aubo_is25.js?v=2';
@@ -20,7 +20,7 @@ class TrajectoryApp {
     this.filteredTrajectories = [];
     this.selectedTraj = null;
     this.activeMode = 'traj'; // 'traj', 'csv', 'mcap'
-    this.listSort = 'box'; // 'box' | 'mileage' | 'compute'
+    this.listSort = 'name'; // trajectory ID or a numeric table column
     this.listSortDir = 1;
     this.globalCSVRobot = 'aubo-is25';
     this.globalCSVTimingMode = 'hz';
@@ -134,16 +134,17 @@ class TrajectoryApp {
       });
     });
 
-    const sortButtons = document.querySelectorAll('#sort-filters .badge-btn');
+    const sortButtons = document.querySelectorAll('#trajectory-table thead button[data-sort]');
     sortButtons.forEach(btn => {
       btn.addEventListener('click', () => {
         const next = btn.dataset.sort;
         if (this.listSort === next) this.listSortDir *= -1;
         else {
           this.listSort = next;
-          this.listSortDir = next === 'box' ? 1 : -1;
+          this.listSortDir = ['id', 'name', 'box'].includes(next) ? 1 : -1;
         }
         this.applyFilters();
+        this.elements['trajectory-list'].closest('.trajectory-list-container').scrollTop = 0;
       });
     });
     
@@ -347,10 +348,14 @@ class TrajectoryApp {
         // Check if there is any difference in content
         if (this.checkIndexDifference(this.trajectories, newTrajectories)) {
           console.log("Trajectories database changed, reloading sidebar...");
+          const previous = this.trajectories.find(t => t.id === this.selectedTraj);
+          const current = newTrajectories.find(t => t.id === this.selectedTraj);
+          const reload = previous && current && previous.revision !== current.revision;
           this.trajectories = newTrajectories;
           this.annotateBoxCycles(this.trajectories);
           this.applyFilters();
           
+          if (reload) { this.activeTraj = null; this.selectTrajectory(this.selectedTraj); }
           // Fallback selection if active is lost or none selected
           if (this.filteredTrajectories.length > 0 && (!this.selectedTraj || !this.trajectories.some(t => t.id === this.selectedTraj))) {
             this.selectTrajectory(this.filteredTrajectories[0].id);
@@ -367,6 +372,11 @@ class TrajectoryApp {
     for (let i = 0; i < arr1.length; i++) {
       if (arr1[i].id !== arr2[i].id || 
           arr1[i].duration !== arr2[i].duration ||
+          arr1[i].compute_s !== arr2[i].compute_s ||
+          arr1[i].mileage_sum_rad !== arr2[i].mileage_sum_rad ||
+          arr1[i].name !== arr2[i].name ||
+          arr1[i].box_number !== arr2[i].box_number ||
+          arr1[i].revision !== arr2[i].revision ||
           arr1[i].status !== arr2[i].status ||
           arr1[i].model !== arr2[i].model ||
           arr1[i].format !== arr2[i].format) {
@@ -381,35 +391,50 @@ class TrajectoryApp {
     list.innerHTML = '';
     
     if (this.filteredTrajectories.length === 0) {
-      list.innerHTML = '<li class="scene-item" style="padding: 20px; justify-content: center; color: var(--text-muted);">No trajectories match filters</li>';
+      list.innerHTML = '<tr><td colspan="5" class="trajectory-empty">No trajectories match filters</td></tr>';
       return;
     }
     
     this.filteredTrajectories.forEach(t => {
-      const li = document.createElement('li');
+      const li = document.createElement('tr');
       const selected = this.selectedTraj === t.id;
       li.className = `list-item ${selected ? 'selected' : ''}`;
-      li.setAttribute('role', 'option');
+      li.tabIndex = 0;
       li.setAttribute('data-id', t.id);
       li.setAttribute('aria-selected', selected ? 'true' : 'false');
       
-      const shortId = t.id.slice(0, 8);
-      const dest = this.destinationLabel(t.tag);
-      const statusColor = t.red ? 'var(--danger-color)' : t.status === 70 ? 'var(--success-color)' : t.status === 40 ? 'var(--danger-color)' : 'var(--warning-color)';
-      const statusLabel = t.red ? 'Anomaly' : t.status === 70 ? 'Planned' : t.status === 40 ? 'Collided' : 'Timeout';
-      if (t.red) li.style.background = 'rgba(239, 68, 68, 0.18)';
-      const box = t.box_number != null ? `box ${t.box_number}` : '';
-      const compute = t.compute_s != null ? `${t.compute_s.toFixed(1)}s cpu` : '';
-      
-      li.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; margin-right: 8px;">
-          <div style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: ${statusColor}; box-shadow: 0 0 4px ${statusColor};" title="${statusLabel}"></div>
-          <span class="item-id monospace" style="font-size: 0.75rem; white-space: nowrap;">${shortId}</span>
-          <span style="font-size: 0.68rem; color: var(--accent-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${dest}</span>
-        </div>
-        <span style="font-size: 0.65rem; color: ${t.red ? 'var(--danger-color)' : 'var(--text-muted)'}; flex-shrink: 0; text-align: right;">${box}<br>${compute || t.duration.toFixed(2) + 's'}</span>
-      `;
-      
+      const statusLabel = t.red ? 'Anomaly' : t.status === 70 ? 'Planned' : t.status <= 20 ? 'Pending' : 'Failed';
+      const identity = document.createElement('td');
+      identity.className = 'trajectory-identity';
+      identity.title = `${t.name || 'Unnamed'} · ${t.id} · ${statusLabel}`;
+      const dot = document.createElement('span');
+      dot.className = `trajectory-status ${t.red || t.status >= 30 && t.status < 70 ? 'failed' : t.status === 70 ? 'solved' : 'pending'}`;
+      dot.title = statusLabel;
+      const label = document.createElement('span');
+      label.className = 'trajectory-name';
+      label.textContent = t.name || 'Unnamed';
+      const shortId = document.createElement('small');
+      shortId.className = 'trajectory-short-id monospace';
+      shortId.textContent = t.id.slice(0, 8);
+      identity.append(dot, label, shortId);
+      li.appendChild(identity);
+      const boxCell = document.createElement('td');
+      boxCell.className = 'trajectory-number';
+      boxCell.title = t.box_note || 'Box number unavailable';
+      boxCell.textContent = t.box_number == null ? '—' : `${t.box_inferred ? '≈' : ''}${t.box_number}`;
+      li.appendChild(boxCell);
+      for (const [value, digits] of [[t.compute_s, 1], [t.traj_time_s, 2], [t.mileage_sum_rad, 2]]) {
+        const cell = document.createElement('td');
+        cell.className = 'trajectory-number';
+        cell.textContent = Number.isFinite(value) ? value.toFixed(digits) : '—';
+        li.appendChild(cell);
+      }
+      li.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          this.selectTrajectory(t.id);
+        }
+      });
       li.addEventListener('click', () => this.selectTrajectory(t.id));
       list.appendChild(li);
     });
@@ -417,7 +442,6 @@ class TrajectoryApp {
     if (window.lucide) {
       window.lucide.createIcons({ attrs: { class: 'meta-group-icon' } });
     }
-    this.scrollSelectedIntoView();
   }
 
   scrollSelectedIntoView() {
@@ -454,12 +478,12 @@ class TrajectoryApp {
     if (!root || !leftHandle || !rightHandle) return;
 
     const KEY = 'ts-panel-widths';
-    const minLeft = 220;
+    const minLeft = 500;
     const minRight = 360;
     const minCenter = 280;
 
     const defaults = () => ({
-      left: Math.round(Math.min(360, Math.max(280, window.innerWidth * 0.18))),
+      left: Math.round(Math.min(580, Math.max(500, window.innerWidth * 0.28))),
       right: Math.round(Math.min(800, Math.max(500, window.innerWidth * 0.38)))
     });
 
@@ -528,7 +552,7 @@ class TrajectoryApp {
     // Count based on active mode (format) and search query
     const modeTrajectories = this.trajectories.filter(t => {
       const matchesMode = t.format === this.activeMode;
-      const matchesSearch = t.id.toLowerCase().includes(searchVal);
+      const matchesSearch = `${t.id} ${t.name || ''} ${t.box_number ?? ''}`.toLowerCase().includes(searchVal);
       return matchesMode && matchesSearch;
     });
     
@@ -568,7 +592,7 @@ class TrajectoryApp {
 
     this.filteredTrajectories = this.trajectories.filter(t => {
       // 1. Search filter (match full ID or parts of it)
-      const matchesSearch = t.id.toLowerCase().includes(searchVal);
+      const matchesSearch = `${t.id} ${t.name || ''} ${t.box_number ?? ''}`.toLowerCase().includes(searchVal);
       
       // 2. Status filter
       let matchesStatus = true;
@@ -638,22 +662,32 @@ class TrajectoryApp {
       return dir * (va - vb);
     };
     this.filteredTrajectories.sort((a, b) => {
-      if (this.listSort === 'box') {
-        return dir * ((a._pal - b._pal) || (a._cycle - b._cycle) || (a._phase - b._phase) || ((a.task_id ?? 0) - (b.task_id ?? 0)));
-      }
+      if (this.listSort === 'id') return dir * a.id.localeCompare(b.id);
+      if (this.listSort === 'name') return dir * (a.name || '').localeCompare(b.name || '') || a.id.localeCompare(b.id);
+      if (this.listSort === 'box') return nullLast(a.box_number, b.box_number);
       if (this.listSort === 'mileage') return nullLast(a.mileage_sum_rad, b.mileage_sum_rad);
       if (this.listSort === 'compute') return nullLast(a.compute_s, b.compute_s);
+      if (this.listSort === 'travel') return nullLast(a.traj_time_s, b.traj_time_s);
       return 0;
     });
   }
 
   paintSortButtons() {
     const arrow = this.listSortDir > 0 ? '↑' : '↓';
-    const labels = { box: 'Box order', mileage: 'Mileage', compute: 'Compute' };
-    document.querySelectorAll('#sort-filters .badge-btn').forEach(btn => {
-      const on = btn.dataset.sort === this.listSort;
+    const labels = { name: 'Trajectory', box: 'Box', id: 'ID', mileage: 'Mileage', compute: 'Compute', travel: 'Travel' };
+    const units = { box: 'est.', mileage: 'rad', compute: 's', travel: 's' };
+    document.querySelectorAll('#trajectory-table thead button[data-sort]').forEach(btn => {
+      const key = btn.dataset.sort;
+      const on = key === this.listSort;
       btn.classList.toggle('active', on);
-      btn.textContent = on ? `${labels[btn.dataset.sort]} ${arrow}` : labels[btn.dataset.sort];
+      btn.closest('th').setAttribute('aria-sort', on ? (this.listSortDir > 0 ? 'ascending' : 'descending') : 'none');
+      btn.textContent = labels[key] + (on ? ` ${arrow}` : '');
+      if (units[key]) {
+        const unit = document.createElement('span');
+        unit.className = 'column-unit';
+        unit.textContent = units[key];
+        btn.appendChild(unit);
+      }
     });
   }
 

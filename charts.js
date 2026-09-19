@@ -144,10 +144,10 @@ export class TrajectoryChart {
         },
         layout: {
           padding: {
-            left: 10,
-            right: 15,
-            top: 15,
-            bottom: 90
+            left: 2,
+            right: 8,
+            top: 8,
+            bottom: 44
           }
         },
         scales: {
@@ -160,12 +160,9 @@ export class TrajectoryChart {
             ticks: { color: '#94a3b8', font: { size: 9 } }
           },
           y: {
-            afterFit: (scale) => {
-              scale.width = 60;
-            },
             title: {
-              display: true,
-              text: 'Value',
+              display: false,
+              text: '',
               color: '#94a3b8',
               font: { size: 10, family: 'Inter' }
             },
@@ -269,13 +266,6 @@ export class TrajectoryChart {
       };
     });
     
-    // Set labels and titles
-    let yTitle = 'Position (rad)';
-    if (metric === 'velocity') yTitle = 'Velocity (rad/s)';
-    else if (metric === 'acceleration') yTitle = 'Acceleration (rad/s²)';
-    else if (metric === 'jerk') yTitle = 'Jerk (rad/s³)';
-    
-    this.chart.options.scales.y.title.text = yTitle;
     this.chart.options.scales.x.max = duration;
     this.chart.options.scales.x.min = 0;
     

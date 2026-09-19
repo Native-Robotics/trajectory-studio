@@ -69,7 +69,7 @@ body {
 
 /* Primary Layout Structure */
 #app-container {
-  --left-w: clamp(280px, 18vw, 360px);
+  --left-w: clamp(500px, 28vw, 580px);
   --right-w: clamp(500px, 38vw, 800px);
   display: grid;
   grid-template-columns: var(--left-w) 12px minmax(240px, 1fr) 12px var(--right-w);
@@ -1004,7 +1004,7 @@ body.resizing-cols canvas {
 
 #timeline-controls-row {
   position: absolute;
-  bottom: 29px;
+  bottom: 8px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -1450,3 +1450,30 @@ body.resizing-cols canvas {
   background: var(--danger-color);
   box-shadow: 0 0 6px var(--danger-color);
 }
+
+/* Live settings are read-only; playback controls remain available. */
+.live-view #scale-tools-panel { display: none; }
+
+/* Compact live table: one row per trajectory, aligned numeric metrics. */
+#trajectory-table { width: 100%; min-width: 470px; border-collapse: separate; border-spacing: 0; font-size: 12px; }
+#trajectory-table thead { position: sticky; top: 0; z-index: 2; background: #101426; }
+#trajectory-table th { padding: 0; border-bottom: 1px solid var(--panel-border); text-align: right; }
+#trajectory-table th:first-child { text-align: left; }
+#trajectory-table th button { width: 100%; padding: 10px 7px; background: none; border: 0; color: var(--text-secondary); text-align: inherit; font: inherit; cursor: pointer; white-space: nowrap; }
+#trajectory-table th button:hover, #trajectory-table th button.active { color: var(--accent-color); background: rgba(6,182,212,.06); }
+#trajectory-table .column-unit { display: block; font-size: 10px; font-weight: 400; color: var(--text-muted); margin-top: 3px; }
+#trajectory-table .list-item { display: table-row; border-radius: 0; }
+#trajectory-table td { padding: 10px 7px; border-bottom: 1px solid var(--panel-border); white-space: nowrap; }
+#trajectory-table .trajectory-number { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-secondary); }
+#trajectory-table .selected td { color: var(--text-primary); background: rgba(6,182,212,.07); }
+#trajectory-table .selected td:first-child { box-shadow: inset 2px 0 var(--accent-color); }
+#trajectory-table .trajectory-status { display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; vertical-align: middle; }
+#trajectory-table .trajectory-status.solved { background: var(--success-color); }
+#trajectory-table .trajectory-status.failed { background: var(--danger-color); }
+#trajectory-table .trajectory-status.pending { background: var(--warning-color); }
+#trajectory-table .trajectory-empty { text-align: center; padding: 24px 8px; color: var(--text-muted); }
+#trajectory-table button:focus-visible, #trajectory-table tr:focus-visible { outline: 2px solid var(--accent-color); outline-offset: -2px; }
+
+#trajectory-table .trajectory-identity { max-width: 195px; }
+#trajectory-table .trajectory-name { display: inline-block; max-width: 165px; overflow: hidden; text-overflow: ellipsis; vertical-align: middle; }
+#trajectory-table .trajectory-short-id { display: block; margin: 4px 0 0 13px; color: var(--text-muted); font-size: 10px; }

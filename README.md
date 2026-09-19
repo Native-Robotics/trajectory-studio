@@ -97,3 +97,13 @@ The tracked `Trajectories/traj` files, `trajectories.json`, and
 `palletize_corpus.json` form one complete collection. Earlier bundled samples
 remain in the parent commit. New replay collections under `collections/` and
 local IDE settings are excluded from this snapshot.
+
+## Live OmniPack test viewer
+
+Bundled trajectories have been removed. Run `python live.py --trajectories
+/home/USER/Omni/robot/OmniPack/Trajectories --metrics /path/to/test/metrics.json`
+(on one line), or use Telegram `/traj test-start`. The live server binds localhost
+port 8000 and reads the flat `.traj`/`.repr` settings directory on every refresh.
+Writes to live settings are disabled. Compute is elapsed submission-to-result time
+including queue; travel sums part knot spans. Both metrics can be sorted using the
+sidebar buttons. A missing computation metric is shown as unknown.
