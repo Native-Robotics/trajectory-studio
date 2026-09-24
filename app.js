@@ -4,9 +4,9 @@
  */
 
 import * as THREE from 'three';
-import { TrajectoryViewer } from './viewer.js?v=51';
-import { TrajectoryChart } from './charts.js?v=38';
-import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=36';
+import { TrajectoryViewer } from './viewer.js?v=52';
+import { TrajectoryChart } from './charts.js?v=39';
+import { evaluateSpline, computeForwardKinematics, quatToMatrix } from './robot.js?v=37';
 import { parseTraj, parseCSV } from './readers.js?v=36';
 import { createAuboIS25Repr } from './robots/aubo_is25.js?v=2';
 
@@ -965,8 +965,8 @@ class TrajectoryApp {
       // Compute Forward Kinematics for this point
       const linkTransforms = computeForwardKinematics(state.q, dh, T_base);
       
-      // Get the flange transform (link 6)
-      const T_flange = linkTransforms[6];
+      // Get the flange transform (last link)
+      const T_flange = linkTransforms[linkTransforms.length - 1];
       // Flange position (translation component of final 4x4 matrix)
       // Flat array indices for translation columns are 3 (x), 7 (y), 11 (z)
       const x = T_flange[3];
@@ -1012,14 +1012,14 @@ class TrajectoryApp {
     this.updateJointTableUI(state, dh);
     
     // 5. Update Flange Cartesian Info in UI
-    const T_flange = linkTransforms[6];
+    const T_flange = linkTransforms[linkTransforms.length - 1];
     
     // Extract base-relative flange position by back-applying the base transform
     // (Or we can just extract relative to base from the DH product prior to T_base)
     // T_flange_base is the DH product without T_base applied first.
     // Let's compute it quickly or extract it from T_flange in base coordinate system:
     // To do this simply, we can run computeForwardKinematics with base=Identity
-    const T_flange_base = computeForwardKinematics(state.q, dh, [1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1])[6];
+    const T_flange_base = computeForwardKinematics(state.q, dh, [1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1]).at(-1);
     
     this.elements['tcp-x'].innerText = T_flange_base[3].toFixed(3);
     this.elements['tcp-y'].innerText = T_flange_base[7].toFixed(3);
@@ -1072,7 +1072,13 @@ class TrajectoryApp {
     const modelName = this.activeRepr.equipment_model.model_name || "generic";
     const speedLimits = this.getRobotSpeedLimits(modelName);
     
-    for (let j = 0; j < 6; j++) {
+    const numJoints = state.q.length;
+    // Hide table rows of joints this robot does not have (e.g. J6 on a 5-DOF arm)
+    document.querySelectorAll('tr[id^="joint-row-"]').forEach(row => {
+      const joint = Number(row.dataset.joint);
+      row.style.display = joint < numJoints ? '' : 'none';
+    });
+    for (let j = 0; j < numJoints; j++) {
       const qVal = state.q[j];
       const qDeg = (qVal * 180 / Math.PI).toFixed(1);
       
