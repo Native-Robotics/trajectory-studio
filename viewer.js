@@ -104,11 +104,13 @@ export class TrajectoryViewer {
     });
     this.renderer.setSize(width, height);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.canvas.addEventListener('webglcontextrestored', () => { this.needsRender = true; });
     this.renderer.shadowMap.enabled = true;
     this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
     // 4. Controls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    this.controls.addEventListener('change', () => { this.needsRender = true; });
     this.controls.enableDamping = true;
     this.controls.dampingFactor = 0.05; // Ultra-smooth gliding damping
     this.controls.maxPolarAngle = Math.PI / 2 + 0.05; // Keep camera above floor
@@ -246,6 +248,7 @@ export class TrajectoryViewer {
   }
  
   onResize() {
+    this.needsRender = true;
     const width = this.container.clientWidth;
     const height = this.container.clientHeight;
     if (width === 0 || height === 0) return;
@@ -268,15 +271,21 @@ export class TrajectoryViewer {
         const newDist = THREE.MathUtils.lerp(currentDist, this.targetZoomDist, 0.15); // 0.15 damping factor
         offset.normalize().multiplyScalar(newDist);
         this.camera.position.copy(this.controls.target).add(offset);
+        this.needsRender = true;
       }
     }
     
-    this.controls.update();
-    this.renderer.render(this.scene, this.camera);
+    const cameraChanged = this.controls.update();
+    // Keep damping responsive, but do not submit identical paused scenes to the GPU.
+    if (cameraChanged || this.needsRender !== false) {
+      this.needsRender = false;
+      this.renderer.render(this.scene, this.camera);
+    }
   }
 
   // Set visibility toggles
   setGridVisible(visible) {
+    this.needsRender = true;
     this.showGrid = visible;
     this.scene.traverse((child) => {
       if (child instanceof THREE.GridHelper) {
@@ -286,6 +295,7 @@ export class TrajectoryViewer {
   }
 
   setRobotXRay(xRay) {
+    this.needsRender = true;
     this.xRayMode = xRay;
     const material = xRay ? this.robotMaterials.xray : this.robotMaterials.solid;
     
@@ -301,6 +311,7 @@ export class TrajectoryViewer {
   }
 
   setObstaclesVisible(visible) {
+    this.needsRender = true;
     this.showObstacles = visible;
     this.obstaclesGroup.visible = visible;
   }
@@ -310,6 +321,7 @@ export class TrajectoryViewer {
    * @param {Object} reprData - The representation JSON data
    */
   buildRobot(reprData) {
+    this.needsRender = true;
     // 1. Clear existing meshes in link groups
     for (let i = 0; i <= 6; i++) {
       // Remove all children
@@ -499,6 +511,7 @@ export class TrajectoryViewer {
    * @param {Object} reprData - The representation JSON data
    */
   buildSceneObstacles(reprData) {
+    this.needsRender = true;
     // Clear old obstacles
     while (this.obstaclesGroup.children.length > 0) {
       this.obstaclesGroup.remove(this.obstaclesGroup.children[0]);
@@ -556,6 +569,7 @@ export class TrajectoryViewer {
    * @param {Array<THREE.Vector3>} points - Position points of the TCP curve in world coordinates
    */
   drawTrajectoryPath(points) {
+    this.needsRender = true;
     // Clear old trajectory lines
     while (this.trajectoryGroup.children.length > 0) {
       this.trajectoryGroup.remove(this.trajectoryGroup.children[0]);
@@ -593,6 +607,7 @@ export class TrajectoryViewer {
    * @param {Array<number>} [v] - Active joint velocities
    */
   updatePose(linkTransforms, q, v) {
+    this.needsRender = true;
     // Helper to transpose 4x4 flat row-major matrix to column-major
     const toColumnMajor = (m) => {
       return [
@@ -724,10 +739,12 @@ export class TrajectoryViewer {
    * @param {THREE.Vector3} pos - Position of the current TCP in world space
    */
   updateTcpMarker(pos) {
+    this.needsRender = true;
     this.currentTcpMarker.position.copy(pos);
   }
 
   setEditMode(isEdit) {
+    this.needsRender = true;
     this.editMode = isEdit;
     
     // Fade robot and obstacles
@@ -751,6 +768,7 @@ export class TrajectoryViewer {
   }
 
   buildEditorHandles() {
+    this.needsRender = true;
     this.clearEditorHandles();
     
     // Decimate trajectoryPoints into control points
@@ -791,6 +809,7 @@ export class TrajectoryViewer {
   }
 
   clearEditorHandles() {
+    this.needsRender = true;
     this.transformControls.forEach(tc => {
       tc.detach();
       tc.dispose();
@@ -805,6 +824,7 @@ export class TrajectoryViewer {
   }
 
   updateSplineFromHandles() {
+    this.needsRender = true;
     if (this.controlSpheres.length < 2) return;
     
     // Update controlPoints array from sphere positions
