@@ -3,7 +3,8 @@
  * Joint graphs management using Chart.js.
  */
 
-import { evaluateSpline } from './robot.js?v=36';
+import { getJointCount } from './robot.js?v=37';
+import { buildMetricSeries, detectAccelerationSteps, groupStepsByTime } from './series.js?v=1';
 
 // Custom plugin to draw a vertical timeline cursor line
 const verticalCursorPlugin = {
@@ -100,15 +101,140 @@ const horizontalLimitsPlugin = {
   }
 };
 
+const STEP_KIND_LABELS = { start: 'start from rest', end: 'stop at rest', junction: 'part junction', knot: 'knot' };
+
+// Custom plugin to mark acceleration steps (jerk impulses) on the acceleration and jerk charts
+const accelerationStepsPlugin = {
+  id: 'accelerationSteps',
+  afterDatasetsDraw: (chart) => {
+    const opts = chart.options.plugins.accelerationSteps;
+    if (!opts || !opts.groups || opts.groups.length === 0) return;
+    if (opts.metric !== 'acceleration' && opts.metric !== 'jerk') return;
+    const ctx = chart.ctx;
+    const xAxis = chart.scales.x;
+    const yAxis = chart.scales.y;
+    const area = chart.chartArea;
+    const colors = opts.colors || [];
+    const colorOf = (joint) => colors[joint % colors.length] || '#e2e8f0';
+    const clampY = (y) => Math.max(area.top, Math.min(area.bottom, y));
+    const maxStep = Math.max(...opts.groups.flatMap(g => g.steps.map(s => Math.abs(s.step))));
+
+    ctx.save();
+    const labelBoxes = [];
+    opts.groups.forEach(group => {
+      if (group.t < xAxis.min || group.t > xAxis.max) return;
+      const x = xAxis.getPixelForValue(group.t);
+
+      // Faint vertical guide at the step time
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(248, 250, 252, 0.18)';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([2, 3]);
+      ctx.moveTo(x, area.top);
+      ctx.lineTo(x, area.bottom);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Draw smaller steps first so the largest one stays on top
+      [...group.steps].reverse().forEach(step => {
+        const color = colorOf(step.joint);
+        if (opts.metric === 'acceleration') {
+          // Vertical edge from the left limit (open circle) to the right limit (filled dot)
+          const y0 = clampY(yAxis.getPixelForValue(step.before));
+          const y1 = clampY(yAxis.getPixelForValue(step.after));
+          ctx.beginPath();
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 3;
+          ctx.moveTo(x, y0);
+          ctx.lineTo(x, y1);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(x, y0, 3.5, 0, 2 * Math.PI);
+          ctx.fillStyle = '#0a0c16';
+          ctx.fill();
+          ctx.lineWidth = 1.5;
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.arc(x, y1, 3.5, 0, 2 * Math.PI);
+          ctx.fillStyle = color;
+          ctx.fill();
+        } else {
+          // Jerk impulse: arrow from zero, length proportional to the step size
+          const base = clampY(yAxis.getPixelForValue(0));
+          const room = (step.step > 0 ? base - area.top : area.bottom - base) - 4;
+          const len = Math.max(10, Math.min(room, 0.45 * (area.bottom - area.top)) * Math.abs(step.step) / maxStep);
+          const tip = step.step > 0 ? base - len : base + len;
+          const dir = step.step > 0 ? 1 : -1;
+          ctx.beginPath();
+          ctx.strokeStyle = color;
+          ctx.lineWidth = 2.5;
+          ctx.moveTo(x, base);
+          ctx.lineTo(x, tip + dir * 5);
+          ctx.stroke();
+          ctx.beginPath();
+          ctx.fillStyle = color;
+          ctx.moveTo(x, tip);
+          ctx.lineTo(x - 4.5, tip + dir * 7);
+          ctx.lineTo(x + 4.5, tip + dir * 7);
+          ctx.closePath();
+          ctx.fill();
+        }
+      });
+
+      // Label: time, kind and the largest steps of this group
+      const maxLines = 4;
+      const shown = group.steps.slice(0, maxLines);
+      const lines = [{ text: `Δa @ ${group.t.toFixed(3)} s · ${STEP_KIND_LABELS[group.kind] || group.kind}`, color: '#e2e8f0' }];
+      shown.forEach(step => {
+        const sign = step.step > 0 ? '+' : '−';
+        lines.push({ text: `J${step.joint + 1} ${sign}${Math.abs(step.step).toFixed(2)} rad/s²`, color: colorOf(step.joint) });
+      });
+      if (group.steps.length > shown.length) {
+        lines.push({ text: `+${group.steps.length - shown.length} smaller`, color: '#94a3b8' });
+      }
+      ctx.font = '9px "JetBrains Mono", monospace';
+      const lineH = 11;
+      const w = Math.max(...lines.map(l => ctx.measureText(l.text).width)) + 8;
+      const h = lines.length * lineH + 4;
+      let bx = x + 6;
+      if (bx + w > area.right) bx = x - 6 - w;
+      bx = Math.max(area.left, bx);
+      let by = area.top + 2;
+      // Stack below any label box this one would overlap
+      let moved = true;
+      while (moved) {
+        moved = false;
+        for (const b of labelBoxes) {
+          if (bx < b.x + b.w && bx + w > b.x && by < b.y + b.h && by + h > b.y) {
+            by = b.y + b.h + 2;
+            moved = true;
+          }
+        }
+      }
+      labelBoxes.push({ x: bx, y: by, w, h });
+      ctx.fillStyle = 'rgba(10, 12, 22, 0.85)';
+      ctx.fillRect(bx, by, w, h);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(bx, by, w, h);
+      lines.forEach((l, i) => {
+        ctx.fillStyle = l.color;
+        ctx.fillText(l.text, bx + 4, by + 2 + (i + 1) * lineH - 2);
+      });
+    });
+    ctx.restore();
+  }
+};
+
 // Register custom plugins
-Chart.register(verticalCursorPlugin, alignSliderPlugin, horizontalLimitsPlugin);
+Chart.register(verticalCursorPlugin, alignSliderPlugin, horizontalLimitsPlugin, accelerationStepsPlugin);
 
 export class TrajectoryChart {
   constructor(canvasId) {
     this.canvas = document.getElementById(canvasId);
     this.chart = null;
     
-    // Consistent color coding for joints J1..J6
+    // Consistent color coding for joints J1..J6 (cycled if a robot has more joints)
     this.jointColors = [
       '#a855f7', // J1 Purple
       '#3b82f6', // J2 Blue
@@ -140,7 +266,7 @@ export class TrajectoryChart {
         animation: false, // Turn off transitions for raw speed
         elements: {
           point: { radius: 0 }, // Hide points, only show lines
-          line: { borderDelta: 0, tension: 0.1, borderWidth: 1.8 }
+          line: { borderDelta: 0, tension: 0, borderWidth: 1.8 } // straight segments: knots carry exact steps
         },
         layout: {
           padding: {
@@ -191,6 +317,11 @@ export class TrajectoryChart {
           },
           horizontalLimits: {
             lines: [] // List of active limit lines to draw
+          },
+          accelerationSteps: {
+            metric: null,
+            groups: [], // Acceleration steps grouped by time
+            colors: this.jointColors // plain data: Chart.js would call a function option as scriptable
           }
         }
       }
@@ -214,7 +345,7 @@ export class TrajectoryChart {
     
     // 1. Get trajectory duration
     let duration = 0.0;
-    if (trajData.parts && trajData.parts.length > 0) {
+    if (trajData.status === 70 && trajData.parts && trajData.parts.length > 0) {
       const lastPart = trajData.parts[trajData.parts.length - 1];
       const knots = lastPart.knots;
       if (knots && knots.length > 0) {
@@ -228,44 +359,15 @@ export class TrajectoryChart {
       return;
     }
     
-    // 2. Generate points to evaluate (e.g., 200 samples)
-    const samplesCount = 200;
-    const timeSteps = [];
-    for (let i = 0; i < samplesCount; i++) {
-      timeSteps.push((duration * i) / (samplesCount - 1));
-    }
-    
-    // Initialize 6 datasets
-    const datasetsData = Array.from({ length: 6 }, () => []);
-    
-    // Evaluate spline for each time step
-    timeSteps.forEach(t => {
-      const state = evaluateSpline(trajData, t);
-      // Retrieve the requested metric
-      let vals = [];
-      if (metric === 'position') vals = state.q;
-      else if (metric === 'velocity') vals = state.v;
-      else if (metric === 'acceleration') vals = state.a;
-      else if (metric === 'jerk') vals = state.j;
-      
-      for (let j = 0; j < 6; j++) {
-        datasetsData[j].push({ x: t, y: vals[j] });
-      }
-    });
-    
-    // 3. Update Chart.js datasets
-    this.chart.data.datasets = datasetsData.map((dataPoints, jIdx) => {
-      return {
-        label: `Joint J${jIdx + 1}`,
-        data: dataPoints,
-        borderColor: this.jointColors[jIdx],
-        backgroundColor: 'transparent',
-        borderWidth: 1.8,
-        pointRadius: 0,
-        fill: false
-      };
-    });
-    
+    // 2. Sample every knot (both sides) plus a dense grid; jerk as exact steps
+    const datasetsData = buildMetricSeries(trajData, metric);
+    this.chart.data.datasets = this.makeDatasets(datasetsData);
+
+    // 3. Mark acceleration steps (jerk impulses) at knots and part junctions
+    this.stepGroups = groupStepsByTime(detectAccelerationSteps(trajData));
+    this.chart.options.plugins.accelerationSteps.metric = metric;
+    this.chart.options.plugins.accelerationSteps.groups = this.stepGroups;
+
     this.chart.options.scales.x.max = duration;
     this.chart.options.scales.x.min = 0;
     
@@ -280,13 +382,14 @@ export class TrajectoryChart {
    * @param {Object} [reprData] - Optional robot representation configuration for limits
    */
   showStaticPlot(trajData, metric, reprData = null) {
-    const targetState = trajData.targetState || [0, 0, 0, 0, 0, 0];
+    const numJoints = getJointCount(trajData);
+    const targetState = trajData.targetState || new Array(numJoints).fill(0);
     
-    const datasetsData = Array.from({ length: 6 }, () => []);
+    const datasetsData = Array.from({ length: numJoints }, () => []);
     const timeSteps = [0.0, 1.0]; // Simple flat 0 to 1 seconds line
     
     timeSteps.forEach(t => {
-      for (let j = 0; j < 6; j++) {
+      for (let j = 0; j < numJoints; j++) {
         let val = 0.0;
         if (metric === 'position') val = targetState[j];
         // Velocity, Acceleration, Jerk are zero for static states
@@ -294,23 +397,31 @@ export class TrajectoryChart {
       }
     });
     
-    this.chart.data.datasets = datasetsData.map((dataPoints, jIdx) => {
-      return {
-        label: `Joint J${jIdx + 1}`,
-        data: dataPoints,
-        borderColor: this.jointColors[jIdx],
-        backgroundColor: 'transparent',
-        borderWidth: 1.8,
-        pointRadius: 0,
-        fill: false
-      };
-    });
+    this.chart.data.datasets = this.makeDatasets(datasetsData);
+    this.stepGroups = [];
+    this.chart.options.plugins.accelerationSteps.groups = [];
     
     this.chart.options.scales.x.max = 1.0;
     this.chart.options.scales.x.min = 0.0;
     
     this.checkHorizontalLimits(datasetsData, metric, reprData);
     this.chart.update('none');
+  }
+
+  jointColor(joint) {
+    return this.jointColors[joint % this.jointColors.length];
+  }
+
+  makeDatasets(datasetsData) {
+    return datasetsData.map((dataPoints, jIdx) => ({
+      label: `Joint J${jIdx + 1}`,
+      data: dataPoints,
+      borderColor: this.jointColor(jIdx),
+      backgroundColor: 'transparent',
+      borderWidth: 1.8,
+      pointRadius: 0,
+      fill: false
+    }));
   }
 
   /**
@@ -324,14 +435,14 @@ export class TrajectoryChart {
       const modelName = equipment.model_name || 'generic';
       const speedLimits = this.getRobotSpeedLimits(modelName);
       
-      for (let j = 0; j < 6; j++) {
+      for (let j = 0; j < datasetsData.length; j++) {
         const curvePoints = datasetsData[j];
         if (!curvePoints || curvePoints.length === 0) continue;
         
         const yVals = curvePoints.map(pt => pt.y);
         const minCurveY = Math.min(...yVals);
         const maxCurveY = Math.max(...yVals);
-        const jColor = this.jointColors[j];
+        const jColor = this.jointColor(j);
         
         if (metric === 'position') {
           const limit = limits.find(l => l.joint_id === j);
@@ -427,7 +538,7 @@ export class TrajectoryChart {
     if (activeLines.length > 0 && datasetsData) {
       let minY = Infinity;
       let maxY = -Infinity;
-      for (let j = 0; j < 6; j++) {
+      for (let j = 0; j < datasetsData.length; j++) {
         if (datasetsData[j]) {
           datasetsData[j].forEach(pt => {
             if (pt.y < minY) minY = pt.y;

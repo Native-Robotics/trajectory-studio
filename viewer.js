@@ -6,7 +6,7 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
-import { quatToMatrix } from './robot.js?v=36';
+import { quatToMatrix } from './robot.js?v=37';
 import { getRobotConfig } from './robots/factory.js?v=36';
 
 export class TrajectoryViewer {
@@ -428,7 +428,9 @@ export class TrajectoryViewer {
       
       // Render simple joint connector rings at the actual joint axes.
       // The axis of Joint i is the Z-axis of Link i-1.
-      for (let i = 1; i <= 6; i++) {
+      // One ring per DH joint (5 on a 5-DOF arm); link groups exist for up to 6 joints.
+      const numJoints = Math.min(6, (dh.a || []).length || 6);
+      for (let i = 1; i <= numJoints; i++) {
         const j = i - 1;
         const r = config.jointRingRadii[j];
         const h = config.jointRingHeights[j];
@@ -626,9 +628,9 @@ export class TrajectoryViewer {
       }
     }
 
-    // Position of link 6 TCP marker
-    if (linkTransforms[6]) {
-      const t6 = linkTransforms[6];
+    // Position of the TCP marker at the last link (flange)
+    if (linkTransforms.length > 1) {
+      const t6 = linkTransforms[linkTransforms.length - 1];
       // Flange position (translation component of final 4x4 matrix)
       // Flat array indices for translation columns in row-major are 3 (x), 7 (y), 11 (z)
       const x = t6[3];

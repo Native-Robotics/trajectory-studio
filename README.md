@@ -17,6 +17,9 @@
 
 ### 2. Kinematics Charting (Chart.js)
 - Renders curves for **Position**, **Velocity**, **Acceleration**, and **Jerk** over time.
+- Samples every knot on both sides plus a dense grid, so short (7 ms) edge segments are never skipped. Jerk is constant per cubic segment and is drawn as exact steps between knots.
+- **Acceleration steps**: where the left and right acceleration limits at a knot, part junction, or rest start/stop differ by more than 1e-3 rad/s², the Accel chart marks the jump and the Jerk chart draws an impulse arrow, each labelled with the time, joint, and step size.
+- The joint count comes from the trajectory data (5-DOF arms such as the Doosan P3020 work).
 - **Vertical Cursor**: Tracks the active playback position with a dashed cyan line.
 - **Joint-Colored Limit Lines**: If any joint gets within 5% of its position or velocity limit, a dashed horizontal line is drawn on the graph using that joint's color (Purple for J1, Blue for J2, etc.) along with a clear label.
 - **Exceeded States**: Exceeding a limit draws a thick, solid red line (`3.0px`) with an `EXCEEDED!` label. The chart's Y-axis auto-expands (adding 8% padding) to guarantee limit lines are fully visible.
@@ -51,6 +54,7 @@ trajectory-studio/
 ├── charts.js                    # Chart.js integration, visual cursor & layout plugins
 ├── readers.js                   # Trajectory and CSV parser logic
 ├── robot.js                     # Kinematics solvers (Spline curves & Forward DH Solver)
+├── series.js                    # Chart series (knot-exact sampling, jerk steps) & acceleration-step detection
 ├── viewer.js                    # Three.js 3D WebGL renderer and canvas scene controller
 ├── docs/                        # Specifications and design references
 │   └── design.md                # Comprehensive technical specification document
