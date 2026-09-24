@@ -681,7 +681,12 @@ class TrajectoryApp {
       const on = key === this.listSort;
       btn.classList.toggle('active', on);
       btn.closest('th').setAttribute('aria-sort', on ? (this.listSortDir > 0 ? 'ascending' : 'descending') : 'none');
-      btn.textContent = labels[key] + (on ? ` ${arrow}` : '');
+      btn.textContent = labels[key];
+      const indicator = document.createElement('span');
+      indicator.className = 'sort-indicator';
+      indicator.setAttribute('aria-hidden', 'true');
+      indicator.textContent = on ? arrow : '↕';
+      btn.appendChild(indicator);
       if (units[key]) {
         const unit = document.createElement('span');
         unit.className = 'column-unit';

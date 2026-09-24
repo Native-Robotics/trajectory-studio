@@ -67,11 +67,11 @@
       <div class="trajectory-list-container">
         <table id="trajectory-table" role="grid" aria-label="Live trajectories">
           <thead><tr>
-            <th scope="col" aria-sort="ascending"><button type="button" data-sort="name" title="Sort by trajectory name">Trajectory ↑</button></th>
-            <th scope="col" aria-sort="none"><button type="button" data-sort="box" title="Estimated box number from carton obstacles">Box<span class="column-unit">est.</span></button></th>
-            <th scope="col" aria-sort="none"><button type="button" data-sort="compute" title="Active computation time; queue and requeue waits excluded">Compute<span class="column-unit">s</span></button></th>
-            <th scope="col" aria-sort="none"><button type="button" data-sort="travel" title="Total trajectory travel time">Travel<span class="column-unit">s</span></button></th>
-            <th scope="col" aria-sort="none"><button type="button" data-sort="mileage" title="Total joint travel Σ|dq|, including reversals">Mileage<span class="column-unit">rad</span></button></th>
+            <th scope="col" aria-sort="ascending"><button type="button" data-sort="name" title="Sort by trajectory name">Trajectory<span class="sort-indicator" aria-hidden="true">↑</span></button></th>
+            <th scope="col" aria-sort="none"><button type="button" data-sort="box" title="Estimated box number from carton obstacles">Box<span class="sort-indicator" aria-hidden="true">↕</span><span class="column-unit">est.</span></button></th>
+            <th scope="col" aria-sort="none"><button type="button" data-sort="compute" title="Active computation time; queue and requeue waits excluded">Compute<span class="sort-indicator" aria-hidden="true">↕</span><span class="column-unit">s</span></button></th>
+            <th scope="col" aria-sort="none"><button type="button" data-sort="travel" title="Total trajectory travel time">Travel<span class="sort-indicator" aria-hidden="true">↕</span><span class="column-unit">s</span></button></th>
+            <th scope="col" aria-sort="none"><button type="button" data-sort="mileage" title="Total joint travel Σ|dq|, including reversals">Mileage<span class="sort-indicator" aria-hidden="true">↕</span><span class="column-unit">rad</span></button></th>
           </tr></thead>
           <tbody id="trajectory-list" tabindex="0"></tbody>
         </table>
