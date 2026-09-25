@@ -7,7 +7,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
 import { quatToMatrix } from './robot.js?v=37';
-import { getRobotConfig } from './robots/factory.js?v=36';
+import { getRobotConfig } from './robots/factory.js?v=37';
 
 export class TrajectoryViewer {
   constructor(canvasId) {
@@ -347,24 +347,33 @@ export class TrajectoryViewer {
     this.robotGroup.position.set(0, 0, 0);
     this.robotGroup.quaternion.set(0, 0, 0, 1);
     
-    // Draw base pedestal cylinder (from ground z=0 to z=1.2 base height)
-    const baseCylGeo = new THREE.CylinderGeometry(config.pedestalRadius, config.pedestalRadius, pos[2], 32);
-    baseCylGeo.rotateX(Math.PI / 2); // Make it align along Z axis
-    const baseCyl = new THREE.Mesh(baseCylGeo, this.robotMaterials.joint);
-    baseCyl.position.set(0, 0, -pos[2] / 2);
-    baseCyl.receiveShadow = true;
-    baseCyl.castShadow = true;
-    this.linkGroups[0].add(baseCyl); // Attach to link index 0 (base)
+    // Draw base pedestal cylinder (from ground z=0 to z=base height)
+    if (pos[2] > 0.001) {
+      const baseCylGeo = new THREE.CylinderGeometry(config.pedestalRadius, config.pedestalRadius, pos[2], 32);
+      baseCylGeo.rotateX(Math.PI / 2); // Make it align along Z axis
+      const baseCyl = new THREE.Mesh(baseCylGeo, this.robotMaterials.joint);
+      baseCyl.position.set(0, 0, -pos[2] / 2);
+      baseCyl.receiveShadow = true;
+      baseCyl.castShadow = true;
+      this.linkGroups[0].add(baseCyl); // Attach to link index 0 (base)
+    }
     
-    // Draw visual cylinder representing Link 1 column (height = d[0] = 0.386)
+    // Draw visual cylinder representing Link 1 column (height = d[0])
     if (dh && dh.d && dh.d[0]) {
-      const colHeight = dh.d[0];
+      const colHeight = Math.abs(dh.d[0]);
       const columnGeo = new THREE.CylinderGeometry(config.columnRadius, config.columnRadius, colHeight, 32);
-      // In Link 1's DH frame, the shoulder column lies along the Y axis,
-      // which matches Three.js CylinderGeometry's default alignment.
       const column = new THREE.Mesh(columnGeo, this.robotMaterials.solid);
       column.name = 'hitbox'; // So X-ray matches its material
-      column.position.set(0, -colHeight / 2, 0);
+
+      // In Link 1's DH frame, the vector towards the base (Link 0) is [0, -d[0]*sin(alpha[0]), -d[0]*cos(alpha[0])].
+      // For alpha[0] = +pi/2 (e.g. Aubo, UR), this is along -Y.
+      // For alpha[0] = -pi/2 (e.g. Doosan), this is along +Y.
+      const alpha0 = (dh.alpha && dh.alpha[0] !== undefined) ? dh.alpha[0] : Math.PI / 2;
+      const axis = new THREE.Vector3(0, -Math.sin(alpha0), -Math.cos(alpha0)).normalize();
+      if (Math.abs(axis.y - 1) > 1e-4) {
+        column.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), axis);
+      }
+      column.position.set(0, -dh.d[0] * Math.sin(alpha0) / 2, -dh.d[0] * Math.cos(alpha0) / 2);
       column.castShadow = true;
       column.receiveShadow = true;
       this.linkGroups[1].add(column);
@@ -445,7 +454,7 @@ export class TrajectoryViewer {
         const limit = limits.find(l => l.joint_id === j);
         const minVal = limit ? limit.min_value : -Math.PI;
         const maxVal = limit ? limit.max_value : Math.PI;
-        const speedLimits = this.getRobotSpeedLimits(modelName);
+        const speedLimits = this.getRobotSpeedLimits(modelName, reprData.equipment_model);
         const maxSpeed = speedLimits[j];
         
         this.jointLimits.push({ min: minVal, max: maxVal, maxSpeed: maxSpeed });
@@ -698,9 +707,31 @@ export class TrajectoryViewer {
    * @param {string} modelName - The model identifier
    * @returns {Array<number>} Joint velocity limits
    */
-  getRobotSpeedLimits(modelName) {
+  getRobotSpeedLimits(modelName, equipmentModel = null) {
+    if (equipmentModel && Array.isArray(equipmentModel.max_velocity) && equipmentModel.max_velocity.length > 0) {
+      return equipmentModel.max_velocity;
+    }
     const name = (modelName || '').toLowerCase();
-    if (name.includes('cr20a') || name.includes('cr20')) {
+    if (name.includes('h2017') || name.includes('doosan-h2017') || (name.includes('doosan') && !name.includes('p3020'))) {
+      // Doosan H2017 J1: 100°/s, J2: 80°/s, J3: 100°/s, J4-J6: 180°/s
+      return [
+        100 * Math.PI / 180,
+        80 * Math.PI / 180,
+        100 * Math.PI / 180,
+        180 * Math.PI / 180,
+        180 * Math.PI / 180,
+        180 * Math.PI / 180
+      ];
+    } else if (name.includes('p3020') || name.includes('doosan-p3020')) {
+      // Doosan P3020 (5-DOF) J1: 100°/s, J2-J3: 80°/s, J4: 200°/s, J5: 360°/s
+      return [
+        100 * Math.PI / 180,
+        80 * Math.PI / 180,
+        80 * Math.PI / 180,
+        200 * Math.PI / 180,
+        360 * Math.PI / 180
+      ];
+    } else if (name.includes('cr20a') || name.includes('cr20')) {
       // CR20A J1-J2: 120°/s, J3: 150°/s, J4-J6: 180°/s
       return [
         120 * Math.PI / 180,
@@ -723,12 +754,12 @@ export class TrajectoryViewer {
     } else if (name.includes('aubo-is25') || name.includes('is25')) {
       // Aubo iS25 standard velocity limits
       return [
-        150 * Math.PI / 180,
-        150 * Math.PI / 180,
-        150 * Math.PI / 180,
-        180 * Math.PI / 180,
-        180 * Math.PI / 180,
-        180 * Math.PI / 180
+        2.5831,
+        2.5831,
+        3.1067,
+        5.1662,
+        5.1662,
+        5.1662
       ];
     } else {
       // Standard default collaborative robot speed limits: 150°/s

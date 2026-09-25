@@ -433,7 +433,7 @@ export class TrajectoryChart {
       const equipment = reprData.equipment_model || {};
       const limits = equipment.range_limits || [];
       const modelName = equipment.model_name || 'generic';
-      const speedLimits = this.getRobotSpeedLimits(modelName);
+      const speedLimits = this.getRobotSpeedLimits(modelName, equipment);
       
       for (let j = 0; j < datasetsData.length; j++) {
         const curvePoints = datasetsData[j];
@@ -559,9 +559,31 @@ export class TrajectoryChart {
   /**
    * Retrieves maximum velocity limits (radians/second) for each joint
    */
-  getRobotSpeedLimits(modelName) {
+  getRobotSpeedLimits(modelName, equipmentModel = null) {
+    if (equipmentModel && Array.isArray(equipmentModel.max_velocity) && equipmentModel.max_velocity.length > 0) {
+      return equipmentModel.max_velocity;
+    }
     const name = (modelName || '').toLowerCase();
-    if (name.includes('cr20a') || name.includes('cr20')) {
+    if (name.includes('h2017') || name.includes('doosan-h2017') || (name.includes('doosan') && !name.includes('p3020'))) {
+      // Doosan H2017 J1: 100°/s, J2: 80°/s, J3: 100°/s, J4-J6: 180°/s
+      return [
+        100 * Math.PI / 180,
+        80 * Math.PI / 180,
+        100 * Math.PI / 180,
+        180 * Math.PI / 180,
+        180 * Math.PI / 180,
+        180 * Math.PI / 180
+      ];
+    } else if (name.includes('p3020') || name.includes('doosan-p3020')) {
+      // Doosan P3020 (5-DOF) J1: 100°/s, J2-J3: 80°/s, J4: 200°/s, J5: 360°/s
+      return [
+        100 * Math.PI / 180,
+        80 * Math.PI / 180,
+        80 * Math.PI / 180,
+        200 * Math.PI / 180,
+        360 * Math.PI / 180
+      ];
+    } else if (name.includes('cr20a') || name.includes('cr20')) {
       // CR20A J1-J2: 120°/s, J3: 150°/s, J4-J6: 180°/s
       return [
         120 * Math.PI / 180,
@@ -584,12 +606,12 @@ export class TrajectoryChart {
     } else if (name.includes('aubo-is25') || name.includes('is25')) {
       // Aubo iS25 standard velocity limits
       return [
-        150 * Math.PI / 180,
-        150 * Math.PI / 180,
-        150 * Math.PI / 180,
-        180 * Math.PI / 180,
-        180 * Math.PI / 180,
-        180 * Math.PI / 180
+        2.5831,
+        2.5831,
+        3.1067,
+        5.1662,
+        5.1662,
+        5.1662
       ];
     } else {
       // Standard default collaborative robot speed limits: 150°/s
